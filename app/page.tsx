@@ -1,31 +1,59 @@
-import { supabase } from "@/lib/supabase";
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 
-async function getSureBotData() {
-  const [statsRes, positionsRes] = await Promise.all([
-    supabase.from("bot_stats").select("*").eq("bot_name", "sure_bot").single(),
-    supabase
-      .from("bot_positions")
-      .select("*")
-      .eq("bot_name", "sure_bot")
-      .order("timestamp", { ascending: false })
-      .limit(10),
-  ]);
+function loadSureBotData() {
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), "data", "sure_bot_positions.json"),
+      "utf-8"
+    );
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function computeStats(data: any) {
+  if (!data) return null;
+  const positions = Object.values(data.positions) as any[];
+  const stats = data.stats;
+
+  const closed = positions.filter(
+    (p) => p.status !== "open" && p.status !== "cancelled" && p.pnl != null
+  );
+  const wins = closed.filter((p) => p.pnl > 0);
+  const losses = closed.filter((p) => p.pnl <= 0);
+  const totalPnl = closed.reduce((s: number, p: any) => s + p.pnl, 0);
+  const wr = closed.length ? (wins.length / closed.length) * 100 : 0;
+
+  const recent = [...positions]
+    .sort((a, b) => {
+      if (!a.timestamp) return 1;
+      if (!b.timestamp) return -1;
+      return b.timestamp.localeCompare(a.timestamp);
+    })
+    .slice(0, 10);
+
   return {
-    stats: statsRes.data,
-    recent: positionsRes.data ?? [],
+    total: positions.length,
+    wins: wins.length,
+    losses: losses.length,
+    totalPnl,
+    wr,
+    recent,
+    peakBalance: stats?.peak_balance ?? 0,
   };
 }
 
-export default async function Home() {
-  const { stats, recent } = await getSureBotData();
+export default function Home() {
+  const data = loadSureBotData();
+  const s = computeStats(data);
 
-  const wins = stats?.wins ?? 0;
-  const losses = stats?.losses ?? 0;
-  const total = wins + losses;
-  const wr = total > 0 ? (wins / total) * 100 : 0;
-  const pnl = stats?.total_pnl ?? 0;
-  const totalBets = stats?.total_bets ?? 0;
+  const total = s?.total ?? 0;
+  const wr = s?.wr ?? 0;
+  const pnl = s?.totalPnl ?? 0;
+  const recent = s?.recent ?? [];
 
   return (
     <div className="space-y-8">
@@ -40,13 +68,13 @@ export default async function Home() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard
           label="Всего ставок"
-          value={totalBets.toLocaleString()}
+          value={total.toLocaleString()}
           sub="за всё время"
         />
         <StatCard
           label="Win Rate"
           value={`${wr.toFixed(1)}%`}
-          sub={`${wins} побед / ${losses} потерь`}
+          sub={`${s?.wins ?? 0} побед / ${s?.losses ?? 0} потерь`}
           color={wr > 90 ? "green" : "yellow"}
         />
         <StatCard
@@ -105,22 +133,29 @@ export default async function Home() {
               </tr>
             </thead>
             <tbody>
-              {recent.map((p, i) => (
-                <tr key={i} className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors">
+              {recent.map((p: any, i: number) => (
+                <tr
+                  key={i}
+                  className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors"
+                >
                   <td className="px-4 py-2 max-w-xs">
                     <div className="truncate text-zinc-200">{p.title}</div>
-                    {p.outcome && <div className="text-xs text-zinc-600">{p.outcome}</div>}
+                    {p.outcome && (
+                      <div className="text-xs text-zinc-600">{p.outcome}</div>
+                    )}
                   </td>
                   <td className="px-4 py-2 text-right font-mono text-xs text-zinc-400">
-                    {p.entry_price != null ? `${Math.round(p.entry_price * 100)}¢` : "—"}
+                    {p.entry_price != null
+                      ? `${Math.round(p.entry_price * 100)}¢`
+                      : "—"}
                   </td>
                   <td className="px-4 py-2 text-right font-mono text-xs text-zinc-400">
                     {p.cost_usd != null ? `$${p.cost_usd.toFixed(2)}` : "—"}
                   </td>
                   <td className="px-4 py-2 text-right font-mono text-xs">
-                    {p.final_pnl != null ? (
-                      <span className={p.final_pnl >= 0 ? "text-green-400" : "text-red-400"}>
-                        {p.final_pnl >= 0 ? "+" : ""}${p.final_pnl.toFixed(2)}
+                    {p.pnl != null ? (
+                      <span className={p.pnl >= 0 ? "text-green-400" : "text-red-400"}>
+                        {p.pnl >= 0 ? "+" : ""}${p.pnl.toFixed(2)}
                       </span>
                     ) : (
                       <span className="text-zinc-600">открыта</span>
@@ -129,16 +164,11 @@ export default async function Home() {
                   <td className="px-4 py-2">
                     <StatusBadge status={p.status} />
                   </td>
-                  <td className="px-4 py-2 text-xs text-zinc-600">{p.category || "—"}</td>
-                </tr>
-              ))}
-              {recent.length === 0 && (
-                <tr>
-                  <td colSpan={6} className="px-4 py-8 text-center text-zinc-600">
-                    Нет данных — запусти ETL-скрипт для синхронизации
+                  <td className="px-4 py-2 text-xs text-zinc-600">
+                    {p.category || "—"}
                   </td>
                 </tr>
-              )}
+              ))}
             </tbody>
           </table>
         </div>
@@ -147,25 +177,13 @@ export default async function Home() {
   );
 }
 
-function StatCard({
-  label,
-  value,
-  sub,
-  color = "zinc",
-}: {
-  label: string;
-  value: string;
-  sub: string;
-  color?: string;
+function StatCard({ label, value, sub, color = "zinc" }: {
+  label: string; value: string; sub: string; color?: string;
 }) {
   const valueColor =
-    color === "green"
-      ? "text-green-400"
-      : color === "red"
-      ? "text-red-400"
-      : color === "yellow"
-      ? "text-yellow-400"
-      : "text-white";
+    color === "green" ? "text-green-400" :
+    color === "red" ? "text-red-400" :
+    color === "yellow" ? "text-yellow-400" : "text-white";
   return (
     <div className="rounded-lg border border-zinc-800 bg-zinc-900/50 px-5 py-4">
       <p className="text-zinc-500 text-xs uppercase tracking-wider">{label}</p>

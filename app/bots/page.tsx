@@ -1,69 +1,75 @@
-import { supabase } from "@/lib/supabase";
+import fs from "fs";
+import path from "path";
 
-async function getBotStats() {
-  const { data } = await supabase
-    .from("bot_stats")
-    .select("*")
-    .eq("bot_name", "sure_bot")
-    .single();
-  return data;
+function loadPositions() {
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), "data", "sure_bot_positions.json"),
+      "utf-8"
+    );
+    const data = JSON.parse(raw);
+    const positions = Object.values(data.positions) as any[];
+    const stats = data.stats;
+    return { positions, stats };
+  } catch {
+    return { positions: [], stats: null };
+  }
 }
 
-async function getPositions(status?: string) {
-  let q = supabase
-    .from("bot_positions")
-    .select("*")
-    .eq("bot_name", "sure_bot")
-    .order("timestamp", { ascending: false })
-    .limit(100);
-  if (status) q = q.eq("status", status);
-  const { data } = await q;
-  return data ?? [];
-}
+export default function BotsPage() {
+  const { positions, stats } = loadPositions();
 
-export default async function BotsPage() {
-  const [stats, openPositions, allPositions] = await Promise.all([
-    getBotStats(),
-    getPositions("open"),
-    getPositions(),
-  ]);
+  const closed = positions.filter(
+    (p) => p.status !== "open" && p.status !== "cancelled" && p.pnl != null
+  );
+  const open = positions.filter((p) => p.status === "open");
+  const wins = closed.filter((p) => p.pnl > 0);
+  const losses = closed.filter((p) => p.pnl <= 0);
+  const totalPnl = closed.reduce((s: number, p: any) => s + p.pnl, 0);
+  const wr = closed.length ? (wins.length / closed.length) * 100 : 0;
 
-  const wins = stats?.wins ?? 0;
-  const losses = stats?.losses ?? 0;
-  const total = wins + losses;
-  const wr = total > 0 ? ((wins / total) * 100).toFixed(1) : "—";
-  const pnl = stats?.total_pnl ?? 0;
+  const sorted = [...positions].sort((a, b) => {
+    if (!a.timestamp) return 1;
+    if (!b.timestamp) return -1;
+    return b.timestamp.localeCompare(a.timestamp);
+  });
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-bold text-white">98_sure_bot</h1>
+        <h1 className="text-2xl font-bold text-white">98_sure_bot — Позиции</h1>
         <p className="text-zinc-500 text-sm mt-1">
-          Покупает высоковероятностные исходы (96–99.5¢). Сканирует рынок каждые 5 минут.
+          Покупает высоковероятностные исходы (96–99.5¢) · сканирует каждые 5 минут
         </p>
       </div>
 
-      {/* KPI карточки */}
+      {/* KPI */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <KPI label="Всего ставок" value={String(stats?.total_bets ?? "—")} />
-        <KPI label="Win Rate" value={`${wr}%`} color={Number(wr) > 80 ? "green" : "yellow"} />
+        <KPI label="Всего позиций" value={positions.length.toString()} />
+        <KPI label="Закрытых" value={closed.length.toString()} />
+        <KPI
+          label="Win Rate"
+          value={`${wr.toFixed(1)}%`}
+          color={wr > 90 ? "green" : "yellow"}
+        />
         <KPI
           label="Общий P&L"
-          value={`${pnl >= 0 ? "+" : ""}$${pnl.toFixed(0)}`}
-          color={pnl >= 0 ? "green" : "red"}
+          value={`${totalPnl >= 0 ? "+" : ""}$${totalPnl.toFixed(0)}`}
+          color={totalPnl >= 0 ? "green" : "red"}
         />
-        <KPI label="Побед" value={String(wins)} color="green" />
-        <KPI label="Открытых" value={String(openPositions.length)} color="yellow" />
+        <KPI label="Открытых" value={open.length.toString()} color="yellow" />
       </div>
 
-      {/* Открытые позиции */}
-      <Section title="Открытые позиции" count={openPositions.length} color="green">
-        <PositionsTable rows={openPositions} />
-      </Section>
+      {/* Открытые */}
+      {open.length > 0 && (
+        <Section title="Открытые позиции" count={open.length} color="green">
+          <PositionsTable rows={open} />
+        </Section>
+      )}
 
       {/* История */}
-      <Section title="История позиций (последние 100)" count={allPositions.length} color="zinc">
-        <PositionsTable rows={allPositions} />
+      <Section title="Все позиции" count={sorted.length} color="zinc">
+        <PositionsTable rows={sorted} />
       </Section>
     </div>
   );
@@ -71,13 +77,9 @@ export default async function BotsPage() {
 
 function KPI({ label, value, color }: { label: string; value: string; color?: string }) {
   const c =
-    color === "green"
-      ? "text-green-400"
-      : color === "red"
-      ? "text-red-400"
-      : color === "yellow"
-      ? "text-yellow-400"
-      : "text-white";
+    color === "green" ? "text-green-400" :
+    color === "red" ? "text-red-400" :
+    color === "yellow" ? "text-yellow-400" : "text-white";
   return (
     <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 px-4 py-3">
       <p className="text-zinc-600 text-xs">{label}</p>
@@ -86,23 +88,12 @@ function KPI({ label, value, color }: { label: string; value: string; color?: st
   );
 }
 
-function Section({
-  title,
-  count,
-  color,
-  children,
-}: {
-  title: string;
-  count: number;
-  color: string;
-  children: React.ReactNode;
+function Section({ title, count, color, children }: {
+  title: string; count: number; color: string; children: React.ReactNode;
 }) {
   const c =
-    color === "green"
-      ? "text-green-400"
-      : color === "yellow"
-      ? "text-yellow-400"
-      : "text-zinc-400";
+    color === "green" ? "text-green-400" :
+    color === "yellow" ? "text-yellow-400" : "text-zinc-400";
   return (
     <div>
       <div className="flex items-center gap-3 mb-3">
@@ -115,13 +106,7 @@ function Section({
 }
 
 function PositionsTable({ rows }: { rows: any[] }) {
-  if (rows.length === 0) {
-    return (
-      <div className="rounded-lg border border-zinc-800 px-4 py-8 text-center text-zinc-600 text-sm">
-        Нет позиций — запусти ETL-скрипт для синхронизации данных
-      </div>
-    );
-  }
+  if (rows.length === 0) return null;
 
   return (
     <div className="rounded-lg border border-zinc-800 overflow-hidden">
@@ -139,10 +124,7 @@ function PositionsTable({ rows }: { rows: any[] }) {
         </thead>
         <tbody>
           {rows.map((p, i) => (
-            <tr
-              key={i}
-              className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors"
-            >
+            <tr key={i} className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors">
               <td className="px-4 py-2 max-w-xs">
                 <div className="truncate text-zinc-200">{p.title}</div>
                 {p.outcome && <div className="text-xs text-zinc-600">{p.outcome}</div>}
@@ -154,25 +136,21 @@ function PositionsTable({ rows }: { rows: any[] }) {
                 {p.cost_usd != null ? `$${p.cost_usd.toFixed(2)}` : "—"}
               </td>
               <td className="px-4 py-2 text-right font-mono text-xs">
-                {p.final_pnl != null ? (
-                  <span className={p.final_pnl >= 0 ? "text-green-400" : "text-red-400"}>
-                    {p.final_pnl >= 0 ? "+" : ""}${p.final_pnl.toFixed(2)}
+                {p.pnl != null ? (
+                  <span className={p.pnl >= 0 ? "text-green-400" : "text-red-400"}>
+                    {p.pnl >= 0 ? "+" : ""}${p.pnl.toFixed(2)}
                   </span>
                 ) : (
                   <span className="text-zinc-600">открыта</span>
                 )}
               </td>
-              <td className="px-4 py-2">
-                <StatusBadge status={p.status} />
-              </td>
+              <td className="px-4 py-2"><StatusBadge status={p.status} /></td>
               <td className="px-4 py-2 text-xs text-zinc-600">{p.category || "—"}</td>
               <td className="px-4 py-2 text-zinc-600 text-xs whitespace-nowrap">
                 {p.timestamp
                   ? new Date(p.timestamp).toLocaleString("ru-RU", {
-                      day: "2-digit",
-                      month: "short",
-                      hour: "2-digit",
-                      minute: "2-digit",
+                      day: "2-digit", month: "short",
+                      hour: "2-digit", minute: "2-digit",
                     })
                   : "—"}
               </td>
@@ -191,6 +169,7 @@ function StatusBadge({ status }: { status: string }) {
     sold: "bg-blue-900/40 text-blue-400",
     resolved: "bg-zinc-800 text-zinc-400",
     lost: "bg-red-900/40 text-red-400",
+    cancelled: "bg-zinc-800 text-zinc-600",
   };
   return (
     <span className={`text-xs px-2 py-0.5 rounded ${map[status] ?? "bg-zinc-800 text-zinc-500"}`}>
