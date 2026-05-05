@@ -32,10 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               War Markets
             </Link>
             <Link href="/bots" className="text-zinc-400 hover:text-white transition-colors">
-              Bots
+              sure_bot
             </Link>
             <Link href="/report" className="text-yellow-500 hover:text-yellow-300 transition-colors font-medium">
-              Report
+              Аналитика
             </Link>
           </div>
           <div className="ml-auto flex items-center gap-2">

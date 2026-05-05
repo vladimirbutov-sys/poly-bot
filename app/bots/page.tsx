@@ -1,137 +1,124 @@
 import { supabase } from "@/lib/supabase";
 
 async function getBotStats() {
-  const { data } = await supabase.from("bot_stats").select("*");
-  return data ?? [];
+  const { data } = await supabase
+    .from("bot_stats")
+    .select("*")
+    .eq("bot_name", "sure_bot")
+    .single();
+  return data;
 }
 
-async function getPositions(botName: string, status?: string) {
+async function getPositions(status?: string) {
   let q = supabase
     .from("bot_positions")
     .select("*")
-    .eq("bot_name", botName)
+    .eq("bot_name", "sure_bot")
     .order("timestamp", { ascending: false })
-    .limit(50);
+    .limit(100);
   if (status) q = q.eq("status", status);
   const { data } = await q;
   return data ?? [];
 }
 
 export default async function BotsPage() {
-  const [stats, sureOpen, sureClosed, copyOpen, copyClosed] = await Promise.all([
+  const [stats, openPositions, allPositions] = await Promise.all([
     getBotStats(),
-    getPositions("sure_bot", "open"),
-    getPositions("sure_bot"),
-    getPositions("copybot_v2", "open"),
-    getPositions("copybot_v2"),
+    getPositions("open"),
+    getPositions(),
   ]);
 
-  const sure = stats.find((s) => s.bot_name === "sure_bot");
-  const copy = stats.find((s) => s.bot_name === "copybot_v2");
-
-  return (
-    <div className="space-y-10">
-      <div>
-        <h1 className="text-2xl font-bold text-white">Bots</h1>
-        <p className="text-zinc-500 text-sm mt-1">Live bot performance and positions</p>
-      </div>
-
-      {/* Stats row */}
-      <div className="grid grid-cols-2 gap-6">
-        <BotCard
-          name="98_sure_bot"
-          desc="Buys high-probability outcomes (96–99.5%). Auto-scans every 5 min."
-          stats={sure}
-          openCount={sureOpen.length}
-          color="green"
-        />
-        <BotCard
-          name="copybot_v2"
-          desc="Follows denizz wallet. 3-part staggered entry, log-scaled sizing."
-          stats={copy}
-          openCount={copyOpen.length}
-          color="blue"
-        />
-      </div>
-
-      {/* sure_bot positions */}
-      <Section title="sure_bot — Open Positions" count={sureOpen.length} color="green">
-        <PositionsTable rows={sureOpen} showPlayer={false} />
-      </Section>
-
-      <Section title="sure_bot — Last 50 Positions" count={sureClosed.length} color="zinc">
-        <PositionsTable rows={sureClosed} showPlayer={false} />
-      </Section>
-
-      {/* copybot positions */}
-      <Section title="copybot_v2 — Open Positions" count={copyOpen.length} color="blue">
-        <PositionsTable rows={copyOpen} showPlayer={true} />
-      </Section>
-
-      <Section title="copybot_v2 — Last 50 Positions" count={copyClosed.length} color="zinc">
-        <PositionsTable rows={copyClosed} showPlayer={true} />
-      </Section>
-    </div>
-  );
-}
-
-function BotCard({ name, desc, stats, openCount, color }: {
-  name: string; desc: string; stats: any; openCount: number; color: string;
-}) {
-  const border = color === "green" ? "border-green-900" : "border-blue-900";
-  const accent = color === "green" ? "text-green-400" : "text-blue-400";
   const wins = stats?.wins ?? 0;
   const losses = stats?.losses ?? 0;
   const total = wins + losses;
-  const wr = total > 0 ? ((wins / total) * 100).toFixed(0) : "—";
+  const wr = total > 0 ? ((wins / total) * 100).toFixed(1) : "—";
   const pnl = stats?.total_pnl ?? 0;
 
   return (
-    <div className={`rounded-lg border ${border} bg-zinc-900/30 p-5 space-y-4`}>
+    <div className="space-y-8">
       <div>
-        <p className={`text-sm font-bold ${accent}`}>{name}</p>
-        <p className="text-zinc-500 text-xs mt-1">{desc}</p>
+        <h1 className="text-2xl font-bold text-white">98_sure_bot</h1>
+        <p className="text-zinc-500 text-sm mt-1">
+          Покупает высоковероятностные исходы (96–99.5¢). Сканирует рынок каждые 5 минут.
+        </p>
       </div>
-      <div className="grid grid-cols-4 gap-3">
-        <Metric label="P&L" value={`${pnl >= 0 ? "+" : ""}$${pnl.toFixed(0)}`} color={pnl >= 0 ? "green" : "red"} />
-        <Metric label="Win rate" value={`${wr}%`} />
-        <Metric label="Trades" value={String(stats?.total_bets ?? "—")} />
-        <Metric label="Open" value={String(openCount)} />
+
+      {/* KPI карточки */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <KPI label="Всего ставок" value={String(stats?.total_bets ?? "—")} />
+        <KPI label="Win Rate" value={`${wr}%`} color={Number(wr) > 80 ? "green" : "yellow"} />
+        <KPI
+          label="Общий P&L"
+          value={`${pnl >= 0 ? "+" : ""}$${pnl.toFixed(0)}`}
+          color={pnl >= 0 ? "green" : "red"}
+        />
+        <KPI label="Побед" value={String(wins)} color="green" />
+        <KPI label="Открытых" value={String(openPositions.length)} color="yellow" />
       </div>
+
+      {/* Открытые позиции */}
+      <Section title="Открытые позиции" count={openPositions.length} color="green">
+        <PositionsTable rows={openPositions} />
+      </Section>
+
+      {/* История */}
+      <Section title="История позиций (последние 100)" count={allPositions.length} color="zinc">
+        <PositionsTable rows={allPositions} />
+      </Section>
     </div>
   );
 }
 
-function Metric({ label, value, color }: { label: string; value: string; color?: string }) {
-  const c = color === "green" ? "text-green-400" : color === "red" ? "text-red-400" : "text-white";
+function KPI({ label, value, color }: { label: string; value: string; color?: string }) {
+  const c =
+    color === "green"
+      ? "text-green-400"
+      : color === "red"
+      ? "text-red-400"
+      : color === "yellow"
+      ? "text-yellow-400"
+      : "text-white";
   return (
-    <div>
+    <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 px-4 py-3">
       <p className="text-zinc-600 text-xs">{label}</p>
-      <p className={`text-lg font-bold ${c}`}>{value}</p>
+      <p className={`text-2xl font-bold mt-1 ${c}`}>{value}</p>
     </div>
   );
 }
 
-function Section({ title, count, color, children }: {
-  title: string; count: number; color: string; children: React.ReactNode;
+function Section({
+  title,
+  count,
+  color,
+  children,
+}: {
+  title: string;
+  count: number;
+  color: string;
+  children: React.ReactNode;
 }) {
-  const c = color === "green" ? "text-green-400" : color === "blue" ? "text-blue-400" : "text-zinc-400";
+  const c =
+    color === "green"
+      ? "text-green-400"
+      : color === "yellow"
+      ? "text-yellow-400"
+      : "text-zinc-400";
   return (
     <div>
       <div className="flex items-center gap-3 mb-3">
         <h2 className={`text-sm font-semibold ${c} uppercase tracking-wider`}>{title}</h2>
-        <span className="text-zinc-600 text-xs">{count} rows</span>
+        <span className="text-zinc-600 text-xs">{count} записей</span>
       </div>
       {children}
     </div>
   );
 }
 
-function PositionsTable({ rows, showPlayer }: { rows: any[]; showPlayer: boolean }) {
+function PositionsTable({ rows }: { rows: any[] }) {
   if (rows.length === 0) {
     return (
       <div className="rounded-lg border border-zinc-800 px-4 py-8 text-center text-zinc-600 text-sm">
-        No positions — run the ETL script to sync data
+        Нет позиций — запусти ETL-скрипт для синхронизации данных
       </div>
     );
   }
@@ -141,19 +128,21 @@ function PositionsTable({ rows, showPlayer }: { rows: any[]; showPlayer: boolean
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-zinc-800 text-zinc-500 text-xs bg-zinc-900/50">
-            <th className="px-4 py-2 text-left">Market</th>
-            <th className="px-4 py-2 text-right">Entry</th>
-            <th className="px-4 py-2 text-right">Cost</th>
+            <th className="px-4 py-2 text-left">Рынок</th>
+            <th className="px-4 py-2 text-right">Вход</th>
+            <th className="px-4 py-2 text-right">Сумма</th>
             <th className="px-4 py-2 text-right">P&L</th>
-            <th className="px-4 py-2 text-left">Status</th>
-            {showPlayer && <th className="px-4 py-2 text-left">Player</th>}
-            <th className="px-4 py-2 text-left">Category</th>
-            <th className="px-4 py-2 text-left">Time</th>
+            <th className="px-4 py-2 text-left">Статус</th>
+            <th className="px-4 py-2 text-left">Категория</th>
+            <th className="px-4 py-2 text-left">Дата</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((p, i) => (
-            <tr key={i} className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors">
+            <tr
+              key={i}
+              className="border-b border-zinc-900 hover:bg-zinc-900/50 transition-colors"
+            >
               <td className="px-4 py-2 max-w-xs">
                 <div className="truncate text-zinc-200">{p.title}</div>
                 {p.outcome && <div className="text-xs text-zinc-600">{p.outcome}</div>}
@@ -169,18 +158,21 @@ function PositionsTable({ rows, showPlayer }: { rows: any[]; showPlayer: boolean
                   <span className={p.final_pnl >= 0 ? "text-green-400" : "text-red-400"}>
                     {p.final_pnl >= 0 ? "+" : ""}${p.final_pnl.toFixed(2)}
                   </span>
-                ) : <span className="text-zinc-600">open</span>}
+                ) : (
+                  <span className="text-zinc-600">открыта</span>
+                )}
               </td>
-              <td className="px-4 py-2"><StatusBadge status={p.status} /></td>
-              {showPlayer && (
-                <td className="px-4 py-2 text-xs text-blue-400">{p.signal_player || "—"}</td>
-              )}
+              <td className="px-4 py-2">
+                <StatusBadge status={p.status} />
+              </td>
               <td className="px-4 py-2 text-xs text-zinc-600">{p.category || "—"}</td>
               <td className="px-4 py-2 text-zinc-600 text-xs whitespace-nowrap">
                 {p.timestamp
-                  ? new Date(p.timestamp).toLocaleString("en-GB", {
-                      day: "2-digit", month: "short",
-                      hour: "2-digit", minute: "2-digit",
+                  ? new Date(p.timestamp).toLocaleString("ru-RU", {
+                      day: "2-digit",
+                      month: "short",
+                      hour: "2-digit",
+                      minute: "2-digit",
                     })
                   : "—"}
               </td>
