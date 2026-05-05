@@ -134,12 +134,10 @@ export default function ReportPage() {
               <KPI
                 label="Win Rate"
                 value={`${sure.winRate.toFixed(1)}%`}
-                color="green"
               />
               <KPI
                 label="Общий P&L"
                 value={`+$${sure.totalPnl.toFixed(0)}`}
-                color="green"
               />
               <KPI label="Avg ставка" value={`$${sure.avgCost.toFixed(1)}`} />
               <KPI
@@ -232,42 +230,36 @@ export default function ReportPage() {
                 title="Убрать esports sub-match маркеты"
                 detail="Dota 2 Map 2, Valorant Map 1 — ставки на отдельные карты/игры в серии дают убыток при 13% от всех ставок. Добавить фильтр на слова 'Game N', 'Map N', 'Set N' в названии рынка."
                 impact="+$19/цикл"
-                color="red"
               />
               <Rec
                 priority="P0"
                 title="Увеличить ставки на politics + geopolitics"
                 detail="Politics: 96% WR, +$27. Geopolitics: 99% WR, +$14. Текущий средний размер $10–20 даёт низкий абсолютный P&L. Удвоение ставок в этих категориях даст +$80 без изменения логики."
                 impact="×2 к P&L в этих категориях"
-                color="green"
               />
               <Rec
                 priority="P1"
                 title="Динамический размер по entry price"
                 detail="При цене 96–97¢ вероятность потери выше чем при 99¢. Логика: BET_SIZE × (entry_price − 0.96) / 0.035. Защита от редких падений на нижней границе диапазона."
                 impact="Снижение avg loss"
-                color="yellow"
               />
               <Rec
                 priority="P1"
                 title="Снизить ставки на 'other' и 'unknown'"
                 detail="Категории без достаточной статистики дают убыток. Ограничить до минимального BET_SIZE ($5) пока не накопится 50+ ставок в категории."
                 impact="+$9 экономии"
-                color="yellow"
               />
               <Rec
                 priority="P2"
                 title="Учащённый polling для geopolitics"
                 detail="Geopolitics маркеты (99% WR) закрываются быстро после событий. Увеличить частоту сканирования для этой категории с 300s до 60s — больше входов."
                 impact="+40–60 ставок/мес"
-                color="blue"
               />
               <Rec
                 priority="P2"
                 title="Авто-стоп при серии потерь в категории"
                 detail="3 поражения подряд в одной категории = пауза на 24ч в этой категории. Предотвращает серийные убытки в периоды повышенной неопределённости."
                 impact="Защита капитала"
-                color="blue"
               />
             </div>
           </Section>
@@ -382,33 +374,24 @@ function CategoryRow({ cat, pnl, n, wr }: { cat: string; pnl: number; n: number;
   );
 }
 
-function Rec({ priority, title, detail, impact, color }: {
-  priority: string; title: string; detail: string; impact: string; color: string;
+function Rec({ priority, title, detail, impact }: {
+  priority: string; title: string; detail: string; impact: string; color?: string;
 }) {
-  const pColor =
-    color === "red"
-      ? "bg-red-900/40 text-red-400 border-red-900"
-      : color === "green"
-      ? "bg-green-900/40 text-green-400 border-green-900"
-      : color === "yellow"
-      ? "bg-yellow-900/40 text-yellow-400 border-yellow-900"
-      : "bg-blue-900/40 text-blue-400 border-blue-900";
-
   const prioColor =
     priority === "P0"
-      ? "bg-red-900/60 text-red-300"
+      ? "bg-red-500/20 text-red-400 border-red-500/30"
       : priority === "P1"
-      ? "bg-yellow-900/60 text-yellow-300"
-      : "bg-zinc-800 text-zinc-400";
+      ? "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
+      : "bg-white/10 text-white/50 border-white/10";
 
   return (
-    <div className={`rounded-lg border p-4 space-y-2 ${pColor}`}>
+    <div className="glass-card p-5 space-y-3 hover:bg-white/[0.08] transition-all duration-300">
       <div className="flex items-center gap-2">
-        <span className={`text-xs px-2 py-0.5 rounded font-bold ${prioColor}`}>{priority}</span>
+        <span className={`text-xs px-2 py-0.5 rounded-lg border font-bold ${prioColor}`}>{priority}</span>
         <p className="text-sm font-semibold text-white">{title}</p>
       </div>
-      <p className="text-xs text-zinc-400 leading-relaxed">{detail}</p>
-      <p className="text-xs font-semibold text-zinc-300">Эффект: {impact}</p>
+      <p className="text-xs text-white/50 leading-relaxed">{detail}</p>
+      <p className="text-xs text-cyan-400 font-medium">Эффект: {impact}</p>
     </div>
   );
 }
