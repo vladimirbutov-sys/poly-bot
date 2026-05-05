@@ -6,8 +6,8 @@ import Link from "next/link";
 const mono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Polymarket Intelligence",
-  description: "Real-time spike detection and smart money tracking",
+  title: "98_sure_bot",
+  description: "Automated high-probability trading on Polymarket",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -16,23 +16,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${mono.className} bg-zinc-950 text-zinc-100 min-h-screen`}>
         <nav className="border-b border-zinc-800 px-6 py-3 flex items-center gap-8">
           <span className="text-green-400 font-bold tracking-widest text-sm">
-            POLY INTEL
+            98_SURE_BOT
           </span>
           <div className="flex gap-6 text-sm">
             <Link href="/" className="text-zinc-400 hover:text-white transition-colors">
               Overview
             </Link>
-            <Link href="/alerts" className="text-zinc-400 hover:text-white transition-colors">
-              Alerts
-            </Link>
-            <Link href="/traders" className="text-zinc-400 hover:text-white transition-colors">
-              Traders
-            </Link>
-            <Link href="/markets" className="text-zinc-400 hover:text-white transition-colors">
-              War Markets
-            </Link>
             <Link href="/bots" className="text-zinc-400 hover:text-white transition-colors">
-              sure_bot
+              Позиции
             </Link>
             <Link href="/report" className="text-yellow-500 hover:text-yellow-300 transition-colors font-medium">
               Аналитика
