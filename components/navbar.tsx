@@ -2,12 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Activity, BarChart3, Layers } from 'lucide-react'
+import { Activity, BarChart3, Layers, Terminal } from 'lucide-react'
 
 const navItems = [
   { href: '/', label: 'Overview', icon: Activity },
   { href: '/bots', label: 'Позиции', icon: Layers },
   { href: '/report', label: 'Аналитика', icon: BarChart3 },
+  { href: '/control', label: 'Управление', icon: Terminal },
 ]
 
 export function Navbar() {
