@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { Navbar } from "@/components/navbar";
 
 function loadJson(filePath: string) {
   try {
@@ -81,6 +82,14 @@ export default function ReportPage() {
   const sure = analyzeSureBot(loadJson(surePath));
 
   return (
+    <div className="min-h-screen bg-[#0a0f1e]">
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px]" />
+      </div>
+      <div className="relative z-10">
+        <Navbar />
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div className="space-y-12 pb-16">
       {/* Заголовок */}
       <div className="border-b border-zinc-800 pb-6">
@@ -288,6 +297,9 @@ export default function ReportPage() {
           />
         </div>
       </Section>
+    </div>
+        </main>
+      </div>
     </div>
   );
 }
