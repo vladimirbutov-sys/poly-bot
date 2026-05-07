@@ -1,0 +1,286 @@
+{
+  "timestamp": "2026-03-22T08:05:36.762Z",
+  "config": {
+    "BANKROLL": 600,
+    "FILL_RATE": 0.82,
+    "WIN_RATE": 0.992,
+    "DAYS": 30,
+    "RUNS": 50
+  },
+  "marketSupply": {
+    "regPerDay": 59.5,
+    "negPerDay": 41
+  },
+  "asIs": {
+    "config": {
+      "label": "AS-IS (текущая)",
+      "betReg": 10,
+      "betNeg": 10,
+      "negCap": 420,
+      "sortStrategy": "fifo"
+    },
+    "result": {
+      "label": "AS-IS (текущая)",
+      "pnl": 267.17,
+      "regPerDay": 40.17733333333333,
+      "negPerDay": 16.991333333333333,
+      "betsPerDay": 57.16866666666667,
+      "skipCap": 660.24,
+      "skipNeg": 105.74,
+      "wins": 1646.28,
+      "losses": 14.44,
+      "winRate": 99.13049761549208,
+      "avgCash": 90.42472222222224,
+      "avgRegFrz": 154.755,
+      "avgNegFrz": 354.8202777777778,
+      "maxFrozen": 600,
+      "dailyPnLMedian": 12.25,
+      "dailyPnLP5": -6,
+      "dailyPnLP95": 16.25,
+      "worstDay": -37.25,
+      "bestDay": 20
+    }
+  },
+  "toBe": {
+    "config": {
+      "label": "TO-BE (новая)",
+      "betReg": 15,
+      "betNeg": 8,
+      "negCap": 175,
+      "sortStrategy": "priority_short"
+    },
+    "result": {
+      "label": "TO-BE (новая)",
+      "pnl": 376.69449999999824,
+      "regPerDay": 46.79266666666667,
+      "negPerDay": 9.316,
+      "betsPerDay": 56.108666666666664,
+      "skipCap": 77,
+      "skipNeg": 722.7,
+      "wins": 1630.26,
+      "losses": 13.6,
+      "winRate": 99.17267893859575,
+      "avgCash": 181.4173888888889,
+      "avgRegFrz": 262.50750000000005,
+      "avgNegFrz": 156.0751111111111,
+      "maxFrozen": 587.22,
+      "dailyPnLMedian": 17.399999999999995,
+      "dailyPnLP5": -9.424999999999999,
+      "dailyPnLP95": 22.049999999999997,
+      "worstDay": -43.02499999999999,
+      "bestDay": 25.074999999999996
+    }
+  },
+  "variants": [
+    {
+      "config": {
+        "label": "TO-BE negCap=$100",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 100,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$100",
+        "pnl": 383.713499999999,
+        "regPerDay": 48.71666666666667,
+        "negPerDay": 5.376666666666667,
+        "betsPerDay": 54.093333333333334,
+        "skipCap": 16.34,
+        "skipNeg": 848.5,
+        "wins": 1577.3,
+        "losses": 12.6,
+        "winRate": 99.2074973268759,
+        "avgCash": 228.47811111111108,
+        "avgRegFrz": 281.7683333333333,
+        "avgNegFrz": 89.7535555555556,
+        "maxFrozen": 576.56,
+        "dailyPnLMedian": 17.474999999999998,
+        "dailyPnLP5": -9.100000000000003,
+        "dailyPnLP95": 22,
+        "worstDay": -44.35,
+        "bestDay": 24.499999999999996
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$125",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 125,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$125",
+        "pnl": 392.25349999999844,
+        "regPerDay": 48.48866666666667,
+        "negPerDay": 6.708,
+        "betsPerDay": 55.19666666666667,
+        "skipCap": 21.04,
+        "skipNeg": 804.28,
+        "wins": 1607.56,
+        "losses": 12.52,
+        "winRate": 99.22719865685646,
+        "avgCash": 210.97283333333337,
+        "avgRegFrz": 276.9691666666667,
+        "avgNegFrz": 112.05799999999998,
+        "maxFrozen": 589.32,
+        "dailyPnLMedian": 17.549999999999997,
+        "dailyPnLP5": -7.425000000000004,
+        "dailyPnLP95": 22.4,
+        "worstDay": -41.900000000000006,
+        "bestDay": 25.049999999999997
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$150",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 150,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$150",
+        "pnl": 380.3069999999986,
+        "regPerDay": 47.66133333333333,
+        "negPerDay": 8.045333333333334,
+        "betsPerDay": 55.70666666666667,
+        "skipCap": 45,
+        "skipNeg": 761.94,
+        "wins": 1618.86,
+        "losses": 13.5,
+        "winRate": 99.1729765492906,
+        "avgCash": 193.20136111111108,
+        "avgRegFrz": 272.64374999999995,
+        "avgNegFrz": 134.1548888888889,
+        "maxFrozen": 590.88,
+        "dailyPnLMedian": 17.575,
+        "dailyPnLP5": -9.475000000000005,
+        "dailyPnLP95": 22.025,
+        "worstDay": -33.60000000000001,
+        "bestDay": 26.15
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$175 ★",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 175,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$175 ★",
+        "pnl": 400.3149999999981,
+        "regPerDay": 46.74666666666667,
+        "negPerDay": 9.352666666666666,
+        "betsPerDay": 56.099333333333334,
+        "skipCap": 76.12,
+        "skipNeg": 723.84,
+        "wins": 1631.82,
+        "losses": 11.96,
+        "winRate": 99.27240871649491,
+        "avgCash": 180.65919444444444,
+        "avgRegFrz": 263.01458333333335,
+        "avgNegFrz": 156.32622222222227,
+        "maxFrozen": 586.8,
+        "dailyPnLMedian": 17.55,
+        "dailyPnLP5": -1.875,
+        "dailyPnLP95": 22.025,
+        "worstDay": -28.39999999999999,
+        "bestDay": 25.499999999999996
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$200",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 200,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$200",
+        "pnl": 386.1599999999978,
+        "regPerDay": 45.37133333333334,
+        "negPerDay": 11.069333333333333,
+        "betsPerDay": 56.440666666666665,
+        "skipCap": 118.96,
+        "skipNeg": 664.8,
+        "wins": 1637.54,
+        "losses": 12.72,
+        "winRate": 99.22921236653617,
+        "avgCash": 163.75766666666667,
+        "avgRegFrz": 251.14833333333337,
+        "avgNegFrz": 185.09400000000005,
+        "maxFrozen": 591.08,
+        "dailyPnLMedian": 17.25,
+        "dailyPnLP5": -5.449999999999998,
+        "dailyPnLP95": 21.774999999999995,
+        "worstDay": -28.750000000000007,
+        "bestDay": 24.900000000000002
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$250",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 250,
+        "sortStrategy": "priority_short"
+      },
+      "result": {
+        "label": "TO-BE negCap=$250",
+        "pnl": 375.2879999999973,
+        "regPerDay": 42.95133333333333,
+        "negPerDay": 13.647333333333334,
+        "betsPerDay": 56.59866666666667,
+        "skipCap": 209.48,
+        "skipNeg": 577.14,
+        "wins": 1638.9,
+        "losses": 13,
+        "winRate": 99.21302742296749,
+        "avgCash": 140.37594444444446,
+        "avgRegFrz": 231.40916666666672,
+        "avgNegFrz": 228.21488888888888,
+        "maxFrozen": 595.76,
+        "dailyPnLMedian": 16.724999999999998,
+        "dailyPnLP5": -7.700000000000006,
+        "dailyPnLP95": 21.549999999999997,
+        "worstDay": -54.04999999999999,
+        "bestDay": 24.299999999999997
+      }
+    },
+    {
+      "config": {
+        "label": "TO-BE negCap=$175 FIFO",
+        "betReg": 15,
+        "betNeg": 8,
+        "negCap": 175,
+        "sortStrategy": "fifo"
+      },
+      "result": {
+        "label": "TO-BE negCap=$175 FIFO",
+        "pnl": 382.95549999999815,
+        "regPerDay": 46.596000000000004,
+        "negPerDay": 9.333333333333334,
+        "betsPerDay": 55.92933333333334,
+        "skipCap": 122.4,
+        "skipNeg": 683.26,
+        "wins": 1624.3,
+        "losses": 13,
+        "winRate": 99.20600989433824,
+        "avgCash": 173.5538333333334,
+        "avgRegFrz": 270.9908333333334,
+        "avgNegFrz": 155.4553333333333,
+        "maxFrozen": 591.22,
+        "dailyPnLMedian": 17.349999999999998,
+        "dailyPnLP5": -7.674999999999999,
+        "dailyPnLP95": 22.049999999999997,
+        "worstDay": -40.39999999999999,
+        "bestDay": 26.124999999999993
+      }
+    }
+  ]
+}

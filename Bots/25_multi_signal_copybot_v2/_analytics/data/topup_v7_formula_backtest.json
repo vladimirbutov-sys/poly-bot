@@ -1,0 +1,311 @@
+[
+  {
+    "name": "V1_current_noPR",
+    "final_bankroll": 4463.07,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.11576857333275462,
+    "max_drawdown_pct": 0.14999999999999997,
+    "trades_taken": 78,
+    "trades_skipped_filter": 510,
+    "trades_skipped_bankroll": 682,
+    "trades_skipped_min_upgrade": 362,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.47253671642937267,
+    "std_roi": 1.385740861343114,
+    "sharpe": 0.34099933805182864,
+    "total_resolved_pnl": 557.186959290204,
+    "unresolved_legs": 17,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 20.0,
+      "MAX": 200.0,
+      "price_risk_tiers": [],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 300.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V3_recalib_PR",
+    "final_bankroll": 4169.25,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.04231246862620719,
+    "max_drawdown_pct": 0.21483162106718015,
+    "trades_taken": 95,
+    "trades_skipped_filter": 542,
+    "trades_skipped_bankroll": 662,
+    "trades_skipped_min_upgrade": 333,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4715375480628645,
+    "std_roi": 1.3846184024825985,
+    "sharpe": 0.34055415356130275,
+    "total_resolved_pnl": 254.01284186488294,
+    "unresolved_legs": 15,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V7_aggressive_PR",
+    "final_bankroll": 4223.31,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.055828350633389846,
+    "max_drawdown_pct": 0.21212668689259925,
+    "trades_taken": 91,
+    "trades_skipped_filter": 535,
+    "trades_skipped_bankroll": 662,
+    "trades_skipped_min_upgrade": 344,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4713306844190042,
+    "std_roi": 1.3843750331796971,
+    "sharpe": 0.3404645945805812,
+    "total_resolved_pnl": 305.97552002874534,
+    "unresolved_legs": 14,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V8_aggressive_PR_strict",
+    "final_bankroll": 4220.92,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.05522899344262123,
+    "max_drawdown_pct": 0.2118419119021229,
+    "trades_taken": 91,
+    "trades_skipped_filter": 535,
+    "trades_skipped_bankroll": 662,
+    "trades_skipped_min_upgrade": 344,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4713306844190042,
+    "std_roi": 1.3843750331796971,
+    "sharpe": 0.3404645945805812,
+    "total_resolved_pnl": 304.23722187891644,
+    "unresolved_legs": 15,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.7
+        ],
+        [
+          0.85,
+          0.99,
+          0.5
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  }
+]

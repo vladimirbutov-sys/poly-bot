@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-20T15:06:58.524929+00:00",
+  "data_source": "97_scanner/scanner_data.json",
+  "total_passed_base_filters": 129,
+  "data_period_days": 3.7,
+  "default_rule_markets": 118,
+  "politics_rule_markets": 11,
+  "sports_early_rule_markets": 0
+}

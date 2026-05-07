@@ -1,0 +1,1652 @@
+[
+  {
+    "title": "Iran leadership change by June 30?",
+    "outcome": "No",
+    "condition_id": "0xb196a122933da9aff6cb8b0f3764d0dc5db1859f46c0481c711521eee8524291",
+    "token_id": "114037086617269022315323137414379159845174084075275061115260986148267202915748",
+    "shares": 57.9,
+    "cost": 44.004,
+    "slug": "iran-leadership-change-by",
+    "avg_entry": 0.76,
+    "history_n": 64,
+    "stats": {
+      "n": 64,
+      "min": 0.14500000000000002,
+      "max": 0.21499999999999997,
+      "median": 0.18500000000000005,
+      "mean": 0.178125,
+      "stdev": 0.02427520781138059,
+      "q1": 0.15500000000000003,
+      "q3": 0.20499999999999996,
+      "iqr": 0.04999999999999993,
+      "max_dd": 0.06999999999999995,
+      "max_rally": 0.04499999999999993,
+      "range_width": 0.06999999999999995,
+      "big_daily_moves": 0,
+      "vol_score": 0.13121733952097614,
+      "current": 0.16500000000000004,
+      "pos_on_range": 0.28571428571428614,
+      "first_ts": 1776196857,
+      "last_ts": 1776791396
+    },
+    "bid": 0.83,
+    "ask": 0.84,
+    "supports": [
+      0.14,
+      0.16,
+      0.18
+    ],
+    "resistances": [
+      0.22,
+      0.2,
+      0.18
+    ],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": -0.5
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.0033
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.17,
+    "sell_trigger": 0.2,
+    "extreme_buy": 0.155,
+    "extreme_sell": 0.204,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US obtains Iranian enriched uranium by May 31?",
+    "outcome": "No",
+    "condition_id": "0xbcacd5a055f5a9ced6f69f122216c073dd6987d08253fc07bbcc168fa5b81d55",
+    "token_id": "5345441419419147559625888104788940459264045849260872706421285679583531763371",
+    "shares": 353.9025,
+    "cost": 311.5611,
+    "slug": "us-obtains-iranian-enriched-uranium-by-may-31",
+    "avg_entry": 0.8803585733358765,
+    "history_n": 44,
+    "stats": {
+      "n": 44,
+      "min": 0.18500000000000005,
+      "max": 0.29500000000000004,
+      "median": 0.20499999999999996,
+      "mean": 0.21897727272727271,
+      "stdev": 0.03424568459410966,
+      "q1": 0.19499999999999995,
+      "q3": 0.22499999999999998,
+      "iqr": 0.030000000000000027,
+      "max_dd": 0.10999999999999999,
+      "max_rally": 0.09000000000000008,
+      "range_width": 0.10999999999999999,
+      "big_daily_moves": 0,
+      "vol_score": 0.16705211997126668,
+      "current": 0.18500000000000005,
+      "pos_on_range": 0.0,
+      "first_ts": 1776189620,
+      "last_ts": 1776791338
+    },
+    "bid": 0.81,
+    "ask": 0.82,
+    "supports": [
+      0.18,
+      0.2,
+      0.22
+    ],
+    "resistances": [
+      0.3,
+      0.22,
+      0.2
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 0.0,
+      "touska_seized": 0.0,
+      "pentagon_policy_indo_pacific": -0.5
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.0037
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.189,
+    "sell_trigger": 0.221,
+    "extreme_buy": 0.202,
+    "extreme_sell": 0.279,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": " Iran agrees to end enrichment of uranium by June 30?",
+    "outcome": "Yes",
+    "condition_id": "0x9d3f02264a94bafc676afd7add8b11442e6ec72dabaa69cefef835f0672275c7",
+    "token_id": "25525886838936661349801315808447476243176190100445157889430252006398510133975",
+    "shares": 229.185,
+    "cost": 143.23,
+    "slug": "iran-agrees-to-end-enrichment-of-uranium-by-june-30",
+    "avg_entry": 0.6249536400724305,
+    "history_n": 147,
+    "stats": {
+      "n": 147,
+      "min": 0.455,
+      "max": 0.74,
+      "median": 0.585,
+      "mean": 0.5786734693877551,
+      "stdev": 0.05310988392717139,
+      "q1": 0.545,
+      "q3": 0.62,
+      "iqr": 0.07499999999999996,
+      "max_dd": 0.285,
+      "max_rally": 0.19999999999999996,
+      "range_width": 0.285,
+      "big_daily_moves": 3,
+      "vol_score": 0.09078612637123315,
+      "current": 0.535,
+      "pos_on_range": 0.280701754385965,
+      "first_ts": 1776193258,
+      "last_ts": 1776791448
+    },
+    "bid": 0.51,
+    "ask": 0.56,
+    "supports": [
+      0.48,
+      0.52,
+      0.56
+    ],
+    "resistances": [
+      0.68,
+      0.64,
+      0.62
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": -6.0,
+      "iran_hormuz_open_declared": 0.0,
+      "iran_closes_hormuz_fires": 3.0,
+      "touska_seized": 2.0,
+      "pentagon_policy_indo_pacific": 2.0,
+      "tifani_seized": 0.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.0056
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.538,
+    "sell_trigger": 0.632,
+    "extreme_buy": 0.498,
+    "extreme_sell": 0.697,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US x Iran permanent peace deal by May 31, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
+    "token_id": "72094069823942324362885404801938332659316240217382754851102758232469673300092",
+    "shares": 538.91375,
+    "cost": 437.1406,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.811151320596292,
+    "history_n": 96,
+    "stats": {
+      "n": 96,
+      "min": 0.465,
+      "max": 0.755,
+      "median": 0.595,
+      "mean": 0.5958854166666666,
+      "stdev": 0.04558390061868373,
+      "q1": 0.565,
+      "q3": 0.615,
+      "iqr": 0.050000000000000044,
+      "max_dd": 0.24,
+      "max_rally": 0.29,
+      "range_width": 0.29,
+      "big_daily_moves": 3,
+      "vol_score": 0.07661159767846006,
+      "current": 0.565,
+      "pos_on_range": 0.3448275862068963,
+      "first_ts": 1776214850,
+      "last_ts": 1776791451
+    },
+    "bid": 0.56,
+    "ask": 0.57,
+    "supports": [
+      0.54,
+      0.56,
+      0.58
+    ],
+    "resistances": [
+      0.66,
+      0.62,
+      0.6
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 11.0,
+      "iran_closes_hormuz_fires": -2.0,
+      "touska_seized": 5.0
+    },
+    "backtest": {
+      "entries": 3,
+      "exits": 3,
+      "pnl_per_share": 0.3447
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.547,
+    "sell_trigger": 0.643,
+    "extreme_buy": 0.509,
+    "extreme_sell": 0.712,
+    "state": "WAIT"
+  },
+  {
+    "title": "Will the US x Iran ceasefire be extended by April 21, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0xc0be7b1f19f9b658778c2be7e6bc67596a00f347ab64392d0f5d387534c7c3b4",
+    "token_id": "65622140732053240281290096331865000706701305367981851971995507628274584691571",
+    "shares": 512.827,
+    "cost": 211.11,
+    "slug": "us-x-iran-ceasefire-extended-by",
+    "avg_entry": 0.41165929250994976,
+    "history_n": 44,
+    "stats": {
+      "n": 44,
+      "min": 0.17,
+      "max": 0.855,
+      "median": 0.7,
+      "mean": 0.6118181818181818,
+      "stdev": 0.2222744242186528,
+      "q1": 0.485,
+      "q3": 0.775,
+      "iqr": 0.29000000000000004,
+      "max_dd": 0.6849999999999999,
+      "max_rally": 0.16999999999999998,
+      "range_width": 0.6849999999999999,
+      "big_daily_moves": 3,
+      "vol_score": 0.3175348917409326,
+      "current": 0.215,
+      "pos_on_range": 0.0656934306569343,
+      "first_ts": 1776189628,
+      "last_ts": 1776791400
+    },
+    "bid": 0.21,
+    "ask": 0.22,
+    "supports": [],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 2.5,
+      "touska_seized": 8.5,
+      "pentagon_policy_indo_pacific": 4.0,
+      "tifani_seized": -2.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.4285
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.644,
+    "sell_trigger": 0.756,
+    "extreme_buy": 0.273,
+    "extreme_sell": 0.752,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Israeli forces cross the Litani River by June 30?",
+    "outcome": "No",
+    "condition_id": "0x9049d96597900ba0f3013604dc7adc3dd6e7e4764c5a0c16318605c40ac1ee96",
+    "token_id": "61105898512331423456932766287679410148969111620575334880263459667275737814007",
+    "shares": 126.3245,
+    "cost": 98.4532,
+    "slug": "israeli-forces-cross-the-litani-river-by-june-30",
+    "avg_entry": 0.7793674227881369,
+    "history_n": 147,
+    "stats": {
+      "n": 147,
+      "min": 0.10999999999999999,
+      "max": 0.7150000000000001,
+      "median": 0.265,
+      "mean": 0.2896938775510204,
+      "stdev": 0.12354249517046272,
+      "q1": 0.18500000000000005,
+      "q3": 0.36,
+      "iqr": 0.17499999999999993,
+      "max_dd": 0.39500000000000013,
+      "max_rally": 0.6050000000000001,
+      "range_width": 0.6050000000000001,
+      "big_daily_moves": 3,
+      "vol_score": 0.4661980949828782,
+      "current": 0.47,
+      "pos_on_range": 0.5950413223140495,
+      "first_ts": 1776193257,
+      "last_ts": 1776791447
+    },
+    "bid": 0.51,
+    "ask": 0.54,
+    "supports": [
+      0.1,
+      0.12,
+      0.18
+    ],
+    "resistances": [
+      0.46,
+      0.44,
+      0.28
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": -0.5,
+      "iran_hormuz_open_declared": 4.5,
+      "iran_closes_hormuz_fires": 0.0,
+      "touska_seized": 16.5,
+      "pentagon_policy_indo_pacific": -3.0,
+      "tifani_seized": -0.5
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.1587
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.244,
+    "sell_trigger": 0.286,
+    "extreme_buy": 0.201,
+    "extreme_sell": 0.624,
+    "state": "SELL_TRIGGER_HIT"
+  },
+  {
+    "title": "US-Iran nuclear deal by June 30?",
+    "outcome": "Yes",
+    "condition_id": "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633",
+    "token_id": "68283792174293775430535402015214113701251372409839518501034763677920213819299",
+    "shares": 183.67,
+    "cost": 112.04,
+    "slug": "us-iran-nuclear-deal-by-june-30",
+    "avg_entry": 0.6100070779114717,
+    "history_n": 110,
+    "stats": {
+      "n": 110,
+      "min": 0.485,
+      "max": 0.815,
+      "median": 0.6675,
+      "mean": 0.6663181818181818,
+      "stdev": 0.06463971168669548,
+      "q1": 0.615,
+      "q3": 0.695,
+      "iqr": 0.07999999999999996,
+      "max_dd": 0.32999999999999996,
+      "max_rally": 0.2649999999999999,
+      "range_width": 0.32999999999999996,
+      "big_daily_moves": 5,
+      "vol_score": 0.09683851938081721,
+      "current": 0.5,
+      "pos_on_range": 0.0454545454545455,
+      "first_ts": 1776214847,
+      "last_ts": 1776791390
+    },
+    "bid": 0.49,
+    "ask": 0.51,
+    "supports": [
+      0.58,
+      0.66,
+      0.68
+    ],
+    "resistances": [
+      0.78,
+      0.7,
+      0.68
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 6.0,
+      "iran_closes_hormuz_fires": -6.0,
+      "touska_seized": 3.0,
+      "pentagon_policy_indo_pacific": 4.5
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.0462
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.614,
+    "sell_trigger": 0.721,
+    "extreme_buy": 0.534,
+    "extreme_sell": 0.765,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Iran agrees to surrender enriched uranium stockpile by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x5d37825716832a4a54f89450932e89510f26cf4be59aeec3149d2c49e5fdf44d",
+    "token_id": "106220853378183696641226754443875866363184608965104019427770764978887400913119",
+    "shares": 674.65,
+    "cost": 235.17,
+    "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by",
+    "avg_entry": 0.34858074557177793,
+    "history_n": 73,
+    "stats": {
+      "n": 73,
+      "min": 0.1605,
+      "max": 0.65,
+      "median": 0.2945,
+      "mean": 0.33387671232876714,
+      "stdev": 0.10618853715149498,
+      "q1": 0.2805,
+      "q3": 0.393,
+      "iqr": 0.11249999999999999,
+      "max_dd": 0.48650000000000004,
+      "max_rally": 0.48950000000000005,
+      "range_width": 0.48950000000000005,
+      "big_daily_moves": 6,
+      "vol_score": 0.3605722823480305,
+      "current": 0.1635,
+      "pos_on_range": 0.006128702757916246,
+      "first_ts": 1776196846,
+      "last_ts": 1776791395
+    },
+    "bid": 0.16,
+    "ask": 0.163,
+    "supports": [],
+    "resistances": [
+      0.3
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 15.0,
+      "pentagon_policy_indo_pacific": -1.7
+    },
+    "backtest": {
+      "entries": 3,
+      "exits": 2,
+      "pnl_per_share": 0.1216
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.271,
+    "sell_trigger": 0.318,
+    "extreme_buy": 0.234,
+    "extreme_sell": 0.577,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Will Trump agree to Iranian enrichment of uranium in April?",
+    "outcome": "Yes",
+    "condition_id": "0x807ba575f84169bdb061dd05da3e8eb314a129aa152e31518c2aff9979d5f986",
+    "token_id": "11403971894782485629632795605500772925115225564993889075642616554746394963246",
+    "shares": 286.3674,
+    "cost": 247.16023,
+    "slug": "what-will-the-us-agree-to",
+    "avg_entry": 0.8630878724324069,
+    "history_n": 37,
+    "stats": {
+      "n": 37,
+      "min": 0.206,
+      "max": 0.4745,
+      "median": 0.3755,
+      "mean": 0.3547297297297297,
+      "stdev": 0.06714284054190764,
+      "q1": 0.311,
+      "q3": 0.398,
+      "iqr": 0.08700000000000002,
+      "max_dd": 0.24199999999999997,
+      "max_rally": 0.26849999999999996,
+      "range_width": 0.26849999999999996,
+      "big_daily_moves": 1,
+      "vol_score": 0.17880916256167148,
+      "current": 0.2325,
+      "pos_on_range": 0.09869646182495355,
+      "first_ts": 1776189604,
+      "last_ts": 1776791461
+    },
+    "bid": 0.23,
+    "ask": 0.235,
+    "supports": [],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 0.65
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.1375
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.345,
+    "sell_trigger": 0.406,
+    "extreme_buy": 0.246,
+    "extreme_sell": 0.434,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US x Iran permanent peace deal by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
+    "token_id": "64575112906857627673396031002364315784778510108272214779568803819416675082435",
+    "shares": 139.27274999999997,
+    "cost": 244.3193,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 1.7542505622959268,
+    "history_n": 58,
+    "stats": {
+      "n": 58,
+      "min": 0.265,
+      "max": 0.625,
+      "median": 0.405,
+      "mean": 0.40922413793103446,
+      "stdev": 0.07299243967181669,
+      "q1": 0.36,
+      "q3": 0.445,
+      "iqr": 0.08500000000000002,
+      "max_dd": 0.36,
+      "max_rally": 0.32,
+      "range_width": 0.36,
+      "big_daily_moves": 4,
+      "vol_score": 0.18022824610325108,
+      "current": 0.265,
+      "pos_on_range": 0.0,
+      "first_ts": 1776189616,
+      "last_ts": 1776791454
+    },
+    "bid": 0.26,
+    "ask": 0.27,
+    "supports": [],
+    "resistances": [
+      0.42,
+      0.4
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 2.0,
+      "iran_hormuz_open_declared": 12.5,
+      "touska_seized": 8.0
+    },
+    "backtest": {
+      "entries": 3,
+      "exits": 2,
+      "pnl_per_share": 0.2372
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.373,
+    "sell_trigger": 0.437,
+    "extreme_buy": 0.319,
+    "extreme_sell": 0.571,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Strait of Hormuz traffic returns to normal by end of April?",
+    "outcome": "Yes",
+    "condition_id": "0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+    "token_id": "77893140510362582253172593084218413010407941075415081594586195705930819989216",
+    "shares": 495.38098837499996,
+    "cost": 623.2443,
+    "slug": "strait-of-hormuz-traffic-returns-to-normal-by-april-30",
+    "avg_entry": 1.2581110592161207,
+    "history_n": 45,
+    "stats": {
+      "n": 45,
+      "min": 0.175,
+      "max": 0.545,
+      "median": 0.275,
+      "mean": 0.29244444444444445,
+      "stdev": 0.08085918049737502,
+      "q1": 0.25,
+      "q3": 0.295,
+      "iqr": 0.044999999999999984,
+      "max_dd": 0.37000000000000005,
+      "max_rally": 0.32000000000000006,
+      "range_width": 0.37000000000000005,
+      "big_daily_moves": 3,
+      "vol_score": 0.29403338362681825,
+      "current": 0.185,
+      "pos_on_range": 0.027027027027027046,
+      "first_ts": 1776189622,
+      "last_ts": 1776791399
+    },
+    "bid": 0.17,
+    "ask": 0.19,
+    "supports": [
+      0.26
+    ],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 2.0,
+      "touska_seized": 3.0,
+      "pentagon_policy_indo_pacific": 1.0,
+      "tifani_seized": -3.5
+    },
+    "backtest": {
+      "entries": 3,
+      "exits": 2,
+      "pnl_per_share": 0.2729
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.253,
+    "sell_trigger": 0.297,
+    "extreme_buy": 0.23,
+    "extreme_sell": 0.49,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Israel x Hezbollah Ceasefire extended by April 26, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x02f8dd15d4c674a75fccbd0e00f0cf1256101c45ef41f6d0c5dfde9c36d4141e",
+    "token_id": "15145237739766757543920295010173333079386008614623370487057624811543913015599",
+    "shares": 87.26,
+    "cost": 51.4834,
+    "slug": "israel-x-hezbollah-ceasefire-extended-by",
+    "avg_entry": 0.59,
+    "history_n": 34,
+    "stats": {
+      "n": 34,
+      "min": 0.285,
+      "max": 0.795,
+      "median": 0.62,
+      "mean": 0.5876470588235294,
+      "stdev": 0.158009566713239,
+      "q1": 0.48,
+      "q3": 0.71,
+      "iqr": 0.22999999999999998,
+      "max_dd": 0.4,
+      "max_rally": 0.51,
+      "range_width": 0.51,
+      "big_daily_moves": 4,
+      "vol_score": 0.25485413986006294,
+      "current": 0.395,
+      "pos_on_range": 0.215686274509804,
+      "first_ts": 1776387656,
+      "last_ts": 1776791460
+    },
+    "bid": 0.39,
+    "ask": 0.41,
+    "supports": [],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 10.5
+    },
+    "backtest": {
+      "entries": 4,
+      "exits": 3,
+      "pnl_per_share": 0.5364
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.57,
+    "sell_trigger": 0.67,
+    "extreme_buy": 0.361,
+    "extreme_sell": 0.718,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Iran agrees to end enrichment of uranium by April 30?",
+    "outcome": "Yes",
+    "condition_id": "0xe6939069d36ad63a9f7fcafa91b627a3f373a3264ab0347c1a5e042c5f7d1f08",
+    "token_id": "59937347564572872290316062672979454904942576853251346531585432029105806826906",
+    "shares": 328.49,
+    "cost": 127.78,
+    "slug": "iran-agrees-to-end-enrichment-of-uranium-by-april-30",
+    "avg_entry": 0.38899205455265,
+    "history_n": 135,
+    "stats": {
+      "n": 135,
+      "min": 0.135,
+      "max": 0.562,
+      "median": 0.3385,
+      "mean": 0.3470814814814815,
+      "stdev": 0.07329098128751818,
+      "q1": 0.295,
+      "q3": 0.4075,
+      "iqr": 0.11249999999999999,
+      "max_dd": 0.42700000000000005,
+      "max_rally": 0.26700000000000007,
+      "range_width": 0.42700000000000005,
+      "big_daily_moves": 7,
+      "vol_score": 0.2165169314254599,
+      "current": 0.2325,
+      "pos_on_range": 0.22833723653395782,
+      "first_ts": 1776196850,
+      "last_ts": 1776791449
+    },
+    "bid": 0.23,
+    "ask": 0.235,
+    "supports": [
+      0.28,
+      0.3
+    ],
+    "resistances": [
+      0.44,
+      0.36,
+      0.34
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 1.5,
+      "iran_closes_hormuz_fires": -0.2,
+      "touska_seized": 4.7,
+      "pentagon_policy_indo_pacific": -2.4,
+      "tifani_seized": 0.0
+    },
+    "backtest": {
+      "entries": 4,
+      "exits": 3,
+      "pnl_per_share": 0.2261
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.311,
+    "sell_trigger": 0.366,
+    "extreme_buy": 0.199,
+    "extreme_sell": 0.498,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US-Iran nuclear deal before 2027?",
+    "outcome": "No",
+    "condition_id": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
+    "token_id": "45763018441764333771124945243746174684578244015331389396782339063349542289693",
+    "shares": 125.01,
+    "cost": 60.0,
+    "slug": "us-iran-nuclear-deal-before-2027",
+    "avg_entry": 0.47996160307175423,
+    "history_n": 62,
+    "stats": {
+      "n": 62,
+      "min": 0.6599999999999999,
+      "max": 0.85,
+      "median": 0.7150000000000001,
+      "mean": 0.737983870967742,
+      "stdev": 0.051418084442351436,
+      "q1": 0.7,
+      "q3": 0.775,
+      "iqr": 0.07500000000000007,
+      "max_dd": 0.19000000000000006,
+      "max_rally": 0.16499999999999992,
+      "range_width": 0.19000000000000006,
+      "big_daily_moves": 2,
+      "vol_score": 0.07191340481447753,
+      "current": 0.6599999999999999,
+      "pos_on_range": 0.0,
+      "first_ts": 1776196853,
+      "last_ts": 1776790833
+    },
+    "bid": 0.33,
+    "ask": 0.34,
+    "supports": [
+      0.68,
+      0.7
+    ],
+    "resistances": [
+      0.84,
+      0.7
+    ],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 1.5
+    },
+    "backtest": {
+      "entries": 0,
+      "exits": 0,
+      "pnl_per_share": 0.0
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.658,
+    "sell_trigger": 0.772,
+    "extreme_buy": 0.688,
+    "extreme_sell": 0.821,
+    "state": "WAIT"
+  },
+  {
+    "title": "Israel withdraws from Lebanon by May 31, 2026?",
+    "outcome": "No",
+    "condition_id": "0x8bb861046d70534248fe10aaef5ca28a91fe4c923db024005ea26b86946ca114",
+    "token_id": "72638240516733289490270090522790097230468696624096216694556170058909027876326",
+    "shares": 71.84,
+    "cost": 64.29,
+    "slug": "israel-withdraws-from-lebanon-by",
+    "avg_entry": 0.8949053452115814,
+    "history_n": 34,
+    "stats": {
+      "n": 34,
+      "min": 0.07499999999999996,
+      "max": 0.625,
+      "median": 0.09499999999999997,
+      "mean": 0.13367647058823526,
+      "stdev": 0.10633928564747021,
+      "q1": 0.08499999999999996,
+      "q3": 0.10499999999999998,
+      "iqr": 0.020000000000000018,
+      "max_dd": 0.55,
+      "max_rally": 0.06500000000000006,
+      "range_width": 0.55,
+      "big_daily_moves": 1,
+      "vol_score": 1.1193609015523183,
+      "current": 0.07499999999999996,
+      "pos_on_range": 0.0,
+      "first_ts": 1776387653,
+      "last_ts": 1776791458
+    },
+    "bid": 0.92,
+    "ask": 0.93,
+    "supports": [
+      0.08,
+      0.1
+    ],
+    "resistances": [
+      0.1,
+      0.08
+    ],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 0.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.0116
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.087,
+    "sell_trigger": 0.103,
+    "extreme_buy": 0.157,
+    "extreme_sell": 0.542,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
+    "outcome": "No",
+    "condition_id": "0xe846dd72f8a654ef137a3e23a88226400b42cc0ca817ab4390a615860e08cafa",
+    "token_id": "18702020867581976905619984893323736143098724607754292117438927457109238679413",
+    "shares": 63.75,
+    "cost": 22.3125,
+    "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by",
+    "avg_entry": 0.35,
+    "history_n": 93,
+    "stats": {
+      "n": 93,
+      "min": 0.42500000000000004,
+      "max": 0.81,
+      "median": 0.665,
+      "mean": 0.6538709677419355,
+      "stdev": 0.08217534616618027,
+      "q1": 0.62,
+      "q3": 0.7,
+      "iqr": 0.07999999999999996,
+      "max_dd": 0.385,
+      "max_rally": 0.29500000000000004,
+      "range_width": 0.385,
+      "big_daily_moves": 5,
+      "vol_score": 0.1235719491220756,
+      "current": 0.45999999999999996,
+      "pos_on_range": 0.0909090909090907,
+      "first_ts": 1776214850,
+      "last_ts": 1776791451
+    },
+    "bid": 0.53,
+    "ask": 0.55,
+    "supports": [
+      0.62,
+      0.66,
+      0.7
+    ],
+    "resistances": [
+      0.74,
+      0.72,
+      0.7
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 6.5,
+      "iran_closes_hormuz_fires": 1.0,
+      "touska_seized": 2.0
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.0365
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.612,
+    "sell_trigger": 0.718,
+    "extreme_buy": 0.483,
+    "extreme_sell": 0.752,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Trump announces end of military operations against Iran by April 30th?",
+    "outcome": "Yes",
+    "condition_id": "0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4",
+    "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+    "shares": 126.08156249999999,
+    "cost": 86.512,
+    "slug": "trump-announces-end-of-military-operations-against-iran-by",
+    "avg_entry": 0.6861590091731296,
+    "history_n": 38,
+    "stats": {
+      "n": 38,
+      "min": 0.24,
+      "max": 0.67,
+      "median": 0.405,
+      "mean": 0.41526315789473683,
+      "stdev": 0.08716982003476499,
+      "q1": 0.365,
+      "q3": 0.445,
+      "iqr": 0.08000000000000002,
+      "max_dd": 0.43000000000000005,
+      "max_rally": 0.29500000000000004,
+      "range_width": 0.43000000000000005,
+      "big_daily_moves": 3,
+      "vol_score": 0.2152341235426296,
+      "current": 0.24,
+      "pos_on_range": 0.0,
+      "first_ts": 1776189603,
+      "last_ts": 1776791461
+    },
+    "bid": 0.23,
+    "ask": 0.25,
+    "supports": [
+      0.44
+    ],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 4.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.1109
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.373,
+    "sell_trigger": 0.437,
+    "extreme_buy": 0.304,
+    "extreme_sell": 0.606,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Trump announces end of military operations against Iran by May 31st?",
+    "outcome": "Yes",
+    "condition_id": "0x57c1e8de9d359a76055fe1be95e46a1e72d0537811dcc2ccf070cdfa73d8ba33",
+    "token_id": "88235774871095952577870395590885258537861888267109065817501809685441370257453",
+    "shares": 181.16,
+    "cost": 125.0,
+    "slug": "trump-announces-end-of-military-operations-against-iran-by",
+    "avg_entry": 0.6899977920070656,
+    "history_n": 107,
+    "stats": {
+      "n": 107,
+      "min": 0.645,
+      "max": 0.85,
+      "median": 0.725,
+      "mean": 0.7263084112149533,
+      "stdev": 0.03490780612676804,
+      "q1": 0.7,
+      "q3": 0.745,
+      "iqr": 0.04500000000000004,
+      "max_dd": 0.20499999999999996,
+      "max_rally": 0.15500000000000003,
+      "range_width": 0.20499999999999996,
+      "big_daily_moves": 1,
+      "vol_score": 0.048148698105886956,
+      "current": 0.645,
+      "pos_on_range": 0.0,
+      "first_ts": 1776214847,
+      "last_ts": 1776791390
+    },
+    "bid": 0.64,
+    "ask": 0.65,
+    "supports": [
+      0.68,
+      0.7,
+      0.72
+    ],
+    "resistances": [
+      0.76,
+      0.74,
+      0.72
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 0.5,
+      "iran_closes_hormuz_fires": 0.0,
+      "touska_seized": 1.5,
+      "pentagon_policy_indo_pacific": -1.5
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 0,
+      "pnl_per_share": -0.0281
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.667,
+    "sell_trigger": 0.783,
+    "extreme_buy": 0.676,
+    "extreme_sell": 0.819,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Internet Access restored in Iran by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x0ce2da6193ffc43d329fe5bb3e895fb7c0019e37b09c6778e7442c91c32b6f82",
+    "token_id": "35967147014286407105697872591093510693730825931696531401832620211438948481267",
+    "shares": 53.85,
+    "cost": 7.0,
+    "slug": "internet-access-restored-in-iran-by",
+    "avg_entry": 0.12999071494893222,
+    "history_n": 57,
+    "stats": {
+      "n": 57,
+      "min": 0.065,
+      "max": 0.31,
+      "median": 0.13,
+      "mean": 0.13543859649122808,
+      "stdev": 0.05084360387637608,
+      "q1": 0.095,
+      "q3": 0.155,
+      "iqr": 0.06,
+      "max_dd": 0.245,
+      "max_rally": 0.245,
+      "range_width": 0.245,
+      "big_daily_moves": 2,
+      "vol_score": 0.3911046452028929,
+      "current": 0.085,
+      "pos_on_range": 0.08163265306122451,
+      "first_ts": 1776214847,
+      "last_ts": 1776791460
+    },
+    "bid": 0.08,
+    "ask": 0.09,
+    "supports": [
+      0.06,
+      0.1,
+      0.12
+    ],
+    "resistances": [
+      0.16,
+      0.12,
+      0.1
+    ],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 0.0
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.1591
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.12,
+    "sell_trigger": 0.14,
+    "extreme_buy": 0.102,
+    "extreme_sell": 0.273,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6",
+    "token_id": "926377706175971731068420551849041218012736398250875962020506643091812084572",
+    "shares": 92.84,
+    "cost": 75.0,
+    "slug": "trump-announces-us-blockade-of-hormuz-lifted-by",
+    "avg_entry": 0.8078414476518742,
+    "history_n": 145,
+    "stats": {
+      "n": 145,
+      "min": 0.635,
+      "max": 0.92,
+      "median": 0.82,
+      "mean": 0.8182068965517242,
+      "stdev": 0.040541798826732874,
+      "q1": 0.795,
+      "q3": 0.84,
+      "iqr": 0.04499999999999993,
+      "max_dd": 0.28500000000000003,
+      "max_rally": 0.26,
+      "range_width": 0.28500000000000003,
+      "big_daily_moves": 3,
+      "vol_score": 0.049441218081381556,
+      "current": 0.785,
+      "pos_on_range": 0.5263157894736842,
+      "first_ts": 1776196843,
+      "last_ts": 1776791388
+    },
+    "bid": 0.77,
+    "ask": 0.8,
+    "supports": [
+      0.8,
+      0.82,
+      0.84
+    ],
+    "resistances": [
+      0.86,
+      0.84,
+      0.82
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 0.0,
+      "iran_hormuz_open_declared": -0.5,
+      "iran_closes_hormuz_fires": -2.5,
+      "touska_seized": -1.5,
+      "pentagon_policy_indo_pacific": 2.0,
+      "tifani_seized": 0.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.2447
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.754,
+    "sell_trigger": 0.886,
+    "extreme_buy": 0.678,
+    "extreme_sell": 0.877,
+    "state": "WAIT"
+  },
+  {
+    "title": "Will 150 or more ships transit the Strait of Hormuz between April 20-April 26?",
+    "outcome": "Yes",
+    "condition_id": "0xbe26cb4271d859584f3acc2c8f8ea9ae872f6845d89b3b1777ab100918f08906",
+    "token_id": "39541851975264994845457288172714317281293246871111854594683532814090128224117",
+    "shares": 181.82,
+    "cost": 20.0,
+    "slug": "will-150-or-more-ships-transit-the-strait-of-hormuz-between-april-20-april-26",
+    "avg_entry": 0.10999890001099989,
+    "history_n": 32,
+    "stats": {
+      "n": 32,
+      "min": 0.095,
+      "max": 0.54,
+      "median": 0.18,
+      "mean": 0.21937500000000001,
+      "stdev": 0.13733494492216536,
+      "q1": 0.105,
+      "q3": 0.265,
+      "iqr": 0.16000000000000003,
+      "max_dd": 0.44500000000000006,
+      "max_rally": 0.30500000000000005,
+      "range_width": 0.44500000000000006,
+      "big_daily_moves": 4,
+      "vol_score": 0.762971916234252,
+      "current": 0.18,
+      "pos_on_range": 0.19101123595505615,
+      "first_ts": 1776445222,
+      "last_ts": 1776790842
+    },
+    "bid": 0.17,
+    "ask": 0.19,
+    "supports": [
+      0.1
+    ],
+    "resistances": [],
+    "event_impact_pp": {
+      "touska_seized": 2.0,
+      "pentagon_policy_indo_pacific": 1.0,
+      "tifani_seized": -4.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.1019
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.166,
+    "sell_trigger": 0.194,
+    "extreme_buy": 0.162,
+    "extreme_sell": 0.473,
+    "state": "WAIT"
+  },
+  {
+    "title": "Will fewer than 25 ships transit the Strait of Hormuz between April 20-April 26?",
+    "outcome": "Yes",
+    "condition_id": "0xaa980c83777851bf22a3bd4eeee864d11ce7783096a22ce4af56ff9bf2e1d2cd",
+    "token_id": "10065719129703851524738159766241582795004980250212999796913119632612444350346",
+    "shares": 285.43,
+    "cost": 34.75,
+    "slug": "how-many-ships-transit-the-strait-of-hormuz-this-week-apr-20-26",
+    "avg_entry": 0.12174613740671969,
+    "history_n": 29,
+    "stats": {
+      "n": 29,
+      "min": 0.0475,
+      "max": 0.44,
+      "median": 0.0835,
+      "mean": 0.10941379310344827,
+      "stdev": 0.07959070173679628,
+      "q1": 0.06,
+      "q3": 0.125,
+      "iqr": 0.065,
+      "max_dd": 0.3925,
+      "max_rally": 0.08700000000000001,
+      "range_width": 0.3925,
+      "big_daily_moves": 1,
+      "vol_score": 0.9531820567280991,
+      "current": 0.117,
+      "pos_on_range": 0.17707006369426753,
+      "first_ts": 1776445214,
+      "last_ts": 1776791457
+    },
+    "bid": 0.101,
+    "ask": 0.133,
+    "supports": [
+      0.06
+    ],
+    "resistances": [],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": -1.7
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.0313
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.077,
+    "sell_trigger": 0.09,
+    "extreme_buy": 0.106,
+    "extreme_sell": 0.381,
+    "state": "SELL_TRIGGER_HIT"
+  },
+  {
+    "title": "Strait of Hormuz traffic returns to normal by end of May?",
+    "outcome": "Yes",
+    "condition_id": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
+    "token_id": "75845920741796858670183364159540464375486880005358999101126589340494255300090",
+    "shares": 136.99,
+    "cost": 100.0,
+    "slug": "strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+    "avg_entry": 0.7299802905321556,
+    "history_n": 46,
+    "stats": {
+      "n": 46,
+      "min": 0.565,
+      "max": 0.825,
+      "median": 0.665,
+      "mean": 0.6745652173913044,
+      "stdev": 0.06436722843666921,
+      "q1": 0.625,
+      "q3": 0.705,
+      "iqr": 0.07999999999999996,
+      "max_dd": 0.20999999999999996,
+      "max_rally": 0.26,
+      "range_width": 0.26,
+      "big_daily_moves": 1,
+      "vol_score": 0.0967928247167958,
+      "current": 0.615,
+      "pos_on_range": 0.19230769230769248,
+      "first_ts": 1776214852,
+      "last_ts": 1776791460
+    },
+    "bid": 0.6,
+    "ask": 0.61,
+    "supports": [
+      0.66
+    ],
+    "resistances": [
+      0.66
+    ],
+    "event_impact_pp": {
+      "pentagon_policy_indo_pacific": 4.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.2361
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.612,
+    "sell_trigger": 0.718,
+    "extreme_buy": 0.604,
+    "extreme_sell": 0.786,
+    "state": "WAIT"
+  },
+  {
+    "title": "Israel strike on Yemen by April 30, 2026?",
+    "outcome": "No",
+    "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+    "token_id": "30561980169268678819735256982225694704116127378508623571936660192492766073388",
+    "shares": 203.91,
+    "cost": 177.4,
+    "slug": "israel-strike-on-yemen-by-april-30-2026-212-911",
+    "avg_entry": 0.8699916629885734,
+    "history_n": 74,
+    "stats": {
+      "n": 74,
+      "min": 0.025000000000000022,
+      "max": 0.25249999999999995,
+      "median": 0.135,
+      "mean": 0.13647297297297298,
+      "stdev": 0.061840099366596187,
+      "q1": 0.08050000000000002,
+      "q3": 0.19499999999999995,
+      "iqr": 0.11449999999999994,
+      "max_dd": 0.21499999999999997,
+      "max_rally": 0.22749999999999992,
+      "range_width": 0.22749999999999992,
+      "big_daily_moves": 2,
+      "vol_score": 0.45807481012293466,
+      "current": 0.10650000000000004,
+      "pos_on_range": 0.3582417582417584,
+      "first_ts": 1776196845,
+      "last_ts": 1776791457
+    },
+    "bid": 0.882,
+    "ask": 0.905,
+    "supports": [
+      0.2
+    ],
+    "resistances": [
+      0.2,
+      0.16,
+      0.12
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 0.5,
+      "pentagon_policy_indo_pacific": 15.0
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.1196
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.124,
+    "sell_trigger": 0.146,
+    "extreme_buy": 0.059,
+    "extreme_sell": 0.218,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US x Iran ceasefire extended by April 22, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x1d2787cb8aed975d092b2799ed6f4083e9445f7420cdc09e9d47e7d54356c6cd",
+    "token_id": "50049642142024617231697970377792489304039200104142714216386619263735691638204",
+    "shares": 102.95,
+    "cost": 70.01,
+    "slug": "us-x-iran-ceasefire-extended-by-april-22-2026",
+    "avg_entry": 0.6800388538125304,
+    "history_n": 8,
+    "stats": null,
+    "bid": 0.46,
+    "ask": 0.49,
+    "triggers": null
+  },
+  {
+    "title": "U.S. forces seize another oil tanker by April 30?",
+    "outcome": "Yes",
+    "condition_id": "0x036f32b7b18291ff94d09f0c11830d8b839aafd0148e644207be97a4f9bd5a8a",
+    "token_id": "99701940500121727292418397429817615595883615255368351271990294980806258260391",
+    "shares": 129.23,
+    "cost": 113.99,
+    "slug": "us-forces-seize-another-oil-tanker-by-april-30",
+    "avg_entry": 0.8820707266114679,
+    "history_n": 102,
+    "stats": {
+      "n": 102,
+      "min": 0.0675,
+      "max": 0.9995,
+      "median": 0.33475,
+      "mean": 0.3412598039215686,
+      "stdev": 0.17911948733880306,
+      "q1": 0.244,
+      "q3": 0.422,
+      "iqr": 0.178,
+      "max_dd": 0.3335,
+      "max_rally": 0.932,
+      "range_width": 0.932,
+      "big_daily_moves": 6,
+      "vol_score": 0.5350843535139748,
+      "current": 0.9995,
+      "pos_on_range": 1.0,
+      "first_ts": 1776214849,
+      "last_ts": 1776791390
+    },
+    "bid": 0.999,
+    "ask": null,
+    "supports": [
+      0.26,
+      0.38,
+      0.42
+    ],
+    "resistances": [
+      0.42,
+      0.38,
+      0.26
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": -0.1,
+      "iran_closes_hormuz_fires": -0.05,
+      "touska_seized": -2.9
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 2,
+      "pnl_per_share": 0.6583
+    },
+    "zone": "near_resistance",
+    "buy_trigger": 0.308,
+    "sell_trigger": 0.362,
+    "extreme_buy": 0.207,
+    "extreme_sell": 0.86,
+    "state": "SELL_TRIGGER_HIT"
+  },
+  {
+    "title": "US x Iran permanent peace deal by April 22, 2026?",
+    "outcome": "No",
+    "condition_id": "0xbbc6689d0f6d57ea42168836712237c7308b3e0118c8914d31b6126d0f3254c5",
+    "token_id": "112998834930140849739317686306046962022222428099467375077336504369963794934957",
+    "shares": 162.15,
+    "cost": 146.4418,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.9031255010792476,
+    "history_n": 43,
+    "stats": {
+      "n": 43,
+      "min": 0.04500000000000004,
+      "max": 0.43500000000000005,
+      "median": 0.19499999999999995,
+      "mean": 0.21209302325581397,
+      "stdev": 0.08070546507531727,
+      "q1": 0.16500000000000004,
+      "q3": 0.245,
+      "iqr": 0.07999999999999996,
+      "max_dd": 0.39,
+      "max_rally": 0.25,
+      "range_width": 0.39,
+      "big_daily_moves": 3,
+      "vol_score": 0.413874179873422,
+      "current": 0.04500000000000004,
+      "pos_on_range": 0.0,
+      "first_ts": 1776189618,
+      "last_ts": 1776791462
+    },
+    "bid": 0.95,
+    "ask": 0.96,
+    "supports": [
+      0.14
+    ],
+    "resistances": [
+      0.24
+    ],
+    "event_impact_pp": {
+      "pentagon_blockade_working": 3.0,
+      "touska_seized": 5.0,
+      "pentagon_policy_indo_pacific": 3.0
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": -0.0761
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.179,
+    "sell_trigger": 0.211,
+    "extreme_buy": 0.104,
+    "extreme_sell": 0.377,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US-Iran nuclear deal by June 30?",
+    "outcome": "No",
+    "condition_id": "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633",
+    "token_id": "10690391194840875541563517589463912963575786539307433160985752952931887140267",
+    "shares": 25.61,
+    "cost": 9.2196,
+    "slug": "us-iran-nuclear-deal-by-june-30",
+    "avg_entry": 0.36,
+    "history_n": 140,
+    "stats": {
+      "n": 140,
+      "min": 0.485,
+      "max": 0.785,
+      "median": 0.665,
+      "mean": 0.6586071428571428,
+      "stdev": 0.06316322311573354,
+      "q1": 0.605,
+      "q3": 0.6950000000000001,
+      "iqr": 0.09000000000000008,
+      "max_dd": 0.30000000000000004,
+      "max_rally": 0.245,
+      "range_width": 0.30000000000000004,
+      "big_daily_moves": 5,
+      "vol_score": 0.0949822903995993,
+      "current": 0.5,
+      "pos_on_range": 0.05000000000000004,
+      "first_ts": 1776196845,
+      "last_ts": 1776791510
+    },
+    "bid": 0.49,
+    "ask": 0.51,
+    "supports": [
+      0.58,
+      0.6,
+      0.66
+    ],
+    "resistances": [
+      0.78,
+      0.72,
+      0.7
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 0.0,
+      "iran_closes_hormuz_fires": -3.5,
+      "touska_seized": 3.0,
+      "pentagon_policy_indo_pacific": 4.5,
+      "tifani_seized": 0.0
+    },
+    "backtest": {
+      "entries": 2,
+      "exits": 1,
+      "pnl_per_share": 0.0513
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.612,
+    "sell_trigger": 0.718,
+    "extreme_buy": 0.53,
+    "extreme_sell": 0.74,
+    "state": "BUY_TRIGGER_HIT"
+  },
+  {
+    "title": "US x Iran permanent peace deal by June 30, 2026?",
+    "outcome": "No",
+    "condition_id": "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
+    "token_id": "34730098823282204056880725250863591694415190633560416900548276632326632294207",
+    "shares": 157.67,
+    "cost": 52.031099999999995,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.33,
+    "history_n": 140,
+    "stats": {
+      "n": 140,
+      "min": 0.5900000000000001,
+      "max": 0.815,
+      "median": 0.685,
+      "mean": 0.6888928571428572,
+      "stdev": 0.03026304259610539,
+      "q1": 0.675,
+      "q3": 0.7050000000000001,
+      "iqr": 0.030000000000000027,
+      "max_dd": 0.16999999999999993,
+      "max_rally": 0.22499999999999987,
+      "range_width": 0.22499999999999987,
+      "big_daily_moves": 1,
+      "vol_score": 0.04417962422789108,
+      "current": 0.65,
+      "pos_on_range": 0.26666666666666655,
+      "first_ts": 1776196846,
+      "last_ts": 1776791510
+    },
+    "bid": 0.34,
+    "ask": 0.36,
+    "supports": [
+      0.64,
+      0.66,
+      0.68
+    ],
+    "resistances": [
+      0.72,
+      0.7,
+      0.68
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 1.0,
+      "iran_closes_hormuz_fires": -4.0,
+      "touska_seized": 2.0,
+      "pentagon_policy_indo_pacific": 2.5,
+      "tifani_seized": 0.0
+    },
+    "backtest": {
+      "entries": 1,
+      "exits": 1,
+      "pnl_per_share": 0.1756
+    },
+    "zone": "mid_range",
+    "buy_trigger": 0.63,
+    "sell_trigger": 0.74,
+    "extreme_buy": 0.624,
+    "extreme_sell": 0.781,
+    "state": "WAIT"
+  },
+  {
+    "title": "US-Iran nuclear deal by April 30?",
+    "outcome": "No",
+    "condition_id": "0xd08544f6162283dc8d0a82f16362aab837a8537379df9bbe604960eec9cd4618",
+    "token_id": "63111054483017727612527014142487261417181554883649541604828011046058146540352",
+    "shares": 146.72,
+    "cost": 103.29087999999999,
+    "slug": "us-iran-nuclear-deal-by-april-30",
+    "avg_entry": 0.704,
+    "history_n": 118,
+    "stats": {
+      "n": 118,
+      "min": 0.256,
+      "max": 0.685,
+      "median": 0.3885,
+      "mean": 0.4148771186440678,
+      "stdev": 0.0937728874954465,
+      "q1": 0.36150000000000004,
+      "q3": 0.43600000000000005,
+      "iqr": 0.07450000000000001,
+      "max_dd": 0.42900000000000005,
+      "max_rally": 0.394,
+      "range_width": 0.42900000000000005,
+      "big_daily_moves": 6,
+      "vol_score": 0.24137165378493308,
+      "current": 0.256,
+      "pos_on_range": 0.0,
+      "first_ts": 1776196858,
+      "last_ts": 1776791512
+    },
+    "bid": 0.738,
+    "ask": 0.751,
+    "supports": [
+      0.36,
+      0.38
+    ],
+    "resistances": [
+      0.44,
+      0.38
+    ],
+    "event_impact_pp": {
+      "iran_hormuz_open_declared": 6.4,
+      "iran_closes_hormuz_fires": -6.55,
+      "touska_seized": 13.6,
+      "pentagon_policy_indo_pacific": 5.8
+    },
+    "backtest": {
+      "entries": 5,
+      "exits": 4,
+      "pnl_per_share": 0.4167
+    },
+    "zone": "near_support",
+    "buy_trigger": 0.357,
+    "sell_trigger": 0.42,
+    "extreme_buy": 0.32,
+    "extreme_sell": 0.621,
+    "state": "BUY_TRIGGER_HIT"
+  }
+]

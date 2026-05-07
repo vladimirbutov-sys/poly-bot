@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-03-20T17:36:14.424479+00:00",
+  "analysis": "critical review of neg_risk recommendation",
+  "survivorship": {
+    "total_resolved": 10403,
+    "total_lost": 7,
+    "neg_resolved": 2206,
+    "neg_lost": 2
+  },
+  "confidence": {
+    "current_124_lower_bound_wr": 97.0,
+    "neg_641_lower_bound_wr": 99.4,
+    "combined_765_lower_bound_wr": 99.5
+  },
+  "resolve_times_actual": {
+    "neg_risk_samples": 23,
+    "neg_risk_percentiles": {
+      "p10": 45.9,
+      "p50": 52.7,
+      "p90": 53.5
+    },
+    "regular_samples": 33,
+    "regular_percentiles": {
+      "p10": 3.1,
+      "p50": 9.8,
+      "p90": 22.8
+    }
+  },
+  "simulation_scenarios": [
+    {
+      "bankroll": 200,
+      "neg_cap_pct": 0,
+      "avg_pnl": 57.97,
+      "p10_pnl": 36.23,
+      "worst_pnl": -2.73,
+      "best_pnl": 89.79
+    },
+    {
+      "bankroll": 200,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 66.96,
+      "p10_pnl": 48.25,
+      "worst_pnl": 9.26,
+      "best_pnl": 101.36
+    },
+    {
+      "bankroll": 200,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 72.27,
+      "p10_pnl": 40.24,
+      "worst_pnl": 16.44,
+      "best_pnl": 110.91
+    },
+    {
+      "bankroll": 200,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 72.12,
+      "p10_pnl": 44.07,
+      "worst_pnl": -10.45,
+      "best_pnl": 114.38
+    },
+    {
+      "bankroll": 200,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 66.34,
+      "p10_pnl": 37.88,
+      "worst_pnl": 8.89,
+      "best_pnl": 109.59
+    },
+    {
+      "bankroll": 350,
+      "neg_cap_pct": 0,
+      "avg_pnl": 56.58,
+      "p10_pnl": 29.19,
+      "worst_pnl": -4.95,
+      "best_pnl": 89.49
+    },
+    {
+      "bankroll": 350,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 76.91,
+      "p10_pnl": 50.52,
+      "worst_pnl": 11.18,
+      "best_pnl": 111.41
+    },
+    {
+      "bankroll": 350,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 87.7,
+      "p10_pnl": 59.7,
+      "worst_pnl": 6.6,
+      "best_pnl": 129.7
+    },
+    {
+      "bankroll": 350,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 97.65,
+      "p10_pnl": 63.89,
+      "worst_pnl": 20.19,
+      "best_pnl": 145.92
+    },
+    {
+      "bankroll": 350,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 102.57,
+      "p10_pnl": 71.84,
+      "worst_pnl": 26.49,
+      "best_pnl": 158.24
+    },
+    {
+      "bankroll": 500,
+      "neg_cap_pct": 0,
+      "avg_pnl": 58.23,
+      "p10_pnl": 35.49,
+      "worst_pnl": -3.77,
+      "best_pnl": 89.19
+    },
+    {
+      "bankroll": 500,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 79.82,
+      "p10_pnl": 50.75,
+      "worst_pnl": 28.38,
+      "best_pnl": 123.02
+    },
+    {
+      "bankroll": 500,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 95.86,
+      "p10_pnl": 66.46,
+      "worst_pnl": 2.63,
+      "best_pnl": 146.67
+    },
+    {
+      "bankroll": 500,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 115.48,
+      "p10_pnl": 87.09,
+      "worst_pnl": 54.66,
+      "best_pnl": 157.34
+    },
+    {
+      "bankroll": 500,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 127.67,
+      "p10_pnl": 95.95,
+      "worst_pnl": 37.48,
+      "best_pnl": 190.7
+    },
+    {
+      "bankroll": 700,
+      "neg_cap_pct": 0,
+      "avg_pnl": 56.72,
+      "p10_pnl": 29.79,
+      "worst_pnl": -23.62,
+      "best_pnl": 89.49
+    },
+    {
+      "bankroll": 700,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 89.63,
+      "p10_pnl": 57.46,
+      "worst_pnl": 23.48,
+      "best_pnl": 134.6
+    },
+    {
+      "bankroll": 700,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 113.41,
+      "p10_pnl": 84.33,
+      "worst_pnl": 42.0,
+      "best_pnl": 168.53
+    },
+    {
+      "bankroll": 700,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 139.22,
+      "p10_pnl": 106.39,
+      "worst_pnl": 65.13,
+      "best_pnl": 199.79
+    },
+    {
+      "bankroll": 700,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 161.27,
+      "p10_pnl": 123.04,
+      "worst_pnl": 80.57,
+      "best_pnl": 227.15
+    },
+    {
+      "bankroll": 1000,
+      "neg_cap_pct": 0,
+      "avg_pnl": 58.82,
+      "p10_pnl": 36.82,
+      "worst_pnl": -15.4,
+      "best_pnl": 90.38
+    },
+    {
+      "bankroll": 1000,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 106.29,
+      "p10_pnl": 76.01,
+      "worst_pnl": 48.35,
+      "best_pnl": 147.74
+    },
+    {
+      "bankroll": 1000,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 134.21,
+      "p10_pnl": 99.44,
+      "worst_pnl": 68.34,
+      "best_pnl": 192.18
+    },
+    {
+      "bankroll": 1000,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 170.07,
+      "p10_pnl": 134.29,
+      "worst_pnl": 83.32,
+      "best_pnl": 227.07
+    },
+    {
+      "bankroll": 1000,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 212.73,
+      "p10_pnl": 174.32,
+      "worst_pnl": 98.45,
+      "best_pnl": 275.67
+    },
+    {
+      "bankroll": 1500,
+      "neg_cap_pct": 0,
+      "avg_pnl": 57.45,
+      "p10_pnl": 35.64,
+      "worst_pnl": 6.68,
+      "best_pnl": 88.9
+    },
+    {
+      "bankroll": 1500,
+      "neg_cap_pct": 0.3,
+      "avg_pnl": 131.4,
+      "p10_pnl": 97.91,
+      "worst_pnl": 57.68,
+      "best_pnl": 189.35
+    },
+    {
+      "bankroll": 1500,
+      "neg_cap_pct": 0.5,
+      "avg_pnl": 181.24,
+      "p10_pnl": 143.45,
+      "worst_pnl": 103.96,
+      "best_pnl": 249.24
+    },
+    {
+      "bankroll": 1500,
+      "neg_cap_pct": 0.7,
+      "avg_pnl": 225.52,
+      "p10_pnl": 182.36,
+      "worst_pnl": 140.27,
+      "best_pnl": 296.05
+    },
+    {
+      "bankroll": 1500,
+      "neg_cap_pct": 1.0,
+      "avg_pnl": 288.57,
+      "p10_pnl": 242.14,
+      "worst_pnl": 175.03,
+      "best_pnl": 382.66
+    }
+  ]
+}

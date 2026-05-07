@@ -1,0 +1,54 @@
+[
+  {
+    "key": "0xc230fd694650a0af08d5389b51814ea987234f32dd3eae6e208e5ff5cf2ee848",
+    "title": "Strait of Hormuz traffic returns to normal by end of April?",
+    "token": "77893140510362582253172593084218413010407941075415081594586195705930819989216",
+    "bid": 0.43,
+    "ask": 0.44,
+    "avg": 0.415021,
+    "shares_total": 959.576,
+    "sell_sh": 383.83,
+    "revenue": 165.0469,
+    "pnl": 5.749389570000007,
+    "pct": 0.4
+  },
+  {
+    "key": "0xa0ed9abfdc5d6b670f66d00eb24643e5c6e239f225249a37c34412d9b464bb6b",
+    "title": "Will Trump agree to Iranian enrichment of uranium in April?",
+    "token": "11403971894782485629632795605500772925115225564993889075642616554746394963246",
+    "bid": 0.431,
+    "ask": 0.437,
+    "avg": 0.34956,
+    "shares_total": 707.06,
+    "sell_sh": 353.53,
+    "revenue": 152.37142999999998,
+    "pnl": 28.791483200000002,
+    "pct": 0.5
+  },
+  {
+    "key": "0x6437009bb5cf689c37c8a58da3f605812110d645f79de8c19991b09aed190955",
+    "title": "US x Iran permanent peace deal by April 22, 2026?",
+    "token": "10355316169421062771540371697837923442956106006258739802114788264214901200573",
+    "bid": 0.3,
+    "ask": 0.31,
+    "avg": 0.389587,
+    "shares_total": 624.87,
+    "sell_sh": 312.43,
+    "revenue": 93.729,
+    "pnl": -27.98966641000001,
+    "pct": 0.5
+  },
+  {
+    "key": "0x4a5d1131d6b439298f7307f61b8be6559f1283c1b1235b4068d1a578abda4696",
+    "title": "Trump announces end of military operations against Iran by April 21st?",
+    "token": "25506560533857883018874067035230296855545609452839300134236877827349253759444",
+    "bid": 0.22,
+    "ask": 0.23,
+    "avg": 0.26428,
+    "shares_total": 663.8415,
+    "sell_sh": 199.15,
+    "revenue": 43.813,
+    "pnl": -8.818362000000002,
+    "pct": 0.3
+  }
+]

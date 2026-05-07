@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Iran leadership change by June 30?",
+    "outcome": "No",
+    "condition_id": "0xb196a122933da9aff6cb8b0f3764d0dc5db1859f46c0481c711521eee8524291",
+    "token_id": "114037086617269022315323137414379159845174084075275061115260986148267202915748",
+    "shares": 57.9,
+    "cost": 44.004,
+    "slug": "iran-leadership-change-by",
+    "avg_entry": 0.76
+  },
+  {
+    "title": "US obtains Iranian enriched uranium by May 31?",
+    "outcome": "No",
+    "condition_id": "0xbcacd5a055f5a9ced6f69f122216c073dd6987d08253fc07bbcc168fa5b81d55",
+    "token_id": "5345441419419147559625888104788940459264045849260872706421285679583531763371",
+    "shares": 353.9025,
+    "cost": 311.5611,
+    "slug": "us-obtains-iranian-enriched-uranium-by-may-31",
+    "avg_entry": 0.8803585733358765
+  },
+  {
+    "title": " Iran agrees to end enrichment of uranium by June 30?",
+    "outcome": "Yes",
+    "condition_id": "0x9d3f02264a94bafc676afd7add8b11442e6ec72dabaa69cefef835f0672275c7",
+    "token_id": "25525886838936661349801315808447476243176190100445157889430252006398510133975",
+    "shares": 229.185,
+    "cost": 143.23,
+    "slug": "iran-agrees-to-end-enrichment-of-uranium-by-june-30",
+    "avg_entry": 0.6249536400724305
+  },
+  {
+    "title": "US x Iran permanent peace deal by May 31, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
+    "token_id": "72094069823942324362885404801938332659316240217382754851102758232469673300092",
+    "shares": 538.91375,
+    "cost": 437.1406,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.811151320596292
+  },
+  {
+    "title": "Will the US x Iran ceasefire be extended by April 21, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0xc0be7b1f19f9b658778c2be7e6bc67596a00f347ab64392d0f5d387534c7c3b4",
+    "token_id": "65622140732053240281290096331865000706701305367981851971995507628274584691571",
+    "shares": 512.827,
+    "cost": 211.11,
+    "slug": "us-x-iran-ceasefire-extended-by",
+    "avg_entry": 0.41165929250994976
+  },
+  {
+    "title": "Israeli forces cross the Litani River by June 30?",
+    "outcome": "No",
+    "condition_id": "0x9049d96597900ba0f3013604dc7adc3dd6e7e4764c5a0c16318605c40ac1ee96",
+    "token_id": "61105898512331423456932766287679410148969111620575334880263459667275737814007",
+    "shares": 126.3245,
+    "cost": 98.4532,
+    "slug": "israeli-forces-cross-the-litani-river-by-june-30",
+    "avg_entry": 0.7793674227881369
+  },
+  {
+    "title": "US-Iran nuclear deal by June 30?",
+    "outcome": "Yes",
+    "condition_id": "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633",
+    "token_id": "68283792174293775430535402015214113701251372409839518501034763677920213819299",
+    "shares": 183.67,
+    "cost": 112.04,
+    "slug": "us-iran-nuclear-deal-by-june-30",
+    "avg_entry": 0.6100070779114717
+  },
+  {
+    "title": "Iran agrees to surrender enriched uranium stockpile by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x5d37825716832a4a54f89450932e89510f26cf4be59aeec3149d2c49e5fdf44d",
+    "token_id": "106220853378183696641226754443875866363184608965104019427770764978887400913119",
+    "shares": 674.65,
+    "cost": 235.17,
+    "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by",
+    "avg_entry": 0.34858074557177793
+  },
+  {
+    "title": "Will Trump agree to Iranian enrichment of uranium in April?",
+    "outcome": "Yes",
+    "condition_id": "0x807ba575f84169bdb061dd05da3e8eb314a129aa152e31518c2aff9979d5f986",
+    "token_id": "11403971894782485629632795605500772925115225564993889075642616554746394963246",
+    "shares": 286.3674,
+    "cost": 247.16023,
+    "slug": "what-will-the-us-agree-to",
+    "avg_entry": 0.8630878724324069
+  },
+  {
+    "title": "US x Iran permanent peace deal by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5",
+    "token_id": "64575112906857627673396031002364315784778510108272214779568803819416675082435",
+    "shares": 139.27274999999997,
+    "cost": 244.3193,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 1.7542505622959268
+  },
+  {
+    "title": "Strait of Hormuz traffic returns to normal by end of April?",
+    "outcome": "Yes",
+    "condition_id": "0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+    "token_id": "77893140510362582253172593084218413010407941075415081594586195705930819989216",
+    "shares": 495.38098837499996,
+    "cost": 623.2443,
+    "slug": "strait-of-hormuz-traffic-returns-to-normal-by-april-30",
+    "avg_entry": 1.2581110592161207
+  },
+  {
+    "title": "Israel x Hezbollah Ceasefire extended by April 26, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x02f8dd15d4c674a75fccbd0e00f0cf1256101c45ef41f6d0c5dfde9c36d4141e",
+    "token_id": "15145237739766757543920295010173333079386008614623370487057624811543913015599",
+    "shares": 87.26,
+    "cost": 51.4834,
+    "slug": "israel-x-hezbollah-ceasefire-extended-by",
+    "avg_entry": 0.59
+  },
+  {
+    "title": "Iran agrees to end enrichment of uranium by April 30?",
+    "outcome": "Yes",
+    "condition_id": "0xe6939069d36ad63a9f7fcafa91b627a3f373a3264ab0347c1a5e042c5f7d1f08",
+    "token_id": "59937347564572872290316062672979454904942576853251346531585432029105806826906",
+    "shares": 328.49,
+    "cost": 127.78,
+    "slug": "iran-agrees-to-end-enrichment-of-uranium-by-april-30",
+    "avg_entry": 0.38899205455265
+  },
+  {
+    "title": "US-Iran nuclear deal before 2027?",
+    "outcome": "No",
+    "condition_id": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
+    "token_id": "45763018441764333771124945243746174684578244015331389396782339063349542289693",
+    "shares": 125.01,
+    "cost": 60.0,
+    "slug": "us-iran-nuclear-deal-before-2027",
+    "avg_entry": 0.47996160307175423
+  },
+  {
+    "title": "Israel withdraws from Lebanon by May 31, 2026?",
+    "outcome": "No",
+    "condition_id": "0x8bb861046d70534248fe10aaef5ca28a91fe4c923db024005ea26b86946ca114",
+    "token_id": "72638240516733289490270090522790097230468696624096216694556170058909027876326",
+    "shares": 71.84,
+    "cost": 64.29,
+    "slug": "israel-withdraws-from-lebanon-by",
+    "avg_entry": 0.8949053452115814
+  },
+  {
+    "title": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
+    "outcome": "No",
+    "condition_id": "0xe846dd72f8a654ef137a3e23a88226400b42cc0ca817ab4390a615860e08cafa",
+    "token_id": "18702020867581976905619984893323736143098724607754292117438927457109238679413",
+    "shares": 63.75,
+    "cost": 22.3125,
+    "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by",
+    "avg_entry": 0.35
+  },
+  {
+    "title": "Trump announces end of military operations against Iran by April 30th?",
+    "outcome": "Yes",
+    "condition_id": "0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4",
+    "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+    "shares": 126.08156249999999,
+    "cost": 86.512,
+    "slug": "trump-announces-end-of-military-operations-against-iran-by",
+    "avg_entry": 0.6861590091731296
+  },
+  {
+    "title": "Trump announces end of military operations against Iran by May 31st?",
+    "outcome": "Yes",
+    "condition_id": "0x57c1e8de9d359a76055fe1be95e46a1e72d0537811dcc2ccf070cdfa73d8ba33",
+    "token_id": "88235774871095952577870395590885258537861888267109065817501809685441370257453",
+    "shares": 181.16,
+    "cost": 125.0,
+    "slug": "trump-announces-end-of-military-operations-against-iran-by",
+    "avg_entry": 0.6899977920070656
+  },
+  {
+    "title": "Internet Access restored in Iran by April 30, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x0ce2da6193ffc43d329fe5bb3e895fb7c0019e37b09c6778e7442c91c32b6f82",
+    "token_id": "35967147014286407105697872591093510693730825931696531401832620211438948481267",
+    "shares": 53.85,
+    "cost": 7.0,
+    "slug": "internet-access-restored-in-iran-by",
+    "avg_entry": 0.12999071494893222
+  },
+  {
+    "title": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6",
+    "token_id": "926377706175971731068420551849041218012736398250875962020506643091812084572",
+    "shares": 92.84,
+    "cost": 75.0,
+    "slug": "trump-announces-us-blockade-of-hormuz-lifted-by",
+    "avg_entry": 0.8078414476518742
+  },
+  {
+    "title": "Will 150 or more ships transit the Strait of Hormuz between April 20-April 26?",
+    "outcome": "Yes",
+    "condition_id": "0xbe26cb4271d859584f3acc2c8f8ea9ae872f6845d89b3b1777ab100918f08906",
+    "token_id": "39541851975264994845457288172714317281293246871111854594683532814090128224117",
+    "shares": 181.82,
+    "cost": 20.0,
+    "slug": "will-150-or-more-ships-transit-the-strait-of-hormuz-between-april-20-april-26",
+    "avg_entry": 0.10999890001099989
+  },
+  {
+    "title": "Will fewer than 25 ships transit the Strait of Hormuz between April 20-April 26?",
+    "outcome": "Yes",
+    "condition_id": "0xaa980c83777851bf22a3bd4eeee864d11ce7783096a22ce4af56ff9bf2e1d2cd",
+    "token_id": "10065719129703851524738159766241582795004980250212999796913119632612444350346",
+    "shares": 285.43,
+    "cost": 34.75,
+    "slug": "how-many-ships-transit-the-strait-of-hormuz-this-week-apr-20-26",
+    "avg_entry": 0.12174613740671969
+  },
+  {
+    "title": "Strait of Hormuz traffic returns to normal by end of May?",
+    "outcome": "Yes",
+    "condition_id": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
+    "token_id": "75845920741796858670183364159540464375486880005358999101126589340494255300090",
+    "shares": 136.99,
+    "cost": 100.0,
+    "slug": "strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+    "avg_entry": 0.7299802905321556
+  },
+  {
+    "title": "Israel strike on Yemen by April 30, 2026?",
+    "outcome": "No",
+    "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+    "token_id": "30561980169268678819735256982225694704116127378508623571936660192492766073388",
+    "shares": 203.91,
+    "cost": 177.4,
+    "slug": "israel-strike-on-yemen-by-april-30-2026-212-911",
+    "avg_entry": 0.8699916629885734
+  },
+  {
+    "title": "US x Iran ceasefire extended by April 22, 2026?",
+    "outcome": "Yes",
+    "condition_id": "0x1d2787cb8aed975d092b2799ed6f4083e9445f7420cdc09e9d47e7d54356c6cd",
+    "token_id": "50049642142024617231697970377792489304039200104142714216386619263735691638204",
+    "shares": 102.95,
+    "cost": 70.01,
+    "slug": "us-x-iran-ceasefire-extended-by-april-22-2026",
+    "avg_entry": 0.6800388538125304
+  },
+  {
+    "title": "U.S. forces seize another oil tanker by April 30?",
+    "outcome": "Yes",
+    "condition_id": "0x036f32b7b18291ff94d09f0c11830d8b839aafd0148e644207be97a4f9bd5a8a",
+    "token_id": "99701940500121727292418397429817615595883615255368351271990294980806258260391",
+    "shares": 129.23,
+    "cost": 113.99,
+    "slug": "us-forces-seize-another-oil-tanker-by-april-30",
+    "avg_entry": 0.8820707266114679
+  },
+  {
+    "title": "US x Iran permanent peace deal by April 22, 2026?",
+    "outcome": "No",
+    "condition_id": "0xbbc6689d0f6d57ea42168836712237c7308b3e0118c8914d31b6126d0f3254c5",
+    "token_id": "112998834930140849739317686306046962022222428099467375077336504369963794934957",
+    "shares": 162.15,
+    "cost": 146.4418,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.9031255010792476
+  },
+  {
+    "title": "US-Iran nuclear deal by June 30?",
+    "outcome": "No",
+    "condition_id": "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633",
+    "token_id": "10690391194840875541563517589463912963575786539307433160985752952931887140267",
+    "shares": 25.61,
+    "cost": 9.2196,
+    "slug": "us-iran-nuclear-deal-by-june-30",
+    "avg_entry": 0.36
+  },
+  {
+    "title": "US x Iran permanent peace deal by June 30, 2026?",
+    "outcome": "No",
+    "condition_id": "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
+    "token_id": "34730098823282204056880725250863591694415190633560416900548276632326632294207",
+    "shares": 157.67,
+    "cost": 52.031099999999995,
+    "slug": "us-x-iran-permanent-peace-deal-by",
+    "avg_entry": 0.33
+  },
+  {
+    "title": "US-Iran nuclear deal by April 30?",
+    "outcome": "No",
+    "condition_id": "0xd08544f6162283dc8d0a82f16362aab837a8537379df9bbe604960eec9cd4618",
+    "token_id": "63111054483017727612527014142487261417181554883649541604828011046058146540352",
+    "shares": 146.72,
+    "cost": 103.29087999999999,
+    "slug": "us-iran-nuclear-deal-by-april-30",
+    "avg_entry": 0.704
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "wallet": "0x4717eccF1e1E2443e7563b330C6E0B3B6f96bDdE",
+  "scan_date": "2026-04-08",
+  "scan_blocks": [84025512, 85259797],
+  "scan_days": 30,
+
+  "inflows_count": 1140,
+  "outflows_count": 1797,
+
+  "total_in": 16603.42,
+  "total_out": 15948.04,
+
+  "in_from_polymarket": 9484.45,
+  "in_from_external": 7118.97,
+  "out_to_polymarket": 13487.65,
+  "out_to_external": 2460.39,
+
+  "net_polymarket": -4003.21,
+  "net_external_deposit": 4658.58,
+
+  "current_usdc": 677.11,
+  "open_positions_value_estimate": 1168.00,
+  "total_equity": 1845.11,
+
+  "lifetime_pnl": -2813.47,
+
+  "comparison": {
+    "state_sum_final_pnl": 239.20,
+    "real_pnl_audit_calc": -1416.78,
+    "onchain_truth": -2813.47
+  },
+
+  "notes": [
+    "All bots combined over wallet lifetime ~30 days",
+    "State-based PnL overstates by ~$3052 vs reality",
+    "Most likely causes: unaccounted spreads, fees, manual UI trades, or stale state",
+    "Net external deposit = real money put into the wallet",
+    "Lifetime PnL formula: current_equity - net_external_deposit"
+  ]
+}

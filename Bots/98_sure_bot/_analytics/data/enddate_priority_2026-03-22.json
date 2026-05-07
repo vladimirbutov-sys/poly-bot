@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-03-22T07:46:28.544Z",
+  "resolveTimesByBucket": {
+    "0-1d": {
+      "regCount": 0,
+      "regMedian": null
+    },
+    "1-2d": {
+      "regCount": 0,
+      "regMedian": null
+    },
+    "2-3d": {
+      "regCount": 0,
+      "regMedian": null
+    },
+    "3-5d": {
+      "regCount": 0,
+      "regMedian": null
+    },
+    "5-7d": {
+      "regCount": 0,
+      "regMedian": null
+    },
+    "7+d": {
+      "regCount": 0,
+      "regMedian": null
+    }
+  },
+  "strategies": [
+    {
+      "name": "FIFO (current)",
+      "strategy": "FIFO",
+      "endDate": 7
+    },
+    {
+      "name": "END_DATE PRIORITY (short first)",
+      "strategy": "PRIORITY",
+      "endDate": 7
+    },
+    {
+      "name": "REVERSE (long first, anti-pattern)",
+      "strategy": "REVERSE",
+      "endDate": 7
+    },
+    {
+      "name": "PRIORITY + end≤5d",
+      "strategy": "PRIORITY",
+      "endDate": 5
+    },
+    {
+      "name": "PRIORITY + end≤3d",
+      "strategy": "PRIORITY",
+      "endDate": 3
+    },
+    {
+      "name": "FIFO + end≤3d",
+      "strategy": "FIFO",
+      "endDate": 3
+    }
+  ]
+}

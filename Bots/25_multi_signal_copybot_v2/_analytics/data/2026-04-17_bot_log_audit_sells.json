@@ -1,0 +1,412 @@
+{
+  "total_events": 1540,
+  "classifications": {
+    "skip_duplicate": 990,
+    "skip_unknown": 180,
+    "silent_after_onchain_ok": 161,
+    "skip_dust_tier": 168,
+    "follow_sell_executed": 11,
+    "skip_phantom": 13,
+    "skip_cross_player": 10,
+    "follow_sell_failed": 6,
+    "follow_skip_onchain_empty": 1
+  },
+  "response_rate_on_actionable": 2.0484171322160147,
+  "per_market": {
+    "Israel x Hezbollah ceasefire by April 30, 202": {
+      "skip_duplicate": 67,
+      "skip_unknown": 7,
+      "skip_dust_tier": 5,
+      "skip_phantom": 2,
+      "silent_after_onchain_ok": 3
+    },
+    "Strait of Hormuz traffic returns to normal by": {
+      "skip_duplicate": 136,
+      "skip_unknown": 17,
+      "skip_dust_tier": 5,
+      "silent_after_onchain_ok": 12,
+      "follow_sell_executed": 2,
+      "follow_skip_onchain_empty": 1,
+      "skip_phantom": 2
+    },
+    "US-Iran nuclear deal by April 30?": {
+      "skip_unknown": 10,
+      "skip_dust_tier": 18,
+      "skip_duplicate": 24,
+      "silent_after_onchain_ok": 3
+    },
+    "Iran agrees to end enrichment of uranium by J": {
+      "skip_duplicate": 2,
+      "skip_dust_tier": 2
+    },
+    "Iran x Israel/US conflict ends by April 30?": {
+      "skip_unknown": 6,
+      "skip_duplicate": 35,
+      "silent_after_onchain_ok": 3
+    },
+    "US x Iran meeting by April 10, 2026?": {
+      "skip_duplicate": 37,
+      "silent_after_onchain_ok": 3,
+      "skip_unknown": 1,
+      "skip_phantom": 1
+    },
+    "Israel x Hezbollah ceasefire by June 30, 2026": {
+      "skip_duplicate": 5,
+      "follow_sell_executed": 1,
+      "skip_cross_player": 1,
+      "silent_after_onchain_ok": 2,
+      "skip_unknown": 1
+    },
+    "Iran x Israel/US conflict ends by May 15?": {
+      "skip_duplicate": 2,
+      "silent_after_onchain_ok": 2
+    },
+    "Iran x Israel/US conflict ends by April 7?": {
+      "silent_after_onchain_ok": 21,
+      "skip_duplicate": 117,
+      "skip_unknown": 27,
+      "skip_dust_tier": 39,
+      "skip_phantom": 2,
+      "skip_cross_player": 2
+    },
+    "Iran x Israel/US conflict ends by April 15?": {
+      "skip_dust_tier": 39,
+      "skip_unknown": 31,
+      "skip_phantom": 1,
+      "skip_duplicate": 83,
+      "follow_sell_failed": 1
+    },
+    "Israel x Hezbollah ceasefire by April 15, 202": {
+      "skip_duplicate": 36,
+      "silent_after_onchain_ok": 10,
+      "skip_dust_tier": 2,
+      "skip_unknown": 3,
+      "follow_sell_failed": 1
+    },
+    "Israel military action against Yemen by April": {
+      "silent_after_onchain_ok": 4,
+      "skip_duplicate": 6
+    },
+    "JD Vance diplomatic meeting with Iran by Apri": {
+      "skip_duplicate": 3
+    },
+    "US x Iran meeting by June 15, 2026?": {
+      "skip_duplicate": 2
+    },
+    "Will the United States send warships through ": {
+      "follow_sell_executed": 1
+    },
+    "US x Iran meeting by June 30, 2026?": {
+      "skip_duplicate": 1
+    },
+    "Will Trump announce that the US x Iran ceasef": {
+      "silent_after_onchain_ok": 1,
+      "skip_unknown": 1,
+      "skip_duplicate": 2
+    },
+    "Will Israel conduct military action against I": {
+      "skip_duplicate": 28,
+      "silent_after_onchain_ok": 12,
+      "skip_unknown": 1
+    },
+    "Will the Kharg Island oil terminal be hit by ": {
+      "skip_duplicate": 2
+    },
+    "Iran agrees to surrender enriched uranium sto": {
+      "skip_duplicate": 42,
+      "silent_after_onchain_ok": 4,
+      "skip_dust_tier": 5,
+      "skip_unknown": 2
+    },
+    "Iran x Israel/US conflict ends by June 30?": {
+      "skip_duplicate": 1
+    },
+    "Will the US x Iran ceasefire be extended by A": {
+      "skip_unknown": 6,
+      "skip_duplicate": 29,
+      "silent_after_onchain_ok": 8
+    },
+    "US obtains Iranian enriched uranium by May 31": {
+      "skip_unknown": 3,
+      "skip_duplicate": 5,
+      "follow_sell_executed": 1,
+      "skip_dust_tier": 4
+    },
+    "Will the U.S. invade Iran before 2027?": {
+      "skip_unknown": 1,
+      "skip_dust_tier": 1,
+      "skip_duplicate": 2
+    },
+    "US-Iran nuclear deal by June 30?": {
+      "silent_after_onchain_ok": 3,
+      "skip_duplicate": 2
+    },
+    "Israel x Hamas Ceasefire Phase II by June 30?": {
+      "skip_duplicate": 6,
+      "skip_unknown": 1,
+      "skip_dust_tier": 6,
+      "silent_after_onchain_ok": 1,
+      "follow_sell_executed": 1
+    },
+    "Will Hamas agree to disarm by June 30?": {
+      "silent_after_onchain_ok": 4,
+      "skip_phantom": 1,
+      "skip_duplicate": 1
+    },
+    "Will Hezbollah disarm by December 31?": {
+      "skip_duplicate": 2,
+      "silent_after_onchain_ok": 4,
+      "follow_sell_failed": 2,
+      "skip_unknown": 1
+    },
+    "Will 10 ships transit the Strait of Hormuz on": {
+      "skip_duplicate": 1
+    },
+    "US x Iran permanent peace deal by April 22, 2": {
+      "skip_duplicate": 28,
+      "skip_dust_tier": 9,
+      "skip_unknown": 5,
+      "silent_after_onchain_ok": 1
+    },
+    "US x Iran permanent peace deal by April 30, 2": {
+      "skip_duplicate": 58,
+      "skip_unknown": 11,
+      "skip_dust_tier": 12,
+      "silent_after_onchain_ok": 22,
+      "follow_sell_executed": 2
+    },
+    "Will Trump agree to Iranian enrichment of ura": {
+      "skip_unknown": 3,
+      "skip_duplicate": 4,
+      "skip_dust_tier": 2
+    },
+    "Will Donald Trump announce that the United St": {
+      "skip_unknown": 2,
+      "skip_duplicate": 12,
+      "silent_after_onchain_ok": 1,
+      "skip_dust_tier": 1
+    },
+    "Will Trump endorse an Israeli Ceasefire in Le": {
+      "skip_duplicate": 9,
+      "skip_unknown": 1,
+      "silent_after_onchain_ok": 1
+    },
+    "Will the next diplomatic US-Iran meeting be i": {
+      "skip_phantom": 1,
+      "skip_unknown": 7,
+      "skip_duplicate": 44,
+      "skip_cross_player": 4
+    },
+    "U.S. forces seize another oil tanker by April": {
+      "skip_duplicate": 1
+    },
+    "US x Iran permanent peace deal by May 31, 202": {
+      "skip_unknown": 3,
+      "skip_duplicate": 12,
+      "skip_dust_tier": 6,
+      "follow_sell_executed": 1
+    },
+    "Iran agrees to end enrichment of uranium by A": {
+      "skip_dust_tier": 4,
+      "skip_unknown": 2,
+      "follow_sell_failed": 1,
+      "skip_duplicate": 7,
+      "silent_after_onchain_ok": 1
+    },
+    "Iran agrees to end enrichment of uranium by D": {
+      "skip_unknown": 3,
+      "silent_after_onchain_ok": 2,
+      "skip_duplicate": 3
+    },
+    "Trump announces end of military operations ag": {
+      "skip_dust_tier": 7,
+      "skip_unknown": 14,
+      "skip_duplicate": 58,
+      "silent_after_onchain_ok": 28
+    },
+    "Foreign intervention in Gaza by June 30?": {
+      "skip_duplicate": 4,
+      "silent_after_onchain_ok": 1
+    },
+    "Israeli forces cross the Litani River by June": {
+      "follow_sell_failed": 1,
+      "skip_dust_tier": 1,
+      "skip_duplicate": 1
+    },
+    "Will Iran strike Iraq by April 30, 2026?": {
+      "skip_duplicate": 3
+    },
+    "Iran agrees to unrestricted shipping through ": {
+      "skip_duplicate": 8,
+      "skip_phantom": 1,
+      "skip_cross_player": 3
+    },
+    "Will Delcy Rodríguez be the leader of Venezue": {
+      "skip_phantom": 1,
+      "skip_duplicate": 4
+    },
+    "Israel announces suspension of Lebanon offens": {
+      "skip_duplicate": 54,
+      "skip_unknown": 9,
+      "silent_after_onchain_ok": 4,
+      "follow_sell_executed": 2,
+      "skip_phantom": 1
+    },
+    "Will Trump agree to unfreeze Iranian assets i": {
+      "skip_duplicate": 1,
+      "skip_unknown": 1
+    }
+  },
+  "unknown_samples": [
+    {
+      "ts": "2026-04-10T21:33:52+00:00",
+      "market": "US-Iran nuclear deal by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-10T21:57:50+00:00",
+      "market": "Iran x Israel/US conflict ends by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-10T23:13:19+00:00",
+      "market": "Israel x Hezbollah ceasefire by April 30, 2026? No",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T00:14:40+00:00",
+      "market": "Israel x Hezbollah ceasefire by April 30, 2026? No",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T00:14:40+00:00",
+      "market": "Iran x Israel/US conflict ends by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T00:43:44+00:00",
+      "market": "US-Iran nuclear deal by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T02:51:00+00:00",
+      "market": "US x Iran meeting by April 10, 2026? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T17:44:10+00:00",
+      "market": "Iran x Israel/US conflict ends by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T19:44:21+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T20:44:01+00:00",
+      "market": "US-Iran nuclear deal by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-11T20:51:20+00:00",
+      "market": "US-Iran nuclear deal by April 30? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T10:37:58+00:00",
+      "market": "Will Trump announce that the US x Iran ceasefire h Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:17:52+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:22:11+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:22:40+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:28:10+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:28:45+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:33:59+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:34:44+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:34:45+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:39:03+00:00",
+      "market": "Will the US x Iran ceasefire be extended by April  Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:39:03+00:00",
+      "market": "Will the US x Iran ceasefire be extended by April  Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:40:35+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:40:38+00:00",
+      "market": "Iran x Israel/US conflict ends by April 15? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:41:04+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:41:07+00:00",
+      "market": "Iran x Israel/US conflict ends by April 7? Yes",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:41:18+00:00",
+      "market": "Iran x Israel/US conflict ends by April 30? No",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:41:22+00:00",
+      "market": "Iran x Israel/US conflict ends by April 30? No",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:45:55+00:00",
+      "market": "US obtains Iranian enriched uranium by May 31? No",
+      "dets": []
+    },
+    {
+      "ts": "2026-04-12T14:46:24+00:00",
+      "market": "US obtains Iranian enriched uranium by May 31? No",
+      "dets": []
+    }
+  ]
+}

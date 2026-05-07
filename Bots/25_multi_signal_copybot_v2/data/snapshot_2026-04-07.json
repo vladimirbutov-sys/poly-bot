@@ -1,0 +1,220 @@
+{
+  "positions": {
+    "0x3a8b8dd59080215233e599f47b8989fbf72548f364728da0fe151f75385cc982": {
+      "condition_id": "0x377e7fe65cf198a7fc4fdae3f2136b74729279267858daaf96718b23bc2a5607",
+      "token_id": "60499458684380641857666641513383149627633695110197406276308452075860198022694",
+      "title": "Iran leadership change by December 31?",
+      "outcome": "No",
+      "event_slug": "iran-leadership-change-by",
+      "entry_price": 0.61,
+      "avg_entry": 0.6136075036075036,
+      "size_shares": 0.0,
+      "cost_usd": 8.5046,
+      "tier": "B",
+      "signal_player": "denizz",
+      "parts_filled": 2,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x3a8b8dd59080215233e599f47b8989fbf72548f364728da0fe151f75385cc982",
+        "0x20c24a75d9990be65b9c66e016d0c9f0b6339a95d3539f92c82218760c5f7cb4"
+      ],
+      "timestamp": "2026-03-31T13:36:16.702921+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 13.86,
+          "price": 0.67,
+          "revenue": 9.286200000000001,
+          "pnl": 0.781600000000001,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:13.965755+00:00"
+        }
+      ],
+      "final_pnl": 0.781600000000001
+    },
+    "0x01424ead0754e54d6909722611ef59670c3f0ebd38fb369778d433acb22bc7e6": {
+      "condition_id": "0x68beecc857017df8663fa36c0c86310dec7305aa88fe830c94651391314afc1c",
+      "token_id": "50143980393435996217714022897965886420387298227054033598176282877756178368402",
+      "title": "Trump announces end of military operations against Iran by April 15th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.24,
+      "avg_entry": 0.24,
+      "size_shares": 0.0,
+      "cost_usd": 10.5,
+      "tier": "A",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x01424ead0754e54d6909722611ef59670c3f0ebd38fb369778d433acb22bc7e6"
+      ],
+      "timestamp": "2026-03-31T13:46:16.897901+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 43.75,
+          "price": 0.22,
+          "revenue": 9.625,
+          "pnl": -0.875,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:14.954593+00:00"
+        }
+      ],
+      "final_pnl": -0.875
+    },
+    "0x1daacee161b0d8d01c34cb94d67bca6b4086429cce1606bf99ce9b668ab493c9": {
+      "condition_id": "0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb",
+      "token_id": "111988618077786263362718284278451225707405623288593888751575373086664059387290",
+      "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "outcome": "Yes",
+      "event_slug": "iran-leader-end-of-2026",
+      "entry_price": 0.589,
+      "avg_entry": 0.589,
+      "size_shares": 0.0,
+      "cost_usd": 2.945,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x1daacee161b0d8d01c34cb94d67bca6b4086429cce1606bf99ce9b668ab493c9"
+      ],
+      "timestamp": "2026-03-31T15:39:20.619141+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 5.0,
+          "price": 0.641,
+          "revenue": 3.205,
+          "pnl": 0.26000000000000023,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:15.946046+00:00"
+        }
+      ],
+      "final_pnl": 0.26000000000000023
+    },
+    "0xcfff9548f547afaf57c398b0a0cba7a76d6f7d87836628aedad7c51c60d5b0b9": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "97502225604188679731910255142329798475400025079543823690880164148891433611299",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.73,
+      "avg_entry": 0.73,
+      "size_shares": 0.0,
+      "cost_usd": 4.8034,
+      "tier": "B",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xcfff9548f547afaf57c398b0a0cba7a76d6f7d87836628aedad7c51c60d5b0b9"
+      ],
+      "timestamp": "2026-03-31T17:19:51.304958+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 6.58,
+          "price": 0.68,
+          "revenue": 4.4744,
+          "pnl": -0.32899999999999974,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:17.069873+00:00"
+        }
+      ],
+      "final_pnl": -0.32899999999999974
+    },
+    "0x164d377a5ecc49e0876231dc1d374cfe32283bf7f996f6ee330ee3fca5239663": {
+      "condition_id": "0x68beecc857017df8663fa36c0c86310dec7305aa88fe830c94651391314afc1c",
+      "token_id": "50143980393435996217714022897965886420387298227054033598176282877756178368402",
+      "title": "Trump announces end of military operations against Iran by April 15th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.14,
+      "avg_entry": 0.14,
+      "size_shares": 18.75,
+      "cost_usd": 2.6250000000000004,
+      "tier": "A",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x164d377a5ecc49e0876231dc1d374cfe32283bf7f996f6ee330ee3fca5239663"
+      ],
+      "timestamp": "2026-04-06T14:08:44.500227+00:00",
+      "status": "open"
+    },
+    "0x32ea91560ad2efef6ffc527a0a52d4366be1a58587012787e70b10fb18aafcc0": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "97502225604188679731910255142329798475400025079543823690880164148891433611299",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.63,
+      "avg_entry": 0.63,
+      "size_shares": 5.0,
+      "cost_usd": 3.15,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x32ea91560ad2efef6ffc527a0a52d4366be1a58587012787e70b10fb18aafcc0"
+      ],
+      "timestamp": "2026-04-06T14:08:46.013550+00:00",
+      "status": "open"
+    },
+    "0xf22f49ac3d124ced2de754d8581076641751fd877641a69db1774db27bfed9ce": {
+      "condition_id": "0x80059ff4e694f878c0498f6f3a067ee7ca62dc2fc46251a4287b58355ce47bc5",
+      "token_id": "44149007410374101286260953227333745102128417138356632089802983317837574022801",
+      "title": "US x Iran ceasefire by April 30?",
+      "outcome": "Yes",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.27,
+      "avg_entry": 0.25714258164052456,
+      "size_shares": 311.12,
+      "cost_usd": 80.0022,
+      "tier": "S+",
+      "signal_player": "Car",
+      "parts_filled": 3,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xf22f49ac3d124ced2de754d8581076641751fd877641a69db1774db27bfed9ce",
+        "0x95d11f4ce6481ef28238bf850d7a45a22567cf6b560f56104922f02dbc218dfd",
+        "0xef6183c012e6ab5f782b92df644e6c1defda69c30bb86320344c100f2136fbd1"
+      ],
+      "timestamp": "2026-04-06T15:18:09.753556+00:00",
+      "status": "open"
+    },
+    "0xb8b9ee4eab0fd7929213d19e118a1205b4b6d6c9413edef575a878c52774d5a0": {
+      "condition_id": "0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb",
+      "token_id": "111988618077786263362718284278451225707405623288593888751575373086664059387290",
+      "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "outcome": "Yes",
+      "event_slug": "iran-leader-end-of-2026",
+      "entry_price": 0.517,
+      "avg_entry": 0.517,
+      "size_shares": 5.0,
+      "cost_usd": 2.585,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xb8b9ee4eab0fd7929213d19e118a1205b4b6d6c9413edef575a878c52774d5a0"
+      ],
+      "timestamp": "2026-04-07T04:23:19.910400+00:00",
+      "status": "open"
+    }
+  },
+  "stats": {
+    "total_bets": 11,
+    "wins": 0,
+    "losses": 0,
+    "sells": 4,
+    "total_pnl": -0.16239999999999855,
+    "peak_balance": 300.0,
+    "current_balance": 211.47539999999995
+  }
+}

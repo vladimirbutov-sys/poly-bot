@@ -1,0 +1,152 @@
+{
+  "dates": {
+    "2026-03-16": {
+      "total": 7458,
+      "passed": 93,
+      "negRisk": 5409,
+      "filtered": 1956,
+      "passedByCategory": {
+        "crypto": 12,
+        "finance": 5,
+        "other": 40,
+        "geopolitics": 17,
+        "politics": 9,
+        "tech": 5,
+        "esports": 3,
+        "sports_other": 1,
+        "soccer": 1
+      },
+      "filteredReasons": {},
+      "passedResolved": 36,
+      "passedWon": 36,
+      "passedLost": 0
+    },
+    "2026-03-17": {
+      "total": 3929,
+      "passed": 40,
+      "negRisk": 1042,
+      "filtered": 2847,
+      "passedByCategory": {
+        "sports_other": 6,
+        "crypto": 4,
+        "esports": 8,
+        "geopolitics": 6,
+        "other": 4,
+        "politics": 11,
+        "tech": 1
+      },
+      "filteredReasons": {},
+      "passedResolved": 34,
+      "passedWon": 34,
+      "passedLost": 0
+    },
+    "2026-03-18": {
+      "total": 3144,
+      "passed": 35,
+      "negRisk": 829,
+      "filtered": 2280,
+      "passedByCategory": {
+        "geopolitics": 8,
+        "crypto": 5,
+        "sports_other": 6,
+        "esports": 2,
+        "other": 12,
+        "american_football": 2
+      },
+      "filteredReasons": {},
+      "passedResolved": 29,
+      "passedWon": 29,
+      "passedLost": 0
+    },
+    "2026-03-19": {
+      "total": 4566,
+      "passed": 49,
+      "negRisk": 981,
+      "filtered": 3536,
+      "passedByCategory": {
+        "sports_other": 8,
+        "crypto": 9,
+        "tech": 2,
+        "other": 4,
+        "geopolitics": 6,
+        "esports": 15,
+        "politics": 5
+      },
+      "filteredReasons": {},
+      "passedResolved": 45,
+      "passedWon": 45,
+      "passedLost": 0
+    },
+    "2026-03-20": {
+      "total": 4648,
+      "passed": 57,
+      "negRisk": 942,
+      "filtered": 3649,
+      "passedByCategory": {
+        "politics": 16,
+        "sports_other": 7,
+        "other": 8,
+        "crypto": 10,
+        "geopolitics": 4,
+        "tech": 3,
+        "esports": 9
+      },
+      "filteredReasons": {},
+      "passedResolved": 52,
+      "passedWon": 52,
+      "passedLost": 0
+    },
+    "2026-03-21": {
+      "total": 5631,
+      "passed": 54,
+      "negRisk": 1390,
+      "filtered": 4187,
+      "passedByCategory": {
+        "soccer": 5,
+        "esports": 14,
+        "crypto": 14,
+        "sports_other": 9,
+        "other": 6,
+        "tech": 1,
+        "geopolitics": 4,
+        "fighting": 1
+      },
+      "filteredReasons": {},
+      "passedResolved": 34,
+      "passedWon": 34,
+      "passedLost": 0
+    },
+    "2026-03-22": {
+      "total": 1583,
+      "passed": 4,
+      "negRisk": 308,
+      "filtered": 1271,
+      "passedByCategory": {
+        "sports_other": 1,
+        "politics": 1,
+        "other": 1,
+        "esports": 1
+      },
+      "filteredReasons": {},
+      "passedResolved": 0,
+      "passedWon": 0,
+      "passedLost": 0
+    }
+  },
+  "filterReasons": {
+    "neg_risk": 10901,
+    "price_low": 875,
+    "low_volume": 3649,
+    "price_high": 13161,
+    "end_date_too_far": 565,
+    "low_liquidity": 822,
+    "financial_threshold": 229,
+    "sports_bad": 217,
+    "coin_flip": 204,
+    "toxic_keyword": 2,
+    "slow_keyword": 2
+  },
+  "avgPassedPerDay": 47,
+  "passedWon": 230,
+  "passedLost": 0
+}

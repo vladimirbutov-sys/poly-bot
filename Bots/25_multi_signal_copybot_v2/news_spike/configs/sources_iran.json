@@ -1,0 +1,94 @@
+{
+  "name": "Iran-US Conflict Monitor",
+
+  "telegram_channels": {
+    "Iran_International":  {"tier": 1, "lang": "fa", "topic": "iran", "name": "Iran International"},
+    "IranIntl_En":         {"tier": 1, "lang": "en", "topic": "iran", "name": "Iran Intl English"},
+    "AlMayadeenNews":      {"tier": 2, "lang": "ar", "topic": "mideast", "name": "Al Mayadeen"},
+    "AlJazeeraArabic":     {"tier": 1, "lang": "ar", "topic": "mideast", "name": "Al Jazeera Arabic"},
+    "aljazeera_english":   {"tier": 1, "lang": "en", "topic": "mideast", "name": "Al Jazeera English"},
+    "AJEnglish":           {"tier": 1, "lang": "en", "topic": "mideast", "name": "Al Jazeera (alt)"},
+    "bbcpersian":          {"tier": 1, "lang": "fa", "topic": "iran", "name": "BBC Persian"},
+    "ABORJITV":            {"tier": 2, "lang": "fa", "topic": "iran", "name": "Aborji TV"},
+    "tasaborji":           {"tier": 2, "lang": "fa", "topic": "iran", "name": "Tasa Borji"},
+    "manaborji":           {"tier": 2, "lang": "fa", "topic": "iran", "name": "Mana Borji"},
+    "PressTV":             {"tier": 2, "lang": "en", "topic": "iran_state", "name": "Press TV"},
+    "rt_com":              {"tier": 3, "lang": "en", "topic": "russia", "name": "RT"},
+    "aaborji":             {"tier": 2, "lang": "ar", "topic": "mideast", "name": "Al Arabiya Borji"},
+    "Jerusalem_Post":      {"tier": 1, "lang": "en", "topic": "israel", "name": "Jerusalem Post"},
+    "TimesofIsrael":       {"tier": 1, "lang": "en", "topic": "israel", "name": "Times of Israel"},
+    "yaborji":             {"tier": 2, "lang": "he", "topic": "israel", "name": "Ynet Borji"},
+    "kann_news":           {"tier": 1, "lang": "he", "topic": "israel", "name": "Kan News"},
+    "N12News":             {"tier": 1, "lang": "he", "topic": "israel", "name": "Channel 12 News"},
+    "iaborji":             {"tier": 2, "lang": "he", "topic": "israel", "name": "i24 Borji"},
+    "khamenei_irNews":     {"tier": 1, "lang": "fa", "topic": "iran_state", "name": "Khamenei News"},
+    "Khamenei_en":         {"tier": 1, "lang": "en", "topic": "iran_state", "name": "Khamenei English"},
+    "khamenei_ir_farsi":   {"tier": 1, "lang": "fa", "topic": "iran_state", "name": "Khamenei Farsi"},
+    "Khamenei_arabi":      {"tier": 1, "lang": "ar", "topic": "iran_state", "name": "Khamenei Arabic"},
+    "Khamenei_kingiran":   {"tier": 1, "lang": "fa", "topic": "iran_state", "name": "Khamenei King Iran"},
+    "cnaborji":            {"tier": 1, "lang": "en", "topic": "us_media", "name": "CNN Breaking"},
+    "raborji":             {"tier": 1, "lang": "en", "topic": "us_media", "name": "Reuters Alerts"},
+    "AP":                  {"tier": 1, "lang": "en", "topic": "us_media", "name": "AP News"},
+    "BBCBreaking":         {"tier": 1, "lang": "en", "topic": "west_media", "name": "BBC Breaking"},
+    "Fox_News_Now":        {"tier": 2, "lang": "en", "topic": "us_media", "name": "Fox News"},
+    "ClashReport":         {"tier": 2, "lang": "en", "topic": "osint", "name": "Clash Report"},
+    "Reuters":             {"tier": 1, "lang": "en", "topic": "us_media", "name": "Reuters"},
+    "ReutersWorld":        {"tier": 1, "lang": "en", "topic": "us_media", "name": "Reuters World"},
+    "axios":               {"tier": 1, "lang": "en", "topic": "us_media", "name": "Axios"}
+  },
+
+  "twitter_accounts": {
+    "araghchi":            {"tier": 1, "topic": "iran_state"}
+  },
+
+  "keywords": {
+    "en": [
+      "Iran", "Tehran", "Strait of Hormuz", "Persian Gulf",
+      "IRGC", "Khamenei", "Pahlavi", "Pezeshkian",
+      "strike Iran", "Iran strike", "bomb Iran", "Iran bomb",
+      "Iran nuclear", "Iran nuke", "Iran enrichment", "uranium",
+      "Iran ceasefire", "Iran war", "Iran invasion", "invade Iran",
+      "Iran regime", "Iran coup", "Supreme Leader",
+      "Houthi", "Hezbollah Iran", "Iran proxy",
+      "tanker seized", "vessel attacked", "drone attack Iran",
+      "missile Iran", "air raid Iran", "CENTCOM Iran",
+      "Iran Saudi", "Iran UAE", "Iran Israel",
+      "Iran deal", "JCPOA", "NPT Iran",
+      "Iran oil", "Iran sanctions",
+      "UAE retaliation", "Saudi retaliation", "Gulf strike Iran",
+      "coalition strike Iran", "desalination Iran",
+      "ultimatum", "48 hours", "deadline", "power plant", "power grid",
+      "electricity", "obliterate", "desalination", "Bandar Abbas", "Bushehr",
+      "Neka power", "blackout Iran", "infrastructure strike",
+      "Hormuz open", "Hormuz reopen", "full closure",
+      "water supply", "humanitarian", "civilian infrastructure"
+    ],
+    "fa": [
+      "ایران", "تهران", "تنگه هرمز", "سپاه", "خامنه‌ای", "پهلوی",
+      "حمله", "موشک", "پهپاد", "هسته‌ای", "غنی‌سازی", "اورانیوم",
+      "جنگ", "آتش‌بس", "رژیم", "کودتا",
+      "نیروگاه", "برق", "آب شیرین‌کن", "اولتیماتوم", "ضرب‌الاجل",
+      "بندرعباس", "بوشهر", "نکا", "خاموشی", "قطع برق"
+    ],
+    "ar": [
+      "إيران", "طهران", "مضيق هرمز", "الحرس الثوري", "خامنئي",
+      "ضربة", "صاروخ", "نووي", "تخصيب", "يورانيوم",
+      "حرب", "وقف إطلاق النار", "حزب الله", "الحوثي",
+      "محطة كهرباء", "شبكة كهرباء", "تحلية مياه", "إنذار",
+      "مهلة", "بنية تحتية", "بندر عباس"
+    ],
+    "he": [
+      "איראן", "טהרן", "מיצר הורמוז", "משמרות המהפכה",
+      "תקיפה", "טיל", "מל\"ט", "גרעין", "העשרה",
+      "מלחמה", "הפסקת אש", "חיזבאללה", "חות'ים"
+    ],
+    "ru": [
+      "Иран", "Тегеран", "Ормузский пролив", "КСИР", "Хаменеи",
+      "удар по Ирану", "ядерный Иран", "обогащение урана",
+      "война Иран", "хуситы", "Хезболла",
+      "Персидский залив", "танкер", "дрон",
+      "ультиматум", "электростанция", "энергосистема", "опреснительная",
+      "Бандар-Аббас", "Бушер", "инфраструктура", "блэкаут"
+    ]
+  }
+}

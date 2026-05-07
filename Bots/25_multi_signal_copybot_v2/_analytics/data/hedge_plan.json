@@ -1,0 +1,70 @@
+{
+  "positions_summary": {
+    "deal_yes_value": 3375.86,
+    "deal_yes_count": 21,
+    "worst_case_loss": 3375.86,
+    "target_payout": 1687.93
+  },
+  "hedge_plan": [
+    {
+      "role": "PRIMARY (Ceasefire end April 21 YES)",
+      "slug": "trump-announces-us-x-iran-ceasefire-end-by-april-21-2026",
+      "question": "Trump announces US x Iran ceasefire end by April 21, 2026?",
+      "conditionId": "0xdb7886829f415e00ab97b695a28b5747c6bce1f8ab09635a51ec6480e5d50314",
+      "token_id": "1616166182541724838676329828640054929140786650156260222032609831711838834618",
+      "endDate": "2026-04-21T00:00:00Z",
+      "side": "Yes",
+      "allocation_weight": 0.45,
+      "target_payout_usd": 759.57,
+      "shares_to_buy": 760.0,
+      "avg_fill_price_vwap": 0.06,
+      "suggested_limit_price": 0.06,
+      "cost_usd_estimate": 45.57,
+      "payout_if_yes": 759.57,
+      "net_profit_if_yes": 713.99,
+      "edge_per_dollar": 15.67,
+      "liquidity_top5_shares": 25303.44
+    },
+    {
+      "role": "SECONDARY (Gulf State strikes Iran April 30 YES)",
+      "slug": "will-a-gulf-state-carry-out-military-action-against-iran-by-april-30-2026",
+      "question": "Will a Gulf State carry out military action against Iran by April 30, 2026?",
+      "conditionId": "0x8a4e2896a318755e419acbeb8f5896ce06715fd2e5ebf35c27602a51b1a891b0",
+      "token_id": "12725228216232659927260200422388843865897455065619986459222807494907250144402",
+      "endDate": "2026-04-30T00:00:00Z",
+      "side": "Yes",
+      "allocation_weight": 0.35,
+      "target_payout_usd": 590.78,
+      "shares_to_buy": 591.0,
+      "avg_fill_price_vwap": 0.06,
+      "suggested_limit_price": 0.06,
+      "cost_usd_estimate": 35.45,
+      "payout_if_yes": 590.78,
+      "net_profit_if_yes": 555.33,
+      "edge_per_dollar": 15.67,
+      "liquidity_top5_shares": 52505.200000000004
+    },
+    {
+      "role": "TERTIARY (Iran leadership change April 30 YES)",
+      "slug": "iran-leadership-change-by-april-30",
+      "question": "Iran leadership change by April 30?",
+      "conditionId": "0xb412664463bbfe21be44b1963291205ab332afd4f7f6e0d027aec1ba7a9e6793",
+      "token_id": "99767261437055226116306337813801042912696159191602956091233868382444699564874",
+      "endDate": "2026-04-30T00:00:00Z",
+      "side": "Yes",
+      "allocation_weight": 0.2,
+      "target_payout_usd": 337.59,
+      "shares_to_buy": 338.0,
+      "avg_fill_price_vwap": 0.05,
+      "suggested_limit_price": 0.05,
+      "cost_usd_estimate": 16.88,
+      "payout_if_yes": 337.59,
+      "net_profit_if_yes": 320.71,
+      "edge_per_dollar": 19.0,
+      "liquidity_top5_shares": 85466.6
+    }
+  ],
+  "total_cost": 97.9,
+  "total_payout_all_yes": 1687.93,
+  "coverage_pct": 50.0
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "ts": "2026-04-09 17:31:12",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.558,
+    "shares": 155.2,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:31:12",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.558,
+    "shares": 55.1,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:31:12",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.558,
+    "shares": 222.8,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:31:12",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.558,
+    "shares": 40.0,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:31:16",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.558,
+    "shares": 27.9,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:31:47",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.555,
+    "shares": 5.0,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:33:09",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.513,
+    "shares": 19.4,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 17:35:52",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.602,
+    "our_price": 0.516,
+    "shares": 6.9,
+    "target": 0.592,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 19:26:12",
+    "title": "Trump announces end of military operatio",
+    "denizz_price": 0.53,
+    "our_price": 0.53,
+    "shares": 189.0,
+    "target": 0.52,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 19:26:16",
+    "title": "Trump announces end of military operatio",
+    "denizz_price": 0.53,
+    "our_price": 0.53,
+    "shares": 167.7,
+    "target": 0.52,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 22:42:39",
+    "title": "Israel x Hezbollah ceasefire by June 30,",
+    "denizz_price": 0.41,
+    "our_price": 0.385,
+    "shares": 20.9,
+    "target": 0.39999999999999997,
+    "recovery_min": 0.11666666666666667,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-09 22:53:43",
+    "title": "Israel x Hezbollah ceasefire by June 30,",
+    "denizz_price": 0.41,
+    "our_price": 0.387,
+    "shares": 2.9,
+    "target": 0.39999999999999997,
+    "recovery_min": 0.08333333333333333,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-10 06:10:27",
+    "title": "US x Iran meeting by April 10, 2026?",
+    "denizz_price": 0.67,
+    "our_price": 0.26,
+    "shares": 115.4,
+    "target": 0.66,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-10 09:17:16",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.7,
+    "our_price": 0.637,
+    "shares": 504.1,
+    "target": 0.69,
+    "recovery_min": 10688.766666666666,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-10 10:17:41",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.7,
+    "our_price": 0.636,
+    "shares": 504.1,
+    "target": 0.69,
+    "recovery_min": 10628.35,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-10 11:12:03",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.7,
+    "our_price": 0.628,
+    "shares": 504.1,
+    "target": 0.69,
+    "recovery_min": 10573.983333333334,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-11 00:15:46",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.505,
+    "our_price": 0.486,
+    "shares": 86.3,
+    "target": 0.495,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-11 16:52:54",
+    "title": "Will the United States send warships thr",
+    "denizz_price": 0.93,
+    "our_price": 0.88,
+    "shares": 101.8,
+    "target": 0.92,
+    "recovery_min": 0.9166666666666666,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-12 17:30:22",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.52,
+    "our_price": 0.51,
+    "shares": 19.9,
+    "target": 0.51,
+    "recovery_min": 7315.666666666667,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-13 00:39:58",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.818,
+    "our_price": 0.813,
+    "shares": 97.5,
+    "target": 0.8079999999999999,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-13 09:13:49",
+    "title": "Israeli forces cross the Litani River by",
+    "denizz_price": 0.73,
+    "our_price": 0.65,
+    "shares": 142.0,
+    "target": 0.72,
+    "recovery_min": null,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-13 13:13:51",
+    "title": "US x Iran permanent peace deal by April",
+    "denizz_price": 0.92,
+    "our_price": 0.88,
+    "shares": 103.7,
+    "target": 0.91,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-13 23:33:24",
+    "title": "Will Trump endorse an Israeli Ceasefire",
+    "denizz_price": 0.7,
+    "our_price": 0.67,
+    "shares": 89.6,
+    "target": 0.69,
+    "recovery_min": null,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-14 18:04:51",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.756,
+    "our_price": 0.754,
+    "shares": 39.3,
+    "target": 0.746,
+    "recovery_min": 0.8333333333333334,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-14 20:57:16",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.719,
+    "our_price": 0.715,
+    "shares": 12.2,
+    "target": 0.709,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-14 21:32:38",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.714,
+    "our_price": 0.701,
+    "shares": 9.1,
+    "target": 0.704,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-14 21:36:37",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.714,
+    "our_price": 0.703,
+    "shares": 27.4,
+    "target": 0.704,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-15 05:51:52",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.811,
+    "our_price": 0.805,
+    "shares": 29.5,
+    "target": 0.801,
+    "recovery_min": 0.8,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-15 09:52:59",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.808,
+    "our_price": 0.829,
+    "shares": 22.1,
+    "target": 0.798,
+    "recovery_min": 0.65,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-15 11:35:22",
+    "title": "Israel x Hezbollah ceasefire by April 15",
+    "denizz_price": 0.935,
+    "our_price": 0.937,
+    "shares": 59.5,
+    "target": 0.925,
+    "recovery_min": null,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-16 08:27:29",
+    "title": "Will Trump agree to unfreeze Iranian ass",
+    "denizz_price": 0.6,
+    "our_price": 0.46,
+    "shares": 93.9,
+    "target": 0.59,
+    "recovery_min": 2099.366666666667,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-16 10:05:55",
+    "title": "Israel x Hezbollah ceasefire by April 30",
+    "denizz_price": 0.685,
+    "our_price": 0.665,
+    "shares": 191.9,
+    "target": 0.675,
+    "recovery_min": null,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-16 15:30:25",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.861,
+    "our_price": 0.859,
+    "shares": 66.3,
+    "target": 0.851,
+    "recovery_min": 0.6333333333333333,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-16 20:16:58",
+    "title": "US x Iran permanent peace deal by May 31",
+    "denizz_price": 0.52,
+    "our_price": 0.52,
+    "shares": 71.9,
+    "target": 0.51,
+    "recovery_min": 0.3333333333333333,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-16 20:33:04",
+    "title": "US x Iran permanent peace deal by May 31",
+    "denizz_price": 0.5,
+    "our_price": 0.49,
+    "shares": 161.7,
+    "target": 0.49,
+    "recovery_min": 0.7666666666666667,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-17 05:36:00",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.881,
+    "our_price": 0.873,
+    "shares": 3.3,
+    "target": 0.871,
+    "recovery_min": 0.8,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-17 14:43:44",
+    "title": "Israeli forces cross the Litani River by",
+    "denizz_price": 0.866,
+    "our_price": 0.83,
+    "shares": 26.6,
+    "target": 0.856,
+    "recovery_min": null,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-17 16:07:27",
+    "title": "US obtains Iranian enriched uranium by M",
+    "denizz_price": 0.74,
+    "our_price": 0.73,
+    "shares": 93.5,
+    "target": 0.73,
+    "recovery_min": null,
+    "outcome": "No"
+  },
+  {
+    "ts": "2026-04-17 17:27:41",
+    "title": "Iran x Israel/US conflict ends by April",
+    "denizz_price": 0.904,
+    "our_price": 0.904,
+    "shares": 13.1,
+    "target": 0.894,
+    "recovery_min": 0.31666666666666665,
+    "outcome": "Yes"
+  },
+  {
+    "ts": "2026-04-17 21:42:17",
+    "title": "Trump announces end of military operatio",
+    "denizz_price": 0.4,
+    "our_price": 0.36,
+    "shares": 117.1,
+    "target": 0.39,
+    "recovery_min": null,
+    "outcome": "Yes"
+  }
+]

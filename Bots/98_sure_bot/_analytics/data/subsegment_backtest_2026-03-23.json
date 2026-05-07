@@ -1,0 +1,821 @@
+{
+  "timestamp": "2026-03-23T18:17:00.694681",
+  "total_markets": 7331,
+  "total_losses": 36,
+  "main_type_stats": {
+    "other": {
+      "count": 2982,
+      "wins": 2976,
+      "losses": 6,
+      "win_rate": 99.79879275653923,
+      "loss_rate": 0.2012072434607646,
+      "pnl": 331.93,
+      "cost": 37247.0,
+      "roi_pct": 0.89,
+      "avg_resolve_h": 89.1,
+      "median_resolve_h": 94.4
+    },
+    "threshold": {
+      "count": 2497,
+      "wins": 2475,
+      "losses": 22,
+      "win_rate": 99.11894273127754,
+      "loss_rate": 0.881057268722467,
+      "pnl": 14.99,
+      "cost": 22727.0,
+      "roi_pct": 0.07,
+      "avg_resolve_h": 51.4,
+      "median_resolve_h": 42.6
+    },
+    "match_outcome": {
+      "count": 1309,
+      "wins": 1307,
+      "losses": 2,
+      "win_rate": 99.8472116119175,
+      "loss_rate": 0.15278838808250572,
+      "pnl": 108.01,
+      "cost": 10815.0,
+      "roi_pct": 1.0,
+      "avg_resolve_h": 124.6,
+      "median_resolve_h": 164.4
+    },
+    "prop": {
+      "count": 226,
+      "wins": 222,
+      "losses": 4,
+      "win_rate": 98.23008849557522,
+      "loss_rate": 1.7699115044247788,
+      "pnl": -21.75,
+      "cost": 3019.0,
+      "roi_pct": -0.72,
+      "avg_resolve_h": 30.8,
+      "median_resolve_h": 3.8
+    },
+    "counting": {
+      "count": 198,
+      "wins": 196,
+      "losses": 2,
+      "win_rate": 98.98989898989899,
+      "loss_rate": 1.0101010101010102,
+      "pnl": -0.81,
+      "cost": 1584.0,
+      "roi_pct": -0.05,
+      "avg_resolve_h": 86.7,
+      "median_resolve_h": 78.9
+    },
+    "sub_match": {
+      "count": 82,
+      "wins": 82,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 8.76,
+      "cost": 1048.0,
+      "roi_pct": 0.84,
+      "avg_resolve_h": 52.8,
+      "median_resolve_h": 4.4
+    },
+    "draw": {
+      "count": 37,
+      "wins": 37,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 3.89,
+      "cost": 296.0,
+      "roi_pct": 1.31,
+      "avg_resolve_h": 14.7,
+      "median_resolve_h": 3.0
+    }
+  },
+  "sub_type_stats": {
+    "weather": {
+      "count": 1731,
+      "wins": 1712,
+      "losses": 19,
+      "win_rate": 98.90236857307914,
+      "loss_rate": 1.0976314269208551,
+      "pnl": -38.75,
+      "cost": 13848.0,
+      "roi_pct": -0.28,
+      "avg_resolve_h": 43.9,
+      "median_resolve_h": 40.2
+    },
+    "uncategorized": {
+      "count": 1299,
+      "wins": 1297,
+      "losses": 2,
+      "win_rate": 99.84603541185527,
+      "loss_rate": 0.15396458814472672,
+      "pnl": 154.58,
+      "cost": 15474.0,
+      "roi_pct": 1.0,
+      "avg_resolve_h": 112.4,
+      "median_resolve_h": 156.0
+    },
+    "crypto_price": {
+      "count": 565,
+      "wins": 563,
+      "losses": 2,
+      "win_rate": 99.64601769911503,
+      "loss_rate": 0.35398230088495575,
+      "pnl": 45.67,
+      "cost": 6760.0,
+      "roi_pct": 0.68,
+      "avg_resolve_h": 59.7,
+      "median_resolve_h": 47.9
+    },
+    "election": {
+      "count": 549,
+      "wins": 548,
+      "losses": 1,
+      "win_rate": 99.81785063752277,
+      "loss_rate": 0.18214936247723132,
+      "pnl": 43.18,
+      "cost": 4546.0,
+      "roi_pct": 0.95,
+      "avg_resolve_h": 135.7,
+      "median_resolve_h": 165.7
+    },
+    "sports_other": {
+      "count": 502,
+      "wins": 500,
+      "losses": 2,
+      "win_rate": 99.60159362549801,
+      "loss_rate": 0.398406374501992,
+      "pnl": 44.63,
+      "cost": 6725.0,
+      "roi_pct": 0.66,
+      "avg_resolve_h": 47.8,
+      "median_resolve_h": 4.3
+    },
+    "crypto_other": {
+      "count": 478,
+      "wins": 477,
+      "losses": 1,
+      "win_rate": 99.7907949790795,
+      "loss_rate": 0.20920502092050208,
+      "pnl": 57.71,
+      "cost": 7030.0,
+      "roi_pct": 0.82,
+      "avg_resolve_h": 59.5,
+      "median_resolve_h": 23.1
+    },
+    "politics_other": {
+      "count": 476,
+      "wins": 476,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 63.62,
+      "cost": 5432.0,
+      "roi_pct": 1.17,
+      "avg_resolve_h": 99.7,
+      "median_resolve_h": 117.8
+    },
+    "sports_match": {
+      "count": 396,
+      "wins": 395,
+      "losses": 1,
+      "win_rate": 99.74747474747475,
+      "loss_rate": 0.25252525252525254,
+      "pnl": 29.26,
+      "cost": 3182.0,
+      "roi_pct": 0.92,
+      "avg_resolve_h": 113.9,
+      "median_resolve_h": 161.7
+    },
+    "other_match": {
+      "count": 286,
+      "wins": 286,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 28.23,
+      "cost": 2463.0,
+      "roi_pct": 1.15,
+      "avg_resolve_h": 135.0,
+      "median_resolve_h": 165.7
+    },
+    "other_threshold": {
+      "count": 189,
+      "wins": 188,
+      "losses": 1,
+      "win_rate": 99.47089947089947,
+      "loss_rate": 0.5291005291005291,
+      "pnl": 7.32,
+      "cost": 1995.0,
+      "roi_pct": 0.37,
+      "avg_resolve_h": 94.2,
+      "median_resolve_h": 94.4
+    },
+    "social_media_count": {
+      "count": 183,
+      "wins": 182,
+      "losses": 1,
+      "win_rate": 99.4535519125683,
+      "loss_rate": 0.546448087431694,
+      "pnl": 5.87,
+      "cost": 1464.0,
+      "roi_pct": 0.4,
+      "avg_resolve_h": 83.4,
+      "median_resolve_h": 72.0
+    },
+    "tech_other": {
+      "count": 177,
+      "wins": 177,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 19.28,
+      "cost": 1836.0,
+      "roi_pct": 1.05,
+      "avg_resolve_h": 94.0,
+      "median_resolve_h": 87.5
+    },
+    "other_prop": {
+      "count": 152,
+      "wins": 150,
+      "losses": 2,
+      "win_rate": 98.68421052631578,
+      "loss_rate": 1.3157894736842104,
+      "pnl": -4.02,
+      "cost": 2133.0,
+      "roi_pct": -0.19,
+      "avg_resolve_h": 32.2,
+      "median_resolve_h": 3.1
+    },
+    "soccer_prop": {
+      "count": 71,
+      "wins": 69,
+      "losses": 2,
+      "win_rate": 97.1830985915493,
+      "loss_rate": 2.8169014084507045,
+      "pnl": -17.96,
+      "cost": 841.0,
+      "roi_pct": -2.14,
+      "avg_resolve_h": 29.3,
+      "median_resolve_h": 8.5
+    },
+    "soccer_match": {
+      "count": 66,
+      "wins": 66,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 6.35,
+      "cost": 528.0,
+      "roi_pct": 1.2,
+      "avg_resolve_h": 45.3,
+      "median_resolve_h": 5.2
+    },
+    "esports_other": {
+      "count": 50,
+      "wins": 49,
+      "losses": 1,
+      "win_rate": 98.0,
+      "loss_rate": 2.0,
+      "pnl": -7.89,
+      "cost": 750.0,
+      "roi_pct": -1.05,
+      "avg_resolve_h": 5.8,
+      "median_resolve_h": 2.8
+    },
+    "other_sub_match": {
+      "count": 44,
+      "wins": 44,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 3.7,
+      "cost": 478.0,
+      "roi_pct": 0.78,
+      "avg_resolve_h": 95.5,
+      "median_resolve_h": 140.0
+    },
+    "esports_game_map": {
+      "count": 38,
+      "wins": 38,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 5.06,
+      "cost": 570.0,
+      "roi_pct": 0.89,
+      "avg_resolve_h": 4.3,
+      "median_resolve_h": 3.0
+    },
+    "draw": {
+      "count": 37,
+      "wins": 37,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 3.89,
+      "cost": 296.0,
+      "roi_pct": 1.31,
+      "avg_resolve_h": 14.7,
+      "median_resolve_h": 3.0
+    },
+    "stock_index": {
+      "count": 12,
+      "wins": 12,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.76,
+      "cost": 124.0,
+      "roi_pct": 0.61,
+      "avg_resolve_h": 129.6,
+      "median_resolve_h": 165.7
+    },
+    "esports_match": {
+      "count": 12,
+      "wins": 12,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.99,
+      "cost": 96.0,
+      "roi_pct": 1.03,
+      "avg_resolve_h": 113.8,
+      "median_resolve_h": 121.3
+    },
+    "earthquake_count": {
+      "count": 8,
+      "wins": 7,
+      "losses": 1,
+      "win_rate": 87.5,
+      "loss_rate": 12.5,
+      "pnl": -7.57,
+      "cost": 64.0,
+      "roi_pct": -11.83,
+      "avg_resolve_h": 116.4,
+      "median_resolve_h": 119.7
+    },
+    "other_count": {
+      "count": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.9,
+      "cost": 56.0,
+      "roi_pct": 1.6,
+      "avg_resolve_h": 137.6,
+      "median_resolve_h": 151.3
+    },
+    "esports_prop": {
+      "count": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.23,
+      "cost": 45.0,
+      "roi_pct": 0.52,
+      "avg_resolve_h": 2.2,
+      "median_resolve_h": 2.4
+    }
+  },
+  "bot_trade_stats": {
+    "sports_other": {
+      "count": 42,
+      "wins": 42,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 5.78
+    },
+    "uncategorized": {
+      "count": 34,
+      "wins": 33,
+      "losses": 1,
+      "win_rate": 97.05882352941177,
+      "pnl": -2.56
+    },
+    "other_prop": {
+      "count": 19,
+      "wins": 19,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 1.38
+    },
+    "social_media_count": {
+      "count": 17,
+      "wins": 17,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 1.63
+    },
+    "other_match": {
+      "count": 16,
+      "wins": 16,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 1.44
+    },
+    "politics_other": {
+      "count": 14,
+      "wins": 14,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 2.11
+    },
+    "esports_other": {
+      "count": 14,
+      "wins": 14,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 1.88
+    },
+    "esports_game_map": {
+      "count": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 1.95
+    },
+    "sports_match": {
+      "count": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.35
+    },
+    "crypto_other": {
+      "count": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.45
+    },
+    "esports_match": {
+      "count": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.1
+    },
+    "draw": {
+      "count": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.26
+    },
+    "other_threshold": {
+      "count": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.39
+    },
+    "election": {
+      "count": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.07
+    },
+    "tech_other": {
+      "count": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.12
+    },
+    "earthquake_count": {
+      "count": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "pnl": 0.1
+    }
+  },
+  "losses": [
+    {
+      "question": "Will the highest temperature in Chicago be between 70-71°F on March 20?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.995,
+      "category": "other",
+      "volume": 43915.62140399999,
+      "neg_risk": true
+    },
+    {
+      "question": "Will Albacete Balompié win on 2026-03-16?",
+      "main_type": "match_outcome",
+      "sub_type": "sports_match",
+      "entry_price": 0.975,
+      "category": "sports_other",
+      "volume": 27665.917439,
+      "neg_risk": true
+    },
+    {
+      "question": "Spread: Grizzlies (-3.5)",
+      "main_type": "prop",
+      "sub_type": "other_prop",
+      "entry_price": 0.973,
+      "category": "sports_other",
+      "volume": 125237.61441700012,
+      "neg_risk": false
+    },
+    {
+      "question": "Spread: Grizzlies (-2.5)",
+      "main_type": "prop",
+      "sub_type": "other_prop",
+      "entry_price": 0.989,
+      "category": "sports_other",
+      "volume": 102339.91595799995,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Miami be between 70-71°F on March 17?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.974,
+      "category": "other",
+      "volume": 36495.03450500004,
+      "neg_risk": true
+    },
+    {
+      "question": "Will Elon Musk post 320-339 tweets from March 13 to March 20, 2026?",
+      "main_type": "counting",
+      "sub_type": "social_media_count",
+      "entry_price": 0.9755,
+      "category": "other",
+      "volume": 1828081.5193170037,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 17°C on March 18?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.989,
+      "category": "other",
+      "volume": 29973.411652000003,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 46-47°F on March 18?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.985,
+      "category": "other",
+      "volume": 19608.50686200001,
+      "neg_risk": true
+    },
+    {
+      "question": "Will GroenLinks (GL) win the most seats in Amsterdam’s 2026 municipal election?",
+      "main_type": "match_outcome",
+      "sub_type": "election",
+      "entry_price": 0.985,
+      "category": "politics",
+      "volume": 39570.04572799999,
+      "neg_risk": true
+    },
+    {
+      "question": "Miami Open, Qualification: Arthur Fery vs Yunchaokete Bu",
+      "main_type": "other",
+      "sub_type": "sports_other",
+      "entry_price": 0.9775,
+      "category": "tennis",
+      "volume": 264506.69883000024,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the price of Bitcoin be between $68,000 and $70,000 on March 19?",
+      "main_type": "threshold",
+      "sub_type": "crypto_price",
+      "entry_price": 0.973,
+      "category": "crypto",
+      "volume": 149910.49844400014,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 16°C on March 18?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.982,
+      "category": "other",
+      "volume": 27043.067615999993,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 76-77°F on March 21?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9935,
+      "category": "other",
+      "volume": 22248.639326999986,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the price of Bitcoin be between $70,000 and $72,000 on March 18?",
+      "main_type": "threshold",
+      "sub_type": "crypto_price",
+      "entry_price": 0.9705,
+      "category": "crypto",
+      "volume": 129711.9274960004,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Chicago be between 68-69°F on March 22?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.986,
+      "category": "other",
+      "volume": 51459.53771399998,
+      "neg_risk": true
+    },
+    {
+      "question": "Will Tesla (TSLA) finish week of March 16 above $370?",
+      "main_type": "other",
+      "sub_type": "uncategorized",
+      "entry_price": 0.9745,
+      "category": "other",
+      "volume": 4862.637590000005,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Hong Kong be 22°C on March 21?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9875,
+      "category": "other",
+      "volume": 19789.875688000062,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Taipei be 21°C on March 19?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9795,
+      "category": "other",
+      "volume": 17695.695663,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Tokyo be 18°C on March 19?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.993,
+      "category": "other",
+      "volume": 49186.00129099997,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Madrid be 12°C or below on March 20?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.985,
+      "category": "other",
+      "volume": 15829.598568999996,
+      "neg_risk": true
+    },
+    {
+      "question": "Will there be exactly 2 earthquakes of magnitude 6.5 or higher worldwide by March 22?",
+      "main_type": "counting",
+      "sub_type": "earthquake_count",
+      "entry_price": 0.984,
+      "category": "other",
+      "volume": 44961.64919500002,
+      "neg_risk": true
+    },
+    {
+      "question": "Spread: Nottingham Forest FC (-2.5)",
+      "main_type": "prop",
+      "sub_type": "soccer_prop",
+      "entry_price": 0.972,
+      "category": "soccer",
+      "volume": 4139.20676,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 5°C on March 20?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.978,
+      "category": "other",
+      "volume": 32658.82997500002,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Toronto be 3°C on March 21?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9785,
+      "category": "other",
+      "volume": 22606.975026999993,
+      "neg_risk": true
+    },
+    {
+      "question": "Will Tesla (TSLA) close above $370 on March 20?",
+      "main_type": "threshold",
+      "sub_type": "other_threshold",
+      "entry_price": 0.9705,
+      "category": "other",
+      "volume": 12132.977407999997,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Tel Aviv be 20°C on March 21?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.974,
+      "category": "other",
+      "volume": 19261.443575,
+      "neg_risk": true
+    },
+    {
+      "question": "Dota 2: Team Essence vs Yangon Galacticos (BO3) - EPL World Series Southeast Asia Group Stage",
+      "main_type": "other",
+      "sub_type": "esports_other",
+      "entry_price": 0.97,
+      "category": "esports",
+      "volume": 24152.420189999997,
+      "neg_risk": false
+    },
+    {
+      "question": "Spread: Everton FC (-2.5)",
+      "main_type": "prop",
+      "sub_type": "soccer_prop",
+      "entry_price": 0.976,
+      "category": "soccer",
+      "volume": 6841.991346999999,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Ankara be 13°C on March 22?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.991,
+      "category": "other",
+      "volume": 47791.28256799996,
+      "neg_risk": true
+    },
+    {
+      "question": "Will Bitcoin dip to $69,000 on March 21?",
+      "main_type": "other",
+      "sub_type": "crypto_other",
+      "entry_price": 0.9805,
+      "category": "crypto",
+      "volume": 101334.46749500008,
+      "neg_risk": false
+    },
+    {
+      "question": "Will MrBeast's next video get between 35 and 40 million views on day 1?",
+      "main_type": "other",
+      "sub_type": "uncategorized",
+      "entry_price": 0.985,
+      "category": "other",
+      "volume": 545991.6273190007,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Shenzhen be 27°C on March 22?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.989,
+      "category": "other",
+      "volume": 156949.3237120002,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Taipei be 24°C on March 23?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.988,
+      "category": "other",
+      "volume": 37062.86756700001,
+      "neg_risk": true
+    },
+    {
+      "question": "Will the highest temperature in Wellington be 19°C on March 23?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9905,
+      "category": "other",
+      "volume": 67180.937914,
+      "neg_risk": true
+    },
+    {
+      "question": "Trail Blazers vs. Nuggets: O/U 240.5",
+      "main_type": "other",
+      "sub_type": "sports_other",
+      "entry_price": 0.98,
+      "category": "sports_other",
+      "volume": 141981.79608499992,
+      "neg_risk": false
+    },
+    {
+      "question": "Will the highest temperature in Shenzhen be 26°C on March 23?",
+      "main_type": "threshold",
+      "sub_type": "weather",
+      "entry_price": 0.9785,
+      "category": "other",
+      "volume": 19056.633113999993,
+      "neg_risk": true
+    }
+  ]
+}

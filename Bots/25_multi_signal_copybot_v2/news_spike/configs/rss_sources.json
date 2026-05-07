@@ -1,0 +1,48 @@
+{
+  "name": "News RSS feeds (live blogs + breaking)",
+  "_note": "Reuters RSS был отключён (feeds.reuters.com), AP требует auth. Используем Reuters/AP через Telegram (@raborji, @AP).",
+  "feeds": [
+    {
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "name": "Al Jazeera (all)",
+      "tier": 1,
+      "lang": "en",
+      "topic": "mideast"
+    },
+    {
+      "url": "https://www.axios.com/feeds/feed.rss",
+      "name": "Axios (all)",
+      "tier": 1,
+      "lang": "en",
+      "topic": "us_media"
+    },
+    {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "name": "BBC World News",
+      "tier": 1,
+      "lang": "en",
+      "topic": "west_media"
+    },
+    {
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "name": "BBC Middle East",
+      "tier": 1,
+      "lang": "en",
+      "topic": "mideast"
+    },
+    {
+      "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
+      "name": "Jerusalem Post",
+      "tier": 1,
+      "lang": "en",
+      "topic": "israel"
+    },
+    {
+      "url": "https://www.timesofisrael.com/feed/",
+      "name": "Times of Israel",
+      "tier": 1,
+      "lang": "en",
+      "topic": "israel"
+    }
+  ]
+}

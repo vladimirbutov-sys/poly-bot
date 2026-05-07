@@ -1,0 +1,871 @@
+{
+  "positions": {
+    "0x3a8b8dd59080215233e599f47b8989fbf72548f364728da0fe151f75385cc982": {
+      "condition_id": "0x377e7fe65cf198a7fc4fdae3f2136b74729279267858daaf96718b23bc2a5607",
+      "token_id": "60499458684380641857666641513383149627633695110197406276308452075860198022694",
+      "title": "Iran leadership change by December 31?",
+      "outcome": "No",
+      "event_slug": "iran-leadership-change-by",
+      "entry_price": 0.61,
+      "avg_entry": 0.6136075036075036,
+      "size_shares": 0.0,
+      "cost_usd": 8.5046,
+      "tier": "B",
+      "signal_player": "denizz",
+      "parts_filled": 2,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x3a8b8dd59080215233e599f47b8989fbf72548f364728da0fe151f75385cc982",
+        "0x20c24a75d9990be65b9c66e016d0c9f0b6339a95d3539f92c82218760c5f7cb4"
+      ],
+      "timestamp": "2026-03-31T13:36:16.702921+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 13.86,
+          "price": 0.67,
+          "revenue": 9.286200000000001,
+          "pnl": 0.781600000000001,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:13.965755+00:00"
+        }
+      ],
+      "final_pnl": 0.781600000000001
+    },
+    "0x01424ead0754e54d6909722611ef59670c3f0ebd38fb369778d433acb22bc7e6": {
+      "condition_id": "0x68beecc857017df8663fa36c0c86310dec7305aa88fe830c94651391314afc1c",
+      "token_id": "50143980393435996217714022897965886420387298227054033598176282877756178368402",
+      "title": "Trump announces end of military operations against Iran by April 15th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.24,
+      "avg_entry": 0.24,
+      "size_shares": 0.0,
+      "cost_usd": 10.5,
+      "tier": "A",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x01424ead0754e54d6909722611ef59670c3f0ebd38fb369778d433acb22bc7e6"
+      ],
+      "timestamp": "2026-03-31T13:46:16.897901+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 43.75,
+          "price": 0.22,
+          "revenue": 9.625,
+          "pnl": -0.875,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:14.954593+00:00"
+        }
+      ],
+      "final_pnl": -0.875
+    },
+    "0x1daacee161b0d8d01c34cb94d67bca6b4086429cce1606bf99ce9b668ab493c9": {
+      "condition_id": "0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb",
+      "token_id": "111988618077786263362718284278451225707405623288593888751575373086664059387290",
+      "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "outcome": "Yes",
+      "event_slug": "iran-leader-end-of-2026",
+      "entry_price": 0.589,
+      "avg_entry": 0.589,
+      "size_shares": 0.0,
+      "cost_usd": 2.945,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x1daacee161b0d8d01c34cb94d67bca6b4086429cce1606bf99ce9b668ab493c9"
+      ],
+      "timestamp": "2026-03-31T15:39:20.619141+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 5.0,
+          "price": 0.641,
+          "revenue": 3.205,
+          "pnl": 0.26000000000000023,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:15.946046+00:00"
+        }
+      ],
+      "final_pnl": 0.26000000000000023
+    },
+    "0xcfff9548f547afaf57c398b0a0cba7a76d6f7d87836628aedad7c51c60d5b0b9": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "97502225604188679731910255142329798475400025079543823690880164148891433611299",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.73,
+      "avg_entry": 0.73,
+      "size_shares": 0.0,
+      "cost_usd": 4.8034,
+      "tier": "B",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xcfff9548f547afaf57c398b0a0cba7a76d6f7d87836628aedad7c51c60d5b0b9"
+      ],
+      "timestamp": "2026-03-31T17:19:51.304958+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 6.58,
+          "price": 0.68,
+          "revenue": 4.4744,
+          "pnl": -0.32899999999999974,
+          "reason": "manual_sell_all",
+          "timestamp": "2026-04-01T09:53:17.069873+00:00"
+        }
+      ],
+      "final_pnl": -0.32899999999999974
+    },
+    "0x164d377a5ecc49e0876231dc1d374cfe32283bf7f996f6ee330ee3fca5239663": {
+      "condition_id": "0x68beecc857017df8663fa36c0c86310dec7305aa88fe830c94651391314afc1c",
+      "token_id": "50143980393435996217714022897965886420387298227054033598176282877756178368402",
+      "title": "Trump announces end of military operations against Iran by April 15th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.14,
+      "avg_entry": 0.14,
+      "size_shares": 0.0,
+      "cost_usd": 2.6250000000000004,
+      "tier": "A",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x164d377a5ecc49e0876231dc1d374cfe32283bf7f996f6ee330ee3fca5239663"
+      ],
+      "timestamp": "2026-04-06T14:08:44.500227+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 18.75,
+          "price": 0.25,
+          "revenue": 4.6875,
+          "pnl": 2.0624999999999996,
+          "reason": "Car_sell_detected",
+          "timestamp": "2026-04-07T21:51:47.338191+00:00"
+        }
+      ],
+      "final_pnl": 2.0624999999999996
+    },
+    "0x32ea91560ad2efef6ffc527a0a52d4366be1a58587012787e70b10fb18aafcc0": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "97502225604188679731910255142329798475400025079543823690880164148891433611299",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.63,
+      "avg_entry": 0.63,
+      "size_shares": 0.0,
+      "cost_usd": 3.15,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x32ea91560ad2efef6ffc527a0a52d4366be1a58587012787e70b10fb18aafcc0"
+      ],
+      "timestamp": "2026-04-06T14:08:46.013550+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 5.0,
+          "price": 0.56,
+          "revenue": 2.8000000000000003,
+          "pnl": -0.34999999999999964,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-07T20:24:23.041794+00:00"
+        }
+      ],
+      "final_pnl": -0.34999999999999964
+    },
+    "0xf22f49ac3d124ced2de754d8581076641751fd877641a69db1774db27bfed9ce": {
+      "condition_id": "0x80059ff4e694f878c0498f6f3a067ee7ca62dc2fc46251a4287b58355ce47bc5",
+      "token_id": "44149007410374101286260953227333745102128417138356632089802983317837574022801",
+      "title": "US x Iran ceasefire by April 30?",
+      "outcome": "Yes",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.27,
+      "avg_entry": 0.25714258164052456,
+      "size_shares": 0.0,
+      "cost_usd": 80.0022,
+      "tier": "S+",
+      "signal_player": "Car",
+      "parts_filled": 3,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xf22f49ac3d124ced2de754d8581076641751fd877641a69db1774db27bfed9ce",
+        "0x95d11f4ce6481ef28238bf850d7a45a22567cf6b560f56104922f02dbc218dfd",
+        "0xef6183c012e6ab5f782b92df644e6c1defda69c30bb86320344c100f2136fbd1"
+      ],
+      "timestamp": "2026-04-06T15:18:09.753556+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 311.12,
+          "price": 0.28,
+          "revenue": 87.1136,
+          "pnl": 7.111400000000003,
+          "reason": "Car_sell_detected",
+          "timestamp": "2026-04-07T14:26:32.159398+00:00"
+        }
+      ],
+      "final_pnl": 7.111400000000003
+    },
+    "0xb8b9ee4eab0fd7929213d19e118a1205b4b6d6c9413edef575a878c52774d5a0": {
+      "condition_id": "0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb",
+      "token_id": "111988618077786263362718284278451225707405623288593888751575373086664059387290",
+      "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "outcome": "Yes",
+      "event_slug": "iran-leader-end-of-2026",
+      "entry_price": 0.517,
+      "avg_entry": 0.517,
+      "size_shares": 0.0,
+      "cost_usd": 2.585,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xb8b9ee4eab0fd7929213d19e118a1205b4b6d6c9413edef575a878c52774d5a0"
+      ],
+      "timestamp": "2026-04-07T04:23:19.910400+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 5.0,
+          "price": 0.51,
+          "revenue": 2.55,
+          "pnl": -0.03500000000000014,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-07T09:09:00.774998+00:00"
+        }
+      ],
+      "final_pnl": -0.03500000000000014
+    },
+    "0x89dd5c5a7738a9d74b72f8b729fabf89ec196699eb9d00050eaffd86485a1159": {
+      "condition_id": "0x377e7fe65cf198a7fc4fdae3f2136b74729279267858daaf96718b23bc2a5607",
+      "token_id": "60499458684380641857666641513383149627633695110197406276308452075860198022694",
+      "title": "Iran leadership change by December 31?",
+      "outcome": "No",
+      "event_slug": "iran-leadership-change-by",
+      "entry_price": 0.54,
+      "avg_entry": 0.54,
+      "size_shares": 5.0,
+      "cost_usd": 2.7,
+      "tier": "B",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x89dd5c5a7738a9d74b72f8b729fabf89ec196699eb9d00050eaffd86485a1159"
+      ],
+      "timestamp": "2026-04-07T06:52:30.930580+00:00",
+      "status": "open"
+    },
+    "0xeeb28cfad31f51fe962572d08f7ef6b6d0ff5eed5390639bc9ea2c3eeb76e29a": {
+      "condition_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "token_id": "1910830010387565971650098373488592514702818137344973088263643820608151819241",
+      "title": "Will the U.S. invade Iran before 2027?",
+      "outcome": "No",
+      "event_slug": "will-the-us-invade-iran-before-2027",
+      "entry_price": 0.43,
+      "avg_entry": 0.4216769732403867,
+      "size_shares": 177.88,
+      "cost_usd": 75.00789999999999,
+      "tier": "S+",
+      "signal_player": "denizz",
+      "parts_filled": 3,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xeeb28cfad31f51fe962572d08f7ef6b6d0ff5eed5390639bc9ea2c3eeb76e29a",
+        "0x82386d6779d553d362d66becfc4f50d78be8a10541311cc97eb4b31cad0410ab",
+        "0xeb0964363d6188eb7677795e6c5d11e6f3bf1cc254ac3570e0eef9e4c46ab063"
+      ],
+      "timestamp": "2026-04-07T09:24:31.035566+00:00",
+      "status": "open"
+    },
+    "0x900a151b59428d5e1b56f358e5ba9f5cfdf089a67cd056d33adc13916fa6a9cb": {
+      "condition_id": "0x81b06cb917c9a2aabc67a7765bc3c640e88a699bbf451b29915049c0766cde04",
+      "token_id": "91234452361450605263734013436205650165110345459845371466629272470861583403438",
+      "title": "US x Iran ceasefire by June 30?",
+      "outcome": "Yes",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.59,
+      "avg_entry": 0.5929058504455638,
+      "size_shares": 51.62,
+      "cost_usd": 30.6058,
+      "tier": "S",
+      "strategy": "standard",
+      "signal_player": "Car",
+      "parts_filled": 2,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x900a151b59428d5e1b56f358e5ba9f5cfdf089a67cd056d33adc13916fa6a9cb",
+        "0x426524a9bba88a1d1fd1c560bfbe7654976e80464b04bbdfc800f41de445d4e8"
+      ],
+      "timestamp": "2026-04-07T15:27:50.418147+00:00",
+      "status": "won",
+      "final_pnl": 21.0142,
+      "pnl": 21.0142,
+      "close_reason": "manual_fix_2026-04-08_redeem_lookup"
+    },
+    "0x40692805962909f217a0776dbed86ad23f76808aa5236c46599203fea32c31ea": {
+      "condition_id": "0xbc0a2d49b4bea7145a8ca4f43644f82e8013620f45f80665406415c4dfe40966",
+      "token_id": "78040220738389492164014846495298440201550019800969987698950173956182659663573",
+      "title": "Trump announces Hormuz deadline extension today?",
+      "outcome": "No",
+      "event_slug": "trump-announces-hormuz-deadline-extension-today",
+      "entry_price": 0.51,
+      "avg_entry": 0.51,
+      "size_shares": 0.0,
+      "cost_usd": 5.4009,
+      "tier": "B",
+      "strategy": "standard",
+      "signal_player": "Car",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x40692805962909f217a0776dbed86ad23f76808aa5236c46599203fea32c31ea"
+      ],
+      "timestamp": "2026-04-07T16:59:17.706967+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 10.59,
+          "price": 0.6,
+          "revenue": 6.354,
+          "pnl": 0.9531000000000001,
+          "reason": "Car_sell_detected",
+          "timestamp": "2026-04-07T17:12:48.030736+00:00"
+        }
+      ],
+      "final_pnl": 0.9531000000000001
+    },
+    "0x2d627744dc376101dfedee5e08ae79014c60fe47e52afbfc9d68988bbefcb18e": {
+      "condition_id": "0xbc0a2d49b4bea7145a8ca4f43644f82e8013620f45f80665406415c4dfe40966",
+      "token_id": "78040220738389492164014846495298440201550019800969987698950173956182659663573",
+      "title": "Trump announces Hormuz deadline extension today?",
+      "outcome": "No",
+      "event_slug": "trump-announces-hormuz-deadline-extension-today",
+      "entry_price": 0.44,
+      "avg_entry": 0.44,
+      "size_shares": 0.0,
+      "cost_usd": 2.2,
+      "tier": "B",
+      "strategy": "standard",
+      "signal_player": "",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x2d627744dc376101dfedee5e08ae79014c60fe47e52afbfc9d68988bbefcb18e"
+      ],
+      "timestamp": "2026-04-07T20:12:05.588481+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 5.0,
+          "price": 0.09,
+          "revenue": 0.44999999999999996,
+          "pnl": -1.7500000000000002,
+          "reason": "stop_loss_80%",
+          "timestamp": "2026-04-07T22:32:54.257951+00:00"
+        }
+      ],
+      "final_pnl": -1.7500000000000002
+    },
+    "0x31625f2feaf00d2fb5003d07854352de515f2d1dcbaf1aefa713cf0b50ec45ad": {
+      "condition_id": "0x4ccff8c606ad71080c7611d28f1593a528a8ca6c11c1fb63bfa24a7eb2ad30d7",
+      "token_id": "8128945458646698903806569632554420186698498029234030899768687922863618111402",
+      "title": "US x Iran ceasefire by December 31?",
+      "outcome": "Yes",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.8,
+      "avg_entry": 0.8,
+      "size_shares": 0.0,
+      "cost_usd": 36.0,
+      "tier": "S",
+      "strategy": "standard",
+      "signal_player": "aenews2",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x31625f2feaf00d2fb5003d07854352de515f2d1dcbaf1aefa713cf0b50ec45ad"
+      ],
+      "timestamp": "2026-04-07T20:55:14.960321+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 45.0,
+          "price": 0.991,
+          "revenue": 44.595,
+          "pnl": 8.594999999999999,
+          "reason": "price_target_90c",
+          "timestamp": "2026-04-07T22:59:08.682087+00:00"
+        }
+      ],
+      "final_pnl": 8.594999999999999
+    },
+    "0x12a60c57f4425ee06ad9e284f876585550cee0968a547e59f8b361d62df68a12": {
+      "condition_id": "0xa6ddb7146f48a12dbf73456d654211b01d7493829932c31b7fe85d82120d338f",
+      "token_id": "103971336418419351548990142781195320713490282483637854831265186666012554199721",
+      "title": "Iran x Israel/US conflict ends by April 30?",
+      "outcome": "Yes",
+      "event_slug": "iran-x-israelus-conflict-ends-by",
+      "entry_price": 0.38,
+      "avg_entry": 0.38,
+      "size_shares": 0.0,
+      "cost_usd": 143.3816,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x12a60c57f4425ee06ad9e284f876585550cee0968a547e59f8b361d62df68a12"
+      ],
+      "timestamp": "2026-04-07T21:03:21.467105+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 377.32,
+          "price": 0.68,
+          "revenue": 256.5776,
+          "pnl": 113.19600000000003,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-08T01:39:14.473294+00:00"
+        }
+      ],
+      "final_pnl": 113.19600000000003
+    },
+    "0x3fdbfab06099570ee1f0511ecda66360be1f7ccdde150f0a8f363d5a49af55b7": {
+      "condition_id": "0x4c5701bcde0b8fb7d7f48c8e9d20245a6caa58c61a77f981fad98f2bfa0b1bc7",
+      "token_id": "55194745453074297560900438908357749978780021444937743754846798173575377021411",
+      "title": "US x Iran ceasefire by April 7?",
+      "outcome": "No",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.68,
+      "avg_entry": 0.68,
+      "size_shares": 0.0,
+      "cost_usd": 144.0036,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "Car",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x3fdbfab06099570ee1f0511ecda66360be1f7ccdde150f0a8f363d5a49af55b7"
+      ],
+      "timestamp": "2026-04-07T21:48:31.426262+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 48.04238455836043,
+          "price": 0.667,
+          "revenue": 32.04427050042641,
+          "pnl": -0.6245509992586875,
+          "reason": "Car_partial_23%",
+          "timestamp": "2026-04-07T22:25:54.877547+00:00"
+        },
+        {
+          "shares": 163.72761544163959,
+          "price": 0.65,
+          "revenue": 106.42295003706573,
+          "pnl": -4.9118284632491935,
+          "reason": "Car_sell_detected_retry",
+          "timestamp": "2026-04-07T22:31:10.583586+00:00"
+        }
+      ],
+      "final_pnl": -5.536379462507881
+    },
+    "0x8e2694bb93b3624b734f054a865ffc5d7231a86ed576919a4f6ab23c71aea658": {
+      "condition_id": "0x8183a221622f2d5d2b46da86c80d55a61f43d35829589e03c1efae9d072638c5",
+      "token_id": "21743669032210695168079601505378236205866986767926346409604806906483294819314",
+      "title": "Iran x Israel/US conflict ends by April 7?",
+      "outcome": "Yes",
+      "event_slug": "iran-x-israelus-conflict-ends-by",
+      "entry_price": 0.194,
+      "avg_entry": 0.194,
+      "size_shares": 0.0,
+      "cost_usd": 150.00080000000003,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x8e2694bb93b3624b734f054a865ffc5d7231a86ed576919a4f6ab23c71aea658"
+      ],
+      "timestamp": "2026-04-07T21:56:11.407188+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 773.2,
+          "price": 0.27,
+          "revenue": 208.76400000000004,
+          "pnl": 58.76320000000001,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-08T01:40:46.741298+00:00"
+        }
+      ],
+      "final_pnl": 58.76320000000001
+    },
+    "0xd70b19845b0044af1f425017c8284607cdb510257f94a8a105fcf9f642eb1f14": {
+      "condition_id": "0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4",
+      "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+      "title": "Trump announces end of military operations against Iran by April 30th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.52,
+      "avg_entry": 0.52,
+      "size_shares": 0.0,
+      "cost_usd": 31.5016,
+      "tier": "A",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xd70b19845b0044af1f425017c8284607cdb510257f94a8a105fcf9f642eb1f14"
+      ],
+      "timestamp": "2026-04-07T22:43:22.151571+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 60.58,
+          "price": 0.6,
+          "revenue": 36.348,
+          "pnl": 4.846399999999999,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-08T03:14:13.645888+00:00"
+        }
+      ],
+      "final_pnl": 4.846399999999999
+    },
+    "0xff20597b1491f79abdc85e83f013f04cb493d6e94b16c5634f83e7d1c04efa1a": {
+      "condition_id": "0x9049d96597900ba0f3013604dc7adc3dd6e7e4764c5a0c16318605c40ac1ee96",
+      "token_id": "61105898512331423456932766287679410148969111620575334880263459667275737814007",
+      "title": "Israeli forces cross the Litani River by June 30?",
+      "outcome": "No",
+      "event_slug": "israeli-forces-cross-the-litani-river-by-june-30",
+      "entry_price": 0.62,
+      "avg_entry": 0.62,
+      "size_shares": 101.62,
+      "cost_usd": 63.004400000000004,
+      "tier": "S",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xff20597b1491f79abdc85e83f013f04cb493d6e94b16c5634f83e7d1c04efa1a"
+      ],
+      "timestamp": "2026-04-07T22:58:27.796306+00:00",
+      "status": "open"
+    },
+    "0x36afa27d9e26218990b97c5092b5e29300211231bacf43f30e80f4845d234498": {
+      "condition_id": "0x773abaa5fe55e5cde51a261f444b7921652a4e059ead6b3be9fe56499c2d4609",
+      "token_id": "85191934649046129480174964255278880752271767733539167443243111973456166096127",
+      "title": "US x Iran ceasefire by April 15?",
+      "outcome": "Yes",
+      "event_slug": "us-x-iran-ceasefire-by",
+      "entry_price": 0.975,
+      "avg_entry": 0.975,
+      "size_shares": 0.0,
+      "cost_usd": 48.009,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "Car",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x36afa27d9e26218990b97c5092b5e29300211231bacf43f30e80f4845d234498"
+      ],
+      "timestamp": "2026-04-07T22:59:14.502696+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 49.24,
+          "price": 0.963,
+          "revenue": 47.41812,
+          "pnl": -0.5908799999999985,
+          "reason": "Car_sell_detected",
+          "timestamp": "2026-04-07T23:16:10.252376+00:00"
+        }
+      ],
+      "final_pnl": -0.5908799999999985
+    },
+    "0xccffe6df38b5f175b1afdecf83540fdc2e83e4e552f8b7cfaa2bcb8fc704db14": {
+      "condition_id": "0xc7140ddb5ae5dc94d4553fb05d4600816f33ff024844cebe8326f4c41c4a1a47",
+      "token_id": "71076253073516159380702286801576688253388973161726933428722204989810362065275",
+      "title": "Israel x Hezbollah ceasefire by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "israel-x-hezbollah-ceasefire-by",
+      "entry_price": 0.436,
+      "avg_entry": 0.436,
+      "size_shares": 0.0,
+      "cost_usd": 35.00208,
+      "tier": "A",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xccffe6df38b5f175b1afdecf83540fdc2e83e4e552f8b7cfaa2bcb8fc704db14"
+      ],
+      "timestamp": "2026-04-07T23:01:20.514666+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 80.28,
+          "price": 0.867,
+          "revenue": 69.60276,
+          "pnl": 34.600680000000004,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-08T00:52:07.632533+00:00"
+        }
+      ],
+      "final_pnl": 34.600680000000004
+    },
+    "0x7e7351576cf474ebb4d466391f7a9e2574ccaab0910b1924b5113ce769f47408": {
+      "condition_id": "0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4",
+      "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+      "title": "Trump announces end of military operations against Iran by April 30th?",
+      "outcome": "Yes",
+      "event_slug": "trump-announces-end-of-military-operations-against-iran-by",
+      "entry_price": 0.59,
+      "avg_entry": 0.59,
+      "size_shares": 0.0,
+      "cost_usd": 31.5001,
+      "tier": "upgrade",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x7e7351576cf474ebb4d466391f7a9e2574ccaab0910b1924b5113ce769f47408"
+      ],
+      "timestamp": "2026-04-08T00:58:14.164945+00:00",
+      "status": "sold",
+      "sells": [
+        {
+          "shares": 53.39,
+          "price": 0.6,
+          "revenue": 32.034,
+          "pnl": 0.5338999999999992,
+          "reason": "denizz_sell_detected",
+          "timestamp": "2026-04-08T03:14:15.876894+00:00"
+        }
+      ],
+      "final_pnl": 0.5338999999999992
+    },
+    "0x8aaa6e62b977a02250f24b0dad084fa97e2d130b1d38e2fb8b618d9d14c47850": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "30561980169268678819735256982225694704116127378508623571936660192492766073388",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "No",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.89,
+      "avg_entry": 0.89,
+      "size_shares": 15.74,
+      "cost_usd": 8.001100000000001,
+      "tier": "B",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x8aaa6e62b977a02250f24b0dad084fa97e2d130b1d38e2fb8b618d9d14c47850"
+      ],
+      "timestamp": "2026-04-08T02:00:23.786886+00:00",
+      "status": "open",
+      "_tracker_fix_note": "adjusted from 8.99 to 15.74 on 2026-04-08"
+    },
+    "0x68038b5b34ca3f52715bdef4e43e3656def5ab666b467279da27eb71391f21ea": {
+      "condition_id": "0x3fe18d2b6303ee3a7e406aab679dbc0b0f7504dc6b477a31c69c6ffb04e9e11c",
+      "token_id": "49232347074200257286333705540570950896584522176544392767367009767750446431044",
+      "title": "Israel strike on Yemen by June 30, 2026?",
+      "outcome": "No",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.7,
+      "avg_entry": 0.7,
+      "size_shares": 19.29,
+      "cost_usd": 13.502999999999998,
+      "tier": "upgrade",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x68038b5b34ca3f52715bdef4e43e3656def5ab666b467279da27eb71391f21ea"
+      ],
+      "timestamp": "2026-04-08T02:00:54.136133+00:00",
+      "status": "open"
+    },
+    "0xb15f057801d65c9176163074be96fc853d049ee6400e51e7aee4acf9936479bf": {
+      "condition_id": "0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+      "token_id": "77893140510362582253172593084218413010407941075415081594586195705930819989216",
+      "title": "Strait of Hormuz traffic returns to normal by end of April?",
+      "outcome": "Yes",
+      "event_slug": "strait-of-hormuz-traffic-returns-to-normal-by-april-30",
+      "entry_price": 0.46,
+      "avg_entry": 0.46,
+      "size_shares": 59.97,
+      "cost_usd": 27.5862,
+      "tier": "A",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xb15f057801d65c9176163074be96fc853d049ee6400e51e7aee4acf9936479bf"
+      ],
+      "timestamp": "2026-04-08T04:13:02.831402+00:00",
+      "status": "open"
+    },
+    "0x5ee049f3df3719e289885c121513a4513a79abf28d3d3d8dae62a059c5b9e4ba": {
+      "condition_id": "0x8bf2d7d344b89a434bba5388eca327bdc5267f0e053f6bc63d75534296605b89",
+      "token_id": "76011167108286483296472407639672910280580167252554566262915317631749766901901",
+      "title": "Will the United States send warships through the Strait of Hormuz by April 30, 2026?",
+      "outcome": "Yes",
+      "event_slug": "which-countries-will-send-warships-through-the-strait-of-hormuz-by-april-30",
+      "entry_price": 0.35,
+      "avg_entry": 0.35,
+      "size_shares": 47.15,
+      "cost_usd": 20.002499999999998,
+      "tier": "B",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x5ee049f3df3719e289885c121513a4513a79abf28d3d3d8dae62a059c5b9e4ba"
+      ],
+      "timestamp": "2026-04-08T04:58:18.843827+00:00",
+      "status": "open",
+      "_tracker_fix_note": "adjusted from 57.15 to 47.15 on 2026-04-08"
+    },
+    "0xfbc3a44ccad7b067f54c014a8c534dac75093f47269a73333091e9a980c274e7": {
+      "condition_id": "0xb7dfd4e3da4055435f1db97db441391729df4a9e4b41b5f6d0212fc490eb5445",
+      "token_id": "30561980169268678819735256982225694704116127378508623571936660192492766073388",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "outcome": "No",
+      "event_slug": "israel-strike-on-yemen-by-593",
+      "entry_price": 0.89,
+      "avg_entry": 0.89,
+      "size_shares": 15.74,
+      "cost_usd": 6.0075,
+      "tier": "upgrade",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0xfbc3a44ccad7b067f54c014a8c534dac75093f47269a73333091e9a980c274e7"
+      ],
+      "timestamp": "2026-04-08T05:03:25.022475+00:00",
+      "status": "open",
+      "_tracker_fix_note": "adjusted from 6.75 to 15.74 on 2026-04-08"
+    },
+    "0x0790b4c8d662acffd371c7d7dfb0f57fe8fc6c10374987301acf5978c7fe009c": {
+      "condition_id": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
+      "token_id": "106181075047366745139197108801635573283215248045056329679360376976893016488727",
+      "title": "Will the Iranian regime fall before 2027?",
+      "outcome": "No",
+      "event_slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+      "entry_price": 0.82,
+      "avg_entry": 0.82,
+      "size_shares": 73.18,
+      "cost_usd": 60.007600000000004,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x0790b4c8d662acffd371c7d7dfb0f57fe8fc6c10374987301acf5978c7fe009c"
+      ],
+      "timestamp": "2026-04-08T06:21:15.696673+00:00",
+      "status": "open"
+    },
+    "0x2c3837ed50a82c2fd591e454daf4e54e9b68af5b0a9d347ac9aeb6b019251f08": {
+      "condition_id": "0x8183a221622f2d5d2b46da86c80d55a61f43d35829589e03c1efae9d072638c5",
+      "token_id": "21743669032210695168079601505378236205866986767926346409604806906483294819314",
+      "title": "Iran x Israel/US conflict ends by April 7?",
+      "outcome": "Yes",
+      "event_slug": "iran-x-israelus-conflict-ends-by",
+      "entry_price": 0.543,
+      "avg_entry": 0.543,
+      "size_shares": 331.5,
+      "cost_usd": 180.0045,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x2c3837ed50a82c2fd591e454daf4e54e9b68af5b0a9d347ac9aeb6b019251f08"
+      ],
+      "timestamp": "2026-04-08T07:44:37.578610+00:00",
+      "status": "open"
+    },
+    "0x8c0f82762cfc22aceccc00738084453cab57cd804c65b776e0e930ddf6d20673": {
+      "condition_id": "0x2f224fca80a6a6b3a2a200406473fc8b33da6bcf5af83dc3fe9021a541c0519d",
+      "token_id": "97107770187587683506815626974888163324622836988014033022064807674186740440043",
+      "title": "Will Reza Pahlavi enter Iran by December 31?",
+      "outcome": "No",
+      "event_slug": "will-reza-pahlavi-enter-iran-by-june-30",
+      "entry_price": 0.86,
+      "avg_entry": 0.86,
+      "size_shares": 93.03,
+      "cost_usd": 80.0058,
+      "tier": "S+",
+      "strategy": "standard",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 3,
+      "order_ids": [
+        "0x8c0f82762cfc22aceccc00738084453cab57cd804c65b776e0e930ddf6d20673"
+      ],
+      "timestamp": "2026-04-08T07:52:42.097170+00:00",
+      "status": "open"
+    },
+    "recovered_hezbollah_april30_no_2026_04_08": {
+      "condition_id": "0xc7140ddb5ae5dc94d4553fb05d4600816f33ff024844cebe8326f4c41c4a1a47",
+      "token_id": "38902668316823899581329108924389881286009857048696806385615295625967267371713",
+      "title": "Israel x Hezbollah ceasefire by April 30, 2026?",
+      "outcome": "No",
+      "event_slug": "israel-x-hezbollah-ceasefire-by",
+      "entry_price": 0.4699,
+      "avg_entry": 0.4699,
+      "size_shares": 205.84,
+      "cost_usd": 96.74,
+      "tier": "?",
+      "strategy": "manual_recovery",
+      "signal_player": "denizz",
+      "parts_filled": 1,
+      "parts_planned": 1,
+      "order_ids": [],
+      "timestamp": "2026-04-08T08:00:00+00:00",
+      "status": "open",
+      "_recovery_note": "Orphaned position recovered from Polymarket API — was not in tracker"
+    }
+  },
+  "stats": {
+    "total_bets": 36,
+    "wins": 0,
+    "losses": 1,
+    "sells": 19,
+    "total_pnl": 243.2517,
+    "peak_balance": 2049.532120537492,
+    "current_balance": 1700.0060205374923
+  }
+}

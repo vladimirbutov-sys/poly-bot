@@ -1,0 +1,756 @@
+{
+  "generated_at": "2026-03-21T16:45:47.867Z",
+  "scanner_stats": {
+    "total_markets": 26986,
+    "resolved": 14751,
+    "wins": 14737,
+    "losses": 7,
+    "win_rate": "99.91%",
+    "high_price_losses_97plus": 7,
+    "high_price_wins_97plus": 14737
+  },
+  "loss_by_bucket": {
+    "99+": {
+      "losses": 1,
+      "wins": 12292,
+      "total": 12293
+    },
+    "98-99": {
+      "losses": 0,
+      "wins": 1038,
+      "total": 1038
+    },
+    "97-98": {
+      "losses": 6,
+      "wins": 1407,
+      "total": 1413
+    },
+    "96-97": {
+      "losses": 0,
+      "wins": 0,
+      "total": 0
+    },
+    "95-96": {
+      "losses": 0,
+      "wins": 0,
+      "total": 0
+    },
+    "below-95": {
+      "losses": 0,
+      "wins": 0,
+      "total": 0
+    }
+  },
+  "loss_by_category": {
+    "crypto": {
+      "losses": 4,
+      "wins": 1230
+    },
+    "sports_other": {
+      "losses": 3,
+      "wins": 8242
+    }
+  },
+  "pattern_loss_map_97plus": {
+    "bitcoin_crypto": {
+      "losses": 4,
+      "wins": 1229,
+      "total": 1233,
+      "loss_rate": "0.3%",
+      "examples": [
+        {
+          "question": "Will the price of Solana be above $90 on March 18?",
+          "price": 0.97,
+          "category": "crypto"
+        },
+        {
+          "question": "Will the price of Ethereum be between $2,100 and $2,200 on March 18?",
+          "price": 0.9795,
+          "category": "crypto"
+        },
+        {
+          "question": "Will the price of Ethereum be above $2,200 on March 18?",
+          "price": 0.979,
+          "category": "crypto"
+        }
+      ]
+    },
+    "financial": {
+      "losses": 4,
+      "wins": 680,
+      "total": 684,
+      "loss_rate": "0.6%",
+      "examples": [
+        {
+          "question": "Will the price of Solana be above $90 on March 18?",
+          "price": 0.97,
+          "category": "crypto"
+        },
+        {
+          "question": "Will the price of Ethereum be between $2,100 and $2,200 on March 18?",
+          "price": 0.9795,
+          "category": "crypto"
+        },
+        {
+          "question": "Will the price of Ethereum be above $2,200 on March 18?",
+          "price": 0.979,
+          "category": "crypto"
+        }
+      ]
+    },
+    "total_goals_kills": {
+      "losses": 1,
+      "wins": 1684,
+      "total": 1685,
+      "loss_rate": "0.1%",
+      "examples": [
+        {
+          "question": "Map 1: Odd/Even Total Kills?",
+          "price": 0.9945,
+          "category": "sports_other"
+        }
+      ]
+    },
+    "spread": {
+      "losses": 1,
+      "wins": 1529,
+      "total": 1530,
+      "loss_rate": "0.1%",
+      "examples": [
+        {
+          "question": "Spread: Kashima Antlers (-2.5)",
+          "price": 0.9755,
+          "category": "sports_other"
+        }
+      ]
+    },
+    "_other": {
+      "losses": 1,
+      "wins": 0,
+      "total": 1,
+      "loss_rate": "100.0%",
+      "examples": [
+        {
+          "question": "Game 1: Any Player Penta Kill?",
+          "price": 0.974,
+          "category": "sports_other"
+        }
+      ]
+    }
+  },
+  "uncovered_filter_gaps": {},
+  "open_position_risk_assessment": [
+    {
+      "title": "Will Bitcoin dip to $66,000 March 16-22?",
+      "entry_price": 0.983,
+      "current_price": 0.954,
+      "unrealized_pnl": -0.2952,
+      "risk_level": "WATCH",
+      "patterns": "bitcoin_crypto(0.3%), dip_to(0.0%)",
+      "max_pattern_loss_rate": 0.32441200324412006
+    },
+    {
+      "title": "Will Bitcoin dip to $64,000 March 16-22?",
+      "entry_price": 0.988,
+      "current_price": 0.993,
+      "unrealized_pnl": 0.0507,
+      "risk_level": "OK",
+      "patterns": "bitcoin_crypto(0.3%), dip_to(0.0%)",
+      "max_pattern_loss_rate": 0.32441200324412006
+    },
+    {
+      "title": "Will Bitcoin dip to $62,000 March 16-22?",
+      "entry_price": 0.989,
+      "current_price": 0.995,
+      "unrealized_pnl": 0.0607,
+      "risk_level": "OK",
+      "patterns": "bitcoin_crypto(0.3%), dip_to(0.0%)",
+      "max_pattern_loss_rate": 0.32441200324412006
+    },
+    {
+      "title": "Will Bitcoin dip to $60,000 March 16-22?",
+      "entry_price": 0.989,
+      "current_price": 0.9985,
+      "unrealized_pnl": 0.0476,
+      "risk_level": "OK",
+      "patterns": "bitcoin_crypto(0.3%), dip_to(0.0%)",
+      "max_pattern_loss_rate": 0.32441200324412006
+    },
+    {
+      "title": "Will Ethereum dip to $1,900 March 16-22?",
+      "entry_price": 0.982,
+      "current_price": 0.993,
+      "unrealized_pnl": 0.1121,
+      "risk_level": "OK",
+      "patterns": "bitcoin_crypto(0.3%), dip_to(0.0%)",
+      "max_pattern_loss_rate": 0.32441200324412006
+    },
+    {
+      "title": "Spread: Hellas Verona FC (-2.5)",
+      "entry_price": 0.979,
+      "current_price": 0.9875,
+      "unrealized_pnl": 0.0425,
+      "risk_level": "OK",
+      "patterns": "spread(0.1%)",
+      "max_pattern_loss_rate": 0.065359477124183
+    },
+    {
+      "title": "Will there be exactly 2 earthquakes of magnitude 6.5 or higher worldwide by March 22?",
+      "entry_price": 0.979,
+      "current_price": 0.153,
+      "unrealized_pnl": -8.4417,
+      "risk_level": "CRITICAL",
+      "patterns": "earthquake(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will there be exactly 3 earthquakes of magnitude 6.5 or higher worldwide by March 22?",
+      "entry_price": 0.992,
+      "current_price": 0.866,
+      "unrealized_pnl": -0.63,
+      "risk_level": "CRITICAL",
+      "patterns": "earthquake(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 420-439 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.991,
+      "current_price": 0.866,
+      "unrealized_pnl": -0.6262,
+      "risk_level": "CRITICAL",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Jhonny Plata win the 2026 La Paz mayoral election?",
+      "entry_price": 0.982,
+      "current_price": 0.904,
+      "unrealized_pnl": -0.7948,
+      "risk_level": "CRITICAL",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 440-459 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.99,
+      "current_price": 0.9145,
+      "unrealized_pnl": -0.3775,
+      "risk_level": "CRITICAL",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 60-79 Truth Social posts from March 17 to March 24, 2026?",
+      "entry_price": 0.979,
+      "current_price": 0.918,
+      "unrealized_pnl": -0.6234,
+      "risk_level": "CRITICAL",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Exact Score: Fulham FC 3 - 3 Burnley FC?",
+      "entry_price": 0.991,
+      "current_price": 0.951,
+      "unrealized_pnl": -0.2004,
+      "risk_level": "DANGER",
+      "patterns": "exact_score(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 460-479 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.992,
+      "current_price": 0.956,
+      "unrealized_pnl": -0.18,
+      "risk_level": "DANGER",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 480-499 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.993,
+      "current_price": 0.9695,
+      "unrealized_pnl": -0.2369,
+      "risk_level": "WATCH",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 40-59 Truth Social posts from March 20 to March 27, 2026?",
+      "entry_price": 0.988,
+      "current_price": 0.965,
+      "unrealized_pnl": -0.233,
+      "risk_level": "WATCH",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Lars Løkke Rasmussen be the next prime minister of Denmark after the 2026 parliamentary elections?",
+      "entry_price": 0.97,
+      "current_price": 0.9505,
+      "unrealized_pnl": -0.0975,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Right-Wing Wave in French Mayoral Elections?",
+      "entry_price": 0.992,
+      "current_price": 0.973,
+      "unrealized_pnl": -0.1917,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%), right_wing_wave(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 440-459 tweets from March 20 to March 27, 2026?",
+      "entry_price": 0.98,
+      "current_price": 0.9635,
+      "unrealized_pnl": -0.1685,
+      "risk_level": "WATCH",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will the Slovenian Democratic Party (SDS) win 35-39 seats in the Slovenian National Assembly in this election?",
+      "entry_price": 0.968,
+      "current_price": 0.9525,
+      "unrealized_pnl": -0.1603,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%), seats_bracket(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Corey Conners win the 2026 Valspar Championship?",
+      "entry_price": 0.985,
+      "current_price": 0.9705,
+      "unrealized_pnl": -0.1473,
+      "risk_level": "WATCH",
+      "patterns": "golf_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Xavier Iturralde win the 2026 La Paz mayoral election?",
+      "entry_price": 0.979,
+      "current_price": 0.9665,
+      "unrealized_pnl": -0.0625,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Rodrigo Rivera win the 2026 La Paz mayoral election?",
+      "entry_price": 0.993,
+      "current_price": 0.9805,
+      "unrealized_pnl": -0.0625,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Anže Logar be the next Prime Minister of Slovenia?",
+      "entry_price": 0.98,
+      "current_price": 0.9695,
+      "unrealized_pnl": -0.0526,
+      "risk_level": "WATCH",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 460-479 tweets from March 20 to March 27, 2026?",
+      "entry_price": 0.988,
+      "current_price": 0.9775,
+      "unrealized_pnl": -0.1064,
+      "risk_level": "WATCH",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Trump say \"Migrant Crime\" this week? (March 22)",
+      "entry_price": 0.965,
+      "current_price": 0.955,
+      "unrealized_pnl": -0.1037,
+      "risk_level": "WATCH",
+      "patterns": "will_say_word(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Alex Vanopslagh be the next prime minister of Denmark after the 2026 parliamentary elections?",
+      "entry_price": 0.988,
+      "current_price": 0.9785,
+      "unrealized_pnl": -0.0476,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 'Arirang' - BTS debut week album sales be at least 6m?",
+      "entry_price": 0.99,
+      "current_price": 0.981,
+      "unrealized_pnl": -0.045,
+      "risk_level": "OK",
+      "patterns": "album_sales(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Carlos Eduardo Palenque win the 2026 La Paz mayoral election?",
+      "entry_price": 0.987,
+      "current_price": 0.9785,
+      "unrealized_pnl": -0.0425,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Iván Arias win the 2026 La Paz mayoral election?",
+      "entry_price": 0.968,
+      "current_price": 0.961,
+      "unrealized_pnl": -0.0724,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 45 or more ships transit the Strait of Hormuz between March 10-16?",
+      "entry_price": 0.98,
+      "current_price": 0.975,
+      "unrealized_pnl": -0.0251,
+      "risk_level": "OK",
+      "patterns": "shipping_strait(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will White House post 120-139 posts from March 17 to March 24, 2026?",
+      "entry_price": 0.987,
+      "current_price": 0.9825,
+      "unrealized_pnl": -0.0456,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Paul Coca win the 2026 La Paz mayoral election?",
+      "entry_price": 0.992,
+      "current_price": 0.9875,
+      "unrealized_pnl": -0.0225,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 500-519 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.993,
+      "current_price": 0.9885,
+      "unrealized_pnl": -0.0454,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Göztepe SK vs. Çaykur Rizespor end in a draw?",
+      "entry_price": 0.989,
+      "current_price": 0.985,
+      "unrealized_pnl": -0.02,
+      "risk_level": "OK",
+      "patterns": "draw_market(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Alfredo Solares win the 2026 Santa Cruz de la Sierra mayoral election?",
+      "entry_price": 0.983,
+      "current_price": 0.9795,
+      "unrealized_pnl": -0.0175,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Exact Score: RC Celta de Vigo 3 - 3 Deportivo Alavés?",
+      "entry_price": 0.981,
+      "current_price": 0.9785,
+      "unrealized_pnl": -0.0125,
+      "risk_level": "OK",
+      "patterns": "exact_score(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will MrBeast say \"Subscribe\" during his next video?",
+      "entry_price": 0.995,
+      "current_price": 0.9935,
+      "unrealized_pnl": -0.0151,
+      "risk_level": "OK",
+      "patterns": "will_say_word(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 20-24 ships transit the Strait of Hormuz between March 10-16?",
+      "entry_price": 0.993,
+      "current_price": 0.992,
+      "unrealized_pnl": -0.005,
+      "risk_level": "OK",
+      "patterns": "shipping_strait(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will MrBeast say \"Feastables\" during his next video?",
+      "entry_price": 0.995,
+      "current_price": 0.994,
+      "unrealized_pnl": -0.0101,
+      "risk_level": "OK",
+      "patterns": "will_say_word(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Angélica Sosa win the 2026 Santa Cruz de la Sierra mayoral election?",
+      "entry_price": 0.981,
+      "current_price": 0.9805,
+      "unrealized_pnl": -0.0025,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 40-59 Truth Social posts from March 17 to March 24, 2026?",
+      "entry_price": 0.99,
+      "current_price": 0.99,
+      "unrealized_pnl": 0,
+      "risk_level": "OK",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 25-29 ships transit the Strait of Hormuz between March 10-16?",
+      "entry_price": 0.993,
+      "current_price": 0.9935,
+      "unrealized_pnl": 0.0025,
+      "risk_level": "OK",
+      "patterns": "shipping_strait(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 140-159 Truth Social posts from March 17 to March 24, 2026?",
+      "entry_price": 0.974,
+      "current_price": 0.975,
+      "unrealized_pnl": 0.0103,
+      "risk_level": "OK",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will \"Ready or Not 2: Here I Come\" score at least 85 on the Rotten Tomatoes Tomatometer?",
+      "entry_price": 0.995,
+      "current_price": 0.9975,
+      "unrealized_pnl": 0.0252,
+      "risk_level": "OK",
+      "patterns": "score_rating(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will White House post 100-119 posts from March 17 to March 24, 2026?",
+      "entry_price": 0.992,
+      "current_price": 0.996,
+      "unrealized_pnl": 0.02,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Manfred Reyes Villa win the 2026 Cochabamba mayoral election?",
+      "entry_price": 0.987,
+      "current_price": 0.991,
+      "unrealized_pnl": 0.02,
+      "risk_level": "OK",
+      "patterns": "temperature(0.0%), election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Alejandro Reyes win the 2026 La Paz mayoral election?",
+      "entry_price": 0.987,
+      "current_price": 0.991,
+      "unrealized_pnl": 0.02,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Félix Oros win the 2026 Santa Cruz de la Sierra mayoral election?",
+      "entry_price": 0.993,
+      "current_price": 0.998,
+      "unrealized_pnl": 0.025,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 20-24 ships transit the Strait of Hormuz between March 10-16?",
+      "entry_price": 0.987,
+      "current_price": 0.992,
+      "unrealized_pnl": 0.025,
+      "risk_level": "OK",
+      "patterns": "shipping_strait(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will the Slovenian Democratic Party (SDS) win 40-44 seats in the Slovenian National Assembly in this election?",
+      "entry_price": 0.984,
+      "current_price": 0.99,
+      "unrealized_pnl": 0.061,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%), seats_bracket(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post <40 tweets from March 21 to March 23, 2026?",
+      "entry_price": 0.981,
+      "current_price": 0.987,
+      "unrealized_pnl": 0.0612,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will 15-19 ships transit the Strait of Hormuz between March 10-16?",
+      "entry_price": 0.989,
+      "current_price": 0.9955,
+      "unrealized_pnl": 0.0326,
+      "risk_level": "OK",
+      "patterns": "shipping_strait(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 180-199 Truth Social posts from March 17 to March 24, 2026?",
+      "entry_price": 0.988,
+      "current_price": 0.9945,
+      "unrealized_pnl": 0.0326,
+      "risk_level": "OK",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 200-219 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.993,
+      "current_price": 1,
+      "unrealized_pnl": 0.035,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Exact Score: FC Bayern München 3 - 3 1. FC Union Berlin?",
+      "entry_price": 0.992,
+      "current_price": 0.9995,
+      "unrealized_pnl": 0.0375,
+      "risk_level": "OK",
+      "patterns": "exact_score(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will there be exactly 0 earthquakes of magnitude 6.5 or higher worldwide by March 22?",
+      "entry_price": 0.99,
+      "current_price": 0.9985,
+      "unrealized_pnl": 0.0859,
+      "risk_level": "OK",
+      "patterns": "earthquake(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will White House post 60-79 posts from March 17 to March 24, 2026?",
+      "entry_price": 0.991,
+      "current_price": 1,
+      "unrealized_pnl": 0.0451,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Franz Tata García win the 2026 Sucre mayoral election?",
+      "entry_price": 0.979,
+      "current_price": 0.9895,
+      "unrealized_pnl": 0.0525,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Wyndham Clark win the 2026 Valspar Championship?",
+      "entry_price": 0.989,
+      "current_price": 1,
+      "unrealized_pnl": 0.0551,
+      "risk_level": "OK",
+      "patterns": "golf_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Viktor Hovland win the 2026 Valspar Championship?",
+      "entry_price": 0.989,
+      "current_price": 1,
+      "unrealized_pnl": 0.1113,
+      "risk_level": "OK",
+      "patterns": "golf_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will José Gary Áñez win the 2026 Santa Cruz de la Sierra mayoral election?",
+      "entry_price": 0.988,
+      "current_price": 0.999,
+      "unrealized_pnl": 0.0551,
+      "risk_level": "OK",
+      "patterns": "election_win(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 180-199 tweets from March 20 to March 27, 2026?",
+      "entry_price": 0.982,
+      "current_price": 0.994,
+      "unrealized_pnl": 0.1223,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 165-189 tweets from March 19 to March 21, 2026?",
+      "entry_price": 0.987,
+      "current_price": 0.9995,
+      "unrealized_pnl": 0.0625,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 220-239 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.987,
+      "current_price": 1,
+      "unrealized_pnl": 0.065,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Donald Trump post 160-179 Truth Social posts from March 17 to March 24, 2026?",
+      "entry_price": 0.978,
+      "current_price": 0.9945,
+      "unrealized_pnl": 0.0825,
+      "risk_level": "OK",
+      "patterns": "post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post 260-279 tweets from March 17 to March 24, 2026?",
+      "entry_price": 0.98,
+      "current_price": 0.9995,
+      "unrealized_pnl": 0.1991,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%), post_bracket(0.0%), bracket_range(0.0%)",
+      "max_pattern_loss_rate": 0
+    },
+    {
+      "title": "Will Elon Musk post <40 tweets from March 19 to March 21, 2026?",
+      "entry_price": 0.978,
+      "current_price": 1,
+      "unrealized_pnl": 0.11,
+      "risk_level": "OK",
+      "patterns": "tweet_bracket(0.0%)",
+      "max_pattern_loss_rate": 0
+    }
+  ]
+}

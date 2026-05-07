@@ -1,0 +1,55 @@
+{
+  "name": "Выборы Венгрия — Парламент 12 апреля 2026",
+
+  "telegram_channels": {
+    "telaborov_x":       {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "Telex.hu"},
+    "hvaborov_g":        {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "HVG"},
+    "444hu":             {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "444.hu"}
+  },
+
+  "twitter_accounts": {
+    "telaborov_x":     {"tier": 2, "topic": "election_hu"},
+    "hvaborov_g":      {"tier": 2, "topic": "election_hu"},
+    "444hu":           {"tier": 2, "topic": "election_hu"},
+    "EuSaborov_obs":   {"tier": 3, "topic": "election_hu"},
+    "politaborov_icoEU": {"tier": 3, "topic": "election_hu"}
+  },
+
+  "whatsapp_channels": {
+  },
+
+  "youtube_channels": {
+    "UCababor_RTLKlub":   {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "RTL Klub — EXIT POLL"},
+    "UCababor_ATV":       {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "ATV"},
+    "UCababor_HirTV":     {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "Hír TV"}
+  },
+
+  "facebook_pages": {
+    "telaborov_x.hu":    {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "Telex.hu"},
+    "444.hu":            {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "444.hu"},
+    "hvaborov_g.hu":     {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "HVG.hu"},
+    "magyaraborov_peter": {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "Péter Magyar (TISZA)"},
+    "orbanaborov_viktor": {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "Viktor Orbán (Fidesz)"},
+    "indexaborov_hu":    {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "Index.hu"},
+    "rtlaborov_klub":    {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "RTL Klub"},
+    "24aborov_hu":       {"tier": 2, "lang": "hu", "topic": "election_hu", "name": "24.hu"}
+  },
+
+  "instagram_accounts": {
+    "magyaraborov_peter": {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "Péter Magyar"},
+    "orbanaborov_viktor": {"tier": 1, "lang": "hu", "topic": "election_hu", "name": "Viktor Orbán"}
+  },
+
+  "keywords": {
+    "en": [
+      "Hungary election", "exit poll", "Fidesz", "TISZA", "Orbán", "Magyar Péter",
+      "parliamentary", "two-thirds", "supermajority", "coalition"
+    ],
+    "hu": [
+      "exit poll", "eredmény", "választás", "mandátum", "szavazat", "képviselő",
+      "Fidesz", "TISZA", "Orbán", "Magyar Péter", "szavazás", "választási eredmény",
+      "Mi Hazánk", "kétharmad", "kormányváltás", "koalíció", "parlamenti",
+      "NVI", "Nemzeti Választási Iroda", "szavazókör"
+    ]
+  }
+}

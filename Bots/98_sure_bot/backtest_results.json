@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-03-20T10:23:45.506375+00:00",
+  "data_source": "Gamma API — all closed Polymarket markets (real historical data)",
+  "total_markets_fetched": 599460,
+  "markets_with_outcome_96pct_plus": 593349,
+  "methodology": "Fetched ALL closed markets from Gamma API. For each market, found the highest-priced outcome. If that outcome's price >= threshold, counted whether it won (price stayed high in final state) or lost.",
+  "win_rate_analysis": [
+    {
+      "label": "ALL, 96%+",
+      "total": 593349,
+      "wins": 593349,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "ALL, 97%+",
+      "total": 593345,
+      "wins": 593345,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "ALL, 97.5%+",
+      "total": 593344,
+      "wins": 593344,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "ALL, 98%+",
+      "total": 593335,
+      "wins": 593335,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 96%+",
+      "total": 484570,
+      "wins": 484570,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 97%+",
+      "total": 484566,
+      "wins": 484566,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 97.5%+",
+      "total": 484565,
+      "wins": 484565,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 98%+",
+      "total": 484556,
+      "wins": 484556,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NEG_RISK only, 97.5%+",
+      "total": 108779,
+      "wins": 108779,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 97.5%+, vol>3K, liq>500",
+      "total": 613,
+      "wins": 613,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    },
+    {
+      "label": "NON-NR, 98%+, vol>3K, liq>500",
+      "total": 613,
+      "wins": 613,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0
+    }
+  ],
+  "losses_nonnr_975": [],
+  "category_breakdown": {
+    "other": {
+      "wins": 115343,
+      "losses": 0,
+      "win_rate": 100.0
+    },
+    "sports": {
+      "wins": 203047,
+      "losses": 0,
+      "win_rate": 100.0
+    },
+    "politics": {
+      "wins": 9219,
+      "losses": 0,
+      "win_rate": 100.0
+    },
+    "crypto": {
+      "wins": 153287,
+      "losses": 0,
+      "win_rate": 100.0
+    },
+    "geopolitics": {
+      "wins": 2677,
+      "losses": 0,
+      "win_rate": 100.0
+    },
+    "finance": {
+      "wins": 992,
+      "losses": 0,
+      "win_rate": 100.0
+    }
+  },
+  "projections": [
+    {
+      "name": "Current (neg_risk ON, 45h avg)",
+      "bets_per_month": 912,
+      "net_pnl": 139.14,
+      "roi_pct": 24.24,
+      "win_rate_used": 100.0
+    },
+    {
+      "name": "NEW: skip neg_risk (12h avg)",
+      "bets_per_month": 3420,
+      "net_pnl": 521.76,
+      "roi_pct": 90.9,
+      "win_rate_used": 100.0
+    },
+    {
+      "name": "NEW: skip neg_risk, $15/bet",
+      "bets_per_month": 2280,
+      "net_pnl": 521.76,
+      "roi_pct": 90.9,
+      "win_rate_used": 100.0
+    },
+    {
+      "name": "NEW: skip neg_risk, $1000 cap",
+      "bets_per_month": 6000,
+      "net_pnl": 915.38,
+      "roi_pct": 91.54,
+      "win_rate_used": 100.0
+    }
+  ],
+  "monte_carlo_30d": {
+    "survival": 100.0,
+    "median": 521.76,
+    "p5": 521.76,
+    "p95": 521.76,
+    "worst": 521.76
+  },
+  "monte_carlo_90d": {
+    "survival": 100.0,
+    "median": 1565.29,
+    "p5": 1565.29,
+    "p95": 1565.29,
+    "worst": 1565.29
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "config": {
+    "enable_rebuy": true,
+    "BET_FORMULA_A": 31.75,
+    "BET_FORMULA_B": -177.0,
+    "MIN_BET_FORMULA": 15.0,
+    "MAX_BET_USD": 250.0,
+    "MAX_POSITION_USD": 300.0,
+    "MIN_UPGRADE_USD": 5.0,
+    "MIN_BET_USD_LIVE": 10.0,
+    "MIN_PLAYER_INVESTED_DENIZZ": 500.0,
+    "BANKROLL": 4000.0,
+    "RESERVE": 300.0,
+    "REBUY_THROTTLE_SEC": 300,
+    "PRICE_RISK_TIERS": [
+      [
+        0.0,
+        0.15,
+        0.4
+      ],
+      [
+        0.15,
+        0.3,
+        0.7
+      ],
+      [
+        0.3,
+        0.7,
+        1.0
+      ],
+      [
+        0.7,
+        0.85,
+        0.9
+      ],
+      [
+        0.85,
+        0.99,
+        0.8
+      ]
+    ],
+    "TOPUP_RATIO_TIERS": [
+      [
+        0.0,
+        0.03,
+        0.0
+      ],
+      [
+        0.03,
+        0.1,
+        0.5
+      ],
+      [
+        0.1,
+        0.3,
+        0.75
+      ],
+      [
+        0.3,
+        999.0,
+        1.0
+      ]
+    ]
+  },
+  "final_bankroll": 5251.95,
+  "return_pct": 0.313,
+  "max_drawdown_pct": 0.1753,
+  "history_br_len": 1851,
+  "trades_first_entry": 91,
+  "trades_upgrade": 100,
+  "rebuy_events_count": 73,
+  "rebuy_unique_legs": 24,
+  "rebuy_usd_total": 2826.63,
+  "rebuy_skipped": {
+    "throttle": 7,
+    "smallbuy": 633,
+    "mincost": 84,
+    "bankroll": 115,
+    "cap_reached": 36,
+    "below_min_live": 32
+  },
+  "rebuy_resolved": {
+    "n": 3,
+    "wins": 3,
+    "losses": 0,
+    "wr": 1.0,
+    "mean_roi": 1.0656858982890582,
+    "median_roi": 0.9332369104571111,
+    "invested_usd": 560.98,
+    "pnl_usd": 681.67,
+    "ev_per_dollar": 1.2151364043807573
+  },
+  "rebuy_unresolved": {
+    "n": 17,
+    "invested_usd": 1738.84,
+    "pnl_usd_estimate": -74.89
+  },
+  "total_resolved_legs": 10,
+  "total_wins": 7,
+  "total_losses": 3,
+  "total_unresolved_legs": 58,
+  "total_mean_roi": 0.6848160098225393,
+  "total_resolved_pnl": 1010.84,
+  "price_bucket_breakdown": {
+    "0.15-0.30": {
+      "n": 35,
+      "usd": 1247.7700000000002
+    },
+    "0.30-0.70": {
+      "n": 17,
+      "usd": 858.6299999999999
+    },
+    "0.70-0.85": {
+      "n": 10,
+      "usd": 421.62
+    },
+    "0.85-0.99": {
+      "n": 9,
+      "usd": 262.28
+    },
+    "0.00-0.15": {
+      "n": 2,
+      "usd": 36.33
+    }
+  }
+}

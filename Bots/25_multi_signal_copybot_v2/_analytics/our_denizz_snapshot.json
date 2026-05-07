@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-04-08T09:40:57.929503+00:00",
+  "positions": [
+    {
+      "asset": "21743669032210695168079601505378236205866986767926346409604806906483294819314",
+      "title": "Iran x Israel/US conflict ends by April 7?",
+      "cost": 179.01,
+      "curval": 174.7005,
+      "unrealized": -4.3095,
+      "realized": 76.4688,
+      "avg_price": 0.54,
+      "cur_price": 0.527
+    },
+    {
+      "asset": "38902668316823899581329108924389881286009857048696806385615295625967267371713",
+      "title": "Israel x Hezbollah ceasefire by April 30, 2026?",
+      "cost": 96.7447,
+      "curval": 82.336,
+      "unrealized": -14.4087,
+      "realized": 0.0,
+      "avg_price": 0.4699,
+      "cur_price": 0.4
+    },
+    {
+      "asset": "1910830010387565971650098373488592514702818137344973088263643820608151819241",
+      "title": "Will the U.S. invade Iran before 2027?",
+      "cost": 75.0077,
+      "curval": 135.1887,
+      "unrealized": 60.1809,
+      "realized": 0.0,
+      "avg_price": 0.4216,
+      "cur_price": 0.76
+    },
+    {
+      "asset": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+      "title": "Trump announces end of military operations against Iran by A",
+      "cost": 94.501,
+      "curval": 93.6419,
+      "unrealized": -0.859,
+      "realized": 5.3804,
+      "avg_price": 0.55,
+      "cur_price": 0.545
+    },
+    {
+      "asset": "61105898512331423456932766287679410148969111620575334880263459667275737814007",
+      "title": "Israeli forces cross the Litani River by June 30?",
+      "cost": 63.0043,
+      "curval": 30.9941,
+      "unrealized": -32.0102,
+      "realized": 0.0,
+      "avg_price": 0.6199,
+      "cur_price": 0.305
+    },
+    {
+      "asset": "97107770187587683506815626974888163324622836988014033022064807674186740440043",
+      "title": "Will Reza Pahlavi enter Iran by December 31?",
+      "cost": 80.0057,
+      "curval": 80.0057,
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "avg_price": 0.86,
+      "cur_price": 0.86
+    },
+    {
+      "asset": "106181075047366745139197108801635573283215248045056329679360376976893016488727",
+      "title": "Will the Iranian regime fall before 2027?",
+      "cost": 60.0076,
+      "curval": 59.6343,
+      "unrealized": -0.3733,
+      "realized": 0.0,
+      "avg_price": 0.82,
+      "cur_price": 0.8149
+    },
+    {
+      "asset": "77893140510362582253172593084218413010407941075415081594586195705930819989216",
+      "title": "Strait of Hormuz traffic returns to normal by end of April?",
+      "cost": 27.5862,
+      "curval": 23.6881,
+      "unrealized": -3.8981,
+      "realized": 0.1612,
+      "avg_price": 0.46,
+      "cur_price": 0.395
+    },
+    {
+      "asset": "76011167108286483296472407639672910280580167252554566262915317631749766901901",
+      "title": "Will the United States send warships through the Strait of H",
+      "cost": 16.5024,
+      "curval": 12.9662,
+      "unrealized": -3.5362,
+      "realized": -0.5,
+      "avg_price": 0.35,
+      "cur_price": 0.275
+    },
+    {
+      "asset": "49232347074200257286333705540570950896584522176544392767367009767750446431044",
+      "title": "Israel strike on Yemen by June 30, 2026?",
+      "cost": 13.5029,
+      "curval": 13.6958,
+      "unrealized": 0.1928,
+      "realized": 0.0,
+      "avg_price": 0.7,
+      "cur_price": 0.71
+    },
+    {
+      "asset": "30561980169268678819735256982225694704116127378508623571936660192492766073388",
+      "title": "Israel strike on Yemen by April 30, 2026?",
+      "cost": 14.0086,
+      "curval": 13.6151,
+      "unrealized": -0.3935,
+      "realized": 0.0,
+      "avg_price": 0.89,
+      "cur_price": 0.865
+    }
+  ]
+}

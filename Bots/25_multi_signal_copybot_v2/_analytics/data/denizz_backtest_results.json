@@ -1,0 +1,190 @@
+{
+  "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
+  "total_raw": 100,
+  "total_filtered_500": 69,
+  "data_note": "ALL 100 records have positive realizedPnl - true WR cannot be determined from this endpoint",
+  "range_stats_filtered": {
+    "0.00-0.15": {
+      "n": 1,
+      "wins": 1,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 234.7,
+      "avg_pnl": 14652.23,
+      "total_pnl": 14652.23,
+      "total_cost": 6241.8,
+      "avg_cost": 6241.8
+    },
+    "0.15-0.30": {
+      "n": 4,
+      "wins": 4,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 121.5,
+      "avg_pnl": 70696.48,
+      "total_pnl": 282785.93,
+      "total_cost": 232706.94,
+      "avg_cost": 58176.74
+    },
+    "0.30-0.50": {
+      "n": 11,
+      "wins": 11,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 74.2,
+      "avg_pnl": 45572.07,
+      "total_pnl": 501292.75,
+      "total_cost": 675277.45,
+      "avg_cost": 61388.86
+    },
+    "0.50-0.70": {
+      "n": 10,
+      "wins": 10,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 39.0,
+      "avg_pnl": 22154.23,
+      "total_pnl": 221542.26,
+      "total_cost": 568550.88,
+      "avg_cost": 56855.09
+    },
+    "0.70-0.85": {
+      "n": 11,
+      "wins": 11,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 19.6,
+      "avg_pnl": 13167.74,
+      "total_pnl": 144845.15,
+      "total_cost": 737755.97,
+      "avg_cost": 67068.72
+    },
+    "0.85-1.00": {
+      "n": 32,
+      "wins": 32,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "roi_pct": 10.5,
+      "avg_pnl": 8823.84,
+      "total_pnl": 282362.74,
+      "total_cost": 2688582.97,
+      "avg_cost": 84018.22
+    }
+  },
+  "strategy_results_no_slippage": {
+    "A_flat_$50": {
+      "n": 69,
+      "wins": 69,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 3386.25,
+      "total_cost": 3450,
+      "roi_pct": 98.2
+    },
+    "B_linear": {
+      "n": 69,
+      "wins": 69,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 1919.17,
+      "total_cost": 4980.83,
+      "roi_pct": 38.5
+    },
+    "C_fixed_profit": {
+      "n": 63,
+      "wins": 63,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 1718.59,
+      "total_cost": 6090.05,
+      "roi_pct": 28.2
+    },
+    "D_tiered": {
+      "n": 69,
+      "wins": 69,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 2443.51,
+      "total_cost": 2605,
+      "roi_pct": 93.8
+    }
+  },
+  "strategy_results_slip_0_03": {
+    "A_flat_$50_slip0.03": {
+      "n": 58,
+      "wins": 58,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 3378.91,
+      "total_cost": 2900,
+      "roi_pct": 116.5
+    },
+    "B_linear_slip0.03": {
+      "n": 58,
+      "wins": 58,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 2107.52,
+      "total_cost": 4069.21,
+      "roi_pct": 51.8
+    },
+    "C_fixed_profit_slip0.03": {
+      "n": 55,
+      "wins": 55,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 1860.89,
+      "total_cost": 5170.63,
+      "roi_pct": 36.0
+    },
+    "D_tiered_slip0.03": {
+      "n": 58,
+      "wins": 58,
+      "losses": 0,
+      "wr_pct": 100.0,
+      "total_pnl": 2480.88,
+      "total_cost": 2255,
+      "roi_pct": 110.0
+    }
+  },
+  "all_positions_by_range": {
+    "0.00-0.15": {
+      "count": 8,
+      "avg_roi_pct": 267.6,
+      "avg_cost": 862.0,
+      "total_pnl": 14817.0
+    },
+    "0.15-0.30": {
+      "count": 6,
+      "avg_roi_pct": 73.4,
+      "avg_cost": 38801.0,
+      "total_pnl": 282815.0
+    },
+    "0.30-0.50": {
+      "count": 14,
+      "avg_roi_pct": 69.2,
+      "avg_cost": 48260.0,
+      "total_pnl": 501355.0
+    },
+    "0.50-0.70": {
+      "count": 12,
+      "avg_roi_pct": 29.6,
+      "avg_cost": 47416.0,
+      "total_pnl": 221582.0
+    },
+    "0.70-0.85": {
+      "count": 17,
+      "avg_roi_pct": 20.3,
+      "avg_cost": 43439.0,
+      "total_pnl": 145030.0
+    },
+    "0.85-1.00": {
+      "count": 43,
+      "avg_roi_pct": 7.7,
+      "avg_cost": 62599.0,
+      "total_pnl": 282580.0
+    }
+  },
+  "yes_count": 40,
+  "no_count": 59
+}

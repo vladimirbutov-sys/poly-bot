@@ -1,0 +1,153 @@
+{
+  "config": {
+    "initialBankroll": 600,
+    "betSize": 5,
+    "totalResolvedMarkets": 14744
+  },
+  "typeDistribution": {
+    "sports_other": {
+      "total": 5470,
+      "won": 5469,
+      "lost": 1
+    },
+    "other": {
+      "total": 5155,
+      "won": 5153,
+      "lost": 2
+    },
+    "crypto_price": {
+      "total": 677,
+      "won": 673,
+      "lost": 4
+    },
+    "temperature": {
+      "total": 1372,
+      "won": 1372,
+      "lost": 0
+    },
+    "tweet_post": {
+      "total": 99,
+      "won": 99,
+      "lost": 0
+    },
+    "esports": {
+      "total": 761,
+      "won": 761,
+      "lost": 0
+    },
+    "election": {
+      "total": 117,
+      "won": 117,
+      "lost": 0
+    },
+    "soccer": {
+      "total": 772,
+      "won": 772,
+      "lost": 0
+    },
+    "exact_score": {
+      "total": 321,
+      "won": 321,
+      "lost": 0
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "A: No limit (current)",
+      "totalBets": 1344,
+      "wins": 1335,
+      "losses": 0,
+      "winRate": 99.33,
+      "finalBalance": 588.41,
+      "pnl": -11.59,
+      "roi": -1.93,
+      "maxDrawdown": 600,
+      "skippedTotal": 13400,
+      "skippedWouldWin": 13393,
+      "skippedWouldLose": 7,
+      "preventedLosses": 7,
+      "skippedByBankroll": 13400
+    },
+    {
+      "scenario": "B: Max 10 positions/type",
+      "totalBets": 830,
+      "wins": 827,
+      "losses": 0,
+      "winRate": 99.64,
+      "finalBalance": 607.45,
+      "pnl": 7.45,
+      "roi": 1.24,
+      "maxDrawdown": 456.33,
+      "skippedTotal": 13914,
+      "skippedWouldWin": 13907,
+      "skippedWouldLose": 7,
+      "preventedLosses": 7,
+      "skippedByBankroll": 0
+    },
+    {
+      "scenario": "C: Max 15 positions/type",
+      "totalBets": 1230,
+      "wins": 1227,
+      "losses": 1,
+      "winRate": 99.76,
+      "finalBalance": 618.5,
+      "pnl": 18.5,
+      "roi": 3.08,
+      "maxDrawdown": 618.5,
+      "skippedTotal": 13514,
+      "skippedWouldWin": 13508,
+      "skippedWouldLose": 6,
+      "preventedLosses": 6,
+      "skippedByBankroll": 3197
+    },
+    {
+      "scenario": "D: Max 20 positions/type",
+      "totalBets": 1275,
+      "wins": 1272,
+      "losses": 0,
+      "winRate": 99.76,
+      "finalBalance": 620.23,
+      "pnl": 20.23,
+      "roi": 3.37,
+      "maxDrawdown": 620.23,
+      "skippedTotal": 13469,
+      "skippedWouldWin": 13462,
+      "skippedWouldLose": 7,
+      "preventedLosses": 7,
+      "skippedByBankroll": 9648
+    },
+    {
+      "scenario": "E: Max 15% bankroll/type",
+      "totalBets": 1252,
+      "wins": 1250,
+      "losses": 0,
+      "winRate": 99.84,
+      "finalBalance": 623.76,
+      "pnl": 23.76,
+      "roi": 3.96,
+      "maxDrawdown": 623.76,
+      "skippedTotal": 13492,
+      "skippedWouldWin": 13485,
+      "skippedWouldLose": 7,
+      "preventedLosses": 7,
+      "skippedByBankroll": 8913
+    },
+    {
+      "scenario": "F: Max 25% bankroll/type",
+      "totalBets": 1380,
+      "wins": 1373,
+      "losses": 0,
+      "winRate": 99.49,
+      "finalBalance": 600.1,
+      "pnl": 0.1,
+      "roi": 0.02,
+      "maxDrawdown": 600.1,
+      "skippedTotal": 13364,
+      "skippedWouldWin": 13357,
+      "skippedWouldLose": 7,
+      "preventedLosses": 7,
+      "skippedByBankroll": 12130
+    }
+  ],
+  "generated": "2026-03-21T16:54:42.107Z"
+}

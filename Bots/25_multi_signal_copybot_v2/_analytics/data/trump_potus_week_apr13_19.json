@@ -1,0 +1,1574 @@
+{
+  "query_hits_raw": [
+    {
+      "id": "37886",
+      "timestamp_str": "April 18, 2026, 7:45 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37886",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:45:00Z"
+    }
+  ],
+  "potus_content_hits": [],
+  "all_posts_in_range": [
+    {
+      "id": "37932",
+      "timestamp_str": "April 19, 2026, 10:54 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37932",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-20T02:54:00Z"
+    },
+    {
+      "id": "37933",
+      "timestamp_str": "April 19, 2026, 10:54 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37933",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-20T02:54:00Z"
+    },
+    {
+      "id": "37931",
+      "timestamp_str": "April 19, 2026, 7:30 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37931",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T23:30:00Z"
+    },
+    {
+      "id": "37928",
+      "timestamp_str": "April 19, 2026, 3:32 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37928",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T19:32:00Z"
+    },
+    {
+      "id": "37929",
+      "timestamp_str": "April 19, 2026, 3:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37929",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T19:31:00Z"
+    },
+    {
+      "id": "37930",
+      "timestamp_str": "April 19, 2026, 3:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37930",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T19:31:00Z"
+    },
+    {
+      "id": "37927",
+      "timestamp_str": "April 19, 2026, 3:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37927",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T19:23:00Z"
+    },
+    {
+      "id": "37923",
+      "timestamp_str": "April 19, 2026, 2:47 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37923",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T18:47:00Z"
+    },
+    {
+      "id": "37924",
+      "timestamp_str": "April 19, 2026, 2:47 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37924",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T18:47:00Z"
+    },
+    {
+      "id": "37925",
+      "timestamp_str": "April 19, 2026, 2:47 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37925",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T18:47:00Z"
+    },
+    {
+      "id": "37926",
+      "timestamp_str": "April 19, 2026, 2:47 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37926",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T18:47:00Z"
+    },
+    {
+      "id": "37922",
+      "timestamp_str": "April 19, 2026, 12:30 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37922",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T16:30:00Z"
+    },
+    {
+      "id": "37921",
+      "timestamp_str": "April 19, 2026, 9:39 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37921",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T13:39:00Z"
+    },
+    {
+      "id": "37920",
+      "timestamp_str": "April 19, 2026, 8:10 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37920",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T12:10:00Z"
+    },
+    {
+      "id": "37917",
+      "timestamp_str": "April 18, 2026, 9:59 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37917",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:59:00Z"
+    },
+    {
+      "id": "37919",
+      "timestamp_str": "April 18, 2026, 9:55 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37919",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:55:00Z"
+    },
+    {
+      "id": "37914",
+      "timestamp_str": "April 18, 2026, 9:50 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37914",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:50:00Z"
+    },
+    {
+      "id": "37916",
+      "timestamp_str": "April 18, 2026, 9:50 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37916",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:50:00Z"
+    },
+    {
+      "id": "37909",
+      "timestamp_str": "April 18, 2026, 9:49 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37909",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:49:00Z"
+    },
+    {
+      "id": "37911",
+      "timestamp_str": "April 18, 2026, 9:48 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37911",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:48:00Z"
+    },
+    {
+      "id": "37905",
+      "timestamp_str": "April 18, 2026, 9:43 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37905",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:43:00Z"
+    },
+    {
+      "id": "37907",
+      "timestamp_str": "April 18, 2026, 9:42 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37907",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:42:00Z"
+    },
+    {
+      "id": "37895",
+      "timestamp_str": "April 18, 2026, 9:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37895",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:34:00Z"
+    },
+    {
+      "id": "37896",
+      "timestamp_str": "April 18, 2026, 9:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37896",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:34:00Z"
+    },
+    {
+      "id": "37897",
+      "timestamp_str": "April 18, 2026, 9:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37897",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:34:00Z"
+    },
+    {
+      "id": "37898",
+      "timestamp_str": "April 18, 2026, 9:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37898",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:34:00Z"
+    },
+    {
+      "id": "37899",
+      "timestamp_str": "April 18, 2026, 9:33 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37899",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:33:00Z"
+    },
+    {
+      "id": "37900",
+      "timestamp_str": "April 18, 2026, 9:32 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37900",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:32:00Z"
+    },
+    {
+      "id": "37901",
+      "timestamp_str": "April 18, 2026, 9:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37901",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:31:00Z"
+    },
+    {
+      "id": "37902",
+      "timestamp_str": "April 18, 2026, 9:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37902",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:31:00Z"
+    },
+    {
+      "id": "37903",
+      "timestamp_str": "April 18, 2026, 9:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37903",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:31:00Z"
+    },
+    {
+      "id": "37904",
+      "timestamp_str": "April 18, 2026, 9:31 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37904",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:31:00Z"
+    },
+    {
+      "id": "37893",
+      "timestamp_str": "April 18, 2026, 9:26 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37893",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:26:00Z"
+    },
+    {
+      "id": "37894",
+      "timestamp_str": "April 18, 2026, 9:26 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37894",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:26:00Z"
+    },
+    {
+      "id": "37891",
+      "timestamp_str": "April 18, 2026, 9:24 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37891",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:24:00Z"
+    },
+    {
+      "id": "37892",
+      "timestamp_str": "April 18, 2026, 9:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37892",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:23:00Z"
+    },
+    {
+      "id": "37890",
+      "timestamp_str": "April 18, 2026, 9:14 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37890",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:14:00Z"
+    },
+    {
+      "id": "37889",
+      "timestamp_str": "April 18, 2026, 9:07 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37889",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-19T01:07:00Z"
+    },
+    {
+      "id": "37887",
+      "timestamp_str": "April 18, 2026, 7:50 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37887",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:50:00Z"
+    },
+    {
+      "id": "37883",
+      "timestamp_str": "April 18, 2026, 7:49 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37883",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:49:00Z"
+    },
+    {
+      "id": "37884",
+      "timestamp_str": "April 18, 2026, 7:45 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37884",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:45:00Z"
+    },
+    {
+      "id": "37886",
+      "timestamp_str": "April 18, 2026, 7:45 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37886",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:45:00Z"
+    },
+    {
+      "id": "37881",
+      "timestamp_str": "April 18, 2026, 7:40 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37881",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:40:00Z"
+    },
+    {
+      "id": "37882",
+      "timestamp_str": "April 18, 2026, 7:40 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37882",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T23:40:00Z"
+    },
+    {
+      "id": "37879",
+      "timestamp_str": "April 18, 2026, 8:14 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37879",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T12:14:00Z"
+    },
+    {
+      "id": "37878",
+      "timestamp_str": "April 18, 2026, 7:29 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37878",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T11:29:00Z"
+    },
+    {
+      "id": "37875",
+      "timestamp_str": "April 18, 2026, 1:15 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37875",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T05:15:00Z"
+    },
+    {
+      "id": "37871",
+      "timestamp_str": "April 18, 2026, 1:11 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37871",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T05:11:00Z"
+    },
+    {
+      "id": "37873",
+      "timestamp_str": "April 18, 2026, 1:10 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37873",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T05:10:00Z"
+    },
+    {
+      "id": "37869",
+      "timestamp_str": "April 18, 2026, 1:06 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37869",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T05:06:00Z"
+    },
+    {
+      "id": "37868",
+      "timestamp_str": "April 18, 2026, 12:25 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37868",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T04:25:00Z"
+    },
+    {
+      "id": "37865",
+      "timestamp_str": "April 18, 2026, 12:24 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37865",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T04:24:00Z"
+    },
+    {
+      "id": "37867",
+      "timestamp_str": "April 18, 2026, 12:23 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37867",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T04:23:00Z"
+    },
+    {
+      "id": "37863",
+      "timestamp_str": "April 18, 2026, 12:12 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37863",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T04:12:00Z"
+    },
+    {
+      "id": "37862",
+      "timestamp_str": "April 17, 2026, 11:25 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37862",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T03:25:00Z"
+    },
+    {
+      "id": "37861",
+      "timestamp_str": "April 17, 2026, 10:55 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37861",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T02:55:00Z"
+    },
+    {
+      "id": "37859",
+      "timestamp_str": "April 17, 2026, 10:27 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37859",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T02:27:00Z"
+    },
+    {
+      "id": "37860",
+      "timestamp_str": "April 17, 2026, 10:25 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37860",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T02:25:00Z"
+    },
+    {
+      "id": "37858",
+      "timestamp_str": "April 17, 2026, 10:17 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37858",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T02:17:00Z"
+    },
+    {
+      "id": "37857",
+      "timestamp_str": "April 17, 2026, 10:11 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37857",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T02:11:00Z"
+    },
+    {
+      "id": "37854",
+      "timestamp_str": "April 17, 2026, 9:37 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37854",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:37:00Z"
+    },
+    {
+      "id": "37855",
+      "timestamp_str": "April 17, 2026, 9:36 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37855",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:36:00Z"
+    },
+    {
+      "id": "37856",
+      "timestamp_str": "April 17, 2026, 9:35 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37856",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:35:00Z"
+    },
+    {
+      "id": "37852",
+      "timestamp_str": "April 17, 2026, 9:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37852",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:34:00Z"
+    },
+    {
+      "id": "37853",
+      "timestamp_str": "April 17, 2026, 9:33 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37853",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:33:00Z"
+    },
+    {
+      "id": "37851",
+      "timestamp_str": "April 17, 2026, 9:12 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37851",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T01:12:00Z"
+    },
+    {
+      "id": "37850",
+      "timestamp_str": "April 17, 2026, 8:41 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37850",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-18T00:41:00Z"
+    },
+    {
+      "id": "37849",
+      "timestamp_str": "April 17, 2026, 4:39 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37849",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T20:39:00Z"
+    },
+    {
+      "id": "37839",
+      "timestamp_str": "April 17, 2026, 3:24 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37839",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:24:00Z"
+    },
+    {
+      "id": "37840",
+      "timestamp_str": "April 17, 2026, 3:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37840",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:23:00Z"
+    },
+    {
+      "id": "37841",
+      "timestamp_str": "April 17, 2026, 3:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37841",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:23:00Z"
+    },
+    {
+      "id": "37842",
+      "timestamp_str": "April 17, 2026, 3:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37842",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:23:00Z"
+    },
+    {
+      "id": "37843",
+      "timestamp_str": "April 17, 2026, 3:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37843",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:23:00Z"
+    },
+    {
+      "id": "37844",
+      "timestamp_str": "April 17, 2026, 3:22 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37844",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:22:00Z"
+    },
+    {
+      "id": "37845",
+      "timestamp_str": "April 17, 2026, 3:22 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37845",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:22:00Z"
+    },
+    {
+      "id": "37846",
+      "timestamp_str": "April 17, 2026, 3:22 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37846",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:22:00Z"
+    },
+    {
+      "id": "37847",
+      "timestamp_str": "April 17, 2026, 3:21 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37847",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:21:00Z"
+    },
+    {
+      "id": "37848",
+      "timestamp_str": "April 17, 2026, 3:21 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37848",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T19:21:00Z"
+    },
+    {
+      "id": "37838",
+      "timestamp_str": "April 17, 2026, 10:58 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37838",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:58:00Z"
+    },
+    {
+      "id": "37837",
+      "timestamp_str": "April 17, 2026, 10:40 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37837",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:40:00Z"
+    },
+    {
+      "id": "37836",
+      "timestamp_str": "April 17, 2026, 10:33 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37836",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:33:00Z"
+    },
+    {
+      "id": "37834",
+      "timestamp_str": "April 17, 2026, 10:30 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37834",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:30:00Z"
+    },
+    {
+      "id": "37835",
+      "timestamp_str": "April 17, 2026, 10:27 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37835",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:27:00Z"
+    },
+    {
+      "id": "37833",
+      "timestamp_str": "April 17, 2026, 10:20 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37833",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:20:00Z"
+    },
+    {
+      "id": "37832",
+      "timestamp_str": "April 17, 2026, 10:16 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37832",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:16:00Z"
+    },
+    {
+      "id": "37831",
+      "timestamp_str": "April 17, 2026, 10:13 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37831",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T14:13:00Z"
+    },
+    {
+      "id": "37830",
+      "timestamp_str": "April 17, 2026, 9:57 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37830",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T13:57:00Z"
+    },
+    {
+      "id": "37829",
+      "timestamp_str": "April 17, 2026, 9:27 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37829",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T13:27:00Z"
+    },
+    {
+      "id": "37828",
+      "timestamp_str": "April 17, 2026, 9:06 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37828",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T13:06:00Z"
+    },
+    {
+      "id": "37827",
+      "timestamp_str": "April 17, 2026, 8:26 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37827",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T12:26:00Z"
+    },
+    {
+      "id": "37826",
+      "timestamp_str": "April 17, 2026, 8:12 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37826",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T12:12:00Z"
+    },
+    {
+      "id": "37824",
+      "timestamp_str": "April 16, 2026, 10:48 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37824",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T02:48:00Z"
+    },
+    {
+      "id": "37825",
+      "timestamp_str": "April 16, 2026, 10:45 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37825",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-17T02:45:00Z"
+    },
+    {
+      "id": "37823",
+      "timestamp_str": "April 16, 2026, 7:22 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37823",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T23:22:00Z"
+    },
+    {
+      "id": "37819",
+      "timestamp_str": "April 16, 2026, 7:12 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37819",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T23:12:00Z"
+    },
+    {
+      "id": "37820",
+      "timestamp_str": "April 16, 2026, 7:11 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37820",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T23:11:00Z"
+    },
+    {
+      "id": "37821",
+      "timestamp_str": "April 16, 2026, 7:11 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37821",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T23:11:00Z"
+    },
+    {
+      "id": "37822",
+      "timestamp_str": "April 16, 2026, 7:11 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37822",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T23:11:00Z"
+    },
+    {
+      "id": "37817",
+      "timestamp_str": "April 16, 2026, 6:27 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37817",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T22:27:00Z"
+    },
+    {
+      "id": "37816",
+      "timestamp_str": "April 16, 2026, 6:20 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37816",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T22:20:00Z"
+    },
+    {
+      "id": "37815",
+      "timestamp_str": "April 16, 2026, 6:19 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37815",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T22:19:00Z"
+    },
+    {
+      "id": "37814",
+      "timestamp_str": "April 16, 2026, 6:08 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37814",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T22:08:00Z"
+    },
+    {
+      "id": "37806",
+      "timestamp_str": "April 16, 2026, 5:38 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37806",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:38:00Z"
+    },
+    {
+      "id": "37807",
+      "timestamp_str": "April 16, 2026, 5:38 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37807",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:38:00Z"
+    },
+    {
+      "id": "37808",
+      "timestamp_str": "April 16, 2026, 5:38 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37808",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:38:00Z"
+    },
+    {
+      "id": "37809",
+      "timestamp_str": "April 16, 2026, 5:38 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37809",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:38:00Z"
+    },
+    {
+      "id": "37810",
+      "timestamp_str": "April 16, 2026, 5:38 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37810",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:38:00Z"
+    },
+    {
+      "id": "37811",
+      "timestamp_str": "April 16, 2026, 5:37 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37811",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:37:00Z"
+    },
+    {
+      "id": "37812",
+      "timestamp_str": "April 16, 2026, 5:37 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37812",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:37:00Z"
+    },
+    {
+      "id": "37813",
+      "timestamp_str": "April 16, 2026, 5:36 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37813",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:36:00Z"
+    },
+    {
+      "id": "37802",
+      "timestamp_str": "April 16, 2026, 5:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37802",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:23:00Z"
+    },
+    {
+      "id": "37804",
+      "timestamp_str": "April 16, 2026, 5:21 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37804",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:21:00Z"
+    },
+    {
+      "id": "37805",
+      "timestamp_str": "April 16, 2026, 5:20 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37805",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:20:00Z"
+    },
+    {
+      "id": "37801",
+      "timestamp_str": "April 16, 2026, 5:19 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37801",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T21:19:00Z"
+    },
+    {
+      "id": "37800",
+      "timestamp_str": "April 16, 2026, 4:30 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37800",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T20:30:00Z"
+    },
+    {
+      "id": "37799",
+      "timestamp_str": "April 16, 2026, 4:19 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37799",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T20:19:00Z"
+    },
+    {
+      "id": "37796",
+      "timestamp_str": "April 16, 2026, 3:24 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37796",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T19:24:00Z"
+    },
+    {
+      "id": "37794",
+      "timestamp_str": "April 16, 2026, 11:53 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37794",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T15:53:00Z"
+    },
+    {
+      "id": "37792",
+      "timestamp_str": "April 15, 2026, 11:26 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37792",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T03:26:00Z"
+    },
+    {
+      "id": "37791",
+      "timestamp_str": "April 15, 2026, 11:14 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37791",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-16T03:14:00Z"
+    },
+    {
+      "id": "37790",
+      "timestamp_str": "April 15, 2026, 3:54 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37790",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T19:54:00Z"
+    },
+    {
+      "id": "37789",
+      "timestamp_str": "April 15, 2026, 12:39 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37789",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T16:39:00Z"
+    },
+    {
+      "id": "37788",
+      "timestamp_str": "April 15, 2026, 10:16 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37788",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T14:16:00Z"
+    },
+    {
+      "id": "37786",
+      "timestamp_str": "April 15, 2026, 8:34 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37786",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T12:34:00Z"
+    },
+    {
+      "id": "37787",
+      "timestamp_str": "April 15, 2026, 8:34 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37787",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T12:34:00Z"
+    },
+    {
+      "id": "37784",
+      "timestamp_str": "April 15, 2026, 8:09 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37784",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T12:09:00Z"
+    },
+    {
+      "id": "37785",
+      "timestamp_str": "April 15, 2026, 8:08 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37785",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T12:08:00Z"
+    },
+    {
+      "id": "37783",
+      "timestamp_str": "April 15, 2026, 7:46 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37783",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T11:46:00Z"
+    },
+    {
+      "id": "37779",
+      "timestamp_str": "April 15, 2026, 1:13 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37779",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T05:13:00Z"
+    },
+    {
+      "id": "37780",
+      "timestamp_str": "April 15, 2026, 1:12 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37780",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T05:12:00Z"
+    },
+    {
+      "id": "37781",
+      "timestamp_str": "April 15, 2026, 1:11 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37781",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T05:11:00Z"
+    },
+    {
+      "id": "37782",
+      "timestamp_str": "April 15, 2026, 1:10 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37782",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T05:10:00Z"
+    },
+    {
+      "id": "37773",
+      "timestamp_str": "April 15, 2026, 12:03 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37773",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T04:03:00Z"
+    },
+    {
+      "id": "37774",
+      "timestamp_str": "April 15, 2026, 12:02 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37774",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T04:02:00Z"
+    },
+    {
+      "id": "37775",
+      "timestamp_str": "April 15, 2026, 12:02 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37775",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T04:02:00Z"
+    },
+    {
+      "id": "37776",
+      "timestamp_str": "April 15, 2026, 12:01 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37776",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T04:01:00Z"
+    },
+    {
+      "id": "37777",
+      "timestamp_str": "April 15, 2026, 12:01 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37777",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T04:01:00Z"
+    },
+    {
+      "id": "37772",
+      "timestamp_str": "April 14, 2026, 11:39 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37772",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T03:39:00Z"
+    },
+    {
+      "id": "37771",
+      "timestamp_str": "April 14, 2026, 11:34 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37771",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-15T03:34:00Z"
+    },
+    {
+      "id": "37770",
+      "timestamp_str": "April 14, 2026, 5:19 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37770",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T21:19:00Z"
+    },
+    {
+      "id": "37769",
+      "timestamp_str": "April 14, 2026, 3:30 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37769",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T19:30:00Z"
+    },
+    {
+      "id": "37768",
+      "timestamp_str": "April 14, 2026, 3:15 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37768",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T19:15:00Z"
+    },
+    {
+      "id": "37767",
+      "timestamp_str": "April 14, 2026, 3:07 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37767",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T19:07:00Z"
+    },
+    {
+      "id": "37766",
+      "timestamp_str": "April 14, 2026, 3:01 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37766",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T19:01:00Z"
+    },
+    {
+      "id": "37764",
+      "timestamp_str": "April 14, 2026, 2:48 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37764",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:48:00Z"
+    },
+    {
+      "id": "37765",
+      "timestamp_str": "April 14, 2026, 2:46 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37765",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:46:00Z"
+    },
+    {
+      "id": "37763",
+      "timestamp_str": "April 14, 2026, 2:41 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37763",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:41:00Z"
+    },
+    {
+      "id": "37762",
+      "timestamp_str": "April 14, 2026, 2:28 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37762",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:28:00Z"
+    },
+    {
+      "id": "37761",
+      "timestamp_str": "April 14, 2026, 2:22 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37761",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:22:00Z"
+    },
+    {
+      "id": "37760",
+      "timestamp_str": "April 14, 2026, 2:07 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37760",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T18:07:00Z"
+    },
+    {
+      "id": "37759",
+      "timestamp_str": "April 14, 2026, 10:30 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37759",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T14:30:00Z"
+    },
+    {
+      "id": "37758",
+      "timestamp_str": "April 14, 2026, 10:08 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37758",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T14:08:00Z"
+    },
+    {
+      "id": "37757",
+      "timestamp_str": "April 14, 2026, 8:09 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37757",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T12:09:00Z"
+    },
+    {
+      "id": "37756",
+      "timestamp_str": "April 14, 2026, 7:51 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37756",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T11:51:00Z"
+    },
+    {
+      "id": "37755",
+      "timestamp_str": "April 14, 2026, 7:49 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37755",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T11:49:00Z"
+    },
+    {
+      "id": "37753",
+      "timestamp_str": "April 13, 2026, 11:24 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37753",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T03:24:00Z"
+    },
+    {
+      "id": "37754",
+      "timestamp_str": "April 13, 2026, 11:23 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37754",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T03:23:00Z"
+    },
+    {
+      "id": "37752",
+      "timestamp_str": "April 13, 2026, 10:59 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37752",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T02:59:00Z"
+    },
+    {
+      "id": "37751",
+      "timestamp_str": "April 13, 2026, 10:54 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37751",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-14T02:54:00Z"
+    },
+    {
+      "id": "37750",
+      "timestamp_str": "April 13, 2026, 7:04 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37750",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T23:04:00Z"
+    },
+    {
+      "id": "37748",
+      "timestamp_str": "April 13, 2026, 5:12 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37748",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T21:12:00Z"
+    },
+    {
+      "id": "37749",
+      "timestamp_str": "April 13, 2026, 5:11 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37749",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T21:11:00Z"
+    },
+    {
+      "id": "37747",
+      "timestamp_str": "April 13, 2026, 4:54 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37747",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T20:54:00Z"
+    },
+    {
+      "id": "37745",
+      "timestamp_str": "April 13, 2026, 12:33 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37745",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T16:33:00Z"
+    },
+    {
+      "id": "37746",
+      "timestamp_str": "April 13, 2026, 12:32 PM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37746",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T16:32:00Z"
+    },
+    {
+      "id": "37744",
+      "timestamp_str": "April 13, 2026, 10:23 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37744",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T14:23:00Z"
+    },
+    {
+      "id": "37743",
+      "timestamp_str": "April 13, 2026, 4:10 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37743",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T08:10:00Z"
+    },
+    {
+      "id": "37738",
+      "timestamp_str": "April 13, 2026, 2:38 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37738",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T06:38:00Z"
+    },
+    {
+      "id": "37739",
+      "timestamp_str": "April 13, 2026, 2:37 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37739",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T06:37:00Z"
+    },
+    {
+      "id": "37740",
+      "timestamp_str": "April 13, 2026, 2:37 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37740",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T06:37:00Z"
+    },
+    {
+      "id": "37741",
+      "timestamp_str": "April 13, 2026, 2:36 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37741",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T06:36:00Z"
+    },
+    {
+      "id": "37742",
+      "timestamp_str": "April 13, 2026, 2:35 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37742",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T06:35:00Z"
+    },
+    {
+      "id": "37737",
+      "timestamp_str": "April 13, 2026, 12:43 AM",
+      "content": "",
+      "status_url": "https://www.trumpstruth.org/statuses/37737",
+      "is_retruth_hint": false,
+      "is_reply_hint": false,
+      "ts_utc": "2026-04-13T04:43:00Z"
+    }
+  ],
+  "cross_check_potus_hits": []
+}

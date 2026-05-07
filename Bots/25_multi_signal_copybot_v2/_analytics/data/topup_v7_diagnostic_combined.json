@@ -1,0 +1,537 @@
+[
+  {
+    "name": "V7_T1_res300p400",
+    "final_bankroll": 4223.31,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.055828350633389846,
+    "max_drawdown_pct": 0.21212668689259925,
+    "trades_taken": 91,
+    "trades_skipped_filter": 535,
+    "trades_skipped_bankroll": 662,
+    "trades_skipped_min_upgrade": 344,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4713306844190042,
+    "std_roi": 1.3843750331796971,
+    "sharpe": 0.3404645945805812,
+    "total_resolved_pnl": 305.97552002874534,
+    "unresolved_legs": 14,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V7_T2_res300p400",
+    "final_bankroll": 4223.31,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.055828350633389846,
+    "max_drawdown_pct": 0.21212668689259925,
+    "trades_taken": 96,
+    "trades_skipped_filter": 456,
+    "trades_skipped_bankroll": 751,
+    "trades_skipped_min_upgrade": 329,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4713306844190042,
+    "std_roi": 1.3843750331796971,
+    "sharpe": 0.3404645945805812,
+    "total_resolved_pnl": 305.97552002874534,
+    "unresolved_legs": 14,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.3
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V7_T2b_res300p400",
+    "final_bankroll": 4223.96,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.055988919369408224,
+    "max_drawdown_pct": 0.2119661181565809,
+    "trades_taken": 94,
+    "trades_skipped_filter": 455,
+    "trades_skipped_bankroll": 752,
+    "trades_skipped_min_upgrade": 331,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4713306844190042,
+    "std_roi": 1.3843750331796971,
+    "sharpe": 0.3404645945805812,
+    "total_resolved_pnl": 306.61779497281975,
+    "unresolved_legs": 14,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.5
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V7_T2_res300p300",
+    "final_bankroll": 4516.68,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.1291697859599392,
+    "max_drawdown_pct": 0.14751348235791098,
+    "trades_taken": 100,
+    "trades_skipped_filter": 464,
+    "trades_skipped_bankroll": 737,
+    "trades_skipped_min_upgrade": 331,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.5275737518831138,
+    "std_roi": 1.5019211993651715,
+    "sharpe": 0.3512659333299959,
+    "total_resolved_pnl": 617.255835463757,
+    "unresolved_legs": 16,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 31.75,
+      "B": -177.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.3
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 300.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V3_T2_res300p300",
+    "final_bankroll": 4470.1,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.11752428553624668,
+    "max_drawdown_pct": 0.14932382113171327,
+    "trades_taken": 103,
+    "trades_skipped_filter": 459,
+    "trades_skipped_bankroll": 732,
+    "trades_skipped_min_upgrade": 338,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.5275430023331885,
+    "std_roi": 1.5016631309621027,
+    "sharpe": 0.351305823161015,
+    "total_resolved_pnl": 571.2422280136083,
+    "unresolved_legs": 17,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.3
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 300.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "V3_T2b_res300p300",
+    "final_bankroll": 4467.39,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.11684810666795965,
+    "max_drawdown_pct": 0.15000000000000008,
+    "trades_taken": 103,
+    "trades_skipped_filter": 457,
+    "trades_skipped_bankroll": 733,
+    "trades_skipped_min_upgrade": 339,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.5275430023331885,
+    "std_roi": 1.5016631309621027,
+    "sharpe": 0.351305823161015,
+    "total_resolved_pnl": 568.5375125404611,
+    "unresolved_legs": 17,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.5
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 300.0,
+      "min_upgrade_usd": 5.0
+    }
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "total_bets": 1807,
+  "total_filled": 373,
+  "fill_rate": 20.641947980077475,
+  "stale_events": [
+    {
+      "title": "(from warning line)",
+      "gamma": 0.981,
+      "clob": 0.84,
+      "diff": 0.141
+    },
+    {
+      "title": "Counter-Strike:  CSDIILIT vs MANA eSports - Map 1 Winner",
+      "gamma": 0.981,
+      "clob": 0.84,
+      "diff": 0.141
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.975,
+      "clob": 0.863,
+      "diff": 0.112
+    },
+    {
+      "title": "Counter-Strike: Rebels Gaming vs Ursa (BO3) - NODWIN Clutch",
+      "gamma": 0.975,
+      "clob": 0.863,
+      "diff": 0.112
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.979,
+      "clob": 0.885,
+      "diff": 0.094
+    },
+    {
+      "title": "Dota 2: Team Falcons vs Virtus.pro (BO2) - ESL One Birmingha",
+      "gamma": 0.979,
+      "clob": 0.885,
+      "diff": 0.094
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.978,
+      "clob": 0.914,
+      "diff": 0.063
+    },
+    {
+      "title": "LoL: French Flair vs Galions - Game 2 Winner",
+      "gamma": 0.978,
+      "clob": 0.914,
+      "diff": 0.064
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.989,
+      "clob": 0.948,
+      "diff": 0.041
+    },
+    {
+      "title": "Counter-Strike: BIG vs MOUZ NXT (BO3) - BC Game Masters Cham",
+      "gamma": 0.989,
+      "clob": 0.948,
+      "diff": 0.041
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.979,
+      "clob": 0.92,
+      "diff": 0.059
+    },
+    {
+      "title": "Counter-Strike: Lavked vs Hashiras - Map 1 Winner",
+      "gamma": 0.979,
+      "clob": 0.92,
+      "diff": 0.059
+    },
+    {
+      "title": "(from warning line)",
+      "gamma": 0.98,
+      "clob": 0.925,
+      "diff": 0.054
+    },
+    {
+      "title": "Will Trump say \"Biden\" or \"Obama\" 7+ times at the NRCC Dinne",
+      "gamma": 0.98,
+      "clob": 0.925,
+      "diff": 0.055
+    }
+  ],
+  "stale_count": 14
+}

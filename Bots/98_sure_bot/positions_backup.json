@@ -1,0 +1,96 @@
+{
+  "positions": {
+    "0x008c989947fd3f2ebf2a6eb966b3448813939fce086b8849422b131a419054e2": {
+      "condition_id": "0xea078f5da2e96011ea0a60eacbb442062269d3f1d145219945b3e63e6fdce12c",
+      "token_id": "78580532746039389070100598296810047586074001504188354766291428977248656369855",
+      "title": "No change in Bank of England's interest rates after March 2026 meeting?",
+      "entry_price": 0.987,
+      "size_shares": 5.0,
+      "cost_usd": 4.935,
+      "neg_risk": true,
+      "order_id": "0x008c989947fd3f2ebf2a6eb966b3448813939fce086b8849422b131a419054e2",
+      "timestamp": "2026-03-18T10:50:28.599311+00:00",
+      "status": "open"
+    },
+    "0x43d5217be8992b5b3462bbfa0ac88feb9e2a01b99cc38fab0d6244a6647f82e7": {
+      "condition_id": "0x80e12c906546d7a9b1c6d503042a50496e23d9dfd02835e1d7defa94257c316a",
+      "token_id": "101876916913164506983365144128098140643807562862758878248439242512392824283132",
+      "title": "No change in Bank of Japan's interest rates after March 2026 meeting?",
+      "entry_price": 0.987,
+      "size_shares": 5.0,
+      "cost_usd": 4.935,
+      "neg_risk": true,
+      "order_id": "0x43d5217be8992b5b3462bbfa0ac88feb9e2a01b99cc38fab0d6244a6647f82e7",
+      "timestamp": "2026-03-18T10:50:30.067272+00:00",
+      "status": "open"
+    },
+    "0x5467e9ecc1800a9b7afc1926b8634a17c2d94980e9c88fe2b3d9f9138d9fcd23": {
+      "condition_id": "0x2c5decee03e431d0f2e8e437267df25b3a077bd36790f13a55342ef610d3eb1f",
+      "token_id": "28715657949848774104017957430894291959798769028572224035820296903696457546441",
+      "title": "Will Powell say \"Good Afternoon\" during March press conference?",
+      "entry_price": 0.989,
+      "size_shares": 5.01,
+      "cost_usd": 4.95489,
+      "neg_risk": false,
+      "order_id": "0x5467e9ecc1800a9b7afc1926b8634a17c2d94980e9c88fe2b3d9f9138d9fcd23",
+      "timestamp": "2026-03-18T10:50:40.960604+00:00",
+      "status": "open"
+    },
+    "0x5105269f9bf6647450822ab790132d28ca64570c4a20b374ab27a79a90af6d33": {
+      "condition_id": "0x455b8bcdbbb832559f28e4be479d01d4cfb0a068d19c06bc2ba0836f3a54bc8d",
+      "token_id": "84192310231692883046600002747968566323785771567696077848325452470966390350529",
+      "title": "Will Powell say \"Volatile\" during March press conference?",
+      "entry_price": 0.978,
+      "size_shares": 5.0,
+      "cost_usd": 4.89,
+      "neg_risk": false,
+      "order_id": "0x5105269f9bf6647450822ab790132d28ca64570c4a20b374ab27a79a90af6d33",
+      "timestamp": "2026-03-18T10:50:42.472619+00:00",
+      "status": "open"
+    },
+    "0xe7405f190e11650c64fbad8b01f8b42338d4a882483e3895d2c2eaadee5c9cf5": {
+      "condition_id": "0x4a09076d4eca529052cdb86a4537dd95970d5c4c7062669c97b6438fcd99dde3",
+      "token_id": "26633481264218666913676971149164671570252961707363129506885973257966768426099",
+      "title": "Will Micron Technology (MU) beat quarterly earnings?",
+      "entry_price": 0.986,
+      "size_shares": 5.0,
+      "cost_usd": 4.93,
+      "neg_risk": false,
+      "order_id": "0xe7405f190e11650c64fbad8b01f8b42338d4a882483e3895d2c2eaadee5c9cf5",
+      "timestamp": "2026-03-18T10:50:44.432513+00:00",
+      "status": "open"
+    },
+    "0x41354f720bc56aa973ba642812881cdf061a1b922c15cf59e390b4d63d30f7a7": {
+      "condition_id": "0xc093d903ee03c6e6b46588a3bda903ccd3b97928e6bd9b7872bf0d2a095caa36",
+      "token_id": "42063272044556211830210833965959772740413696735476043316165249601691790834693",
+      "title": "Spread: Atalanta BC (-2.5)",
+      "entry_price": 0.988,
+      "size_shares": 5.01,
+      "cost_usd": 4.949879999999999,
+      "neg_risk": false,
+      "order_id": "0x41354f720bc56aa973ba642812881cdf061a1b922c15cf59e390b4d63d30f7a7",
+      "timestamp": "2026-03-18T10:50:48.819528+00:00",
+      "status": "open"
+    },
+    "0xb10b6caed57838fbce5aa0266a2d16069415d3ddb2b2c1b64173db49a05ee164": {
+      "condition_id": "0xca488e90716d549283660f2aa30f362e57bfaa360ea8338cdf49bb85ffbefe74",
+      "token_id": "85240826252041168427291833071947073018229022348166789562987180937596002495490",
+      "title": "Siena Saints vs. Duke Blue Devils",
+      "entry_price": 0.991,
+      "size_shares": 5.01,
+      "cost_usd": 4.96491,
+      "neg_risk": false,
+      "order_id": "0xb10b6caed57838fbce5aa0266a2d16069415d3ddb2b2c1b64173db49a05ee164",
+      "timestamp": "2026-03-18T10:50:55.463132+00:00",
+      "status": "open"
+    }
+  },
+  "stats": {
+    "total_bets": 7,
+    "wins": 0,
+    "losses": 0,
+    "total_pnl": 0.0,
+    "peak_balance": 500.0,
+    "current_balance": 465.44032000000004
+  }
+}

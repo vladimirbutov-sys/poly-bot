@@ -1,0 +1,622 @@
+"""
+signal_bot_iran.py — Iran-US Conflict Polymarket Signal Bot
+
+Два модуля:
+  Задача 1 (🔵): Мониторинг новостей → Claude оценка → алерт
+  Задача 2 (🟠): Мониторинг коэффициентов → двойной порог → алерт
+
+Запуск: python signal_bot_iran.py
+"""
+import asyncio
+import hashlib
+import json
+import logging
+import time as _time
+from datetime import datetime, timezone
+
+import httpx
+
+from core.config import (
+    DATA_DIR, CONFIGS_DIR, MIN_CONFIDENCE, ANTHROPIC_API_KEY,
+    TG_BOT_TOKEN, TG_CHAT_ID, SPIKE_BET_SIZE_USD,
+)
+from core.iran_market_cache import MarketCache
+from core.iran_evaluator import IranEvaluator
+from core.alerter import send_alert, format_news_alert, format_odds_alert, format_new_market_alert
+from core.positions import load_positions
+from core.signal_logger import log_signal
+from core.signal_verifier import SignalVerifier  # kept for odds verification
+from digest import generate_digest, run_scheduled_digests
+from auto_hedge import AutoHedge
+from auto_spike_rider import SpikeRider, TARGET_MARKETS
+from core.tick_recorder import TickRecorder
+
+NEW_MARKET_MIN_DATE = "2026-03-25"  # Алертить только о рынках, созданных с этой даты
+
+from monitors.telegram_monitor import TelegramMonitor
+from monitors.twitter_monitor import TwitterMonitor
+from monitors.odds_monitor import OddsMonitor
+from monitors.truth_social_monitor import TruthSocialMonitor
+
+# =====================================================================
+# Логирование
+# =====================================================================
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(DATA_DIR / "iran_bot.log", encoding="utf-8"),
+    ],
+)
+logger = logging.getLogger("iran_bot")
+
+# =====================================================================
+# Shared ядро
+# =====================================================================
+iran_cache = MarketCache()
+evaluator = IranEvaluator()
+verifier = SignalVerifier(iran_cache)
+hedger = AutoHedge()
+spike_rider = SpikeRider()
+
+# Дедупликация по source+text (персистентная — переживает рестарты)
+SEEN_FILE = DATA_DIR / "seen_hashes.json"
+_seen: set[str] = set()
+
+
+def _load_seen():
+    """Загрузить хеши обработанных сообщений с диска."""
+    global _seen
+    try:
+        if SEEN_FILE.exists():
+            with open(SEEN_FILE, "r") as f:
+                _seen = set(json.load(f))
+            logger.info(f"Loaded {len(_seen)} seen hashes from disk")
+    except Exception as e:
+        logger.warning(f"Seen hashes load failed: {e}")
+
+
+def _save_seen():
+    """Сохранить хеши на диск (последние 5000)."""
+    try:
+        to_save = list(_seen)[-5000:]
+        with open(SEEN_FILE, "w") as f:
+            json.dump(to_save, f)
+    except Exception as e:
+        logger.warning(f"Seen hashes save failed: {e}")
+
+# Дедупликация по теме: одна тема из разных источников → один алерт за 20 мин
+_topic_alert_times: dict[str, float] = {}  # topic_key → timestamp
+TOPIC_DEDUP_WINDOW = 1200  # 20 минут
+
+# =====================================================================
+# Tier 1 Bypass: кризисные ключевые слова → алерт БЕЗ Claude
+# Для Tier 1 источников (CNN, Reuters, Pentagon, Khamenei и т.д.)
+# при совпадении с кризисными словами — мгновенный алерт без задержки на API.
+# TODO: отключить после разрешения ультиматума (~26 марта 2026)
+# =====================================================================
+CRISIS_BYPASS_ENABLED = True
+
+CRISIS_KEYWORDS_EN = [
+    "ultimatum", "deadline", "power plant", "power grid", "obliterate",
+    "blackout", "infrastructure strike", "hormuz open", "hormuz reopen",
+    "hormuz clos", "full closure", "desalination", "bandar abbas", "bushehr",
+    "neka power",
+    "strikes iran", "struck iran", "bombing iran", "iran retaliates",
+]
+CRISIS_KEYWORDS_OTHER = [
+    "ультиматум", "электростанция", "блэкаут", "бандар-аббас",
+    "نیروگاه", "اولتیماتوم", "ضرب‌الاجل", "خاموشی", "قطع برق",
+    "محطة كهرباء", "إنذار", "مهلة",
+]
+ALL_CRISIS_KEYWORDS = [k.lower() for k in CRISIS_KEYWORDS_EN + CRISIS_KEYWORDS_OTHER]
+
+
+def _crisis_keyword_match(text: str) -> str | None:
+    """Возвращает первое совпавшее кризисное слово или None."""
+    text_lower = text.lower()
+    for kw in ALL_CRISIS_KEYWORDS:
+        if kw in text_lower:
+            return kw
+    return None
+
+
+async def _quick_translate(text: str) -> str:
+    """Быстрый перевод на русский через Haiku (~0.5с). При ошибке — возвращает оригинал."""
+    try:
+        async with httpx.AsyncClient(timeout=10) as client:
+            resp = await client.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={
+                    "x-api-key": ANTHROPIC_API_KEY,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                },
+                json={
+                    "model": "claude-haiku-4-5-20251001",
+                    "max_tokens": 300,
+                    "messages": [{"role": "user", "content":
+                        f"Переведи на русский язык. Только перевод, ничего лишнего.\n\n{text[:500]}"}],
+                },
+            )
+            resp.raise_for_status()
+            return resp.json()["content"][0]["text"].strip()
+    except Exception as e:
+        logger.warning(f"Quick translate failed: {e}")
+        return text
+
+# Интервал обновления кэша рынков (60 секунд — чаще чем основной бот,
+# т.к. OddsMonitor требует частых снапшотов для истории цен)
+IRAN_CACHE_INTERVAL = 60
+
+
+def _confidence_passes(confidence: str) -> bool:
+    levels = {"HIGH": 3, "MEDIUM": 2, "LOW": 1}
+    return levels.get(confidence, 0) >= levels.get(MIN_CONFIDENCE, 2)
+
+
+# =====================================================================
+# Загрузка sources_iran.json
+# =====================================================================
+def load_iran_sources() -> dict:
+    """Загружает configs/sources_iran.json."""
+    path = CONFIGS_DIR / "sources_iran.json"
+    result = {
+        "telegram": {},
+        "twitter": {},
+        "keywords": {},
+    }
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+
+        result["telegram"] = cfg.get("telegram_channels", {})
+        result["twitter"] = cfg.get("twitter_accounts", {})
+        result["keywords"] = cfg.get("keywords", {})
+
+        # Дедупликация keywords
+        for lang in result["keywords"]:
+            result["keywords"][lang] = list(set(result["keywords"][lang]))
+
+        logger.info(
+            f"Loaded sources_iran.json: "
+            f"{len(result['telegram'])} TG + {len(result['twitter'])} X + "
+            f"{sum(len(v) for v in result['keywords'].values())} keywords"
+        )
+    except Exception as e:
+        logger.error(f"Failed to load sources_iran.json: {e}")
+
+    return result
+
+
+# =====================================================================
+# Задача 1: Pipeline обработки новости
+# =====================================================================
+def _keyword_match(text: str, keywords: dict) -> bool:
+    text_lower = text.lower()
+    for lang_words in keywords.values():
+        for kw in lang_words:
+            if kw.lower() in text_lower:
+                return True
+    return False
+
+
+def _extract_source_url(source_name: str, meta: dict) -> str:
+    """Извлечь URL источника из метаданных."""
+    # Twitter: конструируем URL из tweet_id
+    tweet_id = meta.get("tweet_id", "")
+    if tweet_id and source_name.startswith("X @"):
+        username = source_name.replace("X @", "")
+        return f"https://x.com/{username}/status/{tweet_id}"
+
+    # Telegram: конструируем URL из message_id
+    msg_id = meta.get("msg_id", "")
+    if msg_id and source_name.startswith("TG @"):
+        username = source_name.replace("TG @", "")
+        return f"https://t.me/{username}/{msg_id}"
+
+    return meta.get("url", "")
+
+
+async def make_process_message(keywords: dict):
+    """Создаёт callback для Задачи 1 (мониторинг новостей)."""
+
+    async def process_message(text: str, source_name: str, meta: dict):
+        # Дедупликация (персистентная)
+        h = hashlib.md5(f"{source_name}:{text[:200]}".encode()).hexdigest()
+        if h in _seen:
+            return
+        _seen.add(h)
+        if len(_seen) % 50 == 0:
+            _save_seen()
+        if len(_seen) > 5000:
+            # Оставить последние 3000
+            recent = list(_seen)[-3000:]
+            _seen.clear()
+            _seen.update(recent)
+            _save_seen()
+
+        # Фильтр по ключевым словам (все источники, включая Truth Social)
+        if not _keyword_match(text, keywords):
+            return
+
+        logger.info(f"🔵 Keyword match [{meta.get('topic', '?')}] {source_name}: {text[:80]}...")
+
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        source_url = _extract_source_url(source_name, meta)
+        tier = meta.get("tier", 3)
+
+        # === BYPASS: Tier 1 + кризисное слово → быстрый алерт без полной оценки Claude ===
+        crisis_kw = _crisis_keyword_match(text) if CRISIS_BYPASS_ENABLED else None
+        if crisis_kw and tier == 1:
+            # Быстрый перевод на русский (~0.5с вместо ~2с полной оценки)
+            translated = await _quick_translate(text[:500])
+            result = {
+                "confidence": "HIGH",
+                "topic_key": f"crisis_{crisis_kw.replace(' ', '_')}",
+                "reasoning": f"⚡ BYPASS: Tier 1 источник + кризисное слово '{crisis_kw}' — отправлено без оценки Claude",
+                "summary": translated,
+                "_source": source_name,
+                "_timestamp": ts,
+                "_source_url": source_url,
+            }
+            logger.info(f"⚡ CRISIS BYPASS: Tier 1 '{source_name}' + keyword '{crisis_kw}' → instant alert")
+        else:
+            # Обычный путь: оценка через Claude
+            result = await evaluator.evaluate(
+                text=text,
+                source_name=source_name,
+                tier=tier,
+                topic=meta.get("topic", "unknown"),
+                lang=meta.get("lang", "en"),
+                timestamp=ts,
+                source_url=source_url,
+            )
+            if result is None:
+                return
+
+        confidence = result.get("confidence", "LOW")
+        module = "iran_news"
+        logger.info(f"[{module}] {confidence}")
+
+        should_send = _confidence_passes(confidence)
+
+        # Дедупликация по теме: та же тема из другого источника за 20 мин → не слать
+        if should_send:
+            now_ts = _time.time()
+            topic_key = result.get("topic_key", "")
+            if topic_key:
+                last_topic_ts = _topic_alert_times.get(topic_key, 0)
+                if now_ts - last_topic_ts < TOPIC_DEDUP_WINDOW:
+                    logger.info(
+                        f"🔵 Topic dedup skip ({TOPIC_DEDUP_WINDOW}s): "
+                        f"'{topic_key}' — {source_name}"
+                    )
+                    should_send = False
+
+        log_signal(result, sent=should_send, module=module)
+
+        if should_send:
+            topic_key = result.get("topic_key", "")
+            if topic_key:
+                _topic_alert_times[topic_key] = _time.time()
+            alert_text = format_news_alert(result)
+            await send_alert(alert_text)
+            logger.info(f"🔵 News alert sent: {confidence} — {source_name}")
+
+            # Авто-хедж при HIGH confidence
+            if confidence == "HIGH":
+                try:
+                    await hedger.maybe_hedge(result, iran_cache)
+                except Exception as e:
+                    logger.error(f"Auto-hedge error: {e}")
+
+            # Spike Rider: trigger on Trump/Truth Social + Iran FM Araghchi
+            src_lower = source_name.lower()
+            if "truth" in src_lower or "trump" in src_lower or "araghchi" in src_lower:
+                try:
+                    await spike_rider.on_trump_signal(result)
+                except Exception as e:
+                    logger.error(f"Spike rider error: {e}")
+
+    return process_message
+
+
+# =====================================================================
+# Задача 2: Callback для OddsMonitor
+# =====================================================================
+async def on_odds_alert(alert_data: dict):
+    """Callback для OddsMonitor — логирует движение + отправляет в Telegram."""
+    # Логировать
+    log_signal(
+        {
+            "confidence": "ODDS_MOVE",
+            "relevant_market_slug": alert_data.get("slug", ""),
+            "relevant_market_title": alert_data.get("title", ""),
+            "direction": alert_data.get("direction", ""),
+            "current_price_pct": alert_data.get("current_pct"),
+            "expected_spike_pct": None,
+            "reasoning": f"Движение {alert_data.get('old_pct')}% → {alert_data.get('current_pct')}%",
+            "summary": f"Рынок сдвинулся на {alert_data.get('delta_pp', 0):+.1f} п.п.",
+            "_source": "odds_monitor",
+            "_timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        },
+        sent=True,
+        module="iran_odds",
+    )
+
+    # Отправить в Telegram
+    msg = format_odds_alert(alert_data)
+    await send_alert(msg)
+    logger.info(f"🟠 Odds alert sent: {alert_data.get('title', '?')[:50]}")
+
+    # Зарегистрировать для верификации
+    verifier.register_signal({
+        "slug": alert_data.get("slug", ""),
+        "signal_type": "odds",
+        "confidence": "ODDS_MOVE",
+        "direction": alert_data.get("direction", ""),
+        "price_at_signal": alert_data.get("current_pct", 0),
+        "expected_price": None,
+        "source": "odds_monitor",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "summary": f"{alert_data.get('title', '?')}: {alert_data.get('old_pct')}% → {alert_data.get('current_pct')}%",
+    })
+
+
+# =====================================================================
+# Market cache updater (каждые 60 секунд)
+# =====================================================================
+async def run_spike_rider_exits():
+    """Check spike rider trades for take-profit or timeout every 30s."""
+    while True:
+        try:
+            await spike_rider.check_exits(iran_cache)
+        except Exception as e:
+            logger.error(f"Spike rider exit check error: {e}")
+        await asyncio.sleep(30)
+
+
+async def run_iran_cache_updater():
+    while True:
+        try:
+            new_markets = await iran_cache.update()
+            if new_markets:
+                for mkt in new_markets:
+                    created = mkt.get("created_at", "")[:10]
+                    if created >= NEW_MARKET_MIN_DATE:
+                        msg = format_new_market_alert(mkt)
+                        await send_alert(msg)
+                        logger.info(f"🆕 New market alert sent: {mkt.get('title', '?')[:60]}")
+                    else:
+                        logger.info(f"🆕 New market (old, no alert): {mkt.get('title', '?')[:60]} created {created}")
+        except Exception as e:
+            logger.error(f"Iran cache update error: {e}")
+        await asyncio.sleep(IRAN_CACHE_INTERVAL)
+
+
+
+# =====================================================================
+# Telegram command listener (/digest)
+# =====================================================================
+async def run_telegram_commands(market_cache):
+    """Listen for /digest command via Telegram getUpdates."""
+    last_update_id = 0
+    while True:
+        try:
+            async with httpx.AsyncClient(timeout=10) as client:
+                resp = await client.get(
+                    f"https://api.telegram.org/bot{TG_BOT_TOKEN}/getUpdates",
+                    params={"offset": last_update_id + 1, "timeout": 5, "allowed_updates": '["message"]'},
+                )
+                if resp.status_code == 200:
+                    results = resp.json().get("result", [])
+                    for update in results:
+                        last_update_id = max(last_update_id, update["update_id"])
+                        msg = update.get("message", {})
+                        chat_id = str(msg.get("chat", {}).get("id", ""))
+                        text = msg.get("text", "").strip().lower()
+
+                        if chat_id != TG_CHAT_ID:
+                            continue
+
+                        if text == "/bot":
+                            help_text = (
+                                "<b>Команды бота</b>\n"
+                                "\n"
+                                "<b>Общие:</b>\n"
+                                "/bot — эта справка\n"
+                                "/digest — сводка за последние 12 часов\n"
+                                "\n"
+                                "<b>Spike Rider (авто-торговля по постам Трампа/Араджчи):</b>\n"
+                                "/spike on — включить (режим подтверждения)\n"
+                                "/spike off — выключить\n"
+                                "/spike auto — авто-режим (ставки без подтверждения)\n"
+                                "/spike manual — вернуть режим подтверждения\n"
+                                "/spike status — статус, лимиты, активные сделки\n"
+                                "/spike confirm &lt;id&gt; — подтвердить пакет ставок\n"
+                                "/spike reject &lt;id&gt; — отклонить пакет ставок\n"
+                                "\n"
+                                "<b>Авто-хедж:</b>\n"
+                                "/hedge on — включить\n"
+                                "/hedge off — выключить\n"
+                                "/hedge status — статус\n"
+                                "/hedge confirm &lt;id&gt; — подтвердить хедж\n"
+                                "/hedge reject &lt;id&gt; — отклонить хедж\n"
+                                "/hedge cancel &lt;id&gt; — отменить ордер"
+                            )
+                            await send_alert(help_text)
+                        elif text == "/digest":
+                            digest_text = await generate_digest(market_cache)
+                            await send_alert(digest_text)
+                            logger.info("Digest sent via /digest command")
+                        elif text == "/hedge on":
+                            msg = hedger.toggle(True)
+                            await send_alert(msg)
+                            logger.info("Hedge enabled via command")
+                        elif text == "/hedge off":
+                            msg = hedger.toggle(False)
+                            await send_alert(msg)
+                            logger.info("Hedge disabled via command")
+                        elif text == "/hedge status":
+                            msg = hedger.get_status()
+                            await send_alert(msg)
+                        elif text.startswith("/hedge confirm "):
+                            proposal_id = text.replace("/hedge confirm ", "").strip()
+                            msg = await hedger.confirm_proposal(proposal_id)
+                            await send_alert(msg)
+                            logger.info("Hedge confirmed: %s", proposal_id)
+                        elif text.startswith("/hedge reject "):
+                            proposal_id = text.replace("/hedge reject ", "").strip()
+                            msg = await hedger.reject_proposal(proposal_id)
+                            await send_alert(msg)
+                            logger.info("Hedge rejected: %s", proposal_id)
+                        elif text.startswith("/hedge cancel "):
+                            order_id = text.replace("/hedge cancel ", "").strip()
+                            msg = await hedger.cancel_order(order_id)
+                            await send_alert(msg)
+                        # --- Spike Rider commands ---
+                        elif text == "/spike on":
+                            msg = spike_rider.toggle(True)
+                            await send_alert(msg)
+                            logger.info("Spike rider enabled via command")
+                        elif text == "/spike off":
+                            msg = spike_rider.toggle(False)
+                            await send_alert(msg)
+                            logger.info("Spike rider disabled via command")
+                        elif text == "/spike auto":
+                            msg = spike_rider.set_auto_mode(True)
+                            await send_alert(msg)
+                            logger.info("Spike rider AUTO mode enabled")
+                        elif text == "/spike manual":
+                            msg = spike_rider.set_auto_mode(False)
+                            await send_alert(msg)
+                            logger.info("Spike rider manual mode enabled")
+                        elif text == "/spike status":
+                            msg = spike_rider.get_status()
+                            await send_alert(msg)
+                        elif text.startswith("/spike confirm "):
+                            proposal_id = text.replace("/spike confirm ", "").strip()
+                            msg = await spike_rider.confirm_proposal(proposal_id)
+                            await send_alert(msg)
+                            logger.info("Spike confirmed: %s", proposal_id)
+                        elif text.startswith("/spike reject "):
+                            proposal_id = text.replace("/spike reject ", "").strip()
+                            msg = await spike_rider.reject_proposal(proposal_id)
+                            await send_alert(msg)
+                            logger.info("Spike rejected: %s", proposal_id)
+        except Exception as e:
+            logger.error(f"Telegram commands error: {e}")
+
+        await asyncio.sleep(10)
+
+
+# =====================================================================
+# MAIN
+# =====================================================================
+async def main():
+    logger.info("=" * 60)
+    logger.info("🇮🇷 Iran Signal Bot starting...")
+
+    # Загрузить персистентный дедуп
+    _load_seen()
+
+    # Загрузить позиции пользователя
+    positions = load_positions()
+
+    # Загрузить конфиги
+    src = load_iran_sources()
+
+    # Начальное обновление кэша (new markets отправим после startup алерта)
+    initial_new_markets = await iran_cache.update()
+
+    # Callback для Задачи 1
+    process_message = await make_process_message(src["keywords"])
+
+    # Подсчёт
+    n_tg = len(src["telegram"])
+    n_tw = len(src["twitter"])
+    n_kw = sum(len(v) for v in src["keywords"].values())
+    n_markets = len(iran_cache.markets)
+
+    # Startup алерт
+    lines = [
+        "🇮🇷 <b>Iran Signal Bot запущен</b>\n",
+        f"📡 Telegram: {n_tg} каналов",
+        f"🐦 Twitter: {n_tw} аккаунтов",
+        f"📢 Truth Social: RSS + CNN backup",
+        f"🔑 Keywords: {n_kw}",
+        f"📊 Iran-рынков: {n_markets}",
+        f"📍 Позиций: {len(positions)}",
+        f"⚙️ Min confidence: {MIN_CONFIDENCE}",
+        f"📐 Пороги движения: ≥4 п.п. (с позицией) / ≥7 п.п. (без) за 5 мин",
+        f"🆕 Новые рынки: алерт при создании (с 25.03), движения только при volume > $30K",
+        f"⚡ Crisis bypass: {'ВКЛ — Tier 1 + кризисные слова → мгновенный алерт' if CRISIS_BYPASS_ENABLED else 'ВЫКЛ'}",
+        f"🎯 Spike Rider: {'ВКЛ' if spike_rider.enabled else 'ВЫКЛ'} (${SPIKE_BET_SIZE_USD}/рынок, /spike on)",
+        "",
+        "🔵 = алерт по новости",
+        "🟠 = алерт по движению рынка",
+        "🆕 = новый рынок на Polymarket",
+        f"\n🕐 {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
+    ]
+    await send_alert("\n".join(lines))
+
+    # Отправить алерты о новых рынках, обнаруженных при старте
+    if initial_new_markets:
+        logger.info(f"🆕 {len(initial_new_markets)} new market(s) found at startup (no alerts)")
+
+    # Создать мониторы
+    monitors = []
+
+    # Задача 1: мониторы новостей
+    if src["telegram"]:
+        monitors.append(
+            TelegramMonitor(channels=src["telegram"], on_message=process_message)
+        )
+
+    if src["twitter"]:
+        monitors.append(
+            TwitterMonitor(accounts=src["twitter"], on_message=process_message)
+        )
+
+    # Truth Social monitor
+    truth_monitor = TruthSocialMonitor(on_message=process_message)
+    monitors.append(truth_monitor)
+
+    # Задача 2: монитор коэффициентов
+    odds_monitor = OddsMonitor(
+        iran_cache=iran_cache,
+        on_odds_alert=on_odds_alert,
+    )
+    monitors.append(odds_monitor)
+
+    # Tick recorder — тиковые данные каждые 10 сек по целевым рынкам
+    target_slugs = {tm["slug"] for tm in TARGET_MARKETS}
+    tick_recorder = TickRecorder(iran_cache, target_slugs)
+
+    # Запуск всех задач
+    tasks = [
+        asyncio.create_task(run_iran_cache_updater()),
+        asyncio.create_task(evaluator.start_worker()),
+        asyncio.create_task(verifier.run()),
+        asyncio.create_task(run_scheduled_digests(iran_cache)),
+        asyncio.create_task(run_telegram_commands(iran_cache)),
+        asyncio.create_task(run_spike_rider_exits()),
+        asyncio.create_task(tick_recorder.run()),
+    ]
+
+    for monitor in monitors:
+        tasks.append(asyncio.create_task(monitor.run_forever()))
+
+    logger.info(
+        f"Running {len(tasks)} tasks: "
+        f"{len(monitors)} monitors + cache updater + evaluator"
+    )
+
+    await asyncio.gather(*tasks)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

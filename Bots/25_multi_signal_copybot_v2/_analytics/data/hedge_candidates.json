@@ -1,0 +1,976 @@
+[
+  {
+    "slug": "trump-announces-us-x-iran-ceasefire-end-by-april-18-2026",
+    "question": "Trump announces US x Iran ceasefire end by April 18, 2026?",
+    "conditionId": "0xd81f611670339738cb6ac259b94a54b5b08e372f19c063a8ad6fb2a8c7fe3ed8",
+    "endDate": "2026-04-18T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "79964293069461530040675500711708428263953703716506263160033361693864205796730",
+    "best_ask": 0.009,
+    "best_bid": 0.008,
+    "mid": 0.0085,
+    "asks_top5": [
+      {
+        "price": 0.009,
+        "size": 3063.92
+      },
+      {
+        "price": 0.01,
+        "size": 51804.2
+      },
+      {
+        "price": 0.011,
+        "size": 91015.0
+      },
+      {
+        "price": 0.012,
+        "size": 3333.0
+      },
+      {
+        "price": 0.013,
+        "size": 8888.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.008,
+        "size": 46.36
+      },
+      {
+        "price": 0.006,
+        "size": 3623.64
+      },
+      {
+        "price": 0.005,
+        "size": 3165.8
+      },
+      {
+        "price": 0.004,
+        "size": 104.87
+      },
+      {
+        "price": 0.003,
+        "size": 19633.33
+      }
+    ],
+    "liq_top5_asks_shares": 158104.12,
+    "volume24h": 165739.56377400004,
+    "liquidityNum": 217865.35685,
+    "current_prob_api": 0.0075
+  },
+  {
+    "slug": "trump-announces-us-x-iran-ceasefire-end-by-april-21-2026",
+    "question": "Trump announces US x Iran ceasefire end by April 21, 2026?",
+    "conditionId": "0xdb7886829f415e00ab97b695a28b5747c6bce1f8ab09635a51ec6480e5d50314",
+    "endDate": "2026-04-21T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "1616166182541724838676329828640054929140786650156260222032609831711838834618",
+    "best_ask": 0.06,
+    "best_bid": 0.05,
+    "mid": 0.055,
+    "asks_top5": [
+      {
+        "price": 0.06,
+        "size": 6917.88
+      },
+      {
+        "price": 0.07,
+        "size": 6612.66
+      },
+      {
+        "price": 0.08,
+        "size": 3848.7
+      },
+      {
+        "price": 0.09,
+        "size": 7469.23
+      },
+      {
+        "price": 0.1,
+        "size": 454.97
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.05,
+        "size": 7878.11
+      },
+      {
+        "price": 0.04,
+        "size": 12897.52
+      },
+      {
+        "price": 0.03,
+        "size": 16738.23
+      },
+      {
+        "price": 0.02,
+        "size": 14084.44
+      },
+      {
+        "price": 0.01,
+        "size": 35550.82
+      }
+    ],
+    "liq_top5_asks_shares": 25303.44,
+    "volume24h": 91639.13050599999,
+    "liquidityNum": 46787.1473,
+    "current_prob_api": 0.055
+  },
+  {
+    "slug": "will-trump-announce-that-the-us-x-iran-ceasefire-has-been-broken-by-april-21-2026",
+    "question": "Will Trump announce that the US x Iran ceasefire has been broken by April 21, 2026?",
+    "conditionId": "0xdda63e9a4419b36eed1559287ec645677d23cb95d96ce7d5c91d83cb6a8b268e",
+    "endDate": "2026-04-21T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "49280639040357558550052498419702634099516416168726782881690167140869178226036",
+    "best_ask": 0.1,
+    "best_bid": 0.09,
+    "mid": 0.095,
+    "asks_top5": [
+      {
+        "price": 0.1,
+        "size": 9.94
+      },
+      {
+        "price": 0.11,
+        "size": 4759.79
+      },
+      {
+        "price": 0.12,
+        "size": 5227.43
+      },
+      {
+        "price": 0.13,
+        "size": 619.91
+      },
+      {
+        "price": 0.14,
+        "size": 3287.42
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.09,
+        "size": 3046.13
+      },
+      {
+        "price": 0.08,
+        "size": 6862.72
+      },
+      {
+        "price": 0.07,
+        "size": 2409.83
+      },
+      {
+        "price": 0.06,
+        "size": 1236.4
+      },
+      {
+        "price": 0.05,
+        "size": 30.0
+      }
+    ],
+    "liq_top5_asks_shares": 13904.49,
+    "volume24h": 15429.253388,
+    "liquidityNum": 29761.3681,
+    "current_prob_api": 0.095
+  },
+  {
+    "slug": "will-another-country-conduct-military-action-against-iran-by-april-15-2026",
+    "question": "Will another country conduct military action against Iran by April 15, 2026?",
+    "conditionId": "0x2d859e9b62672ab0e90238495c1799f37759f8a2e96b67e240ddbf679428e7c8",
+    "endDate": "2026-04-15T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "56898529615166225725410591181516414080450820454450813390300048067076552780724",
+    "best_ask": 0.016,
+    "best_bid": 0.015,
+    "mid": 0.0155,
+    "asks_top5": [
+      {
+        "price": 0.016,
+        "size": 14.51
+      },
+      {
+        "price": 0.02,
+        "size": 138.65
+      },
+      {
+        "price": 0.021,
+        "size": 110.0
+      },
+      {
+        "price": 0.022,
+        "size": 47.03
+      },
+      {
+        "price": 0.023,
+        "size": 100.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.015,
+        "size": 296.63
+      },
+      {
+        "price": 0.014,
+        "size": 3000.0
+      },
+      {
+        "price": 0.013,
+        "size": 2000.0
+      },
+      {
+        "price": 0.012,
+        "size": 14000.0
+      },
+      {
+        "price": 0.011,
+        "size": 100.0
+      }
+    ],
+    "liq_top5_asks_shares": 410.19,
+    "volume24h": 112832.49227699998,
+    "liquidityNum": 41872.2971,
+    "current_prob_api": 0.0165
+  },
+  {
+    "slug": "will-another-country-conduct-military-action-against-iran-by-april-30-2026",
+    "question": "Will another country conduct military action against Iran by April 30, 2026?",
+    "conditionId": "0x9a8757bf4ecee8ba364603c3195d63c37c4d2700b69f8e4c5f751850bc330c9a",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "34326167000070763607237385728981202142045743684217811488054767471626770511481",
+    "best_ask": 0.07,
+    "best_bid": 0.06,
+    "mid": 0.065,
+    "asks_top5": [
+      {
+        "price": 0.07,
+        "size": 400.0
+      },
+      {
+        "price": 0.08,
+        "size": 4754.35
+      },
+      {
+        "price": 0.09,
+        "size": 4695.0
+      },
+      {
+        "price": 0.1,
+        "size": 4084.0
+      },
+      {
+        "price": 0.11,
+        "size": 200.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.06,
+        "size": 7397.26
+      },
+      {
+        "price": 0.05,
+        "size": 8171.25
+      },
+      {
+        "price": 0.04,
+        "size": 3611.86
+      },
+      {
+        "price": 0.03,
+        "size": 8283.53
+      },
+      {
+        "price": 0.02,
+        "size": 10287.73
+      }
+    ],
+    "liq_top5_asks_shares": 14133.35,
+    "volume24h": 10231.978199000003,
+    "liquidityNum": 33009.4051,
+    "current_prob_api": 0.065
+  },
+  {
+    "slug": "will-israel-conduct-military-action-against-iran-by-april-14-2026",
+    "question": "Will Israel conduct military action against Iran by April 14, 2026?",
+    "conditionId": "0x4f8bddad85712e2b46756f71c753380a1417bec8049e4a45742e5182c3a5c015",
+    "endDate": "2026-04-21T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "96547715814438274153556028673891561643153825815779427197832566613330714491363",
+    "best_ask": 0.001,
+    "best_bid": 0.0,
+    "mid": 0.001,
+    "asks_top5": [
+      {
+        "price": 0.001,
+        "size": 44369.67
+      },
+      {
+        "price": 0.002,
+        "size": 26113.66
+      },
+      {
+        "price": 0.005,
+        "size": 700.0
+      },
+      {
+        "price": 0.006,
+        "size": 126.76
+      },
+      {
+        "price": 0.012,
+        "size": 15.0
+      }
+    ],
+    "bids_top5": [],
+    "liq_top5_asks_shares": 71325.09,
+    "volume24h": 80867.75714500001,
+    "liquidityNum": 89296.06855,
+    "current_prob_api": 0.0005
+  },
+  {
+    "slug": "will-israel-conduct-military-action-against-iran-by-april-21-2026",
+    "question": "Will Israel conduct military action against Iran by April 21, 2026?",
+    "conditionId": "0x9dd27666ad05dbe8ac5547e79d634fc306578b60b71f96ab4347f020b46e9413",
+    "endDate": "2026-04-21T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "69918305790707613956950983542932789139135850481457755083498968292192269931106",
+    "best_ask": 0.06,
+    "best_bid": 0.05,
+    "mid": 0.055,
+    "asks_top5": [
+      {
+        "price": 0.06,
+        "size": 7510.0
+      },
+      {
+        "price": 0.07,
+        "size": 5461.08
+      },
+      {
+        "price": 0.08,
+        "size": 8417.89
+      },
+      {
+        "price": 0.09,
+        "size": 2396.06
+      },
+      {
+        "price": 0.1,
+        "size": 372.69
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.05,
+        "size": 305.01
+      },
+      {
+        "price": 0.04,
+        "size": 8189.0
+      },
+      {
+        "price": 0.03,
+        "size": 19646.58
+      },
+      {
+        "price": 0.02,
+        "size": 12733.45
+      },
+      {
+        "price": 0.01,
+        "size": 26226.26
+      }
+    ],
+    "liq_top5_asks_shares": 24157.719999999998,
+    "volume24h": 121078.75153100002,
+    "liquidityNum": 58824.5597,
+    "current_prob_api": 0.05
+  },
+  {
+    "slug": "will-a-gulf-state-carry-out-military-action-against-iran-by-april-15-2026",
+    "question": "Will a Gulf State carry out military action against Iran by April 15, 2026?",
+    "conditionId": "0xd18ed6ef65bfa1b2c93c72998f026d8c3ae53a41f80231f07063e0d2d2c6dd47",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "58455616762580151335368016243969158849726952205585617571479816357393058291978",
+    "best_ask": 0.009,
+    "best_bid": 0.008,
+    "mid": 0.0085,
+    "asks_top5": [
+      {
+        "price": 0.009,
+        "size": 14.56
+      },
+      {
+        "price": 0.01,
+        "size": 211.0
+      },
+      {
+        "price": 0.012,
+        "size": 500.0
+      },
+      {
+        "price": 0.013,
+        "size": 100.0
+      },
+      {
+        "price": 0.014,
+        "size": 380.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.008,
+        "size": 5.0
+      },
+      {
+        "price": 0.007,
+        "size": 2029.92
+      },
+      {
+        "price": 0.005,
+        "size": 1100.0
+      },
+      {
+        "price": 0.004,
+        "size": 8626.46
+      },
+      {
+        "price": 0.003,
+        "size": 10293.62
+      }
+    ],
+    "liq_top5_asks_shares": 1205.56,
+    "volume24h": 64977.72783000002,
+    "liquidityNum": 43667.94031,
+    "current_prob_api": 0.0075
+  },
+  {
+    "slug": "will-a-gulf-state-carry-out-military-action-against-iran-by-april-30-2026",
+    "question": "Will a Gulf State carry out military action against Iran by April 30, 2026?",
+    "conditionId": "0x8a4e2896a318755e419acbeb8f5896ce06715fd2e5ebf35c27602a51b1a891b0",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "12725228216232659927260200422388843865897455065619986459222807494907250144402",
+    "best_ask": 0.06,
+    "best_bid": 0.05,
+    "mid": 0.055,
+    "asks_top5": [
+      {
+        "price": 0.06,
+        "size": 8918.78
+      },
+      {
+        "price": 0.07,
+        "size": 11238.37
+      },
+      {
+        "price": 0.08,
+        "size": 27803.83
+      },
+      {
+        "price": 0.09,
+        "size": 4538.66
+      },
+      {
+        "price": 0.1,
+        "size": 5.56
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.05,
+        "size": 2260.04
+      },
+      {
+        "price": 0.04,
+        "size": 3876.6
+      },
+      {
+        "price": 0.03,
+        "size": 9655.1
+      },
+      {
+        "price": 0.02,
+        "size": 13190.54
+      },
+      {
+        "price": 0.01,
+        "size": 45301.06
+      }
+    ],
+    "liq_top5_asks_shares": 52505.200000000004,
+    "volume24h": 11422.217602,
+    "liquidityNum": 64136.4556,
+    "current_prob_api": 0.055
+  },
+  {
+    "slug": "will-the-us-officially-declare-war-on-iran-by-april-30-2026",
+    "question": "Will the US officially declare war on Iran by April 30, 2026?",
+    "conditionId": "0xe00f84278d7ec49668b4f9f6c6d0a437663cdcf0e330fdb3789c649f8a29fdc8",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "93852170807587967635291782617381311707737235945251339459489022960438892285682",
+    "best_ask": 0.005,
+    "best_bid": 0.004,
+    "mid": 0.0045000000000000005,
+    "asks_top5": [
+      {
+        "price": 0.005,
+        "size": 239.91
+      },
+      {
+        "price": 0.006,
+        "size": 5710.0
+      },
+      {
+        "price": 0.007,
+        "size": 33031.02
+      },
+      {
+        "price": 0.008,
+        "size": 3320.0
+      },
+      {
+        "price": 0.009,
+        "size": 5985.37
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.004,
+        "size": 8059.32
+      },
+      {
+        "price": 0.003,
+        "size": 15001.36
+      },
+      {
+        "price": 0.002,
+        "size": 154219.13
+      },
+      {
+        "price": 0.001,
+        "size": 156360.19
+      }
+    ],
+    "liq_top5_asks_shares": 48286.299999999996,
+    "volume24h": 31097.548563,
+    "liquidityNum": 142289.36759,
+    "current_prob_api": 0.0045
+  },
+  {
+    "slug": "will-trump-declare-war-on-iran-by-april-30-2026",
+    "question": "Will Trump declare war on Iran by April 30, 2026?",
+    "conditionId": "0x8ed9ef25fbd07f6447cf8677b825b333df5daf684c95cbea6570e079b952b642",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "18337915609156849620172944455823304573671390963539388163813140098229504454173",
+    "best_ask": 0.018,
+    "best_bid": 0.017,
+    "mid": 0.0175,
+    "asks_top5": [
+      {
+        "price": 0.018,
+        "size": 63.7
+      },
+      {
+        "price": 0.019,
+        "size": 68.8
+      },
+      {
+        "price": 0.02,
+        "size": 5000.0
+      },
+      {
+        "price": 0.022,
+        "size": 35.49
+      },
+      {
+        "price": 0.028,
+        "size": 10.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.017,
+        "size": 603.99
+      },
+      {
+        "price": 0.015,
+        "size": 156.66
+      },
+      {
+        "price": 0.012,
+        "size": 10.0
+      },
+      {
+        "price": 0.011,
+        "size": 108.46
+      },
+      {
+        "price": 0.01,
+        "size": 4113.55
+      }
+    ],
+    "liq_top5_asks_shares": 5177.99,
+    "volume24h": 6241.741655,
+    "liquidityNum": 50659.24812,
+    "current_prob_api": 0.0175
+  },
+  {
+    "slug": "will-the-iranian-regime-fall-by-april-30",
+    "question": "Will the Iranian regime fall by April 30?",
+    "conditionId": "0xe443dab97ad8b7f58558cc7a6a3932d156031e962a451e0461e9a4578d78fe84",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "48764428286656921488851644351774667118009263342042758531252625616470924946480",
+    "best_ask": 0.012,
+    "best_bid": 0.011,
+    "mid": 0.0115,
+    "asks_top5": [
+      {
+        "price": 0.012,
+        "size": 39515.42
+      },
+      {
+        "price": 0.013,
+        "size": 31274.64
+      },
+      {
+        "price": 0.014,
+        "size": 14901.69
+      },
+      {
+        "price": 0.015,
+        "size": 56966.5
+      },
+      {
+        "price": 0.016,
+        "size": 35290.77
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.011,
+        "size": 28724.51
+      },
+      {
+        "price": 0.01,
+        "size": 82674.52
+      },
+      {
+        "price": 0.009,
+        "size": 46178.85
+      },
+      {
+        "price": 0.008,
+        "size": 54468.54
+      },
+      {
+        "price": 0.007,
+        "size": 339390.42
+      }
+    ],
+    "liq_top5_asks_shares": 177949.02,
+    "volume24h": 774762.0396699992,
+    "liquidityNum": 1021186.97906,
+    "current_prob_api": 0.0115
+  },
+  {
+    "slug": "iran-leadership-change-by-april-30",
+    "question": "Iran leadership change by April 30?",
+    "conditionId": "0xb412664463bbfe21be44b1963291205ab332afd4f7f6e0d027aec1ba7a9e6793",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "99767261437055226116306337813801042912696159191602956091233868382444699564874",
+    "best_ask": 0.05,
+    "best_bid": 0.04,
+    "mid": 0.045,
+    "asks_top5": [
+      {
+        "price": 0.05,
+        "size": 21194.0
+      },
+      {
+        "price": 0.06,
+        "size": 33234.5
+      },
+      {
+        "price": 0.07,
+        "size": 16189.1
+      },
+      {
+        "price": 0.08,
+        "size": 5544.0
+      },
+      {
+        "price": 0.09,
+        "size": 9305.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.04,
+        "size": 6282.65
+      },
+      {
+        "price": 0.03,
+        "size": 15225.71
+      },
+      {
+        "price": 0.02,
+        "size": 34291.15
+      },
+      {
+        "price": 0.01,
+        "size": 56492.95
+      }
+    ],
+    "liq_top5_asks_shares": 85466.6,
+    "volume24h": 85304.54691499998,
+    "liquidityNum": 159622.6658,
+    "current_prob_api": 0.045
+  },
+  {
+    "slug": "us-escorts-commercial-ship-through-hormuz-by-april-30-894",
+    "question": "US escorts commercial ship through Hormuz by April 30?",
+    "conditionId": "0x01ffd0acf0d6e42558a7cbd521efde937166a1bf09f3a2dfcdf36950c2dd3635",
+    "endDate": "2026-03-31T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "39692746408839627006625117454702416483396848777109545915742836472702053280131",
+    "best_ask": 0.17,
+    "best_bid": 0.15,
+    "mid": 0.16,
+    "asks_top5": [
+      {
+        "price": 0.17,
+        "size": 1394.09
+      },
+      {
+        "price": 0.18,
+        "size": 3333.7
+      },
+      {
+        "price": 0.19,
+        "size": 5851.0
+      },
+      {
+        "price": 0.2,
+        "size": 5.0
+      },
+      {
+        "price": 0.21,
+        "size": 25.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.15,
+        "size": 5364.5
+      },
+      {
+        "price": 0.14,
+        "size": 862.9
+      },
+      {
+        "price": 0.13,
+        "size": 1200.0
+      },
+      {
+        "price": 0.12,
+        "size": 5.0
+      },
+      {
+        "price": 0.11,
+        "size": 300.0
+      }
+    ],
+    "liq_top5_asks_shares": 10608.789999999999,
+    "volume24h": 23331.596157999997,
+    "liquidityNum": 26310.8907,
+    "current_prob_api": 0.165
+  },
+  {
+    "slug": "will-iran-strike-qatar-by-april-30-2026",
+    "question": "Will Iran strike Qatar by April 30, 2026?",
+    "conditionId": "0xe6a8bdcd0a55507e718303dbc04373821a35433b4a71de55ee759f10ee6be798",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "60365199244155355420477258068674919718998395704504877938040891133227755520616",
+    "best_ask": 0.2,
+    "best_bid": 0.18,
+    "mid": 0.19,
+    "asks_top5": [
+      {
+        "price": 0.2,
+        "size": 67.58
+      },
+      {
+        "price": 0.21,
+        "size": 641.0
+      },
+      {
+        "price": 0.22,
+        "size": 488.09
+      },
+      {
+        "price": 0.23,
+        "size": 60.0
+      },
+      {
+        "price": 0.24,
+        "size": 60.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.18,
+        "size": 151.17
+      },
+      {
+        "price": 0.17,
+        "size": 108.98
+      },
+      {
+        "price": 0.16,
+        "size": 1079.55
+      },
+      {
+        "price": 0.15,
+        "size": 1000.0
+      },
+      {
+        "price": 0.14,
+        "size": 260.0
+      }
+    ],
+    "liq_top5_asks_shares": 1316.67,
+    "volume24h": 5150.448032,
+    "liquidityNum": 21796.3085,
+    "current_prob_api": 0.185
+  },
+  {
+    "slug": "will-iran-strike-bahrain-by-april-30-2026-553",
+    "question": "Will Iran strike Bahrain by April 30, 2026?",
+    "conditionId": "0x724d7eaffc5b26082105d7a9aebd6b729fe0e87368b8d7e5ea7a9926b3077ad0",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "5225827609822868868145793265213508113788673663978980382143600892260812273680",
+    "best_ask": 0.36,
+    "best_bid": 0.34,
+    "mid": 0.35,
+    "asks_top5": [
+      {
+        "price": 0.36,
+        "size": 169.73
+      },
+      {
+        "price": 0.37,
+        "size": 326.41
+      },
+      {
+        "price": 0.38,
+        "size": 393.98
+      },
+      {
+        "price": 0.39,
+        "size": 558.12
+      },
+      {
+        "price": 0.4,
+        "size": 10.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.34,
+        "size": 100.0
+      },
+      {
+        "price": 0.33,
+        "size": 160.0
+      },
+      {
+        "price": 0.32,
+        "size": 298.0
+      },
+      {
+        "price": 0.31,
+        "size": 356.0
+      },
+      {
+        "price": 0.3,
+        "size": 70.49
+      }
+    ],
+    "liq_top5_asks_shares": 1458.24,
+    "volume24h": 38426.99922000001,
+    "liquidityNum": 22154.7462,
+    "current_prob_api": 0.35
+  },
+  {
+    "slug": "will-uae-strike-iran-by-april-30",
+    "question": "Will UAE strike Iran by April 30?",
+    "conditionId": "0x858071dbcd97be6e31f8467cba92fcb09d1d767d46da407e4434438a188b04a2",
+    "endDate": "2026-04-30T00:00:00Z",
+    "hedge_outcome": "Yes",
+    "hedge_token_id": "102454201799753464027716159113315815628358603238328886066076570955663916397169",
+    "best_ask": 0.08,
+    "best_bid": 0.07,
+    "mid": 0.07500000000000001,
+    "asks_top5": [
+      {
+        "price": 0.08,
+        "size": 7570.84
+      },
+      {
+        "price": 0.09,
+        "size": 4518.32
+      },
+      {
+        "price": 0.1,
+        "size": 5409.73
+      },
+      {
+        "price": 0.11,
+        "size": 236.87
+      },
+      {
+        "price": 0.12,
+        "size": 210.0
+      }
+    ],
+    "bids_top5": [
+      {
+        "price": 0.07,
+        "size": 790.52
+      },
+      {
+        "price": 0.06,
+        "size": 1406.1
+      },
+      {
+        "price": 0.05,
+        "size": 11770.0
+      },
+      {
+        "price": 0.04,
+        "size": 25650.23
+      },
+      {
+        "price": 0.03,
+        "size": 26441.39
+      }
+    ],
+    "liq_top5_asks_shares": 17945.76,
+    "volume24h": 43326.890281,
+    "liquidityNum": 39954.6342,
+    "current_prob_api": 0.075
+  }
+]

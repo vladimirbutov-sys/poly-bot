@@ -1,0 +1,119 @@
+{
+  "username": "Oompa-Loompa",
+  "wallet": "0x6828e04b468e17d92fa1e5d60d59290278a81056",
+  "bio": "Oompa loompa doompadee dah, if you are not greedy you will go far...",
+  "join_date": "2025-03-18",
+  "fetched_at": "2026-03-21",
+  "profile_stats": {
+    "positions_value_usd": 50076.28,
+    "total_pnl_usd": 145400.28,
+    "markets_traded": 4550,
+    "biggest_win_usd": 6212.88,
+    "profile_views": 7368,
+    "trading_volume_usd": 10863271.09,
+    "portfolio_value_api": 50101.96
+  },
+  "open_positions_count": 118,
+  "closed_positions_fetched": 561,
+  "open_positions_summary": {
+    "total_positions": 118,
+    "categories": {
+      "iran_geopolitics": {
+        "count": 28,
+        "examples": [
+          "Will the Iranian regime fall by March 31? (NO, 3800 shares, +$194.91)",
+          "Will the Iranian regime fall before 2027? (NO, 2000 shares, +$61.21)",
+          "Will the Iranian regime fall by April 30? (NO, 2000 shares, +$30.01)",
+          "US x Iran ceasefire by April 30? (YES, 1600 shares, -$197.43)",
+          "Will any E.U. country strike Iran by March 31? (NO, 1000 shares, +$103.25)",
+          "US announces military support of Kurds in Iran (NO, 827 shares, +$330.65)",
+          "Will Trump declare war on Iran by March 31? (NO, 766 shares, +$74.25)",
+          "US/Israel strike on Fordow nuclear facility (NO, 300 shares, +$114.86)",
+          "Will UK strike Iran by March 31? (NO, 586 shares, +$106.32)"
+        ]
+      },
+      "elections_politics": {
+        "count": 25,
+        "examples": [
+          "Freedom Movement (GS) - 2026 Slovenian election (YES, 3034 shares, +$539.55)",
+          "Will John Cornyn win 2026 Texas Republican Primary? (YES, 2473 shares, -$558.72)",
+          "Netanyahu out by April 30? (NO, 2000 shares, +$114.99)",
+          "Will Rafael Lopez Aliaga win Peru? (NO, 1800 shares, +$56.00)",
+          "SPD win most seats Rhineland-Palatinate? (YES, 1500 shares, -$77.85)",
+          "SDS win most seats Slovenia? (NO, 1500 shares, +$66.50)",
+          "Troels Lund Poulsen next PM of Denmark? (YES, 1400 shares, -$34.99)"
+        ]
+      },
+      "fed_economy": {
+        "count": 12,
+        "examples": [
+          "US recession by end of 2026? (NO, 2000 shares, -$76.95)",
+          "Will 2 Fed rate cuts happen in 2026? (YES, 1000 shares, -$65.00)",
+          "No change in Fed rates after April 2026 (YES, 1000 shares, +$139.51)",
+          "Will the ECB announce no change at April 2026? (YES, 696 shares, -$140.54)",
+          "Bank of England rate hike 2026? (YES, 350 shares, +$24.50)"
+        ]
+      },
+      "russia_ukraine": {
+        "count": 6,
+        "examples": [
+          "Ukraine hits Moscow by March 31? (NO, 800 shares, +$31.27)",
+          "Will Russia capture Lyman by June 30? (NO, 571 shares, +$77.04)",
+          "Will Russia capture Rodynske by March 31? (YES, 150 shares, +$82.20)"
+        ]
+      },
+      "crypto_tech": {
+        "count": 15,
+        "examples": [
+          "EdgeX FDV above $2B (YES, 1000 shares, -$66.50)",
+          "Bitcoin dip to $55K in March? (NO, 1000 shares, +$90.30)",
+          "Bitcoin dip to $60K in March? (NO, 500 shares, +$132.50)",
+          "Predict.fun FDV above $1B (NO, 1000 shares, +$66.99)",
+          "Predict.fun FDV above $500M (NO, 700 shares, +$41.00)",
+          "Claude 5 released by March 31? (NO, 500 shares, +$17.88)"
+        ]
+      },
+      "commodities": {
+        "count": 5,
+        "examples": [
+          "Crude Oil all time high by March 31? (NO, 1222 shares, +$48.95)",
+          "Crude Oil hit $140 by end of March? (NO, 350 shares, +$17.85)",
+          "Crude Oil hit $120 by end of March? (NO, 271 shares, +$61.07)"
+        ]
+      },
+      "entertainment_other": {
+        "count": 27,
+        "examples": [
+          "Will there be a perfect NCAA bracket? (NO, 1300 shares, +$12.35)",
+          "Will Jean-Paul Lecoq be next mayor of Le Havre? (YES, 932 shares, -$211.53)",
+          "Elon Musk net worth at least $710b on March 31? (NO, 500 shares, +$90.75)",
+          "Pam Bondi out as Attorney General (NO, 971 shares, +$129.92)"
+        ]
+      }
+    }
+  },
+  "closed_positions_top_wins": [
+    {"title": "Bhumjaithai Party win most seats Thai election", "pnl": 2917.30, "bought": 4744.46},
+    {"title": "Gemini 3 Score 40% FrontierMath", "pnl": 2432.04, "bought": 5154.50},
+    {"title": "Kevin Warsh Fed Chair", "pnl": 1827.15, "bought": 4000.00},
+    {"title": "US invade Venezuela (NO)", "pnl": 1354.40, "bought": 25650.23},
+    {"title": "Avatar: Fire and Ash < 400m by Jan 31", "pnl": 1199.11, "bought": 7681.25},
+    {"title": "Will Seguro win all of Portugal's districts", "pnl": 1098.13, "bought": 8567.44},
+    {"title": "Antonio Jose Seguro win Portugal election", "pnl": 1020.47, "bought": 5699.99},
+    {"title": "US x Iran meeting by Feb 6", "pnl": 873.43, "bought": 1200.00},
+    {"title": "Hurupay public sale <$3M", "pnl": 894.65, "bought": 1600.01},
+    {"title": "Israel strikes Iran by Jan 31 (NO)", "pnl": 719.48, "bought": 12699.87}
+  ],
+  "closed_positions_top_losses": [
+    {"title": "Khamenei out by June 30 (NO)", "pnl": -2666.70, "bought": 5297.36},
+    {"title": "Wuthering Heights opening weekend", "pnl": -1744.12, "bought": 2058.79},
+    {"title": "Khamenei out by Feb 28 (NO)", "pnl": -1640.41, "bought": 3200.00},
+    {"title": "Logan Paul Pokémon card over $4M", "pnl": -1186.72, "bought": 2100.00},
+    {"title": "Russia capture Myrnohrad by Jan 31 (YES)", "pnl": -1033.00, "bought": 1799.99},
+    {"title": "US strikes Iran by Jan 31 (YES)", "pnl": -970.13, "bought": 9299.97},
+    {"title": "People's Party win most Thai seats", "pnl": -893.38, "bought": 6695.10},
+    {"title": "Khamenei out by March 31 (NO)", "pnl": -869.99, "bought": 1600.00},
+    {"title": "US strikes Iran by Jan 31 (NO)", "pnl": -735.82, "bought": 9199.97},
+    {"title": "Amy Madigan Best Supporting Actress", "pnl": -739.09, "bought": null}
+  ]
+}

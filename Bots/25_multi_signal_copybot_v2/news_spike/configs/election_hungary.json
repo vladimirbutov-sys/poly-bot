@@ -1,0 +1,80 @@
+{
+  "name": "Парламентские выборы в Венгрии — 12 апреля 2026",
+  "active": false,
+  "poll_interval": 45,
+  "notes": "Главное событие квартала. $28.8M объём. Orbán vs Magyar (TISZA). Экзит-поллы выходят на венгерском ТВ в 19:00 CET (закрытие участков). Polymarket резолвит по valasztas.hu (ЦИК).",
+
+  "sources": [
+    {
+      "type": "web_text",
+      "url": "https://vtr.valasztas.hu/ogy2026/eredmenyek",
+      "name": "ЦИК Венгрии (valasztas.hu) — ГЛАВНЫЙ ИСТОЧНИК",
+      "keywords": ["Fidesz", "TISZA", "mandátum", "eredmény", "szavazat", "képviselő"]
+    },
+    {
+      "type": "rss",
+      "url": "https://telex.hu/rss/belfold",
+      "name": "Telex.hu (независимый, оппозиционный)",
+      "keywords": ["exit poll", "eredmény", "választás", "mandátum", "Fidesz", "Tisza", "Magyar Péter", "Orbán"]
+    },
+    {
+      "type": "rss",
+      "url": "https://index.hu/24ora/rss/",
+      "name": "Index.hu (крупнейший портал)",
+      "keywords": ["exit poll", "eredmény", "választás", "mandátum", "Fidesz", "Tisza"]
+    },
+    {
+      "type": "rss",
+      "url": "https://hvg.hu/rss",
+      "name": "HVG.hu (деловое издание, оппозиционное)",
+      "keywords": ["exit poll", "eredmény", "választás", "mandátum", "Fidesz", "Tisza"]
+    },
+    {
+      "type": "web_text",
+      "url": "https://444.hu",
+      "name": "444.hu (независимый, оппозиционный)",
+      "keywords": ["exit poll", "eredmény", "választás", "mandátum", "Fidesz", "Tisza", "Magyar"]
+    },
+    {
+      "type": "web_text",
+      "url": "https://www.hungarianconservative.com",
+      "name": "Hungarian Conservative (проправительственный, англоязычный)",
+      "keywords": ["exit poll", "result", "election", "Fidesz", "Tisza", "seats", "mandate"]
+    }
+  ],
+
+  "candidate_markets": {
+    "Fidesz": {
+      "slug": "hungary-parliamentary-election-winner",
+      "conditionId": "FILL_FROM_POLYMARKET",
+      "market_title": "Will Fidesz win the most seats?",
+      "side": "YES"
+    },
+    "TISZA": {
+      "slug": "hungary-parliamentary-election-winner",
+      "conditionId": "FILL_FROM_POLYMARKET",
+      "market_title": "Will TISZA win the most seats?",
+      "side": "YES"
+    },
+    "Mi Hazánk": {
+      "slug": "hungary-parliamentary-election-winner",
+      "conditionId": "FILL_FROM_POLYMARKET",
+      "market_title": "Will Our Homeland Movement win the most seats?",
+      "side": "YES"
+    },
+    "Orbán PM": {
+      "slug": "next-prime-minister-of-hungary",
+      "conditionId": "FILL_FROM_POLYMARKET",
+      "market_title": "Will Viktor Orbán be the next PM?",
+      "side": "YES"
+    },
+    "Magyar PM": {
+      "slug": "next-prime-minister-of-hungary",
+      "conditionId": "FILL_FROM_POLYMARKET",
+      "market_title": "Will Péter Magyar be the next PM?",
+      "side": "YES"
+    }
+  },
+
+  "alert_threshold_pp": 8
+}

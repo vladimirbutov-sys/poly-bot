@@ -1,0 +1,105 @@
+{
+  "config": {
+    "enable_rebuy": false,
+    "BET_FORMULA_A": 31.75,
+    "BET_FORMULA_B": -177.0,
+    "MIN_BET_FORMULA": 15.0,
+    "MAX_BET_USD": 250.0,
+    "MAX_POSITION_USD": 300.0,
+    "MIN_UPGRADE_USD": 5.0,
+    "MIN_BET_USD_LIVE": 10.0,
+    "MIN_PLAYER_INVESTED_DENIZZ": 500.0,
+    "BANKROLL": 4000.0,
+    "RESERVE": 300.0,
+    "REBUY_THROTTLE_SEC": 300,
+    "PRICE_RISK_TIERS": [
+      [
+        0.0,
+        0.15,
+        0.4
+      ],
+      [
+        0.15,
+        0.3,
+        0.7
+      ],
+      [
+        0.3,
+        0.7,
+        1.0
+      ],
+      [
+        0.7,
+        0.85,
+        0.9
+      ],
+      [
+        0.85,
+        0.99,
+        0.8
+      ]
+    ],
+    "TOPUP_RATIO_TIERS": [
+      [
+        0.0,
+        0.03,
+        0.0
+      ],
+      [
+        0.03,
+        0.1,
+        0.5
+      ],
+      [
+        0.1,
+        0.3,
+        0.75
+      ],
+      [
+        0.3,
+        999.0,
+        1.0
+      ]
+    ]
+  },
+  "final_bankroll": 4604.07,
+  "return_pct": 0.151,
+  "max_drawdown_pct": 0.1175,
+  "history_br_len": 2066,
+  "trades_first_entry": 112,
+  "trades_upgrade": 165,
+  "rebuy_events_count": 0,
+  "rebuy_unique_legs": 0,
+  "rebuy_usd_total": 0,
+  "rebuy_skipped": {
+    "throttle": 0,
+    "smallbuy": 0,
+    "mincost": 0,
+    "bankroll": 0,
+    "cap_reached": 0,
+    "below_min_live": 0
+  },
+  "rebuy_resolved": {
+    "n": 0,
+    "wins": 0,
+    "losses": 0,
+    "wr": 0.0,
+    "mean_roi": 0.0,
+    "median_roi": 0.0,
+    "invested_usd": 0.0,
+    "pnl_usd": 0.0,
+    "ev_per_dollar": 0.0
+  },
+  "rebuy_unresolved": {
+    "n": 0,
+    "invested_usd": 0.0,
+    "pnl_usd_estimate": 0.0
+  },
+  "total_resolved_legs": 11,
+  "total_wins": 7,
+  "total_losses": 4,
+  "total_unresolved_legs": 69,
+  "total_mean_roi": 0.4655370881218878,
+  "total_resolved_pnl": 512.9,
+  "price_bucket_breakdown": {}
+}

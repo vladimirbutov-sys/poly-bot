@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-03-29T02:52:02.693162+00:00",
+  "days_remaining": 2,
+  "regime": {
+    "classification": "decorrelated",
+    "correlations": {
+      "24h": null,
+      "3d": -0.033,
+      "7d": 0.157,
+      "all": 0.067
+    },
+    "slopes": {
+      "24h": null,
+      "3d": -0.226,
+      "7d": 0.696,
+      "all": 0.184
+    },
+    "sample_sizes": {
+      "24h": 0,
+      "3d": 41,
+      "7d": 114,
+      "all": 456
+    },
+    "regime_shift": false,
+    "structural_break": true,
+    "slope_first_half": 0.81,
+    "slope_second_half": -0.524,
+    "summary": "WTI и YES двигаются независимо. WTI-триггеры ненадёжны, уменьшить позиции."
+  },
+  "volatility": {
+    "realized_24h": null,
+    "realized_3d": 51.5,
+    "realized_7d": 83.0,
+    "volatility_ratio": null,
+    "classification": "normal",
+    "wti_range_24h": {
+      "min": null,
+      "max": null
+    },
+    "wti_range_3d": {
+      "min": 91.72,
+      "max": 101.18
+    },
+    "wti_range_7d": {
+      "min": 87.09,
+      "max": 101.18
+    },
+    "current_mean_24h": null
+  },
+  "sensitivity": {
+    "pp_per_dollar_24h": null,
+    "pp_per_dollar_3d": -0.226,
+    "pp_per_dollar_7d": 0.696,
+    "current_hardcoded": 0.82,
+    "recommended": -0.23,
+    "asymmetry": {
+      "up_slope": 0.066,
+      "down_slope": 2.527
+    },
+    "confidence": "medium",
+    "sample_size": 41
+  },
+  "price_distribution": {
+    "yes_3d": {
+      "current": 0.7745,
+      "min": 0.295,
+      "max": 0.828,
+      "p25": 0.3605,
+      "p50": 0.5295,
+      "p75": 0.7325,
+      "max_swing": 0.533,
+      "max_gain_pct": 180.7,
+      "count": 73
+    },
+    "yes_7d": {
+      "current": 0.7745,
+      "min": 0.22,
+      "max": 0.884,
+      "p25": 0.3415,
+      "p50": 0.4525,
+      "p75": 0.731,
+      "max_swing": 0.608,
+      "max_gain_pct": 276.4,
+      "count": 169
+    },
+    "no_3d": {
+      "current": 0.2255,
+      "min": 0.172,
+      "max": 0.705,
+      "p25": 0.2675,
+      "p50": 0.4705,
+      "p75": 0.6395,
+      "max_swing": 0.1715,
+      "max_gain_pct": 99.7,
+      "count": 73
+    },
+    "no_7d": {
+      "current": 0.2255,
+      "min": 0.116,
+      "max": 0.78,
+      "p25": 0.269,
+      "p50": 0.5475,
+      "p75": 0.6585,
+      "max_swing": 0.664,
+      "max_gain_pct": 572.4,
+      "count": 169
+    }
+  },
+  "theta": {
+    "current_day": 2,
+    "profit_mult": 0.4822,
+    "price_mult": 1.0,
+    "decay_rate": 0.518,
+    "accelerating": true
+  },
+  "trade_history": {
+    "total_trades": 22,
+    "wins": 14,
+    "losses": 8,
+    "avg_pnl": 2.66,
+    "total_pnl": 58.42,
+    "avg_hold_hours": 8.4,
+    "yes_steps_triggered": [
+      0,
+      1,
+      2
+    ],
+    "no_steps_triggered": [
+      0,
+      1,
+      2
+    ],
+    "exit_reasons": {
+      "manual": 7,
+      "profit_target": 10,
+      "ceasefire_stop": 3,
+      "deadline": 2
+    },
+    "primary_exit_reason": "profit_target"
+  },
+  "orderbook": {
+    "yes": {
+      "best_bid": 0.774,
+      "best_ask": 0.775,
+      "spread": 0.001,
+      "bid_depth_usd": 14690.09,
+      "ask_depth_usd": 69539.02
+    },
+    "no": {
+      "best_bid": 0.225,
+      "best_ask": 0.226,
+      "spread": 0.001,
+      "bid_depth_usd": 13626.52,
+      "ask_depth_usd": 2399.78
+    }
+  },
+  "recommendations": [
+    {
+      "parameter": "YES_ENTRY_STEPS",
+      "current": [
+        [
+          92.0,
+          20.0
+        ],
+        [
+          90.0,
+          20.0
+        ],
+        [
+          88.0,
+          60.0
+        ]
+      ],
+      "recommended": [
+        [
+          92.0,
+          5
+        ],
+        [
+          90.0,
+          5
+        ],
+        [
+          87.0,
+          5
+        ]
+      ],
+      "rationale": "WTI 3d диапазон: $91.72–$101.18. Режим: decorrelated → ставки ×0.4. Достижимый минимум: ~$85.",
+      "confidence": "high",
+      "sample_size": 41
+    },
+    {
+      "parameter": "YES_EXIT_STEPS",
+      "current": [
+        [
+          97.0,
+          0.3
+        ],
+        [
+          99.0,
+          0.5
+        ],
+        [
+          100.0,
+          1.0
+        ]
+      ],
+      "recommended": [
+        [
+          97.0,
+          0.3
+        ],
+        [
+          98.0,
+          0.5
+        ],
+        [
+          100.0,
+          1.0
+        ]
+      ],
+      "rationale": "Чувствительность -0.2 pp/$1. При YES=0.77 и target 10%, нужно движение WTI +$5.0. Шаги распределены на 40%/70%/100% от требуемого движения.",
+      "confidence": "medium",
+      "sample_size": 41
+    },
+    {
+      "parameter": "NO_ENTRY_STEPS",
+      "current": [
+        [
+          97.0,
+          20.0,
+          0.35
+        ],
+        [
+          98.0,
+          20.0,
+          0.69
+        ],
+        [
+          99.0,
+          40.0,
+          1.04
+        ]
+      ],
+      "recommended": [
+        [
+          97.0,
+          5,
+          0.35
+        ],
+        [
+          99.0,
+          5,
+          0.69
+        ],
+        [
+          100.0,
+          5,
+          1.04
+        ]
+      ],
+      "rationale": "WTI 3d потолок: $101.18. Режим: decorrelated → ставки ×0.4. Profit targets ×0.48 (theta). Достижимый потолок: ~$101.",
+      "confidence": "high",
+      "sample_size": 41
+    },
+    {
+      "parameter": "YES_PROFIT_TARGET",
+      "current": 0.21,
+      "recommended": 0.3,
+      "rationale": "Макс. свинг YES за 3 дня: 180.7%. P75 от свинга = 135.5%. С theta ×0.48 → 30%.",
+      "confidence": "high",
+      "sample_size": 73
+    },
+    {
+      "parameter": "MAX_YES_ENTRY_PRICE",
+      "current": 0.32,
+      "recommended": 0.32,
+      "rationale": "Медиана YES за 3d: 0.53. С буфером +3¢ и theta ×1.00 → 0.32.",
+      "confidence": "high",
+      "sample_size": 73
+    },
+    {
+      "parameter": "MAX_NO_ENTRY_PRICE",
+      "current": 0.17,
+      "recommended": 0.17,
+      "rationale": "Медиана NO за 3d: 0.47. С буфером +5¢ и theta ×1.00 → 0.17.",
+      "confidence": "high",
+      "sample_size": 73
+    },
+    {
+      "parameter": "DIVERGENCE_RATIO_NORMAL",
+      "current": 0.82,
+      "recommended": -0.23,
+      "rationale": "Измеренная чувствительность 3d: -0.226 pp/$1 (текущая: 0.82). Асимметрия: вверх 0.066, вниз 2.527.",
+      "confidence": "medium",
+      "sample_size": 41
+    },
+    {
+      "parameter": "STOP_CEASEFIRE_WTI",
+      "current": 80.0,
+      "recommended": 82.0,
+      "rationale": "WTI min за 7d: $87.09. Стоп на $82.0 ($5 ниже минимума).",
+      "confidence": "medium",
+      "sample_size": 87.09
+    },
+    {
+      "parameter": "WTI_SELL_NO_BELOW",
+      "current": 91.0,
+      "recommended": 91.0,
+      "rationale": "WTI 3d min: $91.72. Продажа NO при WTI < $91.0.",
+      "confidence": "medium",
+      "sample_size": 41
+    }
+  ],
+  "warnings": [
+    {
+      "type": "regime_breakdown",
+      "severity": "high",
+      "message": "Корреляция WTI↔YES разрушена (24h: None). WTI-триггеры могут не приводить к ожидаемому движению цен YES/NO."
+    },
+    {
+      "type": "structural_break",
+      "severity": "high",
+      "message": "Структурный перелом: наклон первой половины 7d = 0.81, второй = -0.524. Рынок поменял поведение."
+    },
+    {
+      "type": "theta_accelerating",
+      "severity": "medium",
+      "message": "Theta ускоряется: profit_mult упал на 0.518 за день."
+    },
+    {
+      "type": "deadline_close",
+      "severity": "high",
+      "message": "Осталось 2 торговых дней. Рекомендуется не открывать новые позиции."
+    }
+  ],
+  "summary": "Режим: DECORRELATED | 2 дней | Корр. 24h: None | 4 предупреждений | 6 изменений",
+  "auto_applied": {
+    "applied": [
+      {
+        "parameter": "DIVERGENCE_RATIO_NORMAL",
+        "old": 0.82,
+        "new": -0.23,
+        "confidence": "medium"
+      }
+    ],
+    "skipped": [
+      {
+        "parameter": "YES_ENTRY_STEPS",
+        "reason": "PROTECTED (backtest-verified)"
+      },
+      {
+        "parameter": "YES_EXIT_STEPS",
+        "reason": "PROTECTED (backtest-verified)"
+      },
+      {
+        "parameter": "NO_ENTRY_STEPS",
+        "reason": "PROTECTED (backtest-verified)"
+      },
+      {
+        "parameter": "YES_PROFIT_TARGET",
+        "reason": "PROTECTED (backtest-verified)"
+      },
+      {
+        "parameter": "MAX_YES_ENTRY_PRICE",
+        "reason": "no change"
+      },
+      {
+        "parameter": "MAX_NO_ENTRY_PRICE",
+        "reason": "no change"
+      },
+      {
+        "parameter": "STOP_CEASEFIRE_WTI",
+        "reason": "PROTECTED (backtest-verified)"
+      },
+      {
+        "parameter": "WTI_SELL_NO_BELOW",
+        "reason": "no change"
+      }
+    ],
+    "errors": []
+  }
+}

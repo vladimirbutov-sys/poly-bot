@@ -1,0 +1,267 @@
+[
+  {
+    "name": "T1_baseline_3pct",
+    "final_bankroll": 4169.25,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.04231246862620719,
+    "max_drawdown_pct": 0.21483162106718015,
+    "trades_taken": 95,
+    "trades_skipped_filter": 542,
+    "trades_skipped_bankroll": 662,
+    "trades_skipped_min_upgrade": 333,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4715375480628645,
+    "std_roi": 1.3846184024825985,
+    "sharpe": 0.34055415356130275,
+    "total_resolved_pnl": 254.01284186488294,
+    "unresolved_legs": 15,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.03,
+          0.0
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "T2_soft_2pct_mini",
+    "final_bankroll": 4169.25,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.04231246862620719,
+    "max_drawdown_pct": 0.21483162106718026,
+    "trades_taken": 99,
+    "trades_skipped_filter": 464,
+    "trades_skipped_bankroll": 751,
+    "trades_skipped_min_upgrade": 318,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.4715375480628645,
+    "std_roi": 1.3846184024825985,
+    "sharpe": 0.34055415356130275,
+    "total_resolved_pnl": 254.01284186488294,
+    "unresolved_legs": 15,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.02,
+          0.0
+        ],
+        [
+          0.02,
+          0.03,
+          0.3
+        ],
+        [
+          0.03,
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.3,
+          0.75
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 400.0,
+      "min_upgrade_usd": 5.0
+    }
+  },
+  {
+    "name": "T3_aggressive_1.5",
+    "final_bankroll": 4101.22,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.025304750882932922,
+    "max_drawdown_pct": 0.2548544232334343,
+    "trades_taken": 95,
+    "trades_skipped_filter": 418,
+    "trades_skipped_bankroll": 824,
+    "trades_skipped_min_upgrade": 295,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.47141700011488924,
+    "std_roi": 1.3845972672184241,
+    "sharpe": 0.340472288423578,
+    "total_resolved_pnl": 176.75073261239925,
+    "unresolved_legs": 9,
+    "hits_max_bet": 0,
+    "trades_at_max_bet_usd": 0.0,
+    "max_bet_leg_pnl": 0.0,
+    "config": {
+      "A": 30.0,
+      "B": -167.0,
+      "MIN": 15.0,
+      "MAX": 250.0,
+      "price_risk_tiers": [
+        [
+          0.0,
+          0.15,
+          0.4
+        ],
+        [
+          0.15,
+          0.3,
+          0.7
+        ],
+        [
+          0.3,
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.7,
+          0.85
+        ],
+        [
+          0.7,
+          0.85,
+          0.75
+        ],
+        [
+          0.85,
+          0.99,
+          0.6
+        ]
+      ],
+      "topup_tiers": [
+        [
+          0.0,
+          0.015,
+          0.0
+        ],
+        [
+          0.015,
+          0.03,
+          0.35
+        ],
+        [
+          0.03,
+          0.1,
+          0.6
+        ],
+        [
+          0.1,
+          0.3,
+          0.85
+        ],
+        [
+          0.3,
+          999.0,
+          1.0
+        ]
+      ],
+      "max_position_usd": 500.0,
+      "min_upgrade_usd": 3.0
+    }
+  }
+]

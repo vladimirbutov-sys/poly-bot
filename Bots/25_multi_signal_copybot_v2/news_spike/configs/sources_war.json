@@ -1,0 +1,27 @@
+{
+  "name": "Россия/Украина",
+  "telegram_channels": {
+    "V_Zelenskiy_official": {"tier": 1, "lang": "uk", "topic": "ukraine"},
+    "Ukraine_Now":          {"tier": 1, "lang": "uk", "topic": "ukraine"},
+    "GeneralStaffZSU":      {"tier": 1, "lang": "uk", "topic": "ukraine"},
+    "mod_russia":           {"tier": 1, "lang": "ru", "topic": "russia"},
+    "taborov":              {"tier": 1, "lang": "ru", "topic": "russia"},
+    "MID_Russia":           {"tier": 1, "lang": "ru", "topic": "russia"},
+    "rybar":                {"tier": 2, "lang": "ru", "topic": "osint"},
+    "DeepStateUA":          {"tier": 2, "lang": "uk", "topic": "osint"},
+    "boris_rozhin":         {"tier": 2, "lang": "ru", "topic": "osint"},
+    "legitimniy":           {"tier": 2, "lang": "ru", "topic": "osint"},
+    "nexta_live":           {"tier": 2, "lang": "ru", "topic": "osint"}
+  },
+  "twitter_accounts": {
+    "sentdefender":    {"tier": 3, "topic": "osint"},
+    "IntelCrab":       {"tier": 3, "topic": "osint"},
+    "Liveuamap":       {"tier": 3, "topic": "osint"},
+    "KyivIndependent": {"tier": 3, "topic": "ukraine"}
+  },
+  "keywords": {
+    "en": ["ceasefire", "armistice", "peace deal", "truce", "settlement", "strike on", "missile strike", "drone attack", "meeting with", "summit", "invasion", "sanctions", "escalation", "mobilization"],
+    "ru": ["перемирие", "прекращение огня", "мирное соглашение", "переговоры", "удар по", "ракетный удар", "обстрел", "взрыв", "встреча с", "санкции", "мобилизация", "эскалация", "наступление", "захват"],
+    "uk": ["перемир'я", "припинення вогню", "мирна угода", "переговори", "удар по", "ракетний удар", "обстріл", "вибух", "зустріч з", "санкції", "мобілізація", "ескалація", "візит"]
+  }
+}

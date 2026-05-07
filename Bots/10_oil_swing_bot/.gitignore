@@ -1,0 +1,10 @@
+.env
+positions.json
+__pycache__/
+bot.lock
+bot.log
+bot_output.log
+bot_error.log
+Oil_Bot_Rules.docx
+Oil_Bot_Positions.xlsx
+theta_calibration.json

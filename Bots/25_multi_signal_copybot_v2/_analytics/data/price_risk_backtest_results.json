@@ -1,0 +1,282 @@
+[
+  {
+    "name": "V1_current",
+    "A": 31.75,
+    "B": -177.0,
+    "MIN": 20.0,
+    "MAX": 200.0,
+    "price_risk_tiers": [],
+    "scale": 1.0,
+    "final_bankroll": 4457.813287680591,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.1144533219201478,
+    "max_drawdown_pct": 0.14999999999999997,
+    "trades_taken": 81,
+    "trades_skipped_filter": 872,
+    "trades_skipped_bankroll": 679,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.47253671642937267,
+    "median_roi": 0.21400736173986512,
+    "std_roi": 1.385740861343114,
+    "sharpe": 0.34099933805182864,
+    "total_resolved_pnl": 557.186959290204,
+    "unresolved_legs": 16
+  },
+  {
+    "name": "V2_current+PR",
+    "A": 31.75,
+    "B": -177.0,
+    "MIN": 20.0,
+    "MAX": 200.0,
+    "price_risk_tiers": [
+      [
+        0.0,
+        0.15,
+        0.4
+      ],
+      [
+        0.15,
+        0.3,
+        0.7
+      ],
+      [
+        0.3,
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        0.7,
+        0.85
+      ],
+      [
+        0.7,
+        0.85,
+        0.75
+      ],
+      [
+        0.85,
+        0.99,
+        0.6
+      ]
+    ],
+    "scale": 1.0,
+    "final_bankroll": 4528.1461951745905,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.13203654879364762,
+    "max_drawdown_pct": 0.14751348235791076,
+    "trades_taken": 99,
+    "trades_skipped_filter": 883,
+    "trades_skipped_bankroll": 650,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.5274944543297755,
+    "median_roi": 0.21400736173986518,
+    "std_roi": 1.5005751245529302,
+    "sharpe": 0.35152818789191453,
+    "total_resolved_pnl": 632.8880142694954,
+    "unresolved_legs": 18
+  },
+  {
+    "name": "V3_recalib+PR",
+    "A": 30.0,
+    "B": -167.0,
+    "MIN": 15.0,
+    "MAX": 250.0,
+    "price_risk_tiers": [
+      [
+        0.0,
+        0.15,
+        0.4
+      ],
+      [
+        0.15,
+        0.3,
+        0.7
+      ],
+      [
+        0.3,
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        0.7,
+        0.85
+      ],
+      [
+        0.7,
+        0.85,
+        0.75
+      ],
+      [
+        0.85,
+        0.99,
+        0.6
+      ]
+    ],
+    "scale": 1.0,
+    "final_bankroll": 4850.762962718025,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.21269074067950625,
+    "max_drawdown_pct": 0.14995600286414967,
+    "trades_taken": 102,
+    "trades_skipped_filter": 890,
+    "trades_skipped_bankroll": 640,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.572162653803202,
+    "median_roi": 0.21400736173986512,
+    "std_roi": 1.6028211944732065,
+    "sharpe": 0.3569722285780309,
+    "total_resolved_pnl": 952.9584446221479,
+    "unresolved_legs": 18
+  },
+  {
+    "name": "V4_conservative+PR",
+    "A": 25.0,
+    "B": -140.0,
+    "MIN": 10.0,
+    "MAX": 150.0,
+    "price_risk_tiers": [
+      [
+        0.0,
+        0.15,
+        0.4
+      ],
+      [
+        0.15,
+        0.3,
+        0.7
+      ],
+      [
+        0.3,
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        0.7,
+        0.85
+      ],
+      [
+        0.7,
+        0.85,
+        0.75
+      ],
+      [
+        0.85,
+        0.99,
+        0.6
+      ]
+    ],
+    "scale": 1.0,
+    "final_bankroll": 4829.429868452278,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.20735746711306957,
+    "max_drawdown_pct": 0.1499125657837419,
+    "trades_taken": 109,
+    "trades_skipped_filter": 942,
+    "trades_skipped_bankroll": 581,
+    "resolved_trades": 12,
+    "wins": 8,
+    "losses": 4,
+    "win_rate": 0.6666666666666666,
+    "mean_roi": 0.5229883798011181,
+    "median_roi": 0.21400736173986512,
+    "std_roi": 1.5769427409764625,
+    "sharpe": 0.3316470320775739,
+    "total_resolved_pnl": 935.3374496279272,
+    "unresolved_legs": 19
+  },
+  {
+    "name": "V5_aggressive_noPR",
+    "A": 35.0,
+    "B": -195.0,
+    "MIN": 25.0,
+    "MAX": 300.0,
+    "price_risk_tiers": [],
+    "scale": 1.0,
+    "final_bankroll": 4544.935156277219,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.13623378906930475,
+    "max_drawdown_pct": 0.14960463658833226,
+    "trades_taken": 70,
+    "trades_skipped_filter": 876,
+    "trades_skipped_bankroll": 686,
+    "resolved_trades": 10,
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "mean_roi": 0.47313201092331036,
+    "median_roi": 0.21400736173986518,
+    "std_roi": 1.386437696589621,
+    "sharpe": 0.34125731872923476,
+    "total_resolved_pnl": 640.8691359483139,
+    "unresolved_legs": 16
+  },
+  {
+    "name": "V6_recalib+PR_strict",
+    "A": 30.0,
+    "B": -167.0,
+    "MIN": 15.0,
+    "MAX": 250.0,
+    "price_risk_tiers": [
+      [
+        0.0,
+        0.15,
+        0.3
+      ],
+      [
+        0.15,
+        0.3,
+        0.6
+      ],
+      [
+        0.3,
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        0.7,
+        0.9
+      ],
+      [
+        0.7,
+        0.85,
+        0.7
+      ],
+      [
+        0.85,
+        0.99,
+        0.5
+      ]
+    ],
+    "scale": 1.0,
+    "final_bankroll": 4703.647612446877,
+    "starting_bankroll": 4000.0,
+    "return_pct": 0.1759119031117193,
+    "max_drawdown_pct": 0.14999999999999994,
+    "trades_taken": 105,
+    "trades_skipped_filter": 909,
+    "trades_skipped_bankroll": 618,
+    "resolved_trades": 11,
+    "wins": 8,
+    "losses": 3,
+    "win_rate": 0.7272727272727273,
+    "mean_roi": 0.6526211562642049,
+    "median_roi": 0.3333333333333333,
+    "std_roi": 1.5494478987033675,
+    "sharpe": 0.42119593489419116,
+    "total_resolved_pnl": 808.4608472644962,
+    "unresolved_legs": 19
+  }
+]

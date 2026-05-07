@@ -1,0 +1,346 @@
+{
+  "timestamp": "2026-03-23T18:23:55.484658+00:00",
+  "total_resolved": 17120,
+  "passed_filters": 2872,
+  "filtered_out": 14248,
+  "remaining_losses": 4,
+  "main_type_stats": {
+    "other": {
+      "count": 1571,
+      "wins": 1568,
+      "losses": 3,
+      "win_rate": 99.81,
+      "loss_rate": 0.191,
+      "pnl": 157.27,
+      "cost": 18588.0,
+      "roi_pct": 0.85,
+      "median_resolve_h": 152.2
+    },
+    "match_outcome": {
+      "count": 1117,
+      "wins": 1116,
+      "losses": 1,
+      "win_rate": 99.91,
+      "loss_rate": 0.09,
+      "pnl": 94.62,
+      "cost": 9223.0,
+      "roi_pct": 1.03,
+      "median_resolve_h": 165.7
+    },
+    "sub_match": {
+      "count": 75,
+      "wins": 75,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 7.69,
+      "cost": 943.0,
+      "roi_pct": 0.82,
+      "median_resolve_h": 4.4
+    },
+    "prop": {
+      "count": 48,
+      "wins": 48,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 4.92,
+      "cost": 510.0,
+      "roi_pct": 0.96,
+      "median_resolve_h": 73.3
+    },
+    "draw": {
+      "count": 33,
+      "wins": 33,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 2.98,
+      "cost": 264.0,
+      "roi_pct": 1.13,
+      "median_resolve_h": 3.0
+    },
+    "threshold": {
+      "count": 18,
+      "wins": 18,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 2.1,
+      "cost": 200.0,
+      "roi_pct": 1.05,
+      "median_resolve_h": 112.5
+    },
+    "counting": {
+      "count": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 1.02,
+      "cost": 80.0,
+      "roi_pct": 1.28,
+      "median_resolve_h": 160.4
+    }
+  },
+  "sub_type_stats": {
+    "uncategorized": {
+      "count": 714,
+      "wins": 713,
+      "losses": 1,
+      "win_rate": 99.86,
+      "loss_rate": 0.14,
+      "pnl": 74.87,
+      "cost": 8015.0,
+      "roi_pct": 0.93,
+      "median_resolve_h": 163.9
+    },
+    "election": {
+      "count": 439,
+      "wins": 439,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 43.51,
+      "cost": 3666.0,
+      "roi_pct": 1.19,
+      "median_resolve_h": 165.7
+    },
+    "politics_other": {
+      "count": 437,
+      "wins": 437,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 60.32,
+      "cost": 5106.0,
+      "roi_pct": 1.18,
+      "median_resolve_h": 136.0
+    },
+    "sports_match": {
+      "count": 363,
+      "wins": 362,
+      "losses": 1,
+      "win_rate": 99.72,
+      "loss_rate": 0.275,
+      "pnl": 23.25,
+      "cost": 2918.0,
+      "roi_pct": 0.8,
+      "median_resolve_h": 163.0
+    },
+    "other_match": {
+      "count": 247,
+      "wins": 247,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 21.96,
+      "cost": 2095.0,
+      "roi_pct": 1.05,
+      "median_resolve_h": 165.7
+    },
+    "sports_other": {
+      "count": 201,
+      "wins": 200,
+      "losses": 1,
+      "win_rate": 99.5,
+      "loss_rate": 0.498,
+      "pnl": 14.24,
+      "cost": 2693.0,
+      "roi_pct": 0.53,
+      "median_resolve_h": 6.0
+    },
+    "crypto_other": {
+      "count": 103,
+      "wins": 102,
+      "losses": 1,
+      "win_rate": 99.03,
+      "loss_rate": 0.971,
+      "pnl": -4.04,
+      "cost": 1440.0,
+      "roi_pct": -0.28,
+      "median_resolve_h": 163.0
+    },
+    "tech_other": {
+      "count": 70,
+      "wins": 70,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 6.03,
+      "cost": 644.0,
+      "roi_pct": 0.94,
+      "median_resolve_h": 165.7
+    },
+    "soccer_match": {
+      "count": 61,
+      "wins": 61,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 5.54,
+      "cost": 488.0,
+      "roi_pct": 1.13,
+      "median_resolve_h": 4.7
+    },
+    "esports_other": {
+      "count": 46,
+      "wins": 46,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 5.85,
+      "cost": 690.0,
+      "roi_pct": 0.85,
+      "median_resolve_h": 3.0
+    },
+    "other_sub_match": {
+      "count": 38,
+      "wins": 38,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 3.1,
+      "cost": 388.0,
+      "roi_pct": 0.8,
+      "median_resolve_h": 164.4
+    },
+    "esports_game_map": {
+      "count": 37,
+      "wins": 37,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 4.59,
+      "cost": 555.0,
+      "roi_pct": 0.83,
+      "median_resolve_h": 3.0
+    },
+    "draw": {
+      "count": 33,
+      "wins": 33,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 2.98,
+      "cost": 264.0,
+      "roi_pct": 1.13,
+      "median_resolve_h": 3.0
+    },
+    "other_prop": {
+      "count": 28,
+      "wins": 28,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 3.19,
+      "cost": 322.0,
+      "roi_pct": 0.99,
+      "median_resolve_h": 122.7
+    },
+    "soccer_prop": {
+      "count": 20,
+      "wins": 20,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 1.73,
+      "cost": 188.0,
+      "roi_pct": 0.92,
+      "median_resolve_h": 46.3
+    },
+    "other_threshold": {
+      "count": 16,
+      "wins": 16,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 1.77,
+      "cost": 184.0,
+      "roi_pct": 0.96,
+      "median_resolve_h": 92.4
+    },
+    "other_count": {
+      "count": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.9,
+      "cost": 56.0,
+      "roi_pct": 1.6,
+      "median_resolve_h": 151.3
+    },
+    "esports_match": {
+      "count": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.37,
+      "cost": 56.0,
+      "roi_pct": 0.66,
+      "median_resolve_h": 79.4
+    },
+    "social_media_count": {
+      "count": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.12,
+      "cost": 24.0,
+      "roi_pct": 0.52,
+      "median_resolve_h": 165.7
+    },
+    "weather": {
+      "count": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate": 0.0,
+      "pnl": 0.33,
+      "cost": 16.0,
+      "roi_pct": 2.04,
+      "median_resolve_h": 117.8
+    }
+  },
+  "remaining_loss_details": [
+    {
+      "question": "Will Albacete Balompié win on 2026-03-16?",
+      "main_type": "match_outcome",
+      "sub_type": "sports_match",
+      "entry_price": 0.975,
+      "category": "sports_other",
+      "volume": 27665.917439,
+      "neg_risk": true
+    },
+    {
+      "question": "Miami Open, Qualification: Arthur Fery vs Yunchaokete Bu",
+      "main_type": "other",
+      "sub_type": "sports_other",
+      "entry_price": 0.9775,
+      "category": "tennis",
+      "volume": 264506.69883000024,
+      "neg_risk": false
+    },
+    {
+      "question": "Will Bitcoin dip to $69,000 on March 21?",
+      "main_type": "other",
+      "sub_type": "crypto_other",
+      "entry_price": 0.9805,
+      "category": "crypto",
+      "volume": 101334.46749500008,
+      "neg_risk": false
+    },
+    {
+      "question": "Will MrBeast's next video get between 35 and 40 million views on day 1?",
+      "main_type": "other",
+      "sub_type": "uncategorized",
+      "entry_price": 0.985,
+      "category": "other",
+      "volume": 545991.6273190007,
+      "neg_risk": true
+    }
+  ]
+}

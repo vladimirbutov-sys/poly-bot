@@ -1,0 +1,1201 @@
+{
+  "timestamp": "2026-03-22T08:25:36.729Z",
+  "resolveData": {
+    "regCount": 253,
+    "negCount": 309
+  },
+  "top30": [
+    {
+      "label": "reg≤2d neg≤3d cap$100 bet$20",
+      "pnl": 324.4865382883286,
+      "betsPerDay": 44.730000000000004,
+      "skipCap": 63.15,
+      "avgCash": 183.91611111111112
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$100 bet$20",
+      "pnl": 322.3542050320529,
+      "betsPerDay": 44.35166666666667,
+      "skipCap": 64.675,
+      "avgCash": 183.79555555555555
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$100 bet$20",
+      "pnl": 320.6239328964484,
+      "betsPerDay": 44.622499999999995,
+      "skipCap": 54.025,
+      "avgCash": 187.4575
+    },
+    {
+      "label": "reg≤3d neg≤0d cap$0 bet$20",
+      "pnl": 319.5281681899995,
+      "betsPerDay": 38.65916666666667,
+      "skipCap": 25.825,
+      "avgCash": 223.29166666666666
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$100 bet$20",
+      "pnl": 318.54936785559113,
+      "betsPerDay": 44.45666666666667,
+      "skipCap": 58.75,
+      "avgCash": 185.37222222222223
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$100 bet$20",
+      "pnl": 318.5360109703568,
+      "betsPerDay": 44.06666666666667,
+      "skipCap": 100.825,
+      "avgCash": 164.7813888888889
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$100 bet$20",
+      "pnl": 317.8055701425733,
+      "betsPerDay": 43.80416666666667,
+      "skipCap": 103.85,
+      "avgCash": 163.37027777777777
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$100 bet$20",
+      "pnl": 316.78282358629303,
+      "betsPerDay": 43.8125,
+      "skipCap": 103.5,
+      "avgCash": 163.67819444444444
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$100 bet$20",
+      "pnl": 316.1870468564081,
+      "betsPerDay": 44.24333333333333,
+      "skipCap": 20.975,
+      "avgCash": 217.9561111111111
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$100 bet$20",
+      "pnl": 316.1792054887732,
+      "betsPerDay": 43.76083333333334,
+      "skipCap": 113.575,
+      "avgCash": 158.47569444444446
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$175 bet$20",
+      "pnl": 316.0220888918927,
+      "betsPerDay": 47.965,
+      "skipCap": 91.9,
+      "avgCash": 174.35055555555556
+    },
+    {
+      "label": "reg≤2d neg≤0d cap$0 bet$20",
+      "pnl": 315.79208234201803,
+      "betsPerDay": 38.2225,
+      "skipCap": 9.825,
+      "avgCash": 252.9361111111111
+    },
+    {
+      "label": "reg≤5d neg≤0d cap$0 bet$20",
+      "pnl": 315.2737013750508,
+      "betsPerDay": 38.34,
+      "skipCap": 31.975,
+      "avgCash": 211.7736111111111
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$175 bet$20",
+      "pnl": 314.8926785421767,
+      "betsPerDay": 47.406666666666666,
+      "skipCap": 181.35,
+      "avgCash": 149.39208333333335
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$175 bet$20",
+      "pnl": 314.52664297954294,
+      "betsPerDay": 47.275,
+      "skipCap": 174.55,
+      "avgCash": 149.75833333333333
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$175 bet$20",
+      "pnl": 313.39084974414044,
+      "betsPerDay": 47.90416666666667,
+      "skipCap": 95.275,
+      "avgCash": 173.48166666666665
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$100 bet$20",
+      "pnl": 312.63869746818295,
+      "betsPerDay": 44.02916666666667,
+      "skipCap": 19.275,
+      "avgCash": 220.2072222222222
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$100 bet$20",
+      "pnl": 312.62319807256466,
+      "betsPerDay": 43.25666666666667,
+      "skipCap": 118.075,
+      "avgCash": 157.84625
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$175 bet$20",
+      "pnl": 312.0735819095925,
+      "betsPerDay": 47.919999999999995,
+      "skipCap": 98.675,
+      "avgCash": 170.55819444444444
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$100 bet$20",
+      "pnl": 311.6412633264038,
+      "betsPerDay": 43.751666666666665,
+      "skipCap": 107.075,
+      "avgCash": 163.79458333333332
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$100 bet$20",
+      "pnl": 311.53264477859483,
+      "betsPerDay": 44.11,
+      "skipCap": 21.5,
+      "avgCash": 220.48277777777778
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$100 bet$20",
+      "pnl": 310.65924129668826,
+      "betsPerDay": 43.3225,
+      "skipCap": 122.9,
+      "avgCash": 157.60430555555556
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$175 bet$20",
+      "pnl": 310.14852317284146,
+      "betsPerDay": 47.25083333333334,
+      "skipCap": 179.5,
+      "avgCash": 148.8726388888889
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$175 bet$20",
+      "pnl": 307.6756394993355,
+      "betsPerDay": 46.344166666666666,
+      "skipCap": 240.425,
+      "avgCash": 136.03194444444443
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$100 bet$20",
+      "pnl": 307.56365533274163,
+      "betsPerDay": 43.954166666666666,
+      "skipCap": 20.075,
+      "avgCash": 219.57763888888888
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$175 bet$20",
+      "pnl": 307.19040381840864,
+      "betsPerDay": 46.55,
+      "skipCap": 249.4,
+      "avgCash": 137.02805555555557
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$100 bet$20",
+      "pnl": 306.2829725377733,
+      "betsPerDay": 43.1325,
+      "skipCap": 123.575,
+      "avgCash": 157.46277777777777
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$175 bet$20",
+      "pnl": 306.19285457164375,
+      "betsPerDay": 46.934999999999995,
+      "skipCap": 175.575,
+      "avgCash": 149.64180555555555
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$175 bet$20",
+      "pnl": 303.4023145088933,
+      "betsPerDay": 47.542500000000004,
+      "skipCap": 97.425,
+      "avgCash": 172.3648611111111
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$250 bet$20",
+      "pnl": 302.3816020793659,
+      "betsPerDay": 50.385,
+      "skipCap": 262.025,
+      "avgCash": 134.63777777777779
+    }
+  ],
+  "current": {
+    "pnl": 171.39452230916015,
+    "betsPerDay": 44.98833333333334,
+    "skipCap": 1113.4
+  },
+  "allResults": [
+    {
+      "label": "reg≤2d neg≤3d cap$100 bet$20",
+      "pnl": 324,
+      "skip": 63
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$100 bet$20",
+      "pnl": 322,
+      "skip": 65
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$100 bet$20",
+      "pnl": 321,
+      "skip": 54
+    },
+    {
+      "label": "reg≤3d neg≤0d cap$0 bet$20",
+      "pnl": 320,
+      "skip": 26
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$100 bet$20",
+      "pnl": 319,
+      "skip": 59
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$100 bet$20",
+      "pnl": 319,
+      "skip": 101
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$100 bet$20",
+      "pnl": 318,
+      "skip": 104
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$100 bet$20",
+      "pnl": 317,
+      "skip": 104
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$100 bet$20",
+      "pnl": 316,
+      "skip": 21
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$100 bet$20",
+      "pnl": 316,
+      "skip": 114
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$175 bet$20",
+      "pnl": 316,
+      "skip": 92
+    },
+    {
+      "label": "reg≤2d neg≤0d cap$0 bet$20",
+      "pnl": 316,
+      "skip": 10
+    },
+    {
+      "label": "reg≤5d neg≤0d cap$0 bet$20",
+      "pnl": 315,
+      "skip": 32
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$175 bet$20",
+      "pnl": 315,
+      "skip": 181
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$175 bet$20",
+      "pnl": 315,
+      "skip": 175
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$175 bet$20",
+      "pnl": 313,
+      "skip": 95
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$100 bet$20",
+      "pnl": 313,
+      "skip": 19
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$100 bet$20",
+      "pnl": 313,
+      "skip": 118
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$175 bet$20",
+      "pnl": 312,
+      "skip": 99
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$100 bet$20",
+      "pnl": 312,
+      "skip": 107
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$100 bet$20",
+      "pnl": 312,
+      "skip": 22
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$100 bet$20",
+      "pnl": 311,
+      "skip": 123
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$175 bet$20",
+      "pnl": 310,
+      "skip": 180
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$175 bet$20",
+      "pnl": 308,
+      "skip": 240
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$100 bet$20",
+      "pnl": 308,
+      "skip": 20
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$175 bet$20",
+      "pnl": 307,
+      "skip": 249
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$100 bet$20",
+      "pnl": 306,
+      "skip": 124
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$175 bet$20",
+      "pnl": 306,
+      "skip": 176
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$175 bet$20",
+      "pnl": 303,
+      "skip": 97
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$250 bet$20",
+      "pnl": 302,
+      "skip": 262
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$250 bet$20",
+      "pnl": 302,
+      "skip": 360
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$175 bet$20",
+      "pnl": 302,
+      "skip": 247
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$175 bet$20",
+      "pnl": 301,
+      "skip": 227
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$175 bet$20",
+      "pnl": 300,
+      "skip": 260
+    },
+    {
+      "label": "reg≤1d neg≤0d cap$0 bet$20",
+      "pnl": 300,
+      "skip": 1
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$175 bet$20",
+      "pnl": 298,
+      "skip": 251
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$175 bet$20",
+      "pnl": 298,
+      "skip": 267
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$250 bet$20",
+      "pnl": 297,
+      "skip": 253
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$175 bet$20",
+      "pnl": 296,
+      "skip": 258
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$250 bet$20",
+      "pnl": 295,
+      "skip": 351
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$250 bet$20",
+      "pnl": 294,
+      "skip": 249
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$250 bet$20",
+      "pnl": 293,
+      "skip": 331
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$250 bet$20",
+      "pnl": 293,
+      "skip": 212
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$250 bet$20",
+      "pnl": 292,
+      "skip": 435
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$250 bet$20",
+      "pnl": 291,
+      "skip": 433
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$250 bet$20",
+      "pnl": 290,
+      "skip": 318
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$250 bet$20",
+      "pnl": 286,
+      "skip": 437
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$250 bet$20",
+      "pnl": 285,
+      "skip": 462
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$250 bet$20",
+      "pnl": 285,
+      "skip": 403
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$250 bet$20",
+      "pnl": 282,
+      "skip": 440
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$250 bet$20",
+      "pnl": 278,
+      "skip": 399
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$250 bet$15",
+      "pnl": 275,
+      "skip": 112
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$250 bet$20",
+      "pnl": 275,
+      "skip": 390
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$250 bet$15",
+      "pnl": 273,
+      "skip": 50
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$250 bet$15",
+      "pnl": 272,
+      "skip": 117
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$250 bet$15",
+      "pnl": 272,
+      "skip": 111
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$175 bet$15",
+      "pnl": 272,
+      "skip": 50
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$175 bet$15",
+      "pnl": 271,
+      "skip": 25
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$175 bet$15",
+      "pnl": 271,
+      "skip": 67
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$175 bet$15",
+      "pnl": 270,
+      "skip": 53
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$250 bet$15",
+      "pnl": 270,
+      "skip": 174
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$250 bet$15",
+      "pnl": 269,
+      "skip": 179
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$175 bet$15",
+      "pnl": 269,
+      "skip": 25
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$175 bet$15",
+      "pnl": 268,
+      "skip": 56
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$175 bet$15",
+      "pnl": 267,
+      "skip": 53
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$250 bet$15",
+      "pnl": 267,
+      "skip": 193
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$250 bet$15",
+      "pnl": 267,
+      "skip": 167
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$250 bet$15",
+      "pnl": 266,
+      "skip": 48
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$175 bet$15",
+      "pnl": 266,
+      "skip": 19
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$175 bet$15",
+      "pnl": 266,
+      "skip": 68
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$250 bet$15",
+      "pnl": 266,
+      "skip": 192
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$175 bet$15",
+      "pnl": 265,
+      "skip": 44
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$175 bet$15",
+      "pnl": 265,
+      "skip": 21
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$100 bet$15",
+      "pnl": 264,
+      "skip": 11
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$100 bet$15",
+      "pnl": 263,
+      "skip": 9
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$250 bet$15",
+      "pnl": 263,
+      "skip": 47
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$100 bet$15",
+      "pnl": 263,
+      "skip": 7
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$100 bet$15",
+      "pnl": 262,
+      "skip": 13
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$250 bet$15",
+      "pnl": 262,
+      "skip": 104
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$250 bet$15",
+      "pnl": 261,
+      "skip": 197
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$100 bet$15",
+      "pnl": 261,
+      "skip": 5
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$100 bet$15",
+      "pnl": 261,
+      "skip": 10
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$100 bet$15",
+      "pnl": 261,
+      "skip": 1
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$250 bet$15",
+      "pnl": 260,
+      "skip": 46
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$250 bet$15",
+      "pnl": 260,
+      "skip": 151
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$175 bet$15",
+      "pnl": 260,
+      "skip": 5
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$175 bet$15",
+      "pnl": 259,
+      "skip": 4
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$175 bet$15",
+      "pnl": 259,
+      "skip": 63
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$100 bet$15",
+      "pnl": 259,
+      "skip": 10
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$100 bet$15",
+      "pnl": 259,
+      "skip": 10
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$100 bet$15",
+      "pnl": 259,
+      "skip": 2
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$175 bet$15",
+      "pnl": 259,
+      "skip": 4
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$100 bet$15",
+      "pnl": 258,
+      "skip": 2
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$250 bet$15",
+      "pnl": 257,
+      "skip": 178
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$100 bet$15",
+      "pnl": 256,
+      "skip": 1
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$175 bet$15",
+      "pnl": 253,
+      "skip": 4
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$100 bet$15",
+      "pnl": 244,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$100 bet$15",
+      "pnl": 244,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$100 bet$15",
+      "pnl": 244,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤0d cap$0 bet$15",
+      "pnl": 243,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤0d cap$0 bet$15",
+      "pnl": 243,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$100 bet$15",
+      "pnl": 240,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤0d cap$0 bet$15",
+      "pnl": 237,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤0d cap$0 bet$15",
+      "pnl": 224,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤0d cap$0 bet$20",
+      "pnl": 224,
+      "skip": 589
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$250 bet$10",
+      "pnl": 220,
+      "skip": 4
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$250 bet$10",
+      "pnl": 219,
+      "skip": 3
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$100 bet$20",
+      "pnl": 218,
+      "skip": 731
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$250 bet$10",
+      "pnl": 217,
+      "skip": 4
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$100 bet$20",
+      "pnl": 216,
+      "skip": 725
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$100 bet$20",
+      "pnl": 216,
+      "skip": 729
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$250 bet$10",
+      "pnl": 215,
+      "skip": 2
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$175 bet$20",
+      "pnl": 215,
+      "skip": 953
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$250 bet$10",
+      "pnl": 214,
+      "skip": 4
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$175 bet$20",
+      "pnl": 214,
+      "skip": 923
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$250 bet$10",
+      "pnl": 214,
+      "skip": 1
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$175 bet$20",
+      "pnl": 213,
+      "skip": 940
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$250 bet$20",
+      "pnl": 213,
+      "skip": 1136
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$100 bet$20",
+      "pnl": 210,
+      "skip": 726
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$250 bet$20",
+      "pnl": 210,
+      "skip": 1075
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$175 bet$20",
+      "pnl": 209,
+      "skip": 913
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$250 bet$10",
+      "pnl": 208,
+      "skip": 3
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$250 bet$10",
+      "pnl": 208,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$250 bet$20",
+      "pnl": 207,
+      "skip": 1103
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$250 bet$10",
+      "pnl": 207,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤0d cap$0 bet$15",
+      "pnl": 206,
+      "skip": 391
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$250 bet$10",
+      "pnl": 205,
+      "skip": 1
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$100 bet$15",
+      "pnl": 205,
+      "skip": 581
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$250 bet$10",
+      "pnl": 204,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$250 bet$15",
+      "pnl": 204,
+      "skip": 904
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$100 bet$15",
+      "pnl": 203,
+      "skip": 586
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$250 bet$10",
+      "pnl": 203,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$175 bet$15",
+      "pnl": 203,
+      "skip": 759
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$250 bet$15",
+      "pnl": 201,
+      "skip": 952
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$250 bet$10",
+      "pnl": 201,
+      "skip": 2
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$100 bet$15",
+      "pnl": 201,
+      "skip": 567
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$100 bet$15",
+      "pnl": 201,
+      "skip": 567
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$175 bet$10",
+      "pnl": 200,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$175 bet$10",
+      "pnl": 199,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$175 bet$15",
+      "pnl": 199,
+      "skip": 734
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$250 bet$15",
+      "pnl": 199,
+      "skip": 887
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$250 bet$20",
+      "pnl": 198,
+      "skip": 1042
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$250 bet$10",
+      "pnl": 198,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$175 bet$10",
+      "pnl": 198,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$175 bet$10",
+      "pnl": 198,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$175 bet$15",
+      "pnl": 198,
+      "skip": 754
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$250 bet$10",
+      "pnl": 197,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$175 bet$10",
+      "pnl": 197,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$175 bet$10",
+      "pnl": 197,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$175 bet$10",
+      "pnl": 196,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$175 bet$10",
+      "pnl": 195,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$250 bet$10",
+      "pnl": 194,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$175 bet$10",
+      "pnl": 193,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$175 bet$15",
+      "pnl": 193,
+      "skip": 715
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$175 bet$10",
+      "pnl": 192,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$175 bet$10",
+      "pnl": 191,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$175 bet$10",
+      "pnl": 189,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$175 bet$10",
+      "pnl": 186,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$250 bet$15",
+      "pnl": 185,
+      "skip": 864
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$250 bet$10",
+      "pnl": 185,
+      "skip": 608
+    },
+    {
+      "label": "reg≤3d neg≤7d cap$100 bet$10",
+      "pnl": 185,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$175 bet$10",
+      "pnl": 184,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤7d cap$100 bet$10",
+      "pnl": 183,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$175 bet$10",
+      "pnl": 182,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$175 bet$10",
+      "pnl": 182,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤2d cap$100 bet$10",
+      "pnl": 182,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤3d cap$100 bet$10",
+      "pnl": 182,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤2d cap$100 bet$10",
+      "pnl": 181,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤3d cap$100 bet$10",
+      "pnl": 181,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$175 bet$10",
+      "pnl": 181,
+      "skip": 398
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$175 bet$10",
+      "pnl": 180,
+      "skip": 393
+    },
+    {
+      "label": "reg≤3d neg≤1d cap$100 bet$10",
+      "pnl": 180,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤7d cap$100 bet$10",
+      "pnl": 180,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$250 bet$10",
+      "pnl": 180,
+      "skip": 576
+    },
+    {
+      "label": "reg≤7d neg≤3d cap$100 bet$10",
+      "pnl": 179,
+      "skip": 253
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$100 bet$10",
+      "pnl": 178,
+      "skip": 245
+    },
+    {
+      "label": "reg≤7d neg≤7d cap$100 bet$10",
+      "pnl": 178,
+      "skip": 257
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$250 bet$10",
+      "pnl": 177,
+      "skip": 567
+    },
+    {
+      "label": "reg≤7d neg≤2d cap$175 bet$10",
+      "pnl": 177,
+      "skip": 373
+    },
+    {
+      "label": "reg≤5d neg≤1d cap$100 bet$10",
+      "pnl": 177,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤1d cap$100 bet$10",
+      "pnl": 176,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤2d cap$100 bet$10",
+      "pnl": 176,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤3d cap$100 bet$10",
+      "pnl": 176,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$175 bet$10",
+      "pnl": 175,
+      "skip": 371
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$100 bet$10",
+      "pnl": 175,
+      "skip": 248
+    },
+    {
+      "label": "reg≤7d neg≤0d cap$0 bet$10",
+      "pnl": 173,
+      "skip": 109
+    },
+    {
+      "label": "reg≤1d neg≤3d cap$100 bet$10",
+      "pnl": 171,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤7d cap$100 bet$10",
+      "pnl": 170,
+      "skip": 0
+    },
+    {
+      "label": "reg≤7d neg≤1d cap$250 bet$10",
+      "pnl": 170,
+      "skip": 549
+    },
+    {
+      "label": "reg≤1d neg≤1d cap$100 bet$10",
+      "pnl": 167,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤2d cap$100 bet$10",
+      "pnl": 166,
+      "skip": 0
+    },
+    {
+      "label": "reg≤3d neg≤0d cap$0 bet$10",
+      "pnl": 163,
+      "skip": 0
+    },
+    {
+      "label": "reg≤5d neg≤0d cap$0 bet$10",
+      "pnl": 163,
+      "skip": 0
+    },
+    {
+      "label": "reg≤2d neg≤0d cap$0 bet$10",
+      "pnl": 160,
+      "skip": 0
+    },
+    {
+      "label": "reg≤1d neg≤0d cap$0 bet$10",
+      "pnl": 148,
+      "skip": 0
+    }
+  ]
+}

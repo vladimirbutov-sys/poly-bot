@@ -1,0 +1,96 @@
+[
+  {
+    "title": "US obtains Iranian enriched uranium by May 31?",
+    "status": "sold",
+    "shares": 176.96,
+    "vwap": 0.9300000000000002,
+    "revenue": 164.57280000000003,
+    "cost_sold": 155.78829910291728,
+    "pnl": 8.78450089708275
+  },
+  {
+    "title": "Will Netanyahu talk to Joseph Aoun by April 30?",
+    "status": "place_failed"
+  },
+  {
+    "title": "Will Trump visit Pakistan by April 30?",
+    "status": "sold",
+    "shares": 88.23,
+    "vwap": 0.993,
+    "revenue": 87.61239,
+    "cost_sold": 74.11160018132368,
+    "pnl": 13.500789818676324
+  },
+  {
+    "title": "Iran agrees to surrender enriched uranium stockpile by June 30, 2026?",
+    "status": "sold",
+    "shares": 339.01,
+    "vwap": 0.22,
+    "revenue": 74.5822,
+    "cost_sold": 113.39855500855407,
+    "pnl": -38.81635500855407
+  },
+  {
+    "title": "US x Iran diplomatic meeting by April 30, 2026?",
+    "status": "sold",
+    "shares": 224.37,
+    "vwap": 0.91,
+    "revenue": 204.1767,
+    "cost_sold": 643.1102225763882,
+    "pnl": -438.9335225763882
+  },
+  {
+    "title": " Iran agrees to end enrichment of uranium by June 30?",
+    "status": "sold",
+    "shares": 122.67,
+    "vwap": 0.31,
+    "revenue": 38.0277,
+    "cost_sold": 49.066000163025755,
+    "pnl": -11.038300163025752
+  },
+  {
+    "title": "Trump announces end of military operations against Iran by April 30th?",
+    "status": "sold",
+    "shares": 523.78,
+    "vwap": 0.957,
+    "revenue": 501.25746,
+    "cost_sold": 495.2805441111896,
+    "pnl": 5.9769158888103675
+  },
+  {
+    "title": "Will Iran strike Qatar by April 30, 2026?",
+    "status": "sold",
+    "shares": 333.75,
+    "vwap": 0.9100000000000001,
+    "revenue": 303.71250000000003,
+    "cost_sold": 299.7210195949185,
+    "pnl": 3.991480405081518
+  },
+  {
+    "title": "Will the Kharg Island oil terminal be hit by April 30?",
+    "status": "sold",
+    "shares": 159.57,
+    "vwap": 0.963,
+    "revenue": 153.66591,
+    "cost_sold": 150.0005996992104,
+    "pnl": 3.6653103007895993
+  },
+  {
+    "title": "US-Iran nuclear deal by April 30?",
+    "status": "sold",
+    "shares": 255.49,
+    "vwap": 0.978,
+    "revenue": 249.86922,
+    "cost_sold": 242.31051585127202,
+    "pnl": 7.558704148727998
+  },
+  {
+    "title": "Israeli forces cross the Litani River by June 30?",
+    "status": "sold",
+    "shares": 279.8,
+    "vwap": 0.52,
+    "revenue": 145.496,
+    "cost_sold": 162.2841999928523,
+    "pnl": -16.7881999928523
+  }
+]

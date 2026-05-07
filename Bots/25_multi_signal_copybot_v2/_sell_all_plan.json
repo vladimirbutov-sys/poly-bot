@@ -1,0 +1,163 @@
+[
+  {
+    "key": "0x50ac68522b6cefd6e8de4691b451719b9b9d3b54aecbc30d3c78c3493641a51c",
+    "token": "5345441419419147559625888104788940459264045849260872706421285679583531763371",
+    "shares": 176.96,
+    "cost_used": 155.79,
+    "expected_vwap": 0.93,
+    "expected_revenue": 164.58,
+    "expected_pnl": 8.78,
+    "title": "US obtains Iranian enriched uranium by May 31?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0x0f17ffc1f4cf4f461166ab784ac92538d90cdedbab5ec865750ee0cfaf52c4a8",
+    "token": "59937347564572872290316062672979454904942576853251346531585432029105806826906",
+    "shares": 190.66,
+    "cost_used": 86.23,
+    "expected_vwap": 0.0123,
+    "expected_revenue": 2.35,
+    "expected_pnl": -83.88,
+    "title": "Iran agrees to end enrichment of uranium by April 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_c6038565caf48436e07bf30f0e9827f6",
+    "token": "23330623927523224976798170032966383651796457473765550056022078478545665896004",
+    "shares": 58.0,
+    "cost_used": 46.4,
+    "expected_vwap": 0.9793,
+    "expected_revenue": 56.8,
+    "expected_pnl": 10.4,
+    "title": "Will Netanyahu talk to Joseph Aoun by April 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_efc6f9bc4696d8d347fd9a840b32bc57",
+    "token": "73729813496682519995429532676438369547218888156132843164838151809775349287580",
+    "shares": 88.24,
+    "cost_used": 74.12,
+    "expected_vwap": 0.993,
+    "expected_revenue": 87.62,
+    "expected_pnl": 13.5,
+    "title": "Will Trump visit Pakistan by April 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xfa4c94e51f64819e1d8c9e60e85eb2ca4b3411654bcc60c63e612e34f972af68",
+    "token": "71072033942543358092746595783705192338853499264598489041523740805922382816481",
+    "shares": 339.02,
+    "cost_used": 113.4,
+    "expected_vwap": 0.22,
+    "expected_revenue": 74.58,
+    "expected_pnl": -38.82,
+    "title": "Iran agrees to surrender enriched uranium stockpile by ",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0x563af50495bc68defd76580b0c1f39d7889d5de03a6428c3a7f691648371dffb",
+    "token": "12683524285321035959197225276771871845858392912886591325119577507755683407691",
+    "shares": 224.38,
+    "cost_used": 643.13,
+    "expected_vwap": 0.9104,
+    "expected_revenue": 204.26,
+    "expected_pnl": -438.87,
+    "title": "US x Iran diplomatic meeting by April 30, 2026?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0x389977d4dd7e5a7066ec8d009269305c51f35bc874f9a0c9e7d415d2e43ff3f9",
+    "token": "25525886838936661349801315808447476243176190100445157889430252006398510133975",
+    "shares": 122.68,
+    "cost_used": 49.07,
+    "expected_vwap": 0.31,
+    "expected_revenue": 38.03,
+    "expected_pnl": -11.04,
+    "title": " Iran agrees to end enrichment of uranium by June 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0x4cfdb3e056107ccee3ea680ea2211dfd8b75349d9bf661394f76e77c784582c6",
+    "token": "43306201559293677467902878784200227711843675662189772539825649733291552996303",
+    "shares": 523.79,
+    "cost_used": 495.29,
+    "expected_vwap": 0.9573,
+    "expected_revenue": 501.42,
+    "expected_pnl": 6.13,
+    "title": "Trump announces end of military operations against Iran",
+    "has_live_order": true,
+    "live_orders": [
+      [
+        "0x6863c3fcf7b2305893c2b8be4e0d8c379e51dc089014e4e24b7d3cc21932a0b4",
+        "0.97"
+      ]
+    ]
+  },
+  {
+    "key": "0xmanual_99fcd80e71a66e8ab7aea8621f749991",
+    "token": "14450813207569853429427907799191506845125898776856365811166995747634801660417",
+    "shares": 333.76,
+    "cost_used": 299.73,
+    "expected_vwap": 0.9131,
+    "expected_revenue": 304.77,
+    "expected_pnl": 5.04,
+    "title": "Will Iran strike Qatar by April 30, 2026?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_cadf0d7b56a6a23ee15aca68bf8249d7",
+    "token": "112177007392163960484008159326300450500524475967112598127823948255784605038856",
+    "shares": 159.58,
+    "cost_used": 150.01,
+    "expected_vwap": 0.9624,
+    "expected_revenue": 153.58,
+    "expected_pnl": 3.57,
+    "title": "Will the Kharg Island oil terminal be hit by April 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_4ee0b29f3ff2d501911c17e003f70f1d",
+    "token": "63111054483017727612527014142487261417181554883649541604828011046058146540352",
+    "shares": 255.5,
+    "cost_used": 242.32,
+    "expected_vwap": 0.9793,
+    "expected_revenue": 250.22,
+    "expected_pnl": 7.9,
+    "title": "US-Iran nuclear deal by April 30?",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_2892dd605f93dd097e7b05b30bc57502",
+    "token": "22927363175825625095832888773253962860881299963299337794235022401608169522396",
+    "shares": 322.69,
+    "cost_used": 250.01,
+    "expected_vwap": 0.5973,
+    "expected_revenue": 192.75,
+    "expected_pnl": -57.26,
+    "title": "Israel x Hezbollah Ceasefire extended by April 26, 2026",
+    "has_live_order": false,
+    "live_orders": []
+  },
+  {
+    "key": "0xmanual_34b76628c6dce4cfde43beb59c571748",
+    "token": "61105898512331423456932766287679410148969111620575334880263459667275737814007",
+    "shares": 279.81,
+    "cost_used": 162.29,
+    "expected_vwap": 0.5305,
+    "expected_revenue": 148.43,
+    "expected_pnl": -13.86,
+    "title": "Israeli forces cross the Litani River by June 30?",
+    "has_live_order": false,
+    "live_orders": []
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "name": "Выборы Колумбия — Конгресс 8 марта + Президент 31 мая",
+
+  "telegram_channels": {
+    "NoticiasCaracol":   {"tier": 1, "lang": "es", "topic": "election_co", "name": "Caracol Noticias"},
+    "NoticiasRCN":       {"tier": 1, "lang": "es", "topic": "election_co", "name": "RCN Noticias"},
+    "BluRadioColombia":  {"tier": 2, "lang": "es", "topic": "election_co", "name": "Blu Radio"},
+    "WRadioColombia":    {"tier": 2, "lang": "es", "topic": "election_co", "name": "W Radio"}
+  },
+
+  "twitter_accounts": {
+    "NoticiasCaracol":   {"tier": 1, "topic": "election_co"},
+    "NoticiasRCN":       {"tier": 1, "topic": "election_co"},
+    "Aborov_VickyDavila":{"tier": 2, "topic": "election_co"},
+    "DCoronell":         {"tier": 2, "topic": "election_co"},
+    "Registraduria":     {"tier": 1, "topic": "election_co"},
+    "MOE_Colombia":      {"tier": 2, "topic": "election_co"},
+    "CNaborov_E":        {"tier": 1, "topic": "election_co"}
+  },
+
+  "whatsapp_channels": {
+    "0029VaRegistraduria": {"tier": 1, "lang": "es", "topic": "election_co", "name": "Registraduría Nacional"},
+    "0029VaCaracolTV":     {"tier": 1, "lang": "es", "topic": "election_co", "name": "Caracol TV"},
+    "0029VaRCNnoticias":   {"tier": 1, "lang": "es", "topic": "election_co", "name": "RCN Noticias"},
+    "0029VaSemana":        {"tier": 2, "lang": "es", "topic": "election_co", "name": "Revista Semana"},
+    "0029VaElTiempo":      {"tier": 2, "lang": "es", "topic": "election_co", "name": "El Tiempo"}
+  },
+
+  "youtube_channels": {
+    "UCLkRNBjsmk0z_sFcPirFhUQ": {"tier": 1, "lang": "es", "topic": "election_co", "name": "Caracol TV LIVE"},
+    "UC2k_J-6iBadZqGkSYCBu-Gw": {"tier": 1, "lang": "es", "topic": "election_co", "name": "Noticias RCN"}
+  },
+
+  "facebook_pages": {
+    "NoticiasCaracol": {"tier": 1, "lang": "es", "topic": "election_co", "name": "Caracol Noticias"},
+    "NTN24":           {"tier": 2, "lang": "es", "topic": "election_co", "name": "NTN24"},
+    "ElTiempo":        {"tier": 2, "lang": "es", "topic": "election_co", "name": "El Tiempo"},
+    "RevistaSemana":   {"tier": 2, "lang": "es", "topic": "election_co", "name": "Semana"}
+  },
+
+  "instagram_accounts": {
+    "noticiascaracol":  {"tier": 2, "lang": "es", "topic": "election_co", "name": "Caracol"},
+    "registraduria":    {"tier": 1, "lang": "es", "topic": "election_co", "name": "Registraduría"},
+    "vaborov_ickydavila":{"tier": 2, "lang": "es", "topic": "election_co", "name": "Vicky Dávila"}
+  },
+
+  "keywords": {
+    "en": [
+      "Colombia election", "exit poll", "preconteo", "Senate result", "Pacto Histórico",
+      "Centro Democrático", "Cambio Radical"
+    ],
+    "es": [
+      "preconteo", "resultado", "escrutinio", "Senado", "Cámara", "curules", "votos",
+      "elecciones", "exit poll", "conteo", "Pacto Histórico", "Centro Democrático",
+      "Cambio Radical", "Cepeda", "Fico", "segunda vuelta", "primera vuelta",
+      "Registraduría", "mesa de votación", "jurado", "tarjetón"
+    ]
+  }
+}

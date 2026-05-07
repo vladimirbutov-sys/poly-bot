@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-04-10T13:51:20.611408+00:00",
+  "bot_stats": {
+    "capital": 1527.7514548349982,
+    "balance": 1225.3035848349982,
+    "total_pnl": 37.812113984999996,
+    "unrealized_pnl": 0.13626000000000005,
+    "open_count": 1,
+    "utilization": 0.19796928946970976,
+    "win_rate": 0.9880952380952381,
+    "windows": {
+      "7d": {
+        "wins": 301,
+        "losses": 4,
+        "total": 305,
+        "loss_rate": 0.013114754098360656,
+        "pnl": 9.238544834999997,
+        "cost": 3445.3313521649998
+      },
+      "30d": {
+        "wins": 830,
+        "losses": 10,
+        "total": 840,
+        "loss_rate": 0.011904761904761904,
+        "pnl": 36.44931783500002,
+        "cost": 8843.523579164977
+      },
+      "all": {
+        "wins": 830,
+        "losses": 10,
+        "total": 840,
+        "loss_rate": 0.011904761904761904,
+        "pnl": 36.44931783500002,
+        "cost": 8843.523579164977
+      }
+    }
+  },
+  "scanner_stats": {
+    "eligible": 42690,
+    "win_rate": 0.9995079893163394,
+    "loss_rate": 0.0004920106836605595,
+    "median_resolve_h": 2.46
+  },
+  "alerts": [
+    "CRITICAL: 7-day loss rate 1.31% (4 losses / 305 bets)"
+  ],
+  "warnings": [
+    "1 positions > 72h ($15.00 frozen)"
+  ],
+  "recommendations": [
+    {
+      "param": "MAX_END_DATE_REGULAR",
+      "current": 3,
+      "recommended": 3
+    },
+    {
+      "param": "MAX_END_DATE_NEG_RISK",
+      "current": 3,
+      "recommended": 3
+    },
+    {
+      "param": "MAX_NEG_RISK_FROZEN",
+      "current": 350,
+      "recommended": 75
+    },
+    {
+      "param": "SORT_PRIORITY",
+      "current": "end_date ASC, price ASC",
+      "recommended": "end_date ASC, price ASC (keep current)"
+    },
+    {
+      "param": "CATEGORY_TECH",
+      "current": "allowed",
+      "recommended": "review"
+    }
+  ],
+  "auto_actions": []
+}

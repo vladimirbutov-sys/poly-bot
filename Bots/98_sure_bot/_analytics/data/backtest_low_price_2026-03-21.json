@@ -1,0 +1,252 @@
+{
+  "generated": "2026-03-21T17:20:19.958116",
+  "scanner_markets_total": 26193,
+  "processed_markets": 26193,
+  "outcome_distribution": {
+    "won": 7561,
+    "unknown": 4250,
+    "lost": 14382
+  },
+  "non_sports_table": {
+    "<85": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "85-90": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "90-92": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "92-94": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "94-96": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "96-97": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "97-98": {
+      "total": 2881,
+      "won": 496,
+      "lost": 863,
+      "unknown": 1522,
+      "likely_lost": 0
+    },
+    "98-99": {
+      "total": 2092,
+      "won": 392,
+      "lost": 588,
+      "unknown": 1112,
+      "likely_lost": 0
+    },
+    "99+": {
+      "total": 4446,
+      "won": 2088,
+      "lost": 1854,
+      "unknown": 504,
+      "likely_lost": 0
+    }
+  },
+  "sports_table": {
+    "<85": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "85-90": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "90-92": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "92-94": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "94-96": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "96-97": {
+      "total": 0,
+      "won": 0,
+      "lost": 0,
+      "unknown": 0,
+      "likely_lost": 0
+    },
+    "97-98": {
+      "total": 744,
+      "won": 48,
+      "lost": 316,
+      "unknown": 380,
+      "likely_lost": 0
+    },
+    "98-99": {
+      "total": 453,
+      "won": 79,
+      "lost": 248,
+      "unknown": 126,
+      "likely_lost": 0
+    },
+    "99+": {
+      "total": 13149,
+      "won": 3837,
+      "lost": 9215,
+      "unknown": 97,
+      "likely_lost": 0
+    }
+  },
+  "api_results": {
+    "politics": {
+      "<85": {
+        "total": 49,
+        "won": 0,
+        "lost": 45
+      },
+      "99+": {
+        "total": 48,
+        "won": 48,
+        "lost": 0
+      },
+      "85-90": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      },
+      "96-97": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      },
+      "98-99": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      }
+    },
+    "geopolitics": {
+      "<85": {
+        "total": 49,
+        "won": 0,
+        "lost": 45
+      },
+      "99+": {
+        "total": 48,
+        "won": 48,
+        "lost": 0
+      },
+      "85-90": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      },
+      "96-97": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      },
+      "98-99": {
+        "total": 1,
+        "won": 0,
+        "lost": 0
+      }
+    }
+  },
+  "summary": {
+    "basketball": {
+      "total": 523,
+      "known_outcome": 419,
+      "won": 407,
+      "win_rate": 97.14
+    },
+    "esports": {
+      "total": 781,
+      "known_outcome": 780,
+      "won": 51,
+      "win_rate": 6.54
+    },
+    "geopolitics": {
+      "total": 403,
+      "known_outcome": 217,
+      "won": 115,
+      "win_rate": 53.0
+    },
+    "hockey": {
+      "total": 651,
+      "known_outcome": 579,
+      "won": 579,
+      "win_rate": 100.0
+    },
+    "other": {
+      "total": 6702,
+      "known_outcome": 4689,
+      "won": 2055,
+      "win_rate": 43.83
+    },
+    "politics": {
+      "total": 1746,
+      "known_outcome": 957,
+      "won": 700,
+      "win_rate": 73.15
+    },
+    "soccer": {
+      "total": 1304,
+      "known_outcome": 1095,
+      "won": 116,
+      "win_rate": 10.59
+    },
+    "sports_other": {
+      "total": 11087,
+      "known_outcome": 10870,
+      "won": 2811,
+      "win_rate": 25.86
+    },
+    "tech": {
+      "total": 568,
+      "known_outcome": 418,
+      "won": 106,
+      "win_rate": 25.36
+    }
+  }
+}

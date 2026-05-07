@@ -1,0 +1,599 @@
+"""Exit management: time stops, price targets, follow-Car exits.
+
+Exit rules:
+1. Car sells -> we sell (handled in main.py via on_sell)
+2. Price reaches 95c+ AND we're in profit -> sell everything
+3. Price dropped 75%+ from our entry -> forced sell (stop-loss)
+4. Position held 20+ days and loss <= 20% -> close position
+5. Market resolved -> redeem (handled by redeemer.py)
+
+Note: No hedge re-check (hedge filter removed, replaced by Denizz check at entry).
+"""
+import time
+import requests
+from datetime import datetime, timezone, timedelta
+import filters
+import executor
+import tracker
+import telegram_notify as tg
+from config import (
+    EXIT_SELL_AT_PRICE, EXIT_TIME_STOP_DAYS, EXIT_TIME_STOP_MAX_LOSS, EXIT_STOP_LOSS_PCT,
+    HP_STOP_LOSS_SELL_BELOW, HP_STOP_LOSS_SLIPPAGE,
+    PLAYERS,
+)
+
+_last_hedge_recheck = {}  # kept for compatibility but not used
+
+# === Duplicate-sell event guard ===
+# Tracks when we last fired an exit on each (player, cid, token) so we can
+# de-duplicate burst events. A single big player sell is often reported by
+# the monitor as multiple SELL events (each partial fill comes as a
+# separate trade record). Without this guard we were placing multiple sell
+# orders in a row, each computing `sold_pct` off stale shares, and ending up
+# selling far more than intended. See bot.log 2026-04-09 22:42 — Hezbollah
+# June 30 got 86% exited on a 29% denizz sell because monitor fired the
+# SELL event 7 times and we processed each independently.
+_recent_exit_fires = {}   # {(player, cid, token): last_ts_unix}
+EXIT_DEDUP_WINDOW_SEC = 60  # skip repeat events within this window
+
+
+# Threshold for "strong exit" — player dumped >= this % of their position.
+# At/above this threshold we fully exit regardless of our own P&L (rule 3).
+PLAYER_EXIT_SELL_PCT_THRESHOLD = 0.70
+
+# Ignore sells smaller than this % of player's position (dust / noise).
+PLAYER_SELL_DUST_PCT = 0.10
+
+# Profit/loss delta for deciding whether a sell was "in profit" or "in loss"
+# relative to cost basis. Sells within ±1% of avg are treated as neutral.
+PROFIT_DELTA = 0.01
+
+
+def _fetch_player_position_size(player_wallet: str, token_id: str):
+    """Return player's current size on the given token, 0.0 if no position,
+    or None on API error (caller should fall back to default behavior)."""
+    try:
+        r = requests.get(
+            "https://data-api.polymarket.com/positions",
+            params={"user": player_wallet, "limit": 500, "sizeThreshold": 0},
+            timeout=15,
+        )
+        if not r.ok:
+            return None
+        for p in r.json():
+            if p.get("asset") == token_id:
+                return float(p.get("size", 0) or 0)
+        return 0.0
+    except Exception:
+        return None
+
+
+def check_exits():
+    """Check all open positions for exit conditions. Called periodically."""
+    data = tracker.load()
+    # Self-heal any tracker duplicates so each (cid, token) is checked once
+    merged = tracker.consolidate_duplicates(data)
+    if merged:
+        tracker.save(data)
+        print(f"[EXIT] check_exits: consolidate_duplicates merged {merged} duplicate records")
+        data = tracker.load()
+    open_positions = tracker.get_open_positions(data)
+
+    if not open_positions:
+        return
+
+    now = datetime.now(timezone.utc)
+
+    for key, pos in list(open_positions.items()):
+        token_id = pos.get("token_id", "")
+        title = pos.get("title", "?")
+
+        if not token_id:
+            continue
+
+        # Get current price
+        prices = filters.get_orderbook_prices(token_id)
+        if not prices:
+            continue
+
+        best_bid = prices[0]
+        shares = pos.get("size_shares", 0)
+
+        if shares < 0.5:
+            continue
+
+        # ========= HIGH-PRICE OVERRIDE positions =========
+        # HP positions use their own exit rules:
+        #  - Hold until resolution (no take-profit at 0.99)
+        #  - Stop-loss: if bid <= 0.80 → sell, allow up to 5c slippage from bid
+        #  - No time-stop (we want to redeem at $1 at resolution)
+        is_hp = pos.get("tier") == "HP" or pos.get("strategy") == "HP"
+        if is_hp:
+            if best_bid > 0 and best_bid <= HP_STOP_LOSS_SELL_BELOW:
+                # Allow wider slippage for HP stop-loss sells
+                sell_price = max(0.01, best_bid - HP_STOP_LOSS_SLIPPAGE)
+                sell_price = round(sell_price, 3)
+                print(f"[EXIT:HP] Stop-loss: bid {best_bid:.3f} <= {HP_STOP_LOSS_SELL_BELOW}, "
+                      f"selling @ {sell_price:.3f} (slip {HP_STOP_LOSS_SLIPPAGE*100:.0f}c) | {title[:50]}")
+                _execute_sell(data, key, pos, shares, sell_price, f"hp_stop_loss_{best_bid:.2f}")
+                data = tracker.load()
+                continue
+            # otherwise — hold to resolution, skip other exit rules
+            continue
+        # ========= end HP exit =========
+
+        # --- EXIT 1: Price reached 90c+ -> sell only if profitable ---
+        entry = pos.get("avg_entry", pos.get("entry_price", 0))
+        if best_bid >= EXIT_SELL_AT_PRICE and best_bid > entry:
+            print(f"[EXIT] Price target {best_bid:.3f} >= {EXIT_SELL_AT_PRICE}, entry was {entry:.3f} | {title[:50]}")
+            _execute_sell(data, key, pos, shares, best_bid, "price_target_90c")
+            data = tracker.load()  # reload after modification
+            continue
+
+        # --- EXIT 2: Stop-loss — price dropped 80%+ from our entry ---
+        entry = pos.get("avg_entry", pos.get("entry_price", 0))
+        if entry > 0.01:
+            drop_pct = (entry - best_bid) / entry
+            if drop_pct >= EXIT_STOP_LOSS_PCT:
+                print(f"[EXIT] Stop-loss: price dropped {drop_pct:.0%} (entry {entry:.3f} -> {best_bid:.3f}) | {title[:50]}")
+                _execute_sell(data, key, pos, shares, best_bid, f"stop_loss_{drop_pct:.0%}")
+                data = tracker.load()
+                continue
+
+        # --- EXIT 3: Time stop — 20 days, only if loss <= 20% ---
+        opened_at = pos.get("timestamp", "")
+        if opened_at:
+            try:
+                open_dt = datetime.fromisoformat(opened_at)
+                if open_dt.tzinfo is None:
+                    open_dt = open_dt.replace(tzinfo=timezone.utc)
+                days_held = (now - open_dt).total_seconds() / 86400
+
+                if days_held >= EXIT_TIME_STOP_DAYS:
+                    entry = pos.get("avg_entry", pos.get("entry_price", 0.5))
+                    loss_pct = (entry - best_bid) / entry if entry > 0.01 else 0
+
+                    if loss_pct <= EXIT_TIME_STOP_MAX_LOSS:
+                        # Loss is small (<=20%) or we're in profit -> close
+                        print(f"[EXIT] Time stop: {days_held:.1f} days, loss {loss_pct:.1%} <= {EXIT_TIME_STOP_MAX_LOSS:.0%} | {title[:50]}")
+                        _execute_sell(data, key, pos, shares, best_bid, f"time_stop_{days_held:.0f}d")
+                        data = tracker.load()
+                        continue
+                    else:
+                        # Loss > 20% -> hold, don't sell at big loss
+                        print(f"[EXIT] Time stop HOLD: {days_held:.1f} days, loss {loss_pct:.1%} > {EXIT_TIME_STOP_MAX_LOSS:.0%} — keeping | {title[:50]}")
+            except Exception:
+                pass
+
+
+def _execute_sell(data, key, pos, shares, price, reason):
+    """Execute a sell order and record it.
+
+    Handles partial fills: if timeout occurs after only part of the order
+    is matched, records the filled portion (not the intended full size).
+    Then retries the remainder at a lower price.
+    """
+    token_id = pos.get("token_id", "")
+    title = pos.get("title", "?")
+
+    result = executor.place_limit_sell(token_id, price, shares)
+    if not result:
+        print(f"[EXIT] Sell order failed: {title[:50]}")
+        tg.error(f"Sell failed: {title[:40]}")
+        return
+
+    tg.sell_placed(title, reason, price, shares)
+    print(f"[EXIT] SELL order placed: {title[:50]} | {shares:.1f} shares @ {price:.3f} | {reason}")
+
+    # Wait for fill with detailed info to catch partial fills
+    fill = executor.wait_for_fill_with_details(result["order_id"], timeout=300)
+    status = fill.get("status", "UNKNOWN")
+    matched = fill.get("size_matched", 0)
+    original = fill.get("size_original", shares)
+
+    if status == "MATCHED":
+        revenue = shares * price
+        data = tracker.load()
+        tracker.record_sell(data, key, shares, price, revenue, reason)
+        print(f"[EXIT] SOLD: {title[:50]} | ${revenue:.2f}")
+        return
+
+    if status == "PARTIAL" and matched > 0.5:
+        # Record the partial fill
+        partial_revenue = round(matched * price, 2)
+        data = tracker.load()
+        tracker.record_sell(data, key, matched, price, partial_revenue, f"{reason}_partial")
+        print(f"[EXIT] PARTIAL SOLD: {title[:50]} | {matched:.1f}/{original:.1f} sh @ {price:.3f} = ${partial_revenue:.2f}")
+        # Try the remainder at lower price
+        remainder = original - matched
+        if remainder >= 0.5:
+            new_price = round(price * 0.98, 2)
+            if new_price > 0.01:
+                print(f"[EXIT] Retry remainder {remainder:.1f} sh @ {new_price:.3f}")
+                result2 = executor.place_limit_sell(token_id, new_price, remainder)
+                if result2:
+                    fill2 = executor.wait_for_fill_with_details(result2["order_id"], timeout=300)
+                    s2 = fill2.get("status", "UNKNOWN")
+                    m2 = fill2.get("size_matched", 0)
+                    if s2 == "MATCHED":
+                        rev2 = remainder * new_price
+                        data = tracker.load()
+                        tracker.record_sell(data, key, remainder, new_price, rev2, reason + "_retry")
+                        print(f"[EXIT] RETRY SOLD: {remainder:.1f} @ {new_price:.3f}")
+                    elif s2 == "PARTIAL" and m2 > 0.5:
+                        rev2 = round(m2 * new_price, 2)
+                        data = tracker.load()
+                        tracker.record_sell(data, key, m2, new_price, rev2, reason + "_retry_partial")
+                        print(f"[EXIT] RETRY PARTIAL SOLD: {m2:.1f}/{remainder:.1f} @ {new_price:.3f}")
+        return
+
+    # Nothing filled — try again at lower price
+    print(f"[EXIT] Sell not filled ({status}): {title[:50]}")
+    new_price = round(price * 0.98, 2)
+    if new_price > 0.01:
+        result2 = executor.place_limit_sell(token_id, new_price, shares)
+        if result2:
+            fill2 = executor.wait_for_fill_with_details(result2["order_id"], timeout=300)
+            s2 = fill2.get("status", "UNKNOWN")
+            m2 = fill2.get("size_matched", 0)
+            if s2 == "MATCHED":
+                revenue = shares * new_price
+                data = tracker.load()
+                tracker.record_sell(data, key, shares, new_price, revenue, reason + "_retry")
+                print(f"[EXIT] RETRY SOLD: {title[:50]}")
+            elif s2 == "PARTIAL" and m2 > 0.5:
+                rev2 = round(m2 * new_price, 2)
+                data = tracker.load()
+                tracker.record_sell(data, key, m2, new_price, rev2, reason + "_retry_partial")
+                print(f"[EXIT] RETRY PARTIAL: {m2:.1f}/{shares:.1f} @ {new_price:.3f}")
+
+
+def handle_player_sell(player_name: str, event: dict):
+    """Called when a player sells. Only exit if this player triggered our position.
+
+    We follow the sell only if pos['signal_player'] == player_name.
+    """
+    condition_id = event.get("condition_id", "")
+    token_id = event.get("token_id", "")
+    title = event.get("title", "?")
+    source = event.get("source", "snapshot")
+
+    if event.get("reason") == "MERGE_EXIT":
+        source = "merge"
+
+    # === DUPLICATE-EVENT GUARD ===
+    # If we already fired an exit on this (player, cid, token) within the last
+    # EXIT_DEDUP_WINDOW_SEC, skip — this is almost certainly a duplicate event
+    # from the monitor observing the same sell distributed across multiple
+    # on-chain fills. Merge events bypass this guard because a merge is a
+    # single unambiguous signal and should never be skipped.
+    if source != "merge":
+        import time as _time
+        dedup_key = (player_name, condition_id, str(token_id))
+        last_fire = _recent_exit_fires.get(dedup_key, 0)
+        now_ts = _time.time()
+        if now_ts - last_fire < EXIT_DEDUP_WINDOW_SEC:
+            age = now_ts - last_fire
+            print(f"[EXIT] SKIP duplicate sell event ({age:.0f}s ago): "
+                  f"{player_name} | {title[:50]}")
+            return
+        # Reserve the slot immediately so that concurrent threads processing
+        # the same event burst also skip. We set it BEFORE doing the work,
+        # not after, to close the race window as tight as possible.
+        _recent_exit_fires[dedup_key] = now_ts
+
+    # === ON-CHAIN VERIFY (double protection) ===
+    # Before ANY sell logic, confirm the player ACTUALLY reduced their
+    # position on-chain. This catches phantom sells from monitor bugs,
+    # API pagination issues, startup recovery replays, etc.
+    # Fail-safe: if RPC fails → do NOT sell.
+    if source != "merge":
+        player_wallet = (PLAYERS.get(player_name) or "").lower()
+        if player_wallet and token_id:
+            try:
+                from web3 import Web3
+                from config import POLYGON_RPC
+                _w3 = Web3(Web3.HTTPProvider(POLYGON_RPC, request_kwargs={"timeout": 10}))
+                _ctf_abi = [{"constant": True,
+                             "inputs": [{"name": "a", "type": "address"},
+                                        {"name": "id", "type": "uint256"}],
+                             "name": "balanceOf",
+                             "outputs": [{"name": "", "type": "uint256"}],
+                             "type": "function", "stateMutability": "view"}]
+                _ctf = _w3.eth.contract(
+                    address=Web3.to_checksum_address("0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"),
+                    abi=_ctf_abi,
+                )
+                player_onchain = _ctf.functions.balanceOf(
+                    Web3.to_checksum_address(player_wallet), int(token_id)
+                ).call() / 1e6
+
+                # The key check: does the player STILL hold a significant
+                # position? If yes → this "sell" is a phantom, skip.
+                # We check TWO conditions:
+                #  1. If old_size is known: player still >= 95% of it → phantom
+                #  2. If old_size is 0 (activity-based events always send 0):
+                #     player still holds > 100 shares → almost certainly phantom
+                #     (a real "100% dump" would show near-zero on-chain)
+                old_size = float(event.get("old_size", 0) or 0)
+                sold_shares = float(event.get("sold_shares", 0) or 0)
+
+                if old_size > 0 and player_onchain >= old_size * 0.95:
+                    print(f"[EXIT] PHANTOM SELL blocked (on-chain verify): {player_name} "
+                          f"still holds {player_onchain:.0f} sh (reported old_size={old_size:.0f}) "
+                          f"| {title[:50]}")
+                    return
+
+                if old_size == 0 and player_onchain > 100:
+                    # Activity-based event with no old_size context.
+                    # Player clearly still has a large position on-chain →
+                    # this is NOT a "100% dump", at most a partial sell.
+                    # Recalculate sold_pct from on-chain reality.
+                    if sold_shares > 0 and sold_shares < player_onchain * 0.5:
+                        # Small sell relative to on-chain holdings — proceed
+                        # normally with corrected old_size for proper sold_pct
+                        event["old_size"] = player_onchain + sold_shares
+                        event["new_size"] = player_onchain
+                        print(f"[EXIT] on-chain verify: {player_name} holds "
+                              f"{player_onchain:.0f} sh, sold {sold_shares:.0f} "
+                              f"→ corrected old_size={player_onchain + sold_shares:.0f} | {title[:50]}")
+                    else:
+                        # sold_shares is huge or zero but player still holds
+                        # a lot → phantom / misattributed sell
+                        print(f"[EXIT] PHANTOM SELL blocked (on-chain, no old_size): "
+                              f"{player_name} still holds {player_onchain:.0f} sh "
+                              f"(reported sold={sold_shares:.0f}) | {title[:50]}")
+                        return
+
+                if old_size > 0:
+                    print(f"[EXIT] on-chain verify: {player_name} {player_onchain:.0f} sh "
+                          f"(was {old_size:.0f}) — confirmed reduction | {title[:50]}")
+            except Exception as e:
+                # RPC failed — fail-safe: do NOT sell
+                print(f"[EXIT] on-chain verify FAILED ({e}) — skipping sell (fail-safe) | {title[:50]}")
+                return
+
+    data = tracker.load()
+    # Self-heal duplicates before processing — guarantees one record per
+    # (cid, token), so the rest of this function operates on a single
+    # consolidated position even if older duplicates existed.
+    merged = tracker.consolidate_duplicates(data)
+    if merged:
+        tracker.save(data)
+        print(f"[EXIT] consolidate_duplicates merged {merged} duplicate records before processing sell")
+        data = tracker.load()
+
+    open_positions = tracker.get_open_positions(data)
+
+    # Find at most ONE matching record (cid + token). After consolidate_duplicates
+    # there should never be more than one open record on the same (cid, token).
+    matched_key = None
+    matched_pos = None
+    for key, pos in open_positions.items():
+        if pos.get("condition_id") != condition_id:
+            continue
+        if str(pos.get("token_id")) != str(token_id):
+            continue
+        matched_key = key
+        matched_pos = pos
+        break
+
+    if matched_pos is None:
+        return
+
+    # Use single-iteration loop body. We keep the `for` shape so the
+    # existing decision logic below is unchanged.
+    iter_records = [(matched_key, matched_pos)]
+
+    for key, pos in iter_records:
+        # Only exit if this player opened our position
+        pos_signal_player = pos.get("signal_player", "")
+        if pos_signal_player and pos_signal_player != player_name:
+            print(f"[EXIT] SKIP: {player_name} sold but position was opened by {pos_signal_player} | {title[:50]}")
+            continue
+
+        our_shares = pos.get("size_shares", 0)
+        if our_shares < 0.5:
+            continue
+
+        # === DETERMINE HOW MUCH THE PLAYER SOLD ===
+        sold_pct_player = None
+        if source == "merge":
+            sold_pct_player = 1.0
+        else:
+            sold = float(event.get("sold_shares", 0) or 0)
+            old_size = float(event.get("old_size", 0) or 0)
+            if old_size > 0:
+                sold_pct_player = sold / old_size
+            elif sold > 0:
+                player_wallet = (PLAYERS.get(player_name) or "").lower()
+                if player_wallet:
+                    cur_size = _fetch_player_position_size(player_wallet, token_id)
+                    if cur_size is not None:
+                        size_before = cur_size + sold
+                        if size_before > 0:
+                            sold_pct_player = sold / size_before
+
+        # Fetch current orderbook — needed for decision & actual sell.
+        prices = filters.get_orderbook_prices(token_id)
+        if not prices:
+            continue
+        our_sell_price = prices[0]
+        our_entry = pos.get("avg_entry", pos.get("entry_price", 0))
+        we_in_profit = our_entry > 0.01 and our_sell_price >= our_entry * (1 + PROFIT_DELTA)
+
+        # === DETERMINE IF PLAYER'S SELL WAS IN PROFIT OR LOSS FOR THEM ===
+        # Fetch player's weighted avg BUY price on this token (cost basis).
+        # Works even if they fully exited.
+        player_sell_price = float(event.get("sell_price", 0) or 0)
+        player_wallet = (PLAYERS.get(player_name) or "").lower()
+        condition_id = pos.get("condition_id", "")
+
+        player_avg = 0.0
+        if player_wallet and condition_id:
+            player_avg = filters.get_player_cost_basis(condition_id, player_wallet, token_id)
+
+        player_in_profit = None    # True / False / None=unknown
+        player_in_loss = None
+        if player_avg > 0.01 and player_sell_price > 0.01:
+            if player_sell_price > player_avg * (1 + PROFIT_DELTA):
+                player_in_profit = True
+                player_in_loss = False
+            elif player_sell_price < player_avg * (1 - PROFIT_DELTA):
+                player_in_profit = False
+                player_in_loss = True
+            else:
+                player_in_profit = False  # neutral → treat as "profit-taking"
+                player_in_loss = False
+
+        # === NEW DECISION MATRIX ===
+        # Rule 1 (dust):      sold < 10%                         → SKIP
+        # Rule 3 (big dump):  sold >= 70%                        → FULL EXIT always
+        # Rule 2a (his loss): 10-70% & player sold at loss       → MIRROR % (follow)
+        # Rule 2b (his win):  10-70% & player sold at profit:
+        #                        we in profit → MIRROR %
+        #                        we in loss   → SKIP
+        # Unknown sold_pct   → fall back to full exit (safer, as legacy)
+        sell_shares = 0.0
+        reason = ""
+        decision_log = ""
+
+        if source == "merge":
+            sell_shares = our_shares
+            reason = f"{player_name}_merge_exit"
+            decision_log = f"MERGE → full exit"
+        elif sold_pct_player is None:
+            # Unknown — fall back to full exit (safer)
+            sell_shares = our_shares
+            reason = f"{player_name}_unknown_pct_full"
+            decision_log = "unknown sold%, default full exit"
+        elif sold_pct_player < PLAYER_SELL_DUST_PCT:
+            pct_s = f"{sold_pct_player:.0%}"
+            print(f"[EXIT] SKIP {player_name} dust sell ({pct_s} < {PLAYER_SELL_DUST_PCT:.0%}): "
+                  f"ignoring noise | {title[:50]}")
+            tg.send(f"SKIP {player_name} dust ({pct_s}): {title[:40]}")
+            continue
+        elif sold_pct_player >= PLAYER_EXIT_SELL_PCT_THRESHOLD:
+            # Rule 3: Big dump — FULL EXIT regardless of P&L
+            sell_shares = our_shares
+            reason = f"{player_name}_big_dump_{sold_pct_player:.0%}"
+            decision_log = (f"big dump {sold_pct_player:.0%} ≥ {PLAYER_EXIT_SELL_PCT_THRESHOLD:.0%} "
+                            f"→ full exit (rule 3)")
+        else:
+            # 10% <= sold_pct < 70% — partial sell, need to examine both P&Ls
+            if player_in_loss is True:
+                # Rule 2a: player selling at their own loss → follow regardless
+                sell_shares = our_shares * sold_pct_player
+                reason = f"{player_name}_mirror_loss_{sold_pct_player:.0%}"
+                decision_log = (f"partial {sold_pct_player:.0%}, player in LOSS "
+                                f"(sell {player_sell_price:.3f} vs their avg {player_avg:.3f}) "
+                                f"→ mirror % (rule 2a)")
+            elif player_in_profit is False and player_in_loss is False:
+                # Player in profit (or neutral): only follow if we're also in profit
+                if we_in_profit:
+                    sell_shares = our_shares * sold_pct_player
+                    reason = f"{player_name}_mirror_profit_{sold_pct_player:.0%}"
+                    decision_log = (f"partial {sold_pct_player:.0%}, player in PROFIT "
+                                    f"({player_sell_price:.3f} vs {player_avg:.3f}), we in PROFIT "
+                                    f"(bid {our_sell_price:.3f} vs entry {our_entry:.3f}) "
+                                    f"→ mirror % (rule 2b)")
+                else:
+                    pct_s = f"{sold_pct_player:.0%}"
+                    print(f"[EXIT] SKIP {player_name} partial {pct_s}: player took profit "
+                          f"({player_sell_price:.3f} vs avg {player_avg:.3f}) but WE in LOSS "
+                          f"(bid {our_sell_price:.3f} vs entry {our_entry:.3f}) "
+                          f"— not locking our loss | {title[:50]}")
+                    tg.send(f"SKIP {player_name} {pct_s}: their profit, our loss\n{title[:50]}")
+                    continue
+            else:
+                # player_in_profit is None → couldn't determine (API error, no buys)
+                # Fall back to legacy behavior: follow only if we're in profit
+                if we_in_profit:
+                    sell_shares = our_shares * sold_pct_player
+                    reason = f"{player_name}_mirror_unk_{sold_pct_player:.0%}"
+                    decision_log = (f"partial {sold_pct_player:.0%}, player P&L unknown "
+                                    f"(avg={player_avg:.3f}), we in profit → mirror %")
+                else:
+                    pct_s = f"{sold_pct_player:.0%}"
+                    print(f"[EXIT] SKIP {player_name} partial {pct_s}: "
+                          f"player P&L unknown, WE in LOSS — holding | {title[:50]}")
+                    tg.send(f"SKIP {player_name} {pct_s} (unknown + loss): {title[:40]}")
+                    continue
+
+        if sell_shares < 0.5:
+            continue
+
+        print(f"[EXIT] {player_name} → {decision_log} | {title[:50]}")
+
+        # Sanity check: if our bid is much worse than player's sell price,
+        # skip — stale orderbook or no liquidity.
+        if source != "merge" and player_sell_price > 0.01 and not we_in_profit:
+            price_gap = (player_sell_price - our_sell_price) / player_sell_price if player_sell_price > 0 else 0
+            if price_gap > 0.40:
+                print(f"[EXIT] SKIP: our price {our_sell_price:.3f} is {price_gap:.0%} worse than "
+                      f"{player_name} @ {player_sell_price:.3f} — holding | {title[:50]}")
+                tg.send(f"SKIP {player_name} (bad price):\n{title}\n"
+                        f"{player_name} @ {player_sell_price:.3f}, we'd @ {our_sell_price:.3f}")
+                continue
+
+        print(f"[EXIT] Following {player_name}: {sell_shares:.1f} sh @ {our_sell_price:.3f} | {title[:50]}")
+        tg.send(f"Following {player_name} SELL:\n{title}\n"
+                f"{sell_shares:.1f} sh @ {our_sell_price:.3f} ({reason})")
+        _execute_sell(data, key, pos, sell_shares, our_sell_price, reason)
+        data = tracker.load()
+
+
+# Keep handle_target_sell as alias for compatibility
+handle_target_sell = handle_player_sell
+
+
+def check_hedge_exits():
+    """No-op: hedge exits removed in Multi-Signal bot.
+
+    Called every HEDGE_RECHECK_INTERVAL seconds. For each open position,
+    re-fetches Car's positions and checks if we're now trapped on the
+    wrong side of an arbitrage setup.
+    """
+    from config import HEDGE_RECHECK_INTERVAL
+
+    now = time.time()
+    data = tracker.load()
+    open_positions = tracker.get_open_positions(data)
+
+    if not open_positions:
+        return
+
+    for key, pos in list(open_positions.items()):
+        condition_id = pos.get("condition_id", "")
+        outcome = pos.get("outcome", "")
+        title = pos.get("title", "?")
+        token_id = pos.get("token_id", "")
+
+        if not condition_id or not outcome or not token_id:
+            continue
+
+        # Throttle: don't re-check more often than HEDGE_RECHECK_INTERVAL
+        last_check = _last_hedge_recheck.get(key, 0)
+        if now - last_check < HEDGE_RECHECK_INTERVAL:
+            continue
+
+        _last_hedge_recheck[key] = now
+
+        # Re-check hedge status
+        result = filters.recheck_hedge_for_position(condition_id, outcome)
+
+        if result["should_exit"]:
+            print(f"[HEDGE-EXIT] {result['reason']} | {title[:50]}")
+            tg.send(f"HEDGE TRAP DETECTED:\n{title}\n{result['reason']}\nExiting immediately!")
+
+            shares = pos.get("size_shares", 0)
+            if shares < 0.5:
+                continue
+
+            prices = filters.get_orderbook_prices(token_id)
+            if not prices:
+                continue
+
+            sell_price = prices[0]
+            _execute_sell(data, key, pos, shares, sell_price, "hedge_trap_exit")
+            data = tracker.load()

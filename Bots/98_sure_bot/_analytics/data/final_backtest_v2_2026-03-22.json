@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-03-22T08:17:44.161Z",
+  "dataSource": "scanner_data.json (19K resolved, filtered by bot criteria)",
+  "resolveTimesUsed": {
+    "regCount": 256,
+    "regMedian": 5.31,
+    "negCount": 310,
+    "negMedian": 24.22
+  },
+  "winRates": {
+    "reg": 1,
+    "neg": 0.9967741935483871,
+    "regSample": 256,
+    "negSample": 310
+  },
+  "marketSupply": {
+    "regPerDay": 59.5,
+    "negPerDay": 41
+  },
+  "results": [
+    {
+      "label": "AS-IS ($10/$10, neg420, FIFO)",
+      "pnl": 195.4362138842069,
+      "betsPerDay": 51.696000000000005,
+      "skipCap": 935.3,
+      "avgCash": 71.70555555555556
+    },
+    {
+      "label": "AS-IS + SHORT PRIO",
+      "pnl": 179.7984853891685,
+      "betsPerDay": 48.61,
+      "skipCap": 1028.52,
+      "avgCash": 65.5925
+    },
+    {
+      "label": "TO-BE ($15/$8, neg175, SHORT)",
+      "pnl": 201.1510029475363,
+      "betsPerDay": 41.71133333333333,
+      "skipCap": 788.52,
+      "avgCash": 80.4548611111111
+    },
+    {
+      "label": "TO-BE FIFO",
+      "pnl": 206.44540111922154,
+      "betsPerDay": 41.23133333333333,
+      "skipCap": 1131.08,
+      "avgCash": 75.72197222222223
+    },
+    {
+      "label": "negCap=$0 (no neg)",
+      "pnl": 219.19115417969724,
+      "betsPerDay": 37.574,
+      "skipCap": 348.98,
+      "avgCash": 99.46416666666666
+    },
+    {
+      "label": "negCap=$50",
+      "pnl": 213.8817895259961,
+      "betsPerDay": 38.589333333333336,
+      "skipCap": 462.8,
+      "avgCash": 99.29302777777781
+    },
+    {
+      "label": "negCap=$100",
+      "pnl": 208.56248324123143,
+      "betsPerDay": 39.623333333333335,
+      "skipCap": 591.24,
+      "avgCash": 86.94797222222219
+    },
+    {
+      "label": "negCap=$150",
+      "pnl": 205.32580228611334,
+      "betsPerDay": 40.92666666666666,
+      "skipCap": 651.28,
+      "avgCash": 79.69047222222223
+    },
+    {
+      "label": "negCap=$175 ★",
+      "pnl": 199.7709812138303,
+      "betsPerDay": 41.20733333333333,
+      "skipCap": 810.8,
+      "avgCash": 79.7681944444444
+    },
+    {
+      "label": "negCap=$200",
+      "pnl": 198.2524582896167,
+      "betsPerDay": 42.05866666666667,
+      "skipCap": 893.94,
+      "avgCash": 75.34755555555556
+    },
+    {
+      "label": "negCap=$250",
+      "pnl": 196.0609155083946,
+      "betsPerDay": 43.407333333333334,
+      "skipCap": 1028.34,
+      "avgCash": 70.04669444444444
+    },
+    {
+      "label": "negCap=$350",
+      "pnl": 190.23353731000896,
+      "betsPerDay": 43.4,
+      "skipCap": 1178.66,
+      "avgCash": 67.67144444444445
+    },
+    {
+      "label": "betReg=$10",
+      "pnl": 195.57853824256236,
+      "betsPerDay": 53.64333333333333,
+      "skipCap": 327.12,
+      "avgCash": 91.30411111111108
+    },
+    {
+      "label": "betReg=$12",
+      "pnl": 199.77908117217117,
+      "betsPerDay": 48.39066666666667,
+      "skipCap": 475.36,
+      "avgCash": 81.4081111111111
+    },
+    {
+      "label": "betReg=$15 ★",
+      "pnl": 199.81272445193025,
+      "betsPerDay": 41.35733333333334,
+      "skipCap": 802.48,
+      "avgCash": 80.33322222222223
+    },
+    {
+      "label": "betReg=$20",
+      "pnl": 204.4530490709318,
+      "betsPerDay": 34.67666666666666,
+      "skipCap": 1069.24,
+      "avgCash": 72.20044444444444
+    },
+    {
+      "label": "betNeg=$5",
+      "pnl": 201.20940875069326,
+      "betsPerDay": 49.46333333333334,
+      "skipCap": 792.06,
+      "avgCash": 77.02625000000002
+    },
+    {
+      "label": "betNeg=$10",
+      "pnl": 206.0213419853752,
+      "betsPerDay": 38.892,
+      "skipCap": 798.52,
+      "avgCash": 78.33555555555554
+    }
+  ]
+}

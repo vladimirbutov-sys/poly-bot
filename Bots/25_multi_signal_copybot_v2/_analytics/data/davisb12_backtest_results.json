@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "wallet": "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+    "total_raw": 768,
+    "valid_positions": 768,
+    "filter_500_count": 349,
+    "filter_5k_count": 108
+  },
+  "2a_by_range_500plus": {
+    "0.00-0.15": {
+      "count": 74,
+      "wins": 11,
+      "losses": 63,
+      "wr": 14.9,
+      "roi": 46.8,
+      "total_pnl": 53944.18,
+      "total_cost": 115302.67,
+      "avg_win": 12609.87,
+      "avg_loss": -1345.47
+    },
+    "0.15-0.30": {
+      "count": 18,
+      "wins": 8,
+      "losses": 10,
+      "wr": 44.4,
+      "roi": 15.0,
+      "total_pnl": 14238.76,
+      "total_cost": 94871.35,
+      "avg_win": 3079.78,
+      "avg_loss": -1039.95
+    },
+    "0.30-0.50": {
+      "count": 18,
+      "wins": 8,
+      "losses": 10,
+      "wr": 44.4,
+      "roi": 2.5,
+      "total_pnl": 7930.87,
+      "total_cost": 313792.3,
+      "avg_win": 4188.47,
+      "avg_loss": -2557.69
+    },
+    "0.50-0.70": {
+      "count": 35,
+      "wins": 15,
+      "losses": 20,
+      "wr": 42.9,
+      "roi": -7.3,
+      "total_pnl": -9102.4,
+      "total_cost": 125029.74,
+      "avg_win": 573.18,
+      "avg_loss": -885.01
+    },
+    "0.70-0.85": {
+      "count": 23,
+      "wins": 11,
+      "losses": 12,
+      "wr": 47.8,
+      "roi": 11.3,
+      "total_pnl": 20449.41,
+      "total_cost": 181551.53,
+      "avg_win": 2619.9,
+      "avg_loss": -697.45
+    },
+    "0.85-1.00": {
+      "count": 181,
+      "wins": 139,
+      "losses": 42,
+      "wr": 76.8,
+      "roi": -0.2,
+      "total_pnl": -16586.54,
+      "total_cost": 7077643.04,
+      "avg_win": 723.86,
+      "avg_loss": -2790.53
+    },
+    "TOTAL": {
+      "count": 349,
+      "wins": 192,
+      "losses": 157,
+      "wr": 55.0,
+      "roi": 0.9,
+      "total_pnl": 70874.28,
+      "total_cost": 7908190.62,
+      "avg_win": 1744.2,
+      "avg_loss": -1681.61
+    }
+  },
+  "2b_by_range_5k_plus": {
+    "0.00-0.15": {
+      "count": 3,
+      "wins": 2,
+      "losses": 1,
+      "wr": 66.7,
+      "roi": 195.7,
+      "total_pnl": 85087.79,
+      "total_cost": 43473.99,
+      "avg_win": 50594.08,
+      "avg_loss": -16100.37
+    },
+    "0.15-0.30": {
+      "count": 6,
+      "wins": 3,
+      "losses": 3,
+      "wr": 50.0,
+      "roi": 27.5,
+      "total_pnl": 21221.48,
+      "total_cost": 77297.68,
+      "avg_win": 7872.77,
+      "avg_loss": -798.94
+    },
+    "0.30-0.50": {
+      "count": 7,
+      "wins": 3,
+      "losses": 4,
+      "wr": 42.9,
+      "roi": 1.8,
+      "total_pnl": 5328.7,
+      "total_cost": 295167.12,
+      "avg_win": 9297.12,
+      "avg_loss": -5640.67
+    },
+    "0.50-0.70": {
+      "count": 3,
+      "wins": 0,
+      "losses": 3,
+      "wr": 0.0,
+      "roi": -11.0,
+      "total_pnl": -7620.46,
+      "total_cost": 69042.69,
+      "avg_win": 0,
+      "avg_loss": -2540.15
+    },
+    "0.70-0.85": {
+      "count": 10,
+      "wins": 5,
+      "losses": 5,
+      "wr": 50.0,
+      "roi": 13.4,
+      "total_pnl": 20407.24,
+      "total_cost": 152732.67,
+      "avg_win": 4967.52,
+      "avg_loss": -886.07
+    },
+    "0.85-1.00": {
+      "count": 79,
+      "wins": 61,
+      "losses": 18,
+      "wr": 77.2,
+      "roi": -0.1,
+      "total_pnl": -10212.95,
+      "total_cost": 6889229.74,
+      "avg_win": 1574.92,
+      "avg_loss": -5904.62
+    },
+    "TOTAL": {
+      "count": 108,
+      "wins": 74,
+      "losses": 34,
+      "wr": 68.5,
+      "roi": 1.5,
+      "total_pnl": 114211.79,
+      "total_cost": 7526943.89,
+      "avg_win": 3697.37,
+      "avg_loss": -4688.05
+    }
+  },
+  "2c_strategies_5k_plus": {
+    "A (fixed $50)": {
+      "trades": 108,
+      "wins": 74,
+      "wr": 68.5,
+      "total_pnl": 1058.05,
+      "total_cost": 5400,
+      "roi": 19.6
+    },
+    "B (proportional)": {
+      "trades": 108,
+      "wins": 74,
+      "wr": 68.5,
+      "total_pnl": -1586.13,
+      "total_cost": 8986.13,
+      "roi": -17.7
+    },
+    "C (target $35 profit)": {
+      "trades": 70,
+      "wins": 44,
+      "wr": 62.9,
+      "total_pnl": -1468.1,
+      "total_cost": 7665.88,
+      "roi": -19.2
+    },
+    "D (stepped)": {
+      "trades": 108,
+      "wins": 74,
+      "wr": 68.5,
+      "total_pnl": 316.77,
+      "total_cost": 3225,
+      "roi": 9.8
+    }
+  },
+  "2d_comparison": {
+    "all": {
+      "count": 768,
+      "wins": 353,
+      "losses": 415,
+      "wr": 46.0,
+      "roi": 1.1,
+      "total_pnl": 85428.28,
+      "total_cost": 7951415.59,
+      "avg_win": 1021.74,
+      "avg_loss": -663.24
+    },
+    "500_to_5k": {
+      "count": 241,
+      "wins": 118,
+      "losses": 123,
+      "wr": 49.0,
+      "roi": -11.4,
+      "total_pnl": -43337.51,
+      "total_cost": 381246.73,
+      "avg_win": 519.33,
+      "avg_loss": -850.56
+    },
+    "5k_plus": {
+      "count": 108,
+      "wins": 74,
+      "losses": 34,
+      "wr": 68.5,
+      "roi": 1.5,
+      "total_pnl": 114211.79,
+      "total_cost": 7526943.89,
+      "avg_win": 3697.37,
+      "avg_loss": -4688.05
+    },
+    "avg_entry_price_wins_5k": 0.8702,
+    "avg_entry_price_losses_5k": 0.7491
+  }
+}

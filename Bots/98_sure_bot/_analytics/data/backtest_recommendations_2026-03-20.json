@@ -1,0 +1,468 @@
+{
+  "generated_at": "2026-03-20T13:11:21.044564+00:00",
+  "data_source": "97_scanner/scanner_data.json (resolved markets with pre-resolution prices)",
+  "total_resolved_markets": 10110,
+  "results": {
+    "CURRENT settings": {
+      "config_name": "CURRENT settings",
+      "total_passed": 129,
+      "wins": 129,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 975.0,
+      "bets_per_month": 6402,
+      "median_resolve_h": 3.9,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 7315,
+        "low_volume": 263,
+        "coin_flip": 88,
+        "low_liquidity": 89,
+        "threshold": 110,
+        "financial_low_vol": 14,
+        "price_low": 15
+      },
+      "categories": {
+        "other": {
+          "w": 11,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 71,
+          "l": 0
+        },
+        "soccer": {
+          "w": 16,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 4,
+          "l": 0
+        },
+        "politics": {
+          "w": 7,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "esports": {
+          "w": 10,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 121,
+          "l": 0
+        },
+        "0.975-0.98": {
+          "w": 1,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    },
+    "Change 1: O/U → all sports": {
+      "config_name": "Change 1: O/U → all sports",
+      "total_passed": 58,
+      "wins": 58,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 792.52,
+      "bets_per_month": 5204,
+      "median_resolve_h": 4.8,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 7315,
+        "low_volume": 263,
+        "coin_flip": 87,
+        "low_liquidity": 89,
+        "threshold": 110,
+        "sports_ou_spread": 72,
+        "financial_low_vol": 14,
+        "price_low": 15
+      },
+      "categories": {
+        "other": {
+          "w": 11,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 16,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 4,
+          "l": 0
+        },
+        "politics": {
+          "w": 7,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "esports": {
+          "w": 10,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 51,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    },
+    "Change 3: MAX_PRICE → 0.995": {
+      "config_name": "Change 3: MAX_PRICE → 0.995",
+      "total_passed": 233,
+      "wins": 233,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 1035.04,
+      "bets_per_month": 6797,
+      "median_resolve_h": 3.6,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 6006,
+        "low_volume": 1074,
+        "low_liquidity": 420,
+        "coin_flip": 136,
+        "threshold": 123,
+        "financial_low_vol": 15,
+        "price_low": 15,
+        "slow_keywords": 1
+      },
+      "categories": {
+        "other": {
+          "w": 19,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 131,
+          "l": 0
+        },
+        "esports": {
+          "w": 28,
+          "l": 0
+        },
+        "politics": {
+          "w": 15,
+          "l": 0
+        },
+        "soccer": {
+          "w": 25,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 5,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 225,
+          "l": 0
+        },
+        "0.975-0.98": {
+          "w": 1,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    },
+    "Change 5: MIN_VOLUME → $1000": {
+      "config_name": "Change 5: MIN_VOLUME → $1000",
+      "total_passed": 160,
+      "wins": 160,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 972.61,
+      "bets_per_month": 6387,
+      "median_resolve_h": 3.9,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 7315,
+        "threshold": 171,
+        "financial_low_vol": 36,
+        "coin_flip": 101,
+        "low_liquidity": 89,
+        "low_volume": 136,
+        "price_low": 15
+      },
+      "categories": {
+        "other": {
+          "w": 12,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 97,
+          "l": 0
+        },
+        "soccer": {
+          "w": 19,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 4,
+          "l": 0
+        },
+        "politics": {
+          "w": 8,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "esports": {
+          "w": 10,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 152,
+          "l": 0
+        },
+        "0.975-0.98": {
+          "w": 1,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    },
+    "Change 2+5: MIN_LIQUIDITY → $1000 + MIN_VOLUME → $1000": {
+      "config_name": "Change 2+5: MIN_LIQUIDITY → $1000 + MIN_VOLUME → $1000",
+      "total_passed": 159,
+      "wins": 159,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 975.0,
+      "bets_per_month": 6402,
+      "median_resolve_h": 3.9,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 7315,
+        "threshold": 171,
+        "financial_low_vol": 36,
+        "coin_flip": 100,
+        "low_liquidity": 96,
+        "low_volume": 131,
+        "price_low": 15
+      },
+      "categories": {
+        "other": {
+          "w": 12,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 96,
+          "l": 0
+        },
+        "soccer": {
+          "w": 19,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 4,
+          "l": 0
+        },
+        "politics": {
+          "w": 8,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "esports": {
+          "w": 10,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 151,
+          "l": 0
+        },
+        "0.975-0.98": {
+          "w": 1,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    },
+    "OPTIMIZED settings": {
+      "config_name": "OPTIMIZED settings",
+      "total_passed": 124,
+      "wins": 124,
+      "losses": 0,
+      "win_rate": 100.0,
+      "loss_rate_1_in_n": 0,
+      "ev_per_bet": 0.1523,
+      "monthly_pnl_estimate": 1125.62,
+      "bets_per_month": 7392,
+      "median_resolve_h": 3.4,
+      "filter_reasons": {
+        "neg_risk": 2087,
+        "price_too_high": 6006,
+        "low_liquidity": 517,
+        "low_volume": 753,
+        "threshold": 190,
+        "financial_low_vol": 40,
+        "coin_flip": 151,
+        "sports_ou_spread": 227,
+        "price_low": 15
+      },
+      "categories": {
+        "other": {
+          "w": 21,
+          "l": 0
+        },
+        "esports": {
+          "w": 30,
+          "l": 0
+        },
+        "politics": {
+          "w": 16,
+          "l": 0
+        },
+        "sports_other": {
+          "w": 39,
+          "l": 0
+        },
+        "geopolitics": {
+          "w": 5,
+          "l": 0
+        },
+        "soccer": {
+          "w": 3,
+          "l": 0
+        },
+        "crypto": {
+          "w": 8,
+          "l": 0
+        },
+        "american_football": {
+          "w": 2,
+          "l": 0
+        }
+      },
+      "price_buckets": {
+        "0.993+": {
+          "w": 117,
+          "l": 0
+        },
+        "0.985-0.99": {
+          "w": 3,
+          "l": 0
+        },
+        "0.98-0.985": {
+          "w": 2,
+          "l": 0
+        },
+        "0.99-0.993": {
+          "w": 2,
+          "l": 0
+        }
+      }
+    }
+  },
+  "losses_detail": {},
+  "methodology": "Each market's max_price_seen is the highest price observed BEFORE resolution. high_outcome_won indicates if that outcome won. Filters are applied exactly as in the bot's filters.py, testing each proposed change independently and combined."
+}

@@ -1,0 +1,47 @@
+# Secrets
+.env
+*.env
+
+# Large databases
+*.db
+
+# Large data exports
+*_open_positions.json
+*_closed_positions.json
+*_all_activity.json
+0p0jogggg_*.json
+Car_*.json
+RememberAmalek_*.json
+ScottyNooo_*.json
+
+# Excel / data files
+*.xlsx
+*.csv
+
+# Logs
+*.log
+logs/
+*.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Claude Code internals
+.claude/
+
+# PIDs
+pids.json
+
+# OS
+.DS_Store
+Thumbs.db
