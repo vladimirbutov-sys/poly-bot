@@ -1,160 +1,160 @@
 # PRD: 98_SURE_BOT + Dashboard
 ### Product Requirements Document
 
-**Версия:** 2.0  
-**Дата:** 2026-05-05  
-**Автор:** Vladimir Butov  
-**Статус:** MVP — в продакшне
+**Version:** 2.0
+**Date:** 2026-05-05
+**Author:** Vladimir Butov
+**Status:** MVP — in production
 
 ---
 
-## Содержание
+## Table of Contents
 
-1. [Контекст и проблема](#1-контекст-и-проблема)
-2. [Продуктовое решение](#2-продуктовое-решение)
-3. [Пользователи и сценарии использования](#3-пользователи-и-сценарии-использования)
-4. [Цели и метрики успеха](#4-цели-и-метрики-успеха)
-5. [Архитектура системы](#5-архитектура-системы)
-6. [Компонент 1 — Торговый бот (98_sure_bot)](#6-компонент-1--торговый-бот-98_sure_bot)
-7. [Компонент 2 — Веб-дашборд (dashboard)](#7-компонент-2--веб-дашборд-dashboard)
-8. [Интеграции и инфраструктура](#8-интеграции-и-инфраструктура)
-9. [Модель данных](#9-модель-данных)
-10. [Нефункциональные требования](#10-нефункциональные-требования)
-11. [Безопасность](#11-безопасность)
-12. [Дорожная карта](#12-дорожная-карта)
-13. [Риски и митигация](#13-риски-и-митигация)
-14. [Открытые вопросы](#14-открытые-вопросы)
-
----
-
-## 1. Контекст и проблема
-
-### Что такое Polymarket
-
-Polymarket — это децентрализованный рынок предсказаний, где пользователи торгуют вероятностями реальных событий. Каждый рынок имеет исход YES/NO, а цена акции (от 1¢ до 99¢) отражает коллективную оценку вероятности. При разрешении рынка:
-- Победившая акция выплачивает **$1.00**
-- Проигравшая выплачивает **$0.00**
-
-**Пример:** Рынок "Завершится ли переговоры до пятницы?" торгуется по 97¢. Если переговоры завершились — выплата $1.00 с 3¢ прибыли на каждую акцию (~3.1% ROI за несколько дней).
-
-### Рыночная неэффективность
-
-Рынки, торгующиеся в диапазоне 96–99.5¢, систематически дают возможность для безрисковой (по сути) торговли при выполнении двух условий:
-1. Рынок **близок к разрешению** (end_date ≤ 3 дней)
-2. Исход **фактически предрешён** — но рынок ещё не достиг $1.00 из-за:
-   - Ограниченной ликвидности
-   - Задержки информации
-   - Нежелания маркетмейкеров двигать цену до 100%
-
-### Проблема
-
-Вручную отслеживать тысячи рынков Polymarket, фильтровать истинно-надёжные исходы от иллюзорно-надёжных и успевать размещать ордера до разрешения — физически невозможно. Без автоматизации эта возможность теряется каждые 5 минут.
-
-Дополнительно: без централизованного дашборда оператор не знает реальное состояние портфеля — открытые позиции, P&L, зависшие ордера — без ручного разбора JSON-файлов и логов.
+1. [Context and Problem](#1-context-and-problem)
+2. [Product Solution](#2-product-solution)
+3. [Users and Use Cases](#3-users-and-use-cases)
+4. [Goals and Success Metrics](#4-goals-and-success-metrics)
+5. [System Architecture](#5-system-architecture)
+6. [Component 1 — Trading Bot (98_sure_bot)](#6-component-1--trading-bot-98_sure_bot)
+7. [Component 2 — Web Dashboard](#7-component-2--web-dashboard)
+8. [Integrations and Infrastructure](#8-integrations-and-infrastructure)
+9. [Data Model](#9-data-model)
+10. [Non-Functional Requirements](#10-non-functional-requirements)
+11. [Security](#11-security)
+12. [Roadmap](#12-roadmap)
+13. [Risks and Mitigation](#13-risks-and-mitigation)
+14. [Open Questions](#14-open-questions)
 
 ---
 
-## 2. Продуктовое решение
+## 1. Context and Problem
 
-Система состоит из двух связанных компонентов:
+### What is Polymarket
 
-**Компонент A — 98_sure_bot** — торговый Python-бот, который:
-- Каждые 5 минут сканирует все открытые рынки Polymarket
-- Применяет 14 фильтров для отсева рискованных рынков
-- Автоматически размещает лимитные ордера на покупку через CLOB API
-- Автоматически редеемит (выводит) выигрышные позиции на блокчейне Polygon
-- Уведомляет оператора в Telegram о каждом действии
+Polymarket is a decentralised prediction market where users trade probabilities on real-world events. Each market has a YES/NO outcome, and the share price (1¢ to 99¢) reflects the collective probability estimate. On resolution:
+- The winning share pays **$1.00**
+- The losing share pays **$0.00**
 
-**Компонент B — Dashboard** — веб-приложение (NiceGUI) для оператора:
-- Показывает состояние бота и портфеля в реальном времени
-- Позволяет запускать и останавливать бота одной кнопкой
-- Отображает все позиции с текущими ценами и P&L
-- Позволяет продавать позиции вручную из интерфейса
-- Даёт доступ к логам и настройкам без терминала
+**Example:** A market "Will peace talks conclude by Friday?" trades at 97¢. If talks conclude — payout is $1.00, profit is 3¢ per share (~3.1% ROI in a few days).
 
----
+### Market Inefficiency
 
-## 3. Пользователи и сценарии использования
+Markets trading in the 96–99.5¢ range systematically create near-risk-free trading opportunities when two conditions hold:
+1. The market is **close to resolution** (end_date ≤ 3 days)
+2. The outcome is **effectively decided** — but the market hasn't reached $1.00 yet due to:
+   - Limited liquidity
+   - Information lag
+   - Market makers unwilling to move price all the way to 100%
 
-### 3.1 Оператор (основной пользователь)
+### Problem
 
-Человек, запускающий бота на своей машине. Торгует своими средствами. Технический уровень: средний — умеет запустить Python-скрипт, но не хочет постоянно смотреть в терминал.
+Manually tracking thousands of Polymarket markets, filtering truly certain outcomes from seemingly certain ones, and placing orders before resolution — is physically impossible. Without automation, this opportunity is lost every 5 minutes.
 
-**Ключевые сценарии:**
-
-| Сценарий | Частота | Как решает система |
-|----------|---------|-------------------|
-| Проверить, работает ли бот | Несколько раз в день | Dashboard: статус-индикатор + время последней активности |
-| Посмотреть P&L за сегодня | Ежедневно | Dashboard: метрики портфеля + таблица позиций |
-| Узнать о новой ставке | В момент события | Telegram-уведомление |
-| Продать позицию раньше закрытия | По необходимости | Dashboard: кнопка продажи с вводом цены |
-| Поменять размер ставки | Редко | Dashboard: редактор конфига |
-| Разобраться почему бот не ставит | По необходимости | Dashboard: просмотр логов |
-
-### 3.2 Наблюдатель (вторичный пользователь)
-
-Инвестор, HR-специалист или ментор, который хочет понять что делает система и оценить результаты. Не взаимодействует с ботом — только смотрит дашборд и отчёты.
+Additionally: without a centralised dashboard, the operator doesn't know the real portfolio state — open positions, P&L, stuck orders — without manually parsing JSON files and logs.
 
 ---
 
-## 4. Цели и метрики успеха
+## 2. Product Solution
 
-### Бизнес-цели
+The system consists of two linked components:
 
-| Цель | Метрика | Целевое значение |
-|------|---------|-----------------|
-| Прибыльность | Win rate по закрытым позициям | ≥ 85% |
-| Эффективность капитала | Оборот капитала в месяц | ≥ 5x от начального |
-| Автономность | Часов ручного вмешательства в неделю | ≤ 1 час |
-| Контроль риска | Максимальная просадка за месяц | ≤ 10% от баланса |
-| Fill rate | Доля размещённых ордеров, которые заполнились | ≥ 60% |
+**Component A — 98_sure_bot** — a Python trading bot that:
+- Scans all open Polymarket markets every 5 minutes
+- Applies 14 filters to eliminate risky markets
+- Automatically places limit buy orders via the CLOB API
+- Automatically redeems (claims) winning positions on the Polygon blockchain
+- Notifies the operator via Telegram on every event
 
-### Продуктовые метрики
-
-| Метрика | Целевое значение |
-|---------|-----------------|
-| Задержка от появления рынка до ордера | ≤ 5 минут |
-| Задержка обновления дашборда | ≤ 30 секунд |
-| Время редеемирования после разрешения | ≤ 10 минут |
-| Uptime бота (% рабочего времени) | ≥ 95% |
+**Component B — Dashboard** — a web application for the operator:
+- Shows bot and portfolio status in real time
+- Allows starting and stopping the bot with one button
+- Displays all positions with current prices and P&L
+- Allows manual position selling from the interface
+- Provides log and settings access without a terminal
 
 ---
 
-## 5. Архитектура системы
+## 3. Users and Use Cases
+
+### 3.1 Operator (primary user)
+
+A person running the bot on their machine. Trading with their own funds. Technical level: intermediate — able to run a Python script, but doesn't want to constantly watch the terminal.
+
+**Key scenarios:**
+
+| Scenario | Frequency | How the system handles it |
+|----------|-----------|--------------------------|
+| Check if bot is running | Several times a day | Dashboard: status indicator + last activity time |
+| View today's P&L | Daily | Dashboard: portfolio metrics + positions table |
+| Get notified of a new bet | At the moment it happens | Telegram notification |
+| Sell a position early | As needed | Dashboard: sell button with price input |
+| Change bet size | Rarely | Dashboard: config editor |
+| Debug why bot isn't betting | As needed | Dashboard: log viewer |
+
+### 3.2 Observer (secondary user)
+
+An investor, HR specialist, or mentor who wants to understand what the system does and evaluate results. Does not interact with the bot — only views the dashboard and reports.
+
+---
+
+## 4. Goals and Success Metrics
+
+### Business Goals
+
+| Goal | Metric | Target |
+|------|--------|--------|
+| Profitability | Win rate on closed positions | ≥ 85% |
+| Capital efficiency | Capital turnover per month | ≥ 5× starting balance |
+| Autonomy | Hours of manual intervention per week | ≤ 1 hour |
+| Risk control | Maximum drawdown per month | ≤ 10% of balance |
+| Fill rate | Share of placed orders that filled | ≥ 60% |
+
+### Product Metrics
+
+| Metric | Target |
+|--------|--------|
+| Latency from market appearance to order | ≤ 5 minutes |
+| Dashboard update latency | ≤ 30 seconds |
+| Redemption time after resolution | ≤ 10 minutes |
+| Bot uptime (% of running time) | ≥ 95% |
+
+---
+
+## 5. System Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                     ЛОКАЛЬНАЯ МАШИНА (Windows 11)                │
+│                     LOCAL MACHINE (Windows 11)                   │
 │                                                                  │
 │   ┌─────────────────────────────────┐                           │
 │   │        98_sure_bot (Python)     │                           │
 │   │                                 │                           │
 │   │  main.py ──► scanner.py         │ ◄── Gamma API             │
-│   │      │       (fetch markets)    │     (рынки, цены)         │
+│   │      │       (fetch markets)    │     (markets, prices)     │
 │   │      ▼                          │                           │
 │   │  filters.py                     │ ◄── CLOB API              │
-│   │  (14 фильтров)                  │     (orderbook, ордера)   │
+│   │  (14 filters)                   │     (orderbook, orders)   │
 │   │      │                          │                           │
 │   │      ▼                          │ ──► Polygon RPC           │
-│   │  executor.py                    │     (блокчейн, redeem)    │
+│   │  executor.py                    │     (blockchain, redeem)  │
 │   │  (limit orders)                 │                           │
 │   │      │                          │ ──► Telegram              │
-│   │      ▼                          │     (уведомления)         │
+│   │      ▼                          │     (notifications)       │
 │   │  tracker.py                     │                           │
 │   │  positions.json ◄──── redeemer.py                          │
 │   │  bot_log.txt                    │                           │
 │   └─────────────────────────────────┘                           │
 │                   │                                              │
-│                   │ читает файлы                                 │
+│                   │ reads files                                  │
 │                   ▼                                              │
 │   ┌─────────────────────────────────┐                           │
-│   │     Dashboard (NiceGUI Python)  │                           │
+│   │     Dashboard (Next.js + FastAPI)│                          │
 │   │                                 │                           │
 │   │  app.py                         │ ◄── Gamma API             │
-│   │  bot_manager.py (start/stop)    │     (текущие цены)        │
-│   │  data_reader.py (позиции)       │                           │
+│   │  bot_manager.py (start/stop)    │     (current prices)      │
+│   │  data_reader.py (positions)     │                           │
 │   │  price_fetcher.py               │ ──► CLOB API              │
-│   │  trade_executor.py (продажа)    │     (sell ордера)         │
+│   │  trade_executor.py (sell)       │     (sell orders)         │
 │   │  settings_editor.py             │                           │
 │   │                                 │                           │
 │   │  http://localhost:8080          │                           │
@@ -162,334 +162,336 @@ Polymarket — это децентрализованный рынок предс
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 
-Браузер оператора ──► http://localhost:8080
+Operator browser ──► http://localhost:8080
 ```
 
-### Принципиальные архитектурные решения
+### Key Architectural Decisions
 
-**Локальный запуск, не облако.** Приватный ключ кошелька никогда не покидает машину оператора. Бот работает как обычный Python-процесс. Это жертва удобством (нет доступа с телефона) ради безопасности.
+**Local execution, not cloud.** The wallet private key never leaves the operator's machine. The bot runs as a regular Python process. This sacrifices convenience (no phone access) for security.
 
-**JSON как база данных.** Состояние хранится в `positions.json`. Не нужна СУБД, не нужен сервер — файл читается дашбордом напрямую. Простота важнее масштабируемости на уровне MVP.
+**JSON as database.** State is stored in `positions.json`. No DBMS needed, no server — the file is read by the dashboard directly. Simplicity beats scalability at MVP level.
 
-**NiceGUI для дашборда.** Позволяет написать интерфейс на чистом Python без отдельного фронтенд-стека. Оператор запускает одну команду и открывает браузер.
+**Next.js for dashboard.** Allows building a modern web interface with a clean API layer. The operator opens one URL and gets a full portfolio view.
 
 ---
 
-## 6. Компонент 1 — Торговый бот (98_sure_bot)
+## 6. Component 1 — Trading Bot (98_sure_bot)
 
-### 6.1 Цикл работы (каждые 5 минут)
+### 6.1 Operating Cycle (every 5 minutes)
 
 ```
-Старт цикла
+Start cycle
     │
     ▼
-[scanner.py] Загрузить все открытые рынки Polymarket
-    │        (Gamma API, пагинация по 500 рынков)
+[scanner.py] Load all open Polymarket markets
+    │        (Gamma API, paginated by 500 markets)
     │
     ▼
-Отфильтровать по ценовому диапазону: 96.0¢ – 99.5¢
+Filter by price range: 96.0¢ – 99.5¢
     │
     ▼
-[filters.py] Применить 14 фильтров к каждому кандидату
+[filters.py] Apply 14 filters to each candidate
     │
     ▼
-Сортировка:
-    1. Strike-рынки сегодня (матч/событие в этот день)
-    2. По end_date ASC (ближайшие к разрешению — первыми)
+Sort:
+    1. Strike markets today (match/event happening today)
+    2. By end_date ASC (nearest to resolution first)
     │
     ▼
-Для каждого прошедшего кандидата:
+For each candidate that passed:
     │
-    ├── Проверить баланс USDC
-    ├── Получить актуальную цену с CLOB orderbook
-    ├── Проверить расхождение Gamma vs CLOB (≤ 3¢)
-    ├── Рассчитать limit price (цена + slippage buffer)
-    ├── Проверить лимиты портфеля (total_frozen ≤ $1000)
-    ├── Рассчитать размер ставки (зависит от типа рынка)
-    └── Разместить лимитный BUY ордер на CLOB
+    ├── Check USDC balance
+    ├── Fetch current price from CLOB orderbook
+    ├── Check price divergence Gamma vs CLOB (≤ 3¢)
+    ├── Calculate limit price (price + slippage buffer)
+    ├── Check portfolio limits (total_frozen ≤ $1000)
+    ├── Calculate bet size (depends on market type)
+    └── Place limit BUY order on CLOB
             │
             ▼
-    Записать позицию в positions.json (статус: open)
-    Отправить Telegram-уведомление
+    Record position in positions.json (status: open)
+    Send Telegram notification
             │
             ▼
-    [Фоновый поток] Отслеживать статус ордера (каждые 5 сек)
+    [Background thread] Track order status (every 5 sec)
             │
-            ├── MATCHED → обновить позицию (статус: filled)
-            ├── PARTIAL → обновить размер, вернуть разницу в баланс
-            └── TIMEOUT (5 мин) → отменить ордер
+            ├── MATCHED → update position (status: filled)
+            ├── PARTIAL → update size, return difference to balance
+            └── TIMEOUT (5 min) → cancel order
                     │
-                    └── Проверить on-chain баланс
-                        (бот иногда заполняется, но CLOB не отвечает)
+                    └── Check on-chain balance
+                        (bot sometimes fills on-chain but CLOB doesn't respond)
 
-[Фоновый поток redeemer] Каждые 5 минут:
-    Для каждой открытой позиции:
-        ├── Проверить resolved ли рынок (on-chain: payoutDenominator > 0)
-        ├── Проверить баланс условных токенов
-        └── Если resolved → отправить redeem-транзакцию на Polygon
+[Background redeemer thread] Every 5 minutes:
+    For each open position:
+        ├── Check if market resolved on-chain (payoutDenominator > 0)
+        ├── Check conditional token balance
+        └── If resolved → send redeem transaction on Polygon
                 │
-                ├── Выигрыш → обновить баланс, статус: won
-                └── Проигрыш → зафиксировать убыток, статус: lost
+                ├── Win → update balance, status: won
+                └── Loss → record loss, status: lost
 ```
 
-### 6.2 Система фильтров (14 фильтров)
+### 6.2 Filter System (14 filters)
 
-Каждый фильтр принимает данные рынка и возвращает `(passed: bool, reason: str)`.
+Each filter takes market data and returns `(passed: bool, reason: str)`.
 
-| # | Фильтр | Условие блокировки |
-|---|--------|--------------------|
-| 1 | **Ценовой диапазон** | Цена < 96% (политика) или < 96.5% (остальные), либо > 99.5% |
-| 2 | **Ликвидность** | Ликвидность рынка < $500 |
-| 3 | **Объём** | Суммарный объём торгов < $500 |
-| 4 | **Дата разрешения** | End_date > 3 дней в будущем или истекла > 3 дней назад |
-| 5 | **Дубликат позиции** | Уже есть открытая позиция по этому condition_id |
-| 6 | **Подматч** | Рынок на конкретный гейм/карту/сет матча ("game 1", "map 2") |
-| 7 | **Выборы** | Рынки типа "победит ли кандидат X" (бинарная неопределённость) |
-| 8 | **Медленные рынки** | Ключевые слова: "top", "most", "season", "weekly" |
-| 9 | **Coin-flip паттерны** | "odd or even", "first blood", "first baron", "coin flip" |
-| 10 | **Пороговые рынки** | "close above $X", "reach $Y", "dip to", "pump to" |
-| 11 | **Отменённые спорт-события** | Игра началась > 6 часов назад и рынок не разрешён |
-| 12 | **Neg-risk лимит** | Замороженный капитал в neg-risk позициях ≥ $350 |
-| 13 | **Финансовые активы** | BTC/ETH/акции с объёмом < $50K (низкая ликвидность, волатильность) |
-| 14 | **Расхождение цен** | Разница между Gamma API ценой и CLOB ценой > 3¢ |
+| # | Filter | Block condition |
+|---|--------|----------------|
+| 1 | **Price range** | Price < 96% (politics) or < 96.5% (others), or > 99.5% |
+| 2 | **Liquidity** | Market liquidity < $500 |
+| 3 | **Volume** | Total traded volume < $500 |
+| 4 | **Resolution date** | end_date > 3 days ahead or expired > 3 days ago |
+| 5 | **Duplicate position** | Already have open position with this condition_id |
+| 6 | **Sub-match** | Market on specific game/map/set ("game 1", "map 2") |
+| 7 | **Elections** | Markets of type "will candidate X win" (binary uncertainty) |
+| 8 | **Slow markets** | Keywords: "top", "most", "season", "weekly" |
+| 9 | **Coin-flip patterns** | "odd or even", "first blood", "first baron", "coin flip" |
+| 10 | **Threshold markets** | "close above $X", "reach $Y", "dip to", "pump to" |
+| 11 | **Cancelled sports events** | Match started > 6 hours ago and market not resolved |
+| 12 | **Neg-risk limit** | Frozen capital in neg-risk positions ≥ $350 |
+| 13 | **Financial assets** | BTC/ETH/stocks with volume < $50K (low liquidity, volatility) |
+| 14 | **Price divergence** | Gap between Gamma API price and CLOB price > 3¢ |
 
-**Дополнительные блокировки по тип-паттернам (regex):**
-- Токсичные ключевые слова: "earthquake", "tornado", "number of views", "total goals"
-- Спортивные рынки не-WIN типа: handicap, over/under, spread
-- Рынки с задержанным разрешением: "not released by Dec 31", "as of Q4"
+**Additional regex blocks:**
+- Toxic keywords: "earthquake", "tornado", "number of views", "total goals"
+- Non-WIN sports markets: handicap, over/under, spread
+- Delayed resolution markets: "not released by Dec 31", "as of Q4"
 
-### 6.3 Параметры торговли
+### 6.3 Trading Parameters
 
-**Размеры ставок по типу рынка:**
+**Bet sizes by market type:**
 
-| Тип рынка | Размер ставки | Обоснование |
-|-----------|--------------|-------------|
-| Обычный рынок | $20 | Базовый размер |
-| Neg-risk рынок | $15 | Сниженный риск (меньше ставка) |
-| Погодный рынок | $10 | Повышенная неопределённость |
-| Slow-keyword рынок | $5 | Тест-размер для неоднозначных рынков |
-| Цена 96.5–97.5% (тест) | $5 | Нижний ценовой диапазон под контролем |
+| Market type | Bet size | Rationale |
+|-------------|----------|-----------|
+| Regular market | $20 | Base size |
+| Neg-risk market | $15 | Reduced (smaller bet) |
+| Weather market | $10 | Higher uncertainty |
+| Slow-keyword market | $5 | Test size for ambiguous markets |
+| Price 96.5–97.5% (test) | $5 | Lower price range under monitoring |
 
-**Таблица slippage (допустимое отклонение при размещении):**
+**Slippage table (allowed deviation when placing order):**
 
-| Ценовой диапазон | Макс. slippage | Логика |
-|-----------------|---------------|--------|
-| 96.0¢ – 97.5¢ | +0.5¢ | Более высокий ROI покрывает slippage |
+| Price range | Max slippage | Logic |
+|-------------|-------------|-------|
+| 96.0¢ – 97.5¢ | +0.5¢ | Higher ROI covers slippage |
 | 97.5¢ – 98.5¢ | +0.4¢ | |
 | 98.5¢ – 99.0¢ | +0.3¢ | |
-| 99.0¢ – 99.5¢ | +0.3¢ | Минимальный ROI — осторожнее |
+| 99.0¢ – 99.5¢ | +0.3¢ | Minimum ROI — be cautious |
 
-**Лимиты портфеля:**
+**Portfolio limits:**
 
-| Параметр | Значение |
-|----------|---------|
-| Максимум замороженного капитала (всего) | $1 000 |
-| Максимум в neg-risk позициях | $350 |
-| Максимальная доля политических рынков | 30% баланса |
-| Минимальный остаток USDC | Размер ставки |
+| Parameter | Value |
+|-----------|-------|
+| Maximum frozen capital (total) | $1,000 |
+| Maximum in neg-risk positions | $350 |
+| Maximum share of politics markets | 30% of balance |
+| Minimum USDC remaining | = bet size |
 
-**Жизненный цикл ордера:**
-- TTL ордера (до отмены): 5 минут
-- Проверка статуса: каждые 5 секунд
-- Если timeout: отмена остатка → проверка on-chain баланса
+**Order lifecycle:**
+- Order TTL (until cancellation): 5 minutes
+- Status check interval: every 5 seconds
+- On timeout: cancel remainder → check on-chain balance
 
-### 6.4 Telegram-уведомления
+### 6.4 Telegram Notifications
 
-Бот отправляет сообщения при каждом значимом событии:
+The bot sends messages on every significant event:
 
-| Событие | Содержание |
-|---------|-----------|
-| Запуск | Баланс, количество открытых позиций |
-| Новая ставка | Название рынка, цена, сумма, order_id |
-| Ордер заполнен | Название, цена исполнения, количество акций, итоговая стоимость |
-| Частичное заполнение | Сколько заполнено из скольких акций |
-| Ордер отменён | Причина отмены |
-| 8-часовой отчёт | Баланс, P&L, win rate, открытые позиции |
-| Ошибка | Описание исключения |
+| Event | Contents |
+|-------|---------|
+| Startup | Balance, number of open positions |
+| New bet | Market name, price, amount, order_id |
+| Order filled | Name, execution price, number of shares, total cost |
+| Partial fill | How many filled out of total shares |
+| Order cancelled | Cancellation reason |
+| 8-hour report | Balance, P&L, win rate, open positions |
+| Error | Exception description |
 
-### 6.5 Модульная структура бота
+### 6.5 Modular Bot Structure
 
 ```
 98_sure_bot/
-├── main.py             ← Главный цикл, оркестрация
-├── scanner.py          ← Получение рынков из Gamma API
-├── filters.py          ← 14 фильтров исключения
-├── executor.py         ← Размещение и отслеживание ордеров (CLOB)
-├── tracker.py          ← Запись P&L в positions.json
-├── redeemer.py         ← Автоматическое получение выигрыша на блокчейне
-├── telegram_notify.py  ← Отправка уведомлений
-├── config.py           ← Все параметры торговли
-├── .env                ← Секреты (ключ, токен Telegram)
-├── positions.json      ← База данных позиций
-└── bot_log.txt         ← Лог всех событий
+├── main.py             ← Main loop, orchestration
+├── scanner.py          ← Fetch markets from Gamma API
+├── filters.py          ← 14 exclusion filters
+├── executor.py         ← Order placement and tracking (CLOB)
+├── tracker.py          ← Write P&L to positions.json
+├── redeemer.py         ← Automatic on-chain win redemption
+├── telegram_notify.py  ← Send notifications
+├── config.py           ← All trading parameters
+├── .env                ← Secrets (key, Telegram token)
+├── positions.json      ← Position database
+└── bot_log.txt         ← All events log
 ```
 
 ---
 
-## 7. Компонент 2 — Веб-дашборд (dashboard)
+## 7. Component 2 — Web Dashboard
 
-### 7.1 Обзор
+### 7.1 Overview
 
-Дашборд — это веб-приложение на Python (NiceGUI), запускаемое локально командой `python app.py`. Открывается в браузере по адресу `http://localhost:8080`.
+The dashboard is a web application (Next.js) that provides a real-time visual interface without needing to look at the terminal or parse JSON manually.
 
-Дашборд читает `positions.json` бота напрямую из файловой системы и предоставляет визуальный интерфейс без необходимости смотреть в терминал или разбирать JSON вручную.
+The dashboard reads `positions.json` from the bot and serves it via a FastAPI backend.
 
-### 7.2 Разделы интерфейса
+**Live demo:** [poly-bot-green.vercel.app](https://poly-bot-green.vercel.app)
 
-#### Раздел 1: Карточки ботов
+### 7.2 Interface Sections
 
-Каждый бот отображается как карточка со статусом:
-- **Индикатор статуса:** ✓ Работает (зелёный) / ✗ Остановлен / ⚠ Зависший
-- **PID процесса** (если запущен)
-- **Время последней активности** — когда последний раз обновился data_file
-- **Кнопки:** Запустить / Остановить / Перезапустить
+#### Section 1: Bot Cards
 
-Если data_file не обновлялся > 65 минут — статус "зависший" (crashed), даже если процесс формально жив. Покрывает сценарий когда бот завис внутри цикла.
+Each bot is displayed as a card with status:
+- **Status indicator:** ✓ Running (green) / ✗ Stopped / ⚠ Crashed
+- **Process PID** (if running)
+- **Last activity time** — when data_file was last updated
+- **Buttons:** Start / Stop / Restart
 
-#### Раздел 2: Метрики портфеля
+If data_file hasn't updated for > 65 minutes — status is "crashed", even if the process is formally alive. Covers the scenario where the bot is stuck inside a cycle.
 
-Четыре KPI-карточки в реальном времени:
-- **Текущий баланс USDC** — ликвидные средства
-- **Общий P&L** — прибыль/убыток по всем закрытым позициям
-- **Замороженный капитал** — сумма в открытых позициях
-- **Открытых позиций** — количество
+#### Section 2: Portfolio Metrics
 
-#### Раздел 3: Таблица всех позиций
+Four real-time KPI cards:
+- **Current USDC balance** — liquid funds
+- **Total P&L** — profit/loss across all closed positions
+- **Frozen capital** — total in open positions
+- **Open positions** — count
 
-Унифицированная таблица позиций со всех ботов:
+#### Section 3: All Positions Table
 
-| Колонка | Содержание |
-|---------|-----------|
-| Бот | Идентификатор бота |
-| Название рынка | Полное название вопроса (усечённое) |
-| Исход | YES / NO |
-| Цена входа | Цена покупки (¢) |
-| Текущая цена | Живая цена с Gamma API (обновляется по кнопке) |
-| Количество акций | |
-| Вложено | Сумма в долларах |
-| P&L | Разница: (текущая цена - цена входа) × акции |
-| Статус | open / won / lost / cancelled |
-| Кнопка "Продать" | Открывает диалог ручной продажи |
+Unified position table from all bots:
 
-#### Раздел 4: Ручная продажа позиции
+| Column | Contents |
+|--------|---------|
+| Bot | Bot identifier |
+| Market name | Full question title (truncated) |
+| Outcome | YES / NO |
+| Entry price | Purchase price (¢) |
+| Current price | Live price from Gamma API (updated on button click) |
+| Shares | Number of shares |
+| Invested | Amount in dollars |
+| P&L | Difference: (current price - entry price) × shares |
+| Status | open / won / lost / cancelled |
+| Sell button | Opens manual sell dialog |
 
-Диалог с полями:
-- Цена продажи (¢) — оператор вводит целевую цену
-- Кнопка "Продать" → размещает GTC SELL-ордер через CLOB API
+#### Section 4: Manual Position Selling
 
-Перед размещением нового ордера автоматически отменяются все существующие SELL-ордера по этому токену.
+Dialog with fields:
+- Sell price (¢) — operator enters target price
+- Sell button → places GTC SELL order via CLOB API
 
-#### Раздел 5: Редактор конфига
+Before placing a new order, all existing SELL orders for this token are automatically cancelled.
 
-Позволяет менять параметры бота прямо из UI без открытия файла:
-- `PRICE_THRESHOLD` — минимальный порог цены
-- `BET_SIZE_*` — размеры ставок
-- `MAX_*_FROZEN` — лимиты капитала
-- Другие параметры из `config.py`
+#### Section 5: Config Editor
 
-После сохранения бот нужно перезапустить для применения изменений.
+Edit bot parameters directly from the UI without opening files:
+- `PRICE_THRESHOLD` — minimum price threshold
+- `BET_SIZE_*` — bet sizes
+- `MAX_*_FROZEN` — capital limits
+- Other parameters from `config.py`
 
-#### Раздел 6: Просмотр логов
+After saving, the bot needs to restart for changes to take effect.
 
-Вывод последних строк `bot_log.txt` в реальном времени прямо в браузере. Позволяет диагностировать проблемы без открытия терминала.
+#### Section 6: Log Viewer
 
-### 7.3 Управление ботами (bot_manager.py)
+Displays the last lines of `bot_log.txt` in real time directly in the browser. Allows diagnosing issues without opening a terminal. Implemented via Server-Sent Events (SSE).
+
+### 7.3 Bot Management (bot_manager.py)
 
 ```
-Запуск бота:
+Start bot:
   subprocess.Popen(["python", "main.py"])
-  с CREATE_NEW_PROCESS_GROUP (Windows — для корректного kill)
-  PID сохраняется в pids.json
+  with CREATE_NEW_PROCESS_GROUP (Windows — for correct kill)
+  PID saved in pids.json
 
-Остановка бота:
+Stop bot:
   psutil.Process(pid).terminate()
-  Если не завершился за 5 сек → kill()
+  If not terminated within 5 sec → kill()
 
-Определение "зависшего":
-  Проверить время изменения data_file (positions.json)
-  Если > 65 минут → статус: crashed
-  (65 мин: боты с почасовыми сканами не должны триггерить ложный crashed)
+Detecting "crashed":
+  Check data_file (positions.json) modification time
+  If > 65 minutes → status: crashed
+  (65 min: bots with hourly scans shouldn't trigger false crashed)
 ```
 
-### 7.4 Получение актуальных цен (price_fetcher.py)
+### 7.4 Fetching Current Prices (price_fetcher.py)
 
-- Параллельные запросы к Gamma API через ThreadPoolExecutor (5 воркеров)
-- Кэш на 2 минуты (не спамить API при частом обновлении)
-- Callback на прогресс: показывает сколько цен загружено из скольких
-- Fallback на on-chain балансы через Polygon RPC для верификации
+- Parallel requests to Gamma API via ThreadPoolExecutor (5 workers)
+- 2-minute cache (avoid spamming API on frequent refresh)
+- Progress callback: shows how many prices loaded out of total
+- Fallback to on-chain balances via Polygon RPC for verification
 
-### 7.5 Структура дашборда
+### 7.5 Dashboard Structure
 
 ```
 dashboard/
-├── app.py                ← Главное NiceGUI приложение
-├── config.py             ← Пути к ботам и их конфигам
-├── bot_manager.py        ← Запуск/остановка процессов
-├── data_reader.py        ← Чтение positions.json, нормализация
-├── price_fetcher.py      ← Получение текущих цен с API
-├── trade_executor.py     ← Размещение SELL-ордеров
-├── settings_editor.py    ← Редактирование config.py ботов
-├── onchain_reality.py    ← Сверка tracker.json vs on-chain
-├── pids.json             ← Сохранённые PID запущенных ботов
-└── logs/                 ← stdout/stderr каждого бота
+├── app.py                ← Main Next.js / FastAPI application
+├── config.py             ← Bot paths and their configs
+├── bot_manager.py        ← Process start/stop
+├── data_reader.py        ← Read positions.json, normalise
+├── price_fetcher.py      ← Fetch current prices from API
+├── trade_executor.py     ← Place SELL orders
+├── settings_editor.py    ← Edit bot config.py
+├── onchain_reality.py    ← Reconcile tracker.json vs on-chain
+├── pids.json             ← Saved PIDs of running bots
+└── logs/                 ← stdout/stderr of each bot
 ```
 
 ---
 
-## 8. Интеграции и инфраструктура
+## 8. Integrations and Infrastructure
 
 ### 8.1 Gamma API (Polymarket)
 
-**Базовый URL:** `https://gamma-api.polymarket.com`
+**Base URL:** `https://gamma-api.polymarket.com`
 
-| Эндпоинт | Использование |
-|----------|--------------|
-| `GET /markets?limit=500&closed=false` | Получить все открытые рынки |
-| `GET /markets?token_id=...` | Получить данные конкретного рынка |
+| Endpoint | Usage |
+|----------|-------|
+| `GET /markets?limit=500&closed=false` | Fetch all open markets |
+| `GET /markets?token_id=...` | Fetch specific market data |
 
-Возвращает: цену, ликвидность, объём, категорию, end_date, game_start_time, neg_risk флаг.
+Returns: price, liquidity, volume, category, end_date, game_start_time, neg_risk flag.
 
 ### 8.2 CLOB API (Polymarket)
 
-**Базовый URL:** `https://clob.polymarket.com`
+**Base URL:** `https://clob.polymarket.com`
 
-| Эндпоинт | Использование |
-|----------|--------------|
-| `GET /book?token_id=...` | Получить orderbook (bid/ask) |
-| `POST /order` | Разместить ордер |
-| `GET /order/:id` | Проверить статус ордера |
-| `DELETE /order/:id` | Отменить ордер |
-| `GET /orders` | Список открытых ордеров |
+| Endpoint | Usage |
+|----------|-------|
+| `GET /book?token_id=...` | Fetch orderbook (bid/ask) |
+| `POST /order` | Place order |
+| `GET /order/:id` | Check order status |
+| `DELETE /order/:id` | Cancel order |
+| `GET /orders` | List open orders |
 
-Аутентификация: ECDSA-подпись (L1 auth через приватный ключ Ethereum).
+Authentication: ECDSA signature (L1 auth via Ethereum private key).
 
 ### 8.3 Polygon Blockchain (RPC)
 
-**Сеть:** Polygon PoS, Chain ID 137  
+**Network:** Polygon PoS, Chain ID 137
 **RPC:** `https://polygon.gateway.tenderly.co`
 
-| Операция | Контракт | Назначение |
-|----------|---------|-----------|
-| `balanceOf(token_id)` | CTF Exchange | Проверить баланс условных токенов |
-| `redeemPositions()` | CTF Exchange | Получить выигрыш (обычные рынки) |
-| `redeemPositions()` | NegRiskAdapter | Получить выигрыш (neg-risk рынки) |
-| `balanceOf(wallet)` | USDC Contract | Проверить USDC баланс |
+| Operation | Contract | Purpose |
+|-----------|---------|---------|
+| `balanceOf(token_id)` | CTF Exchange | Check conditional token balance |
+| `redeemPositions()` | CTF Exchange | Claim winnings (regular markets) |
+| `redeemPositions()` | NegRiskAdapter | Claim winnings (neg-risk markets) |
+| `balanceOf(wallet)` | USDC Contract | Check USDC balance |
 
-**Ключевые адреса:**
+**Key addresses:**
 - CTF Exchange: `0x4D97DCd97eC945f40cF65F87097ACe5EA0476045`
 - USDC (Polygon): `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`
 - NegRiskAdapter: `0xd91e80cf2e7be2e162c6513ced06f1dd0da35296`
 
 ### 8.4 Telegram Bot API
 
-Уведомления отправляются через `https://api.telegram.org/bot{token}/sendMessage`.  
-Rate limit: 0.5 секунды между сообщениями.
+Notifications sent via `https://api.telegram.org/bot{token}/sendMessage`.
+Rate limit: 0.5 seconds between messages.
 
 ---
 
-## 9. Модель данных
+## 9. Data Model
 
-### 9.1 Позиция (positions.json)
+### 9.1 Position (positions.json)
 
 ```json
 {
@@ -513,146 +515,146 @@ Rate limit: 0.5 секунды между сообщениями.
   },
   "stats": {
     "current_balance": 8750.00,
-    "total_bets": 127,
-    "wins": 118,
-    "losses": 9,
+    "total_bets": 881,
+    "wins": 839,
+    "losses": 26,
     "total_pnl": 457.23
   }
 }
 ```
 
-**Возможные статусы позиции:**
+**Possible position statuses:**
 
-| Статус | Значение |
+| Status | Meaning |
 |--------|---------|
-| `open` | Ордер открыт, ещё не разрешён |
-| `won` | Рынок разрешился в нашу пользу, средства получены |
-| `lost` | Рынок разрешился не в нашу пользу |
-| `cancelled` | Ордер отменён (не заполнился), позиция аннулирована |
+| `open` | Order open, not yet resolved |
+| `won` | Market resolved in our favour, funds received |
+| `lost` | Market resolved against us |
+| `cancelled` | Order cancelled (unfilled), position voided |
 
-### 9.2 Конфигурация бота (config.py)
+### 9.2 Bot Configuration (config.py)
 
-Все торговые параметры хранятся в одном файле и могут быть изменены через дашборд или напрямую:
+All trading parameters stored in one file and editable via dashboard or directly:
 
 ```python
-PRICE_THRESHOLD_DEFAULT   = 0.965  # минимальная цена (обычные рынки)
-PRICE_THRESHOLD_POLITICS  = 0.960  # минимальная цена (политика)
-MAX_PRICE                 = 0.995  # максимальная цена (выше ROI слишком мал)
+PRICE_THRESHOLD_DEFAULT   = 0.965  # minimum price (regular markets)
+PRICE_THRESHOLD_POLITICS  = 0.960  # minimum price (politics)
+MAX_PRICE                 = 0.995  # maximum price (above this ROI too small)
 
-BET_SIZE_REGULAR          = 20.00  # обычные рынки
-BET_SIZE_NEG_RISK         = 15.00  # neg-risk рынки
-BET_SIZE_WEATHER          = 10.00  # погодные рынки
-BET_SIZE_TEST_LOW         = 5.00   # рынки 96.5–97.5%
+BET_SIZE_REGULAR          = 20.00  # regular markets
+BET_SIZE_NEG_RISK         = 15.00  # neg-risk markets
+BET_SIZE_WEATHER          = 10.00  # weather markets
+BET_SIZE_TEST_LOW         = 5.00   # markets 96.5–97.5%
 
-MAX_TOTAL_FROZEN          = 1000   # лимит замороженного капитала
-MAX_NEG_RISK_FROZEN       = 350    # лимит в neg-risk позициях
-MAX_POLITICS_FRACTION     = 0.30   # max 30% баланса в политике
+MAX_TOTAL_FROZEN          = 1000   # frozen capital limit
+MAX_NEG_RISK_FROZEN       = 350    # neg-risk cap
+MAX_POLITICS_FRACTION     = 0.30   # max 30% of balance in politics
 
-SCAN_INTERVAL             = 300    # секунд между сканами (5 мин)
-ORDER_TTL_SECONDS         = 300    # TTL ордера (5 мин)
-MIN_SHARES                = 5      # минимум акций в ордере
-MIN_LIQUIDITY             = 500    # минимальная ликвидность рынка
+SCAN_INTERVAL             = 300    # seconds between scans (5 min)
+ORDER_TTL_SECONDS         = 300    # order TTL (5 min)
+MIN_SHARES                = 5      # minimum shares per order
+MIN_LIQUIDITY             = 500    # minimum market liquidity
 ```
 
 ---
 
-## 10. Нефункциональные требования
+## 10. Non-Functional Requirements
 
-| Требование | Целевое значение | Детали |
-|-----------|-----------------|--------|
-| Задержка сканирования | ≤ 5 мин | Пропуск рынка = потеря ставки |
-| Задержка fill-check | ≤ 5 сек | Частичные заполнения важно ловить быстро |
-| Задержка редеемирования | ≤ 10 мин после разрешения | Капитал должен вернуться быстро |
-| Обновление дашборда | ≤ 30 сек | Опрос positions.json |
-| Загрузка цен в UI | ≤ 15 сек | Параллельные запросы (5 воркеров) |
-| Uptime бота | ≥ 95% | Ручной перезапуск при краше |
-| Потребление RAM | ≤ 200 MB | Бот + дашборд вместе |
-| Надёжность записи | 100% | positions.json должен всегда быть консистентным |
-
----
-
-## 11. Безопасность
-
-### Хранение секретов
-- Приватный ключ кошелька и токен Telegram — **только в `.env`**
-- `.env` внесён в `.gitignore` и **никогда не коммитится**
-- Дашборд не отображает приватный ключ в UI
-
-### Изоляция
-- Бот и дашборд работают только на localhost
-- Никаких открытых портов для внешнего доступа
-- Polygon RPC — публичный endpoint, не требует авторизации
-
-### Минимальные права
-- Бот работает от имени обычного пользователя Windows (не администратор)
-- Единственное разрешение — отправка транзакций с одного кошелька
-
-### Риски транзакций
-- Nonce-конфликты при параллельном редеемировании: решается задержкой 5 сек между транзакциями + retry
-- Gas price: используется стандартный gas без ускорения (Polygon дешёвый)
+| Requirement | Target | Details |
+|------------|--------|---------|
+| Scan latency | ≤ 5 min | Missing a market = lost bet |
+| Fill-check latency | ≤ 5 sec | Partial fills need fast detection |
+| Redemption latency | ≤ 10 min after resolution | Capital must return quickly |
+| Dashboard update | ≤ 30 sec | Poll positions.json |
+| Price loading in UI | ≤ 15 sec | Parallel requests (5 workers) |
+| Bot uptime | ≥ 95% | Manual restart on crash |
+| RAM usage | ≤ 200 MB | Bot + dashboard together |
+| Write reliability | 100% | positions.json must always be consistent |
 
 ---
 
-## 12. Дорожная карта
+## 11. Security
 
-### Выполнено (MVP)
+### Secrets Storage
+- Wallet private key and Telegram token — **only in `.env`**
+- `.env` is in `.gitignore` and **never committed**
+- Dashboard does not display the private key in the UI
 
-| Этап | Описание |
-|------|---------|
-| ✅ M1 | Базовый бот: scan → filter → place order |
-| ✅ M2 | Telegram-уведомления о всех событиях |
-| ✅ M3 | Автоматическое редеемирование выигрышей |
-| ✅ M4 | Tracker: запись P&L, статистика |
-| ✅ M5 | 14 фильтров для исключения рискованных рынков |
-| ✅ M6 | Дашборд: просмотр позиций и управление ботом |
-| ✅ M7 | Ручная продажа позиций из UI |
-| ✅ M8 | Редактор конфигов в дашборде |
-| ✅ M9 | 8-часовые отчёты + ежедневный анализ стратегии |
-| ✅ M10 | Web-дашборд (Next.js) с Vercel-деплоем |
-| ✅ M11 | Real-time логи через SSE |
+### Isolation
+- Bot and dashboard run on localhost only
+- No open ports for external access
+- Polygon RPC — public endpoint, no authorisation required
 
-### Бэклог (v2)
+### Minimal Permissions
+- Bot runs as a regular Windows user (not administrator)
+- Only permission: send transactions from one wallet
 
-| Приоритет | Задача | Обоснование |
-|-----------|--------|------------|
-| P0 | Авто-перезапуск бота при краше | Сейчас требует ручного вмешательства |
-| P0 | Алерт в Telegram при крашe | Оператор не знает о проблеме |
-| P1 | SQLite вместо JSON | JSON не поддерживает параллельный доступ надёжно |
-| P1 | UI бэктестинга | Сейчас бэктест — отдельные Python-скрипты |
-| P1 | Облачный деплой дашборда (с туннелем) | Доступ с телефона без VPN |
-| P2 | Мобильное приложение / Telegram-бот для управления | Старт/стоп с телефона |
-| P2 | Портфельная аналитика по категориям | Уже есть, но только в Next.js дашборде |
-| P2 | А/Б тест стратегий (два бота с разными параметрами) | Сравнение подходов |
+### Transaction Risks
+- Nonce conflicts during parallel redemption: resolved with 5-second delay between transactions + retry
+- Gas price: standard gas used without acceleration (Polygon is cheap)
 
 ---
 
-## 13. Риски и митигация
+## 12. Roadmap
 
-| Риск | Вероятность | Влияние | Митигация |
-|------|------------|---------|----------|
-| Рынок 98% разрешается против нас | Низкая | Средняя | 14 фильтров; убыток ограничен $5–20 |
-| CLOB не отвечает, акции уже на-цепи | Средняя | Средняя | Проверка on-chain баланса после timeout |
-| Gamma API возвращает устаревшую цену | Средняя | Средняя | Сверка с CLOB; пропуск при расхождении > 3¢ |
-| Nonce-конфликт при редеемировании | Средняя | Низкая | Задержка между транзакциями + retry |
-| Бот зависает в бесконечном ожидании | Средняя | Средняя | ORDER_TTL_SECONDS = 300; health check в дашборде |
-| Утечка приватного ключа | Очень низкая | Критическая | `.env` + `.gitignore`; не в коде, не в дашборде |
-| Недостаточно ликвидности для заполнения | Высокая | Низкая | Частичные заполнения — норма; остаток возвращается |
-| Polymarket меняет API | Средняя | Высокая | Модульная архитектура; обновить только scanner/executor |
+### Completed (MVP)
+
+| Milestone | Description |
+|-----------|-------------|
+| ✅ M1 | Basic bot: scan → filter → place order |
+| ✅ M2 | Telegram notifications for all events |
+| ✅ M3 | Automatic win redemption |
+| ✅ M4 | Tracker: P&L recording, statistics |
+| ✅ M5 | 14 filters to exclude risky markets |
+| ✅ M6 | Dashboard: position view and bot management |
+| ✅ M7 | Manual position selling from UI |
+| ✅ M8 | Config editor in dashboard |
+| ✅ M9 | 8-hour reports + daily strategy analysis |
+| ✅ M10 | Web dashboard (Next.js) with Vercel deployment |
+| ✅ M11 | Real-time logs via SSE |
+
+### Backlog (v2)
+
+| Priority | Task | Rationale |
+|----------|------|-----------|
+| P0 | Auto-restart on crash | Currently requires manual intervention |
+| P0 | Telegram alert on crash | Operator unaware of issues |
+| P1 | SQLite instead of JSON | JSON doesn't reliably support concurrent access |
+| P1 | Backtesting UI | Currently backtest = separate Python scripts |
+| P1 | Cloud dashboard deployment (with tunnel) | Phone access without VPN |
+| P2 | Mobile app / Telegram bot for management | Start/stop from phone |
+| P2 | Portfolio analytics by category | Already exists in Next.js dashboard |
+| P2 | A/B strategy testing (two bots, different params) | Compare approaches |
 
 ---
 
-## 14. Открытые вопросы
+## 13. Risks and Mitigation
 
-1. **Авто-перезапуск:** Настроить Windows Task Scheduler или watchdog-процесс для перезапуска бота при краше. Когда делать?
-
-2. **Масштаб данных:** При > 1000 позиций чтение JSON замедлится. Переходить на SQLite сразу или подождать?
-
-3. **Облачный доступ к дашборду:** Cloudflare Tunnel или ngrok позволят открывать дашборд с телефона. Нужно ли?
-
-4. **Мультикошелёк:** Запускать бота с несколькими кошельками для увеличения объёма ставок?
-
-5. **Налоговая отчётность:** Как экспортировать P&L историю в формат, понятный бухгалтеру?
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|-----------|
+| 98% market resolves against us | Low | Medium | 14 filters; loss capped at $5–20 |
+| CLOB unresponsive, shares already on-chain | Medium | Medium | On-chain balance check after timeout |
+| Gamma API returns stale price | Medium | Medium | Cross-check with CLOB; skip if divergence > 3¢ |
+| Nonce conflict on redemption | Medium | Low | Delay between transactions + retry |
+| Bot hangs in infinite wait | Medium | Medium | ORDER_TTL_SECONDS = 300; health check in dashboard |
+| Private key leak | Very Low | Critical | `.env` + `.gitignore`; not in code, not in dashboard |
+| Insufficient liquidity to fill | High | Low | Partial fills are normal; remainder returned |
+| Polymarket changes API | Medium | High | Modular architecture; update only scanner/executor |
 
 ---
 
-*Документ отражает состояние системы на 2026-05-05. Актуальные параметры конфигурации — в файле `config.py` бота.*
+## 14. Open Questions
+
+1. **Auto-restart:** Configure Windows Task Scheduler or watchdog process for bot restart on crash. When to implement?
+
+2. **Data scale:** With > 1000 positions, JSON reading will slow down. Switch to SQLite immediately or wait?
+
+3. **Cloud dashboard access:** Cloudflare Tunnel or ngrok would allow opening the dashboard from a phone. Needed?
+
+4. **Multi-wallet:** Run the bot with multiple wallets to increase bet volume?
+
+5. **Tax reporting:** How to export P&L history in a format understandable to an accountant?
+
+---
+
+*Document reflects system state as of 2026-05-05. Current configuration parameters are in the bot's `config.py` file.*
